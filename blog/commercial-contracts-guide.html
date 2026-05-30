@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Guide to Commercial Contracts | LexWin Legal & HR Consulting</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:        #1a2c4e;
+    --navy-mid:    #2c4770;
+    --navy-light:  #3a5a8a;
+    --accent:      #c8943a;
+    --accent-light:#f5ead6;
+    --accent-pale: #fdf8ef;
+    --teal:        #0d6e6e;
+    --teal-light:  #e8f4f4;
+    --red:         #b91c1c;
+    --red-light:   #fef2f2;
+    --red-border:  #fca5a5;
+    --green:       #166534;
+    --green-light: #f0fdf4;
+    --green-border:#86efac;
+    --amber:       #92400e;
+    --amber-light: #fffbeb;
+    --amber-border:#fcd34d;
+    --text:        #1f2937;
+    --text-mid:    #374151;
+    --text-light:  #6b7280;
+    --border:      #e5e7eb;
+    --bg-page:     #fafaf8;
+    --bg-white:    #ffffff;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 16.5px;
+    line-height: 1.78;
+    color: var(--text);
+    background: var(--bg-page);
+  }
+
+  /* ── MASTHEAD ──────────────────────────────────────── */
+  .masthead {
+    background: var(--navy);
+    padding: 0.8rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .masthead-logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+  .masthead-logo span { color: var(--accent); }
+  .masthead-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ── HERO ──────────────────────────────────────────── */
+  .hero {
+    background: var(--navy);
+    padding: 4.5rem 2.5rem 3.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 20% 50%, rgba(200,148,58,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 60% at 80% 30%, rgba(13,110,110,0.1) 0%, transparent 55%);
+    pointer-events: none;
+  }
+  .hero-tag {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid rgba(200,148,58,0.4);
+    padding: 0.3rem 0.9rem;
+    border-radius: 2rem;
+    margin-bottom: 1.4rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .hero-sub {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.72);
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+  }
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .hero-meta-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .hero-meta-item svg { opacity: 0.6; }
+
+  /* ── CONTENT WRAPPER ───────────────────────────────── */
+  .content-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+  }
+
+  /* ── SECTION HEADINGS ──────────────────────────────── */
+  .section-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-top: 3rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .section-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--accent-light);
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+  }
+
+  .sub-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--navy-mid);
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── BODY TEXT ─────────────────────────────────────── */
+  p {
+    margin-bottom: 1rem;
+    color: var(--text-mid);
+  }
+
+  /* ── LEAD PARAGRAPH ────────────────────────────────── */
+  .lead {
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── DANGER CALLOUT ────────────────────────────────── */
+  .callout-danger {
+    background: var(--red-light);
+    border-left: 5px solid var(--red);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.2rem 1.5rem;
+    margin: 1.8rem 0;
+  }
+  .callout-danger .callout-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.45rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .callout-danger p { color: #7f1d1d; margin: 0; font-size: 0.95rem; }
+
+  /* ── WARNING CALLOUT ───────────────────────────────── */
+  .callout-warning {
+    background: var(--amber-light);
+    border-left: 5px solid #d97706;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.2rem 1.5rem;
+    margin: 1.8rem 0;
+  }
+  .callout-warning .callout-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #b45309;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.45rem;
+  }
+  .callout-warning p { color: #78350f; margin: 0; font-size: 0.95rem; }
+
+  /* ── TIP CALLOUT ───────────────────────────────────── */
+  .callout-tip {
+    background: var(--teal-light);
+    border-left: 5px solid var(--teal);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.2rem 1.5rem;
+    margin: 1.8rem 0;
+  }
+  .callout-tip .callout-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.45rem;
+  }
+  .callout-tip p { color: #134e4a; margin: 0; font-size: 0.95rem; }
+
+  /* ── INFO CALLOUT ──────────────────────────────────── */
+  .callout-info {
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.2rem 1.5rem;
+    margin: 1.8rem 0;
+  }
+  .callout-info .callout-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #1d4ed8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.45rem;
+  }
+  .callout-info p { color: #1e3a8a; margin: 0; font-size: 0.95rem; }
+
+  /* ── HIGHLIGHT BOX ─────────────────────────────────── */
+  .highlight-box {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    border-radius: 0.75rem;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .highlight-box::after {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 120px; height: 120px;
+    background: rgba(200,148,58,0.15);
+    border-radius: 50%;
+  }
+  .highlight-box h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+  }
+  .highlight-box p { color: rgba(255,255,255,0.82); margin-bottom: 0.5rem; font-size: 0.95rem; }
+  .highlight-box p:last-child { margin-bottom: 0; }
+
+  /* ── RISK GRID ─────────────────────────────────────── */
+  .risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.8rem 0;
+  }
+  .risk-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-top: 4px solid;
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.3rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .risk-card.red   { border-top-color: var(--red); }
+  .risk-card.amber { border-top-color: #d97706; }
+  .risk-card.navy  { border-top-color: var(--navy); }
+  .risk-card.teal  { border-top-color: var(--teal); }
+  .risk-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+  }
+  .risk-card.red h4   { color: var(--red); }
+  .risk-card.amber h4 { color: #b45309; }
+  .risk-card.navy h4  { color: var(--navy); }
+  .risk-card.teal h4  { color: var(--teal); }
+  .risk-card p { font-size: 0.88rem; color: var(--text-mid); margin: 0; line-height: 1.55; }
+
+  /* ── CLAUSE TABLE ──────────────────────────────────── */
+  .clause-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .clause-table thead tr {
+    background: var(--navy);
+    color: #fff;
+  }
+  .clause-table thead th {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.85rem 1rem;
+    text-align: left;
+  }
+  .clause-table tbody tr:nth-child(even) { background: #f0fdff; }
+  .clause-table tbody tr:nth-child(odd)  { background: var(--bg-white); }
+  .clause-table tbody td {
+    padding: 0.75rem 1rem;
+    color: var(--text-mid);
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.55;
+  }
+  .clause-table tbody td:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--navy-mid);
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  /* ── CHECKLIST ─────────────────────────────────────── */
+  .checklist {
+    list-style: none;
+    margin: 1rem 0 1.2rem;
+    padding: 0;
+  }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    color: var(--text-mid);
+  }
+  .checklist li::before {
+    content: '✓';
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--teal);
+    background: var(--teal-light);
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+  }
+
+  /* ── NUMBERED LIST ─────────────────────────────────── */
+  .num-list {
+    counter-reset: num;
+    list-style: none;
+    margin: 1rem 0 1.2rem;
+    padding: 0;
+  }
+  .num-list li {
+    counter-increment: num;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 0.55rem 0;
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    border-bottom: 1px solid var(--border);
+  }
+  .num-list li:last-child { border-bottom: none; }
+  .num-list li::before {
+    content: counter(num);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    background: var(--navy-mid);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+  }
+
+  /* ── BULLET LIST ───────────────────────────────────── */
+  .bullet-list {
+    list-style: none;
+    margin: 0.8rem 0 1rem 0;
+    padding: 0;
+  }
+  .bullet-list li {
+    padding: 0.3rem 0 0.3rem 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--text-mid);
+  }
+  .bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0.3rem;
+    top: 0.75rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  /* ── SCENARIO CARD ─────────────────────────────────── */
+  .scenario {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+    padding: 1.3rem 1.5rem;
+    margin: 1.2rem 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .scenario-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+  .scenario h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+  .scenario p { font-size: 0.9rem; color: var(--text-mid); margin: 0; }
+
+  /* ── QUOTE PULL ────────────────────────────────────── */
+  .pull-quote {
+    border-left: 4px solid var(--accent);
+    padding: 0.8rem 1.5rem;
+    margin: 2rem 0;
+    background: var(--accent-pale);
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  /* ── DIVIDER ───────────────────────────────────────── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+  }
+
+  /* ── CONCLUSION BAND ───────────────────────────────── */
+  .conclusion-band {
+    background: linear-gradient(135deg, var(--navy) 0%, #0d2240 100%);
+    padding: 3rem 2.5rem;
+    border-radius: 0.75rem;
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .conclusion-band::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 160px; height: 160px;
+    background: rgba(200,148,58,0.1);
+    border-radius: 50%;
+  }
+  .conclusion-band h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 0.9rem;
+  }
+  .conclusion-band p {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.95rem;
+    max-width: 580px;
+    margin: 0 auto 1.4rem;
+  }
+  .conclusion-btn {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--accent);
+    padding: 0.7rem 1.8rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── DISCLAIMER ────────────────────────────────────── */
+  .disclaimer {
+    background: #f8f8f6;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.1rem 1.4rem;
+    margin-top: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+  .disclaimer strong { color: var(--text-mid); }
+
+  /* ── FOOTER ────────────────────────────────────────── */
+  .footer {
+    background: var(--navy);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.4);
+    margin-top: 0;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  /* ── RESPONSIVE ────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .hero { padding: 3rem 1.3rem 2.5rem; }
+    .content-wrap { padding: 2rem 1.2rem 3rem; }
+    .masthead { padding: 0.7rem 1.3rem; }
+    .risk-grid { grid-template-columns: 1fr; }
+    .highlight-box { padding: 1.5rem 1.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<nav class="masthead">
+  <a href="https://www.lexwin.co.in" class="masthead-logo">Lex<span>Win</span> Consulting</a>
+  <span class="masthead-tagline">Legal &amp; HR Consulting · Pune, India</span>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-tag">Business Guide · Commercial Contracts</div>
+  <h1>Business Guide to<br><em>Commercial Contracts</em></h1>
+  <p class="hero-sub">What every business owner and manager must know about drafting, negotiating, and protecting their commercial relationships — and why using someone else's template can cost you more than you think.</p>
+  <div class="hero-meta">
+    <span class="hero-meta-item">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      12 min read
+    </span>
+    <span class="hero-meta-item">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      LexWin Consulting · May 2026
+    </span>
+    <span class="hero-meta-item">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Corporate Legal · Contract Management
+    </span>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<div class="content-wrap">
+
+  <p class="lead">Every business relationship rests on a promise. When that promise is a commercial contract, it determines who gets paid, who bears the risk, and who goes to court when things fall apart. Yet an astonishing number of businesses — startups and established companies alike — treat contract management as a formality rather than a strategic tool. They download templates from the internet, borrow documents from unrelated industries, or rely on a handshake where a carefully drafted agreement is needed. The consequences, when they materialise, can be severe.</p>
+
+  <p>This guide is written for business owners, founders, and managers who want a practical, plain-language understanding of commercial contracts — what they are, what must go into them, and how to use them to protect and grow your business.</p>
+
+  <div class="callout-danger">
+    <div class="callout-title">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+      Critical Warning
+    </div>
+    <p>Using a contract template designed for a different industry, jurisdiction, or transaction type is one of the most common — and costly — legal mistakes in business. A template built for a US software SaaS deal is not suitable for an Indian goods supply contract. A landlord's lease template cannot be repurposed as a service agreement. The mismatch creates hidden gaps that only surface when a dispute arises — and by then, it is often too late.</p>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 class="section-heading"><span class="section-num">01</span> What is a commercial contract?</h2>
+
+  <p>A commercial contract is a legally enforceable agreement between two or more parties in the context of business activity. For a contract to be valid and enforceable under Indian law (governed principally by the Indian Contract Act, 1872), five essential elements must be present:</p>
+
+  <ul class="num-list">
+    <li><strong>Offer &amp; acceptance</strong> — one party makes a clear proposal, the other accepts it unconditionally.</li>
+    <li><strong>Consideration</strong> — something of value is exchanged by each side (money, goods, services, or a promise).</li>
+    <li><strong>Free consent</strong> — both parties agree without coercion, fraud, misrepresentation, or undue influence.</li>
+    <li><strong>Competent parties</strong> — both parties must have the legal capacity to contract (age, mental capacity, not a disqualified entity).</li>
+    <li><strong>Lawful object</strong> — the purpose of the agreement must not be illegal, immoral, or against public policy.</li>
+  </ul>
+
+  <p>A document that ticks all five boxes is a contract. One that misses even one element may be void or voidable — meaning you cannot enforce it when you need to most.</p>
+
+  <!-- SECTION 2 -->
+  <h2 class="section-heading"><span class="section-num">02</span> Types of commercial contracts every business uses</h2>
+
+  <p>Commercial contracts span a wide range of business activities. Below are the most common categories:</p>
+
+  <table class="clause-table">
+    <thead>
+      <tr>
+        <th>Contract type</th>
+        <th>Typical use case</th>
+        <th>Key risk if poorly drafted</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supply / Purchase Agreement</td>
+        <td>Sale of goods between businesses</td>
+        <td>No delivery timeline, unclear quality specs, payment disputes</td>
+      </tr>
+      <tr>
+        <td>Service Agreement / MSA</td>
+        <td>Ongoing provision of services</td>
+        <td>Scope creep, no SLA, no IP ownership clarity</td>
+      </tr>
+      <tr>
+        <td>Non-Disclosure Agreement (NDA)</td>
+        <td>Sharing confidential information</td>
+        <td>Broad carve-outs, no term limit, unenforceable remedies</td>
+      </tr>
+      <tr>
+        <td>Memorandum of Understanding (MoU)</td>
+        <td>Expressing intent before a formal deal</td>
+        <td>Unintentionally binding, or not binding when it should be</td>
+      </tr>
+      <tr>
+        <td>Distribution / Agency Agreement</td>
+        <td>Appointment of resellers or agents</td>
+        <td>Exclusivity ambiguities, termination without cause, commission disputes</td>
+      </tr>
+      <tr>
+        <td>Shareholders' Agreement (SHA)</td>
+        <td>Governing relations between shareholders</td>
+        <td>Deadlock, lack of exit mechanism, no anti-dilution protection</td>
+      </tr>
+      <tr>
+        <td>Joint Venture (JV) Agreement</td>
+        <td>Collaboration on a specific project or venture</td>
+        <td>Undefined profit-sharing, no governance mechanism, unclear exit</td>
+      </tr>
+      <tr>
+        <td>Employment / Contractor Agreement</td>
+        <td>Engaging employees or independent contractors</td>
+        <td>Misclassification risk, no IP/NDA protection, wrongful termination exposure</td>
+      </tr>
+      <tr>
+        <td>Technology / IP Licence</td>
+        <td>Licencing software, patents, or know-how</td>
+        <td>Scope of licence unclear, no sublicence restriction, royalty disputes</td>
+      </tr>
+      <tr>
+        <td>Lease / Licence Agreement</td>
+        <td>Use of commercial property or equipment</td>
+        <td>Tenancy rights unintentionally created, renewal disputes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout-tip">
+    <div class="callout-title">✦ LexWin Insight</div>
+    <p>Each contract type has its own legal architecture — specific statutes, implied terms, and regulatory overlays. A Master Service Agreement (MSA) for an IT company must address IP ownership, source code escrow, and data privacy in ways that a goods supply agreement never will. Using the wrong template means starting from the wrong foundation.</p>
+  </div>
+
+  <!-- SECTION 3 -->
+  <h2 class="section-heading"><span class="section-num">03</span> The template trap: why borrowing someone else's contract is a business risk</h2>
+
+  <p>This is the issue that deserves the most direct attention. The internet is full of "free contract templates." Law firm websites offer them as lead magnets. Colleagues share them across industries. Many businesses — especially SMEs and startups under budget pressure — reach for these documents without asking the most important question: <em>Was this contract designed for my transaction, my industry, and my jurisdiction?</em></p>
+
+  <p>The answer is almost always: no. And the risks are not theoretical.</p>
+
+  <h3 class="sub-heading">Business risks of a mismatched template</h3>
+
+  <div class="risk-grid">
+    <div class="risk-card red">
+      <h4>Revenue leakage</h4>
+      <p>Payment terms, escalation clauses, and penalty provisions that do not reflect your commercial model mean you could be owed money you cannot collect.</p>
+    </div>
+    <div class="risk-card amber">
+      <h4>Scope disputes</h4>
+      <p>A vague scope of work copied from another contract leads to "that was never in scope" arguments, project overruns, and client dissatisfaction.</p>
+    </div>
+    <div class="risk-card navy">
+      <h4>Unlimited liability</h4>
+      <p>Templates from other jurisdictions often lack liability caps or indemnity limits appropriate for Indian businesses, exposing you to disproportionate claims.</p>
+    </div>
+    <div class="risk-card teal">
+      <h4>IP loss</h4>
+      <p>A service agreement that does not clearly assign IP to you may inadvertently vest copyright or trade secrets in your vendor or contractor.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-heading">Legal risks of a mismatched template</h3>
+
+  <div class="callout-danger">
+    <div class="callout-title">⚠ Legal Exposure</div>
+    <p>A US-law governed contract used between two Indian parties may be unenforceable in Indian courts. Arbitration clauses designed for SIAC or ICC may be invalid if the wrong institutional rules are cited. A limitation clause that is valid in the UK may be struck down in India as being contrary to the Indian Contract Act. Every jurisdiction has its own rules — and a template from the wrong one is a trap waiting to be triggered.</p>
+  </div>
+
+  <p>Specific legal risks include:</p>
+
+  <ul class="bullet-list">
+    <li>Governing law and jurisdiction clauses that create inconvenient or unenforceable forum obligations</li>
+    <li>Automatic renewal clauses that lock you into multi-year obligations you did not intend</li>
+    <li>Unilateral variation rights in the counterparty's standard form that allow them to change pricing or terms without notice</li>
+    <li>Force majeure clauses drafted pre-COVID that do not cover pandemic or supply chain events</li>
+    <li>Data protection obligations missing entirely — a significant exposure under India's Digital Personal Data Protection Act, 2023 (DPDPA)</li>
+    <li>Non-compete clauses that are unenforceable under Section 27 of the Indian Contract Act but create a false sense of protection</li>
+  </ul>
+
+  <h3 class="sub-heading">Operational risks of a mismatched template</h3>
+
+  <ul class="bullet-list">
+    <li>Dispute resolution mechanisms that are impractical — e.g., mandatory mediation in a city where neither party operates</li>
+    <li>Notice provisions requiring registered post when your business communicates entirely by email</li>
+    <li>Currency and payment terms in foreign currency creating unintended FEMA compliance obligations</li>
+    <li>Audit rights and reporting obligations copied from a regulated-industry template applied to an unregulated SME</li>
+    <li>Termination provisions that require months of notice for what should be an at-will arrangement</li>
+  </ul>
+
+  <div class="scenario">
+    <div class="scenario-label">Real-World Scenario</div>
+    <h4>The IT company and the vendor's standard form</h4>
+    <p>A mid-sized Indian IT services company signed a cloud infrastructure vendor's standard-form agreement without review. The vendor's template contained an indemnification clause requiring the customer to indemnify the vendor for any third-party IP infringement claim — standard in US software contracts but highly unusual in Indian commercial practice. When a copyright dispute arose involving the vendor's own software, the IT company found itself on the hook for legal costs it had never anticipated. The entire liability arose from a clause it had not noticed because the template "looked similar" to ones it had used before.</p>
+  </div>
+
+  <!-- SECTION 4 -->
+  <h2 class="section-heading"><span class="section-num">04</span> Anatomy of a well-drafted commercial contract</h2>
+
+  <p>A properly drafted commercial contract is not just a list of obligations — it is a risk management document. Here are the core clauses every commercial contract should contain, and what they must achieve:</p>
+
+  <table class="clause-table">
+    <thead>
+      <tr>
+        <th>Clause</th>
+        <th>What it must cover</th>
+        <th>Common drafting failure</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Parties &amp; recitals</td>
+        <td>Full legal names, registered addresses, and entity type of each party; context of the transaction</td>
+        <td>Trade names used instead of registered legal names — creates enforceability issues</td>
+      </tr>
+      <tr>
+        <td>Definitions &amp; interpretation</td>
+        <td>Clear definitions for all key commercial and technical terms; rules for resolving ambiguity</td>
+        <td>Undefined terms left to inference — each party interprets differently</td>
+      </tr>
+      <tr>
+        <td>Scope of work / services</td>
+        <td>Precise description of deliverables, milestones, timelines, and exclusions</td>
+        <td>Vague language ("as agreed" or "best efforts") without specifics</td>
+      </tr>
+      <tr>
+        <td>Pricing &amp; payment terms</td>
+        <td>Amounts, currency, invoice cycles, payment deadlines, late payment interest, GST/tax treatment</td>
+        <td>No interest on delayed payments; no GST clarity leading to tax disputes</td>
+      </tr>
+      <tr>
+        <td>Term &amp; termination</td>
+        <td>Start date, end date or renewal mechanism; grounds for termination (for cause and for convenience); notice period; consequences of termination</td>
+        <td>Auto-renewal without notice; no termination for convenience right</td>
+      </tr>
+      <tr>
+        <td>Representations &amp; warranties</td>
+        <td>Each party's statements of fact that the other relies upon — authority to contract, no conflicting obligations, IP ownership</td>
+        <td>Broad warranties without carve-outs creating disproportionate liability</td>
+      </tr>
+      <tr>
+        <td>Intellectual property</td>
+        <td>Ownership of pre-existing IP, ownership of work product created under the contract, licence grants, restrictions on use</td>
+        <td>Silence on IP ownership — courts may default to copyright vesting in creator</td>
+      </tr>
+      <tr>
+        <td>Confidentiality</td>
+        <td>Definition of confidential information, obligations of receiving party, permitted disclosures, term of obligation</td>
+        <td>No exclusions for publicly available information; indefinite term</td>
+      </tr>
+      <tr>
+        <td>Indemnification</td>
+        <td>Who indemnifies whom for what; whether indemnities are capped; survival after termination</td>
+        <td>One-sided indemnification copied from the stronger party's template</td>
+      </tr>
+      <tr>
+        <td>Limitation of liability</td>
+        <td>Cap on total liability (typically a multiple of fees paid); exclusion of consequential/indirect damages; carve-outs for fraud and wilful misconduct</td>
+        <td>Missing entirely — exposing one party to unlimited claims</td>
+      </tr>
+      <tr>
+        <td>Force majeure</td>
+        <td>Events beyond reasonable control; obligations during force majeure; termination right if prolonged</td>
+        <td>No termination right; overly broad definition used to avoid payment</td>
+      </tr>
+      <tr>
+        <td>Governing law &amp; dispute resolution</td>
+        <td>Choice of applicable law; tiered dispute resolution (negotiation → mediation → arbitration or litigation); seat and venue of arbitration</td>
+        <td>Foreign law governing a purely domestic transaction; unworkable arbitration clause</td>
+      </tr>
+      <tr>
+        <td>Data protection</td>
+        <td>Compliance with DPDPA 2023 (and GDPR if applicable); data processing obligations; security standards; breach notification</td>
+        <td>Entirely absent — now a statutory compliance gap under Indian law</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION 5 -->
+  <h2 class="section-heading"><span class="section-num">05</span> Negotiation: the contract is a conversation, not a diktat</h2>
+
+  <p>Receiving a contract from the other side does not mean you must sign it as presented. Every commercial contract is a negotiation — even standard forms. Understanding what is negotiable, and what to push back on, is a core business skill.</p>
+
+  <div class="pull-quote">
+    <p>"The most dangerous sentence in contract negotiations is: 'That's just our standard form.' Standard forms are drafted by the other side's lawyers, for the other side's benefit."</p>
+  </div>
+
+  <h3 class="sub-heading">Clauses most worth negotiating</h3>
+
+  <ul class="checklist">
+    <li><strong>Liability cap</strong> — push for a cap that is proportionate to the contract value, not unlimited</li>
+    <li><strong>IP ownership</strong> — ensure work product created for you is assigned to you, not licensed</li>
+    <li><strong>Payment &amp; invoicing</strong> — negotiate milestone payments instead of delivery-only payments for large projects</li>
+    <li><strong>Termination for convenience</strong> — insist on a right to exit, even if it comes with a notice period</li>
+    <li><strong>Indemnification carve-outs</strong> — limit indemnities to your own negligence or wilful misconduct, not third-party actions beyond your control</li>
+    <li><strong>Governing law &amp; venue</strong> — ensure disputes are resolved in a forum convenient to your business, not the counterparty's headquarters</li>
+    <li><strong>Auto-renewal</strong> — add a notice window to prevent inadvertent lock-in</li>
+    <li><strong>Audit rights</strong> — if you are the buyer, secure the right to verify compliance; if you are the seller, limit audit frequency and scope</li>
+  </ul>
+
+  <div class="callout-info">
+    <div class="callout-title">📌 Negotiation Practice</div>
+    <p>Always mark up the other party's contract in tracked changes with your proposed revisions. This creates a clear paper trail, focuses attention on specific points, and signals that you have reviewed the document carefully — which in itself builds commercial credibility and discourages unreasonable positions.</p>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2 class="section-heading"><span class="section-num">06</span> Special considerations for Indian businesses</h2>
+
+  <p>Commercial contracts in India operate within a distinct legal landscape that differs significantly from Western frameworks. Indian businesses must account for the following:</p>
+
+  <h3 class="sub-heading">The Indian Contract Act, 1872</h3>
+  <p>The foundational statute governing contracts in India. Key provisions affect non-compete clauses (Section 27 — generally unenforceable post-employment in India), penalty clauses (Section 74 — courts may award only reasonable compensation even if a specific penalty is agreed), and contract modification (Section 62 — novation and alteration must be properly documented).</p>
+
+  <h3 class="sub-heading">Stamp duty &amp; registration</h3>
+  <p>Several types of commercial contracts attract stamp duty under the Indian Stamp Act, 1899 (and state stamp acts). An unstamped or insufficiently stamped document may be inadmissible as evidence in court. Service agreements, assignment deeds, and certain MoUs may attract duty depending on the state in which they are executed. For immovable property-related contracts, registration under the Registration Act, 1908 is mandatory for enforceability.</p>
+
+  <h3 class="sub-heading">GST implications</h3>
+  <p>Contract structure directly affects GST liability. How a transaction is characterised — as a supply of goods, supply of services, or a composite/mixed supply — determines the applicable GST rate and the point of taxation. Poorly drafted contracts that do not specify GST obligations clearly can lead to disputes about who bears the tax, and whether a party was GST-registered at the time of the transaction.</p>
+
+  <h3 class="sub-heading">FEMA for cross-border transactions</h3>
+  <p>If your commercial contract involves a foreign entity — whether as customer, vendor, licensor, or investor — it will likely attract the Foreign Exchange Management Act, 1999 (FEMA) and regulations thereunder. Payment terms, royalty rates, ECB (external commercial borrowings), and dividend/profit repatriation are all subject to RBI regulation. A contract that is commercially sound but FEMA-non-compliant can expose both parties to regulatory penalties.</p>
+
+  <h3 class="sub-heading">DPDPA 2023 — data protection is now a contract issue</h3>
+  <p>India's Digital Personal Data Protection Act, 2023 creates obligations for businesses (Data Fiduciaries) that process personal data, and for those they engage to process data on their behalf (Data Processors). Any commercial contract involving the transfer or processing of personal data — customer lists, employee data, user records — must now contain appropriate data processing provisions, consent mechanisms, and breach notification obligations. Absence of such provisions is not merely a contract risk; it is a statutory compliance failure.</p>
+
+  <div class="callout-warning">
+    <div class="callout-title">⚠ Important for Foreign Companies</div>
+    <p>If your company is entering the Indian market — through a subsidiary, a joint venture, or a distribution arrangement — your commercial contracts must be localised for Indian law. A contract template drafted for operations in the US, UK, or EU will likely be inadequate, and may create compliance gaps under Indian taxation, labour, and data privacy laws from day one of operations.</p>
+  </div>
+
+  <!-- SECTION 7 -->
+  <h2 class="section-heading"><span class="section-num">07</span> Contract lifecycle management: from signing to exit</h2>
+
+  <p>Signing a contract is not the end of the process — it is the beginning. Many businesses focus all their attention on getting the deal signed and then file the contract away, never to review it again. This is a significant operational risk.</p>
+
+  <h3 class="sub-heading">The five stages of a contract's life</h3>
+
+  <ul class="num-list">
+    <li><strong>Initiation &amp; drafting</strong> — identifying the right contract type, drafting or reviewing terms, internal approvals before negotiation</li>
+    <li><strong>Negotiation &amp; execution</strong> — red-lining, finalising terms, obtaining authorised signatures, ensuring stamp duty compliance</li>
+    <li><strong>Active management</strong> — tracking milestones, invoicing cycles, renewal dates, SLA performance, and obligation deadlines</li>
+    <li><strong>Variation &amp; amendment</strong> — documenting changes through properly executed addenda rather than informal email exchanges</li>
+    <li><strong>Expiry, renewal, or termination</strong> — giving proper notice, completing wind-down obligations, returning or destroying confidential information, settling final accounts</li>
+  </ul>
+
+  <p>Businesses that manage contracts as living documents — rather than one-time paperwork events — reduce disputes, capture commercial opportunities, and protect themselves when relationships break down.</p>
+
+  <div class="callout-tip">
+    <div class="callout-title">✦ Practical Tip</div>
+    <p>Maintain a contracts register — even a simple spreadsheet — that tracks every active contract, its parties, key dates (start, end, renewal notice window), value, and accountable owner. Set calendar reminders for renewal notice deadlines at least 90 days in advance. More businesses have been caught by auto-renewed contracts than by any deliberate legal ambush.</p>
+  </div>
+
+  <!-- SECTION 8 -->
+  <h2 class="section-heading"><span class="section-num">08</span> When contracts go wrong: dispute resolution</h2>
+
+  <p>Even well-drafted contracts between well-intentioned parties sometimes produce disputes. How a dispute is resolved — and at what cost — depends heavily on what is written in the contract before the dispute ever arises.</p>
+
+  <h3 class="sub-heading">Options available under Indian law</h3>
+
+  <ul class="bullet-list">
+    <li><strong>Negotiation</strong> — the fastest, cheapest, and most relationship-preserving option; should always be the first step</li>
+    <li><strong>Mediation</strong> — structured facilitated negotiation with a neutral third party; now significantly encouraged by Indian courts and commercial practice</li>
+    <li><strong>Arbitration</strong> — private, confidential adjudication under the Arbitration &amp; Conciliation Act, 1996; the preferred mechanism for most commercial contracts in India; awards are enforceable domestically and internationally under the New York Convention</li>
+    <li><strong>Litigation</strong> — court proceedings before civil courts or the National Company Law Tribunal (NCLT), as applicable; slower and more public, but sometimes necessary</li>
+  </ul>
+
+  <div class="scenario">
+    <div class="scenario-label">Drafting Guidance</div>
+    <h4>A well-drafted dispute resolution clause — what it should say</h4>
+    <p>The parties should first attempt to resolve any dispute through good-faith negotiations between senior representatives within 30 days of written notice. If unresolved, the dispute should be referred to mediation. If mediation fails, arbitration under the ICADR or DIAC rules (or the Arbitration &amp; Conciliation Act, 1996 for ad hoc arbitration) should follow, with the seat at a specified Indian city, conducted in English, before a sole arbitrator (or panel of three for high-value disputes). This tiered approach saves time, cost, and commercial relationships.</p>
+  </div>
+
+  <!-- SECTION 9 -->
+  <h2 class="section-heading"><span class="section-num">09</span> Common contract mistakes that businesses make</h2>
+
+  <p>Experience in commercial practice reveals a consistent set of mistakes that create the most significant problems:</p>
+
+  <ul class="checklist">
+    <li>Starting work before a contract is signed — verbal agreements are enforceable in principle but nearly impossible to prove in practice</li>
+    <li>Using email chains as the contract — courts may treat a series of emails as a binding agreement, but the terms will be incomplete and ambiguous</li>
+    <li>Signing a contract without reading it — the "just send it to legal" approach, where legal is not engaged until after commercial terms are fixed, means lawyers negotiate around business decisions already made</li>
+    <li>Agreeing to the counterparty's standard form without any pushback — standard forms are skewed in favour of the drafter; the party that does not push back on onerous terms has no one to blame but themselves</li>
+    <li>Not documenting amendments — changing contract terms by email or phone call without a formal amendment creates uncertainty about what the current agreement actually is</li>
+    <li>Ignoring renewal dates — being locked into another two-year term because no one set a reminder for the renewal notice window is an entirely avoidable commercial problem</li>
+    <li>Using a template from a different jurisdiction — as discussed throughout this guide, this is perhaps the single most prevalent — and most expensive — contract mistake in Indian commercial practice</li>
+    <li>Treating the MoU as non-binding — an MoU or Letter of Intent can be partially binding if it contains specific commitments; courts look at substance, not labels</li>
+  </ul>
+
+  <!-- SECTION 10 -->
+  <h2 class="section-heading"><span class="section-num">10</span> Contracts as a competitive advantage</h2>
+
+  <p>It would be a mistake to read this guide and conclude that contracts are simply defensive documents — tools for minimising downside. The best commercial lawyers and the most commercially sophisticated businesses understand that contracts are also instruments of competitive advantage.</p>
+
+  <div class="highlight-box">
+    <h3>Contracts that create value, not just protection</h3>
+    <p>A well-drafted exclusivity clause locks in a distribution channel that competitors cannot access. A carefully negotiated IP ownership provision ensures that the technology you commission is an asset on your balance sheet, not a licence that can be revoked. A smart pricing structure — with built-in escalation and volume-based incentives — protects margins without requiring annual renegotiation.</p>
+    <p>A robust NDA with appropriate remedies allows you to share proprietary information with potential partners, investors, and customers with confidence — accelerating business development rather than slowing it down. A clear Shareholders' Agreement with well-designed exit mechanisms makes your company more investable, because sophisticated investors know they can exit when they need to.</p>
+    <p>In short: every contract is an opportunity to build a stronger, more defensible, more valuable business. The businesses that treat contracts as a cost of doing business will always be on the back foot against those that treat them as a tool for doing better business.</p>
+  </div>
+
+  <!-- SECTION 11 -->
+  <h2 class="section-heading"><span class="section-num">11</span> When to engage a commercial lawyer</h2>
+
+  <p>Not every business interaction requires a lawyer. But some decisions are too consequential to make without professional legal support:</p>
+
+  <ul class="num-list">
+    <li><strong>High-value or long-term contracts</strong> — any contract that commits your business for more than 12 months or involves material financial exposure deserves professional drafting or review</li>
+    <li><strong>Counterparty sends their standard form</strong> — always have significant contracts from the other side reviewed before signing; the cost of a review is a small fraction of the risk you are accepting</li>
+    <li><strong>Cross-border transactions</strong> — contracts with foreign entities involve multiple legal systems; professional guidance is not optional</li>
+    <li><strong>Joint ventures and partnerships</strong> — the governance and exit provisions in JV and partnership agreements are where most disputes originate; getting these right at the outset is critical</li>
+    <li><strong>IP-intensive business</strong> — if your business value resides in software, brand, data, or know-how, every contract that touches that IP must be carefully structured</li>
+    <li><strong>First-time contract for a new business model</strong> — entering a new market, launching a new product, or engaging a new type of counterparty; use professional support to build a template that reflects your actual business</li>
+  </ul>
+
+  <div class="callout-info">
+    <div class="callout-title">📌 LexWin's Approach</div>
+    <p>At LexWin, we draft and negotiate commercial contracts across industries — from supply chain agreements for manufacturing businesses to technology licensing contracts for software companies. We also provide contract review services for businesses receiving counterparty standard forms, and ongoing contract management support for businesses that want a systematic approach to their commercial relationships. Our focus is always on contracts that are both legally sound and commercially workable — documents that protect you without getting in the way of business.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CONCLUSION -->
+  <div class="conclusion-band">
+    <h2>Your contracts are your business — protect them</h2>
+    <p>Whether you are signing your first vendor agreement or renegotiating a multi-crore distribution deal, the quality of your commercial contracts determines the quality of your business relationships — and the security of your business outcomes. Do not leave that to a template that was built for someone else's problem.</p>
+    <a href="https://www.lexwin.co.in" class="conclusion-btn">Connect with LexWin →</a>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This article is published for general informational and educational purposes only. It does not constitute legal advice and does not create a lawyer-client relationship. The legal landscape described refers primarily to Indian law as of May 2026. Businesses should seek professional legal advice specific to their situation before entering into commercial contracts or making decisions based on the information in this article. © 2026 LexWin Legal &amp; HR Consulting. All rights reserved.
+  </div>
+
+</div><!-- /content-wrap -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 LexWin Legal &amp; HR Consulting · <a href="https://www.lexwin.co.in">www.lexwin.co.in</a> · Pune, India · <a href="mailto:info@lexwin.co.in">info@lexwin.co.in</a> · +91 98233 85085</p>
+</footer>
+
+</body>
+</html>
