@@ -7,10 +7,13 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-995KV4HXM1');
+  // Skip Analytics if internal visitor cookie is set
+  if (document.cookie.indexOf('lexwin_notrack=1') === -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-995KV4HXM1');
+  }
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LexWin Legal & HR Consulting | Corporate Legal & HR Consultant | Pune, India</title>
