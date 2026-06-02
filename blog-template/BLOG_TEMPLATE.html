@@ -981,6 +981,25 @@
       .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
     }
 
+  
+    /* Data table & clause table — banded, used in articles */
+    .data-table, .clause-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-family: 'DM Sans', sans-serif; font-size: .88rem;
+      box-shadow: var(--shadow-sm); border-radius: 4px; overflow: hidden;
+    }
+    .data-table th, .clause-table th {
+      background: var(--navy-mid); color: var(--white);
+      padding: .65rem .9rem; text-align: left; font-weight: 600; letter-spacing: .02em;
+    }
+    .data-table td, .clause-table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; text-align: justify;
+    }
+    .data-table tbody tr:nth-child(even),
+    .clause-table tbody tr:nth-child(even) { background: #f0fdff; }
+    .data-table tbody tr:hover,
+    .clause-table tbody tr:hover { background: var(--gold-pale); }
+
   </style>
 </head>
 <body>
