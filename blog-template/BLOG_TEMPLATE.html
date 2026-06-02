@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SEO — FILL ALL FIELDS FOR EVERY NEW ARTICLE
+  ════════════════════════════════════════════════════════════════ -->
+  <title>{{ARTICLE_TITLE}} | LexWin</title>
+  <meta name="description"        content="{{META_DESCRIPTION}}" />
+  <meta name="keywords"           content="{{META_KEYWORDS}}" />
+  <link rel="canonical"           href="https://www.lexwin.co.in/blog/{{ARTICLE_SLUG}}.html" />
+  <meta name="google-site-verification" content="61C6F194U8QSocNUBvV7N2gDyIar_2zgtFRcAHBigbw" />
+  <meta name="robots"             content="index, follow" />
+  <meta name="author"             content="LexWin Legal & HR Consulting" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:site_name"   content="LexWin Legal & HR Consulting" />
+  <meta property="og:title"       content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+  <meta property="og:url"         content="https://www.lexwin.co.in/blog/{{ARTICLE_SLUG}}.html" />
+  <meta property="og:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="{{TWITTER_TITLE}}" />
+  <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}" />
+  <meta name="twitter:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Article Schema — JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ARTICLE_TITLE}}",
+    "description": "{{META_DESCRIPTION}}",
+    "author": { "@type": "Organization", "name": "LexWin Legal & HR Consulting" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LexWin Legal & HR Consulting",
+      "logo": { "@type": "ImageObject", "url": "https://www.lexwin.co.in/assets/lexwin-og.png" }
+    },
+    "datePublished": "{{DATE_ISO}}",
+    "url": "https://www.lexwin.co.in/blog/{{ARTICLE_SLUG}}.html"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — G-995KV4HXM1
+       RULE: async loader is ALWAYS unconditional.
+             dataLayer init, gtag function, gtag('js') are ALWAYS
+             outside any if-block.
+             ONLY gtag('config') is inside the notrack cookie check.
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    if (!document.cookie.split(';').some(function(c){ return c.trim().startsWith('lexwin_notrack='); })) {
+      gtag('config', 'G-995KV4HXM1');
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       DESIGN TOKENS — single source of truth
+    ════════════════════════════════════════════════════ */
+    :root {
+      --navy-deep:   #0f1e32;
+      --navy:        #1a2e4a;
+      --navy-mid:    #2c4770;
+      --navy-light:  #3a5a8a;
+      --gold:        #c9a84c;
+      --gold-light:  #e8d5a3;
+      --gold-pale:   #fdf8ee;
+      --white:       #ffffff;
+      --bg:          #f5f7fa;
+      --text:        #2d3748;
+      --text-muted:  #718096;
+      --slate:       #4a5568;
+      --border:      #e2e8f0;
+      --blue-pale:   #eff6ff;
+      --blue-border: #c6deff;
+      --link:        #0066ff;
+      --tag-bg:      #eef4ff;
+      --radius:      4px;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08);
+      --shadow-md:   0 2px 8px rgba(0,0,0,.10);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESET & BASE
+    ════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: var(--link); }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ═══════════════════════════════════════════════════
+       SITE NAV — identical to main site
+    ════════════════════════════════════════════════════ */
+    .site-nav {
+      background: var(--navy-deep);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 2px 12px rgba(0,0,0,.4);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .nav-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: .03em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--white); font-weight: 400; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.78);
+      text-decoration: none;
+      letter-spacing: .02em;
+      transition: color .15s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--navy-deep) !important;
+      background: var(--gold);
+      padding: .45rem 1.1rem;
+      border-radius: var(--radius);
+      text-decoration: none !important;
+      letter-spacing: .04em;
+      transition: background .2s;
+      white-space: nowrap;
+    }
+    .nav-cta-btn:hover { background: var(--gold-light); }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: var(--navy-deep);
+        padding: 1rem 1.5rem 1.5rem;
+        gap: 1rem;
+        border-top: 1px solid rgba(255,255,255,.1);
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       BREADCRUMB
+    ════════════════════════════════════════════════════ */
+    .breadcrumb-bar {
+      background: var(--navy);
+      padding: .55rem 1.5rem;
+    }
+    .breadcrumb-bar a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: .03em;
+    }
+    .breadcrumb-bar a:hover { color: var(--white); }
+
+    /* ═══════════════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════════════════ */
+    .hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #1c3356 100%);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a84c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .hero-category {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,.12);
+      border: 1px solid rgba(201,168,76,.3);
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      margin-bottom: 1.1rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.22;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-byline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .85rem;
+      color: rgba(255,255,255,.52);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-byline span { display: flex; align-items: center; gap: .3rem; }
+    .hero-byline .sep { color: rgba(255,255,255,.25); }
+
+    /* ═══════════════════════════════════════════════════
+       STAT STRIP
+    ════════════════════════════════════════════════════ */
+    .stat-strip {
+      background: var(--gold);
+    }
+    .stat-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .8rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .stat-strip-inner { grid-template-columns: repeat(2, 1fr); padding: .8rem; }
+    }
+    .stat-item .stat-num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.1;
+    }
+    .stat-item .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       PAGE LAYOUT — two-column
+    ════════════════════════════════════════════════════ */
+    .page-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 290px;
+      gap: 2.2rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       ARTICLE BODY
+    ════════════════════════════════════════════════════ */
+    .article-body {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.4rem 2.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 600px) { .article-body { padding: 1.5rem 1.1rem; } }
+
+    /* Headings */
+    .article-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy-mid);
+      margin: 2.5rem 0 .65rem;
+      padding-bottom: .4rem;
+      border-bottom: 2px solid var(--gold-light);
+    }
+    .article-body h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 1.7rem 0 .4rem;
+    }
+    .article-body h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--navy-mid);
+      margin: 1.2rem 0 .3rem;
+    }
+
+    /* Body text */
+    .article-body p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .article-body ul,
+    .article-body ol {
+      margin: .5rem 0 1rem 1.5rem;
+    }
+    .article-body li { margin-bottom: .35rem; }
+    .article-body strong { color: var(--navy); }
+
+    /* ── VISUAL TOOLKIT ── use whichever suit the topic ─ */
+
+    /* 1. Callout box */
+    .callout {
+      border-left: 4px solid var(--gold);
+      background: var(--gold-pale);
+      padding: 1rem 1.3rem;
+      margin: 1.5rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout p { margin: 0; font-style: italic; color: var(--navy); }
+    .callout strong { font-style: normal; }
+
+    /* 2. Callout — warning / danger variant */
+    .callout-warn {
+      border-left-color: #e53e3e;
+      background: #fff5f5;
+    }
+    .callout-warn p { color: #742a2a; }
+
+    /* 3. Callout — tip/positive variant */
+    .callout-tip {
+      border-left-color: #38a169;
+      background: #f0fff4;
+    }
+    .callout-tip p { color: #276749; }
+
+    /* 4. Scenario / example box */
+    .scenario {
+      border: 1px solid var(--blue-border);
+      background: var(--blue-pale);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.4rem;
+      margin: 1.5rem 0;
+    }
+    .scenario-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--link);
+      margin-bottom: .4rem;
+    }
+    .scenario p { margin: 0; font-size: .95rem; }
+
+    /* 5. Numbered process steps */
+    .process-steps { counter-reset: step; margin: 1.2rem 0 1.5rem; }
+    .process-step {
+      counter-increment: step;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: .9rem;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      background: var(--navy-mid);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: .2rem;
+    }
+    .step-num::before { content: counter(step); }
+    .step-body { flex: 1; }
+
+    /* 6. Comparison table */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem;
+      margin: 1.4rem 0;
+      border: 1px solid var(--border);
+    }
+    .compare-table thead tr { background: var(--navy-mid); }
+    .compare-table th {
+      padding: .65rem .9rem;
+      text-align: left;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: .02em;
+    }
+    .compare-table td {
+      padding: .55rem .9rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      text-align: justify;
+    }
+    .compare-table tbody tr:nth-child(even) { background: #f0fdff; }
+    .compare-table tbody tr:hover { background: var(--gold-pale); }
+    .compare-table .yes { color: #276e3e; font-weight: 600; }
+    .compare-table .no  { color: #999; }
+
+    /* 7. Policy / feature cards grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.2rem 0;
+    }
+    .policy-card {
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      background: var(--white);
+    }
+    .policy-card h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--navy-mid);
+      margin: 0 0 .35rem;
+    }
+    .policy-card p {
+      font-size: .83rem;
+      color: var(--slate);
+      margin: 0;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* 8. Risk / highlight cards (icon + label + badge) */
+    .highlight-card {
+      display: flex;
+      gap: .9rem;
+      align-items: flex-start;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1.1rem;
+      margin-bottom: .75rem;
+      background: var(--white);
+    }
+    .highlight-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: .1rem;
+    }
+    .highlight-body h4 { margin: 0 0 .2rem; font-size: .88rem; color: var(--navy-mid); }
+    .highlight-body p  { margin: 0; font-size: .83rem; color: var(--slate); }
+    .risk-badge {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .15rem .5rem;
+      border-radius: 20px;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+    .risk-high   { background: #fed7d7; color: #9b2c2c; }
+    .risk-med    { background: #fefcbf; color: #744210; }
+    .risk-low    { background: #c6f6d5; color: #276749; }
+
+    /* 9. Checklist */
+    .checklist {
+      list-style: none;
+      margin: .8rem 0 1.2rem;
+      padding: 0;
+    }
+    .checklist li {
+      padding: .35rem 0 .35rem 1.9rem;
+      position: relative;
+      border-bottom: 1px dotted var(--border);
+      font-size: .95rem;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    /* Article tags */
+    .article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+    .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--link);
+      padding: .25rem .75rem;
+      border-radius: 20px;
+      border: 1px solid var(--blue-border);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SIDEBAR
+    ════════════════════════════════════════════════════ */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    .sidebar-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+    .sidebar-card-header {
+      background: var(--navy-mid);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .6rem 1rem;
+    }
+    .sidebar-card-body { padding: .9rem 1rem; }
+
+    /* TOC */
+    .toc-list {
+      list-style: none;
+      counter-reset: toc;
+      padding: 0; margin: 0;
+    }
+    .toc-list li {
+      counter-increment: toc;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .82rem;
+      line-height: 1.4;
+      margin-bottom: .55rem;
+      padding-left: 1.6rem;
+      position: relative;
+    }
+    .toc-list li::before {
+      content: counter(toc) '.';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .78rem;
+    }
+    .toc-list a { color: var(--navy); text-decoration: none; }
+    .toc-list a:hover { color: var(--link); text-decoration: underline; }
+
+    /* CTA card */
+    .cta-card-wrap { border-top: 3px solid var(--gold); }
+    .cta-card-body p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .84rem;
+      color: var(--slate);
+      margin-bottom: .6rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .cta-card-body strong {
+      display: block;
+      font-size: .88rem;
+      color: var(--navy);
+      margin-bottom: .5rem;
+    }
+    .cta-card-body ul {
+      list-style: none;
+      padding: 0; margin: 0 0 .9rem;
+    }
+    .cta-card-body ul li {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .81rem;
+      color: var(--slate);
+      padding: .2rem 0 .2rem 1.2rem;
+      position: relative;
+    }
+    .cta-card-body ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .cta-btn {
+      display: block;
+      text-align: center;
+      background: var(--gold);
+      color: var(--navy-deep);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      padding: .65rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      letter-spacing: .04em;
+      transition: background .2s;
+    }
+    .cta-btn:hover { background: var(--gold-light); }
+
+    /* Related articles */
+    .related-list { list-style: none; padding: 0; margin: 0; }
+    .related-list li {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .83rem;
+      padding: .45rem 0;
+      border-bottom: 1px dotted var(--border);
+      line-height: 1.4;
+    }
+    .related-list li:last-child { border-bottom: none; }
+    .related-list a { color: var(--navy-mid); text-decoration: none; }
+    .related-list a:hover { color: var(--link); text-decoration: underline; }
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════════════════ */
+    .site-footer {
+      background: var(--navy-deep);
+      padding: 2rem 1.5rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: .03em;
+    }
+    .footer-logo span { color: var(--white); font-weight: 400; }
+    .footer-tagline {
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: .85rem;
+      color: rgba(255,255,255,.45);
+    }
+    .footer-nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+    .footer-nav a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .footer-nav a:hover { color: var(--white); }
+    .footer-copy {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .footer-disclaimer {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      color: rgba(255,255,255,.22);
+      max-width: 640px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON — same as main site
+    ════════════════════════════════════════════════════ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      background: #25d366;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .82rem;
+      font-weight: 600;
+      padding: .6rem 1rem .6rem .8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(37,211,102,.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .whatsapp-float:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37,211,102,.5);
+      color: var(--white);
+    }
+    .whatsapp-float svg {
+      width: 22px; height: 22px;
+      flex-shrink: 0;
+    }
+    @media (max-width: 480px) {
+      .whatsapp-float span { display: none; }
+      .whatsapp-float { padding: .7rem; border-radius: 50%; }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SITE NAV — identical to main site
+════════════════════════════════════════════════════════════ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://www.lexwin.co.in/index.html" class="nav-logo" aria-label="LexWin Home">
+      LexWin <span>Legal &amp; HR Consulting</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#who-we-help">Who We Help</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#engagement">Engagement</a></li>
+      <li><a href="https://www.lexwin.co.in/blog/index.html">Insights</a></li>
+      <li><a href="https://calendly.com/sadanand-sonar/30min" class="nav-cta-btn" target="_blank" rel="noopener">Free Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BREADCRUMB
+════════════════════════════════════════════════════════════ -->
+<div class="breadcrumb-bar">
+  <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+     FILL: {{HERO_CATEGORY}} | {{ARTICLE_TITLE}} (use <em> for accent word)
+           {{READ_TIME}} | {{PUBLISH_MONTH_YEAR}}
+════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-category">{{HERO_CATEGORY}}</div>
+    <h1>{{ARTICLE_TITLE}}</h1>
+    <div class="hero-byline">
+      <span>LexWin Consulting</span>
+      <span class="sep">·</span>
+      <span>{{READ_TIME}} min read</span>
+      <span class="sep">·</span>
+      <span>{{PUBLISH_MONTH_YEAR}}</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STAT STRIP — 4 stats relevant to article topic
+     FILL: stat-num + stat-label for each of the 4 items
+════════════════════════════════════════════════════════════ -->
+<div class="stat-strip" aria-hidden="true">
+  <div class="stat-strip-inner">
+    <div class="stat-item">
+      <span class="stat-num">{{STAT_1_NUM}}</span>
+      <span class="stat-label">{{STAT_1_LABEL}}</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">{{STAT_2_NUM}}</span>
+      <span class="stat-label">{{STAT_2_LABEL}}</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">{{STAT_3_NUM}}</span>
+      <span class="stat-label">{{STAT_3_LABEL}}</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">{{STAT_4_NUM}}</span>
+      <span class="stat-label">{{STAT_4_LABEL}}</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN LAYOUT — Article + Sidebar
+════════════════════════════════════════════════════════════ -->
+<div class="page-wrap">
+
+  <!-- ── ARTICLE ─────────────────────────────────────── -->
+  <main class="article-body" id="article-top">
+
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  ARTICLE CONTENT GOES HERE                          ║
+    ║                                                      ║
+    ║  STRUCTURE GUIDE (flow for every article):          ║
+    ║  1. Hook paragraph — the problem / the stakes       ║
+    ║  2. Bridge — why this matters now                   ║
+    ║  3. Substance sections (h2 → h3 hierarchy)          ║
+    ║  4. Scenarios / real-world examples                 ║
+    ║  5. Urgency / so-what section                       ║
+    ║  6. LexWin process (how we approach this)           ║
+    ║  7. Who-needs-this table                            ║
+    ║  8. Checklist (self-diagnostic)                     ║
+    ║  9. Conclusion / CTA paragraph                      ║
+    ║                                                      ║
+    ║  VISUAL TOOLKIT — use as appropriate:               ║
+    ║  .callout         — key insight / principle         ║
+    ║  .callout-warn    — warning / danger                ║
+    ║  .callout-tip     — positive tip                    ║
+    ║  .scenario        — real-world example box          ║
+    ║  .process-steps   — numbered how-to steps           ║
+    ║  .compare-table   — comparison / data table         ║
+    ║  .card-grid       — feature/policy cards            ║
+    ║  .highlight-card  — icon + label + risk badge       ║
+    ║  .checklist       — ✓ self-diagnostic list          ║
+    ║                                                      ║
+    ║  EACH h2 MUST have a matching id= for TOC links     ║
+    ╚══════════════════════════════════════════════════════╝
+    -->
+
+    <!-- EXAMPLE STRUCTURE — replace with actual content -->
+
+    <p>{{INTRO_PARAGRAPH_1}}</p>
+
+    <p>{{INTRO_PARAGRAPH_2}}</p>
+
+    <div class="callout">
+      <p><strong>{{CALLOUT_LABEL}}:</strong> {{CALLOUT_TEXT}}</p>
+    </div>
+
+    <h2 id="{{SECTION_1_ID}}">{{SECTION_1_HEADING}}</h2>
+    <p>{{SECTION_1_CONTENT}}</p>
+
+    <!-- Add more h2 sections as needed following the structure guide above -->
+
+    <!-- WHO NEEDS THIS TABLE -->
+    <h2 id="who-needs">{{WHO_NEEDS_HEADING}}</h2>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Organisation Profile</th>
+          <th>Primary Risk Areas</th>
+          <th>Priority Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{WHO_ROW_1_PROFILE}}</td>
+          <td>{{WHO_ROW_1_RISKS}}</td>
+          <td>{{WHO_ROW_1_ACTIONS}}</td>
+        </tr>
+        <!-- Add rows as needed -->
+      </tbody>
+    </table>
+
+    <!-- CHECKLIST -->
+    <h2 id="checklist">{{CHECKLIST_HEADING}}</h2>
+    <ul class="checklist">
+      <li>{{CHECKLIST_ITEM_1}}</li>
+      <li>{{CHECKLIST_ITEM_2}}</li>
+      <!-- Add items as needed -->
+    </ul>
+
+    <!-- CONCLUSION + CTA -->
+    <h2 id="conclusion">{{CONCLUSION_HEADING}}</h2>
+    <p>{{CONCLUSION_TEXT}}</p>
+
+    <div class="callout">
+      <p><strong>How LexWin can help:</strong> {{LEXWIN_CTA_CALLOUT}}</p>
+    </div>
+
+    <!-- TAGS -->
+    <div class="article-tags" aria-label="Article tags">
+      <span class="tag">{{TAG_1}}</span>
+      <span class="tag">{{TAG_2}}</span>
+      <span class="tag">{{TAG_3}}</span>
+      <!-- Add tags as needed -->
+    </div>
+
+  </main><!-- end .article-body -->
+
+  <!-- ── SIDEBAR ─────────────────────────────────────── -->
+  <aside class="sidebar" aria-label="Article sidebar">
+
+    <!-- TABLE OF CONTENTS
+         li items must match h2 id= anchors in article body -->
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">Contents</div>
+      <div class="sidebar-card-body">
+        <ol class="toc-list">
+          <li><a href="#{{SECTION_1_ID}}">{{SECTION_1_HEADING_SHORT}}</a></li>
+          <!-- Add one li per h2 in the article -->
+          <li><a href="#who-needs">{{WHO_NEEDS_HEADING_SHORT}}</a></li>
+          <li><a href="#checklist">{{CHECKLIST_HEADING_SHORT}}</a></li>
+          <li><a href="#conclusion">{{CONCLUSION_HEADING_SHORT}}</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- CTA CARD
+         Title + bullet list of what LexWin covers for this topic + Calendly button -->
+    <div class="sidebar-card cta-card-wrap">
+      <div class="sidebar-card-header">{{CTA_CARD_HEADER}}</div>
+      <div class="sidebar-card-body cta-card-body">
+        <p>{{CTA_CARD_INTRO}}</p>
+        <strong>What we cover:</strong>
+        <ul>
+          <li>{{CTA_BULLET_1}}</li>
+          <li>{{CTA_BULLET_2}}</li>
+          <li>{{CTA_BULLET_3}}</li>
+          <!-- Add bullets as needed -->
+        </ul>
+        <a href="https://calendly.com/sadanand-sonar/30min"
+           class="cta-btn"
+           target="_blank"
+           rel="noopener">Book Free Consultation →</a>
+      </div>
+    </div>
+
+    <!-- RELATED ARTICLES
+         Link to other relevant blog articles -->
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">Related Articles</div>
+      <div class="sidebar-card-body">
+        <ul class="related-list">
+          <li><a href="{{RELATED_1_URL}}">{{RELATED_1_TITLE}}</a></li>
+          <li><a href="{{RELATED_2_URL}}">{{RELATED_2_TITLE}}</a></li>
+          <li><a href="{{RELATED_3_URL}}">{{RELATED_3_TITLE}}</a></li>
+          <!-- Add links as needed -->
+        </ul>
+      </div>
+    </div>
+
+  </aside><!-- end .sidebar -->
+
+</div><!-- end .page-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER — identical structure to main site
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">LexWin <span>Legal &amp; HR Consulting</span></div>
+    <div class="footer-tagline">Precision in law. Clarity in counsel. Speed in execution.</div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="https://www.lexwin.co.in/index.html">Home</a></li>
+        <li><a href="https://www.lexwin.co.in/blog/index.html">All Articles</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy">© {{COPYRIGHT_YEAR}} LexWin Legal &amp; HR Consulting. Pune, India.</div>
+    <div class="footer-disclaimer">This article is for informational purposes only and does not constitute legal advice. For specific legal guidance, please consult a qualified legal professional.</div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHATSAPP FLOATING BUTTON — same as main site
+════════════════════════════════════════════════════════════ -->
+<a href="https://wa.me/919823385085"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span>Chat on WhatsApp</span>
+</a>
+
+</body>
+</html>
