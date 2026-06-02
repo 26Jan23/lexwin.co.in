@@ -1231,10 +1231,20 @@ s0.parentNode.insertBefore(s1,s0);
 
 <script>
 (function () {
-  var STAY_MS  = 3200;
-  var SLIDE_MS = 350;
-  var GAP      = 16;
-  var PEEK     = 44;
+  /*
+   * QUEUE SLIDE LOGIC
+   * - Cards sit in a row: [0][1][2]...[peek]
+   * - On tick:
+   *     1. First card vanishes instantly (opacity 0, no movement)
+   *     2. All remaining cards slide LEFT into the gap (smooth, quick)
+   *     3. New card appears at the right end (slides in from right)
+   * - Feels like removing the front of a queue and the chain shifts up
+   */
+
+  var STAY_MS  = 3000;   // how long before next advance
+  var SLIDE_MS = 320;    // slide duration (ms) — quick but smooth
+  var GAP      = 16;     // gap between cards (px)
+  var PEEK     = 48;     // px of next-in-queue card peeking at right edge
 
   var wrap   = document.querySelector('.slideshow-wrap');
   var track  = document.getElementById('slideshowTrack');
@@ -1243,17 +1253,23 @@ s0.parentNode.insertBefore(s1,s0);
 
   var cards = Array.from(track.querySelectorAll('.blog-card'));
   var total = cards.length;
-  var cur   = 0;
+  var cur   = 0;   // index of first visible card
   var timer = null;
+  var busy  = false;
 
-  function vis() { return window.innerWidth >= 769 ? 3 : 1; }
-  function cw()  { return Math.floor((wrap.offsetWidth - GAP * (vis() - 1) - PEEK) / vis()); }
+  function vis()  { return window.innerWidth >= 769 ? 3 : 1; }
+  function cw()   { return Math.floor((wrap.offsetWidth - GAP * (vis() - 1) - PEEK) / vis()); }
 
+  /* Map logical index (relative to cur) to array index with wrap */
+  function idx(offset) { return (cur + offset + total) % total; }
+
+  /* Set track height to match card natural height at current width */
   function setHeight() {
     var w = cw();
     cards.forEach(function(card) {
       card.style.position   = 'relative';
       card.style.transform  = 'none';
+      card.style.opacity    = '1';
       card.style.width      = w + 'px';
       card.style.visibility = 'hidden';
     });
@@ -1264,94 +1280,146 @@ s0.parentNode.insertBefore(s1,s0);
       card.style.position   = 'absolute';
       card.style.visibility = 'visible';
     });
+    return maxH;
   }
 
-  function place(anim) {
+  /* Place all cards without animation — used on init and resize */
+  function placeAll() {
     var w  = cw();
     var ww = wrap.offsetWidth;
-    var ease = 'cubic-bezier(0.22,1,0.36,1)';
+    var n  = vis();
+
     cards.forEach(function(card, i) {
+      card.style.transition = 'none';
+      card.style.opacity    = '1';
       card.style.width      = w + 'px';
-      card.style.transition = anim ? 'transform ' + SLIDE_MS + 'ms ' + ease : 'none';
-      var slot = i - cur;
-      if (slot >= 0 && slot < vis()) {
-        card.style.transform = 'translateX(' + (slot * (w + GAP)) + 'px)';
-      } else if (slot === vis()) {
-        card.style.transform = 'translateX(' + (vis() * (w + GAP) - GAP + 8) + 'px)';
-      } else {
-        card.style.transform = 'translateX(' + (ww + w + 40) + 'px)';
-      }
     });
+
+    for (var offset = 0; offset < total; offset++) {
+      var card = cards[idx(offset)];
+      if (offset < n) {
+        /* visible cards */
+        card.style.transform = 'translateX(' + (offset * (w + GAP)) + 'px)';
+        card.style.opacity   = '1';
+      } else if (offset === n) {
+        /* peek card — partially visible at right */
+        card.style.transform = 'translateX(' + (n * (w + GAP) - GAP + 8) + 'px)';
+        card.style.opacity   = '1';
+      } else {
+        /* waiting off right — hidden */
+        card.style.transform = 'translateX(' + (ww + w + 40) + 'px)';
+        card.style.opacity   = '0';
+      }
+    }
     updateDots();
   }
 
-  function goNext() {
-    var w  = cw();
-    var ww = wrap.offsetWidth;
-    var ease = 'cubic-bezier(0.22,1,0.36,1)';
-    cards.forEach(function(card, i) {
-      var slot = i - cur;
-      if (slot >= 0 && slot <= vis()) {
-        card.style.transition = 'transform ' + SLIDE_MS + 'ms ' + ease;
-        card.style.transform  = 'translateX(-' + (ww + w + 40) + 'px)';
-      }
-    });
+  /* ADVANCE — queue-remove effect */
+  function advance() {
+    if (busy) return;
+    busy = true;
+
+    var w    = cw();
+    var ww   = wrap.offsetWidth;
+    var n    = vis();
+    var ease = 'cubic-bezier(0.4, 0, 0.2, 1)';
+
+    /* Step 1: first visible card disappears instantly */
+    var leaving = cards[idx(0)];
+    leaving.style.transition = 'opacity 80ms ease';
+    leaving.style.opacity    = '0';
+
+    /* Step 2: after it vanishes, slide everything left */
     setTimeout(function() {
-      cur = (cur + vis()) >= total ? 0 : cur + vis();
-      var w2 = cw(); var ww2 = wrap.offsetWidth;
-      cards.forEach(function(card, i) {
-        var slot = i - cur;
-        if (slot >= 0 && slot <= vis()) {
-          card.style.transition = 'none';
-          card.style.transform  = 'translateX(' + (ww2 + w2 + 40) + 'px)';
-        }
-      });
-      setHeight();
+
+      /* Move leaving card off-screen right (instant, no transition) */
+      leaving.style.transition = 'none';
+      leaving.style.transform  = 'translateX(' + (ww + w + 40) + 'px)';
+      leaving.style.opacity    = '0';
+
+      /* The new incoming card (was off-screen right) — position it */
+      var incoming = cards[idx(n + 1)];  /* card after current peek */
+      incoming.style.transition = 'none';
+      incoming.style.transform  = 'translateX(' + (ww + w + 40) + 'px)';
+      incoming.style.opacity    = '1';
+
+      /* Force reflow so transitions fire */
       track.offsetHeight;
-      place(true);
-    }, SLIDE_MS + 20);
+
+      /* Slide: cards 1..n shift left by one slot, new card slides into peek */
+      for (var offset = 1; offset <= n + 1; offset++) {
+        var card       = cards[idx(offset)];
+        var targetSlot = offset - 1;
+        card.style.transition = 'transform ' + SLIDE_MS + 'ms ' + ease;
+        card.style.opacity    = '1';
+
+        if (targetSlot < n) {
+          /* Move into visible area */
+          card.style.transform = 'translateX(' + (targetSlot * (w + GAP)) + 'px)';
+        } else {
+          /* New peek card */
+          card.style.transform = 'translateX(' + (n * (w + GAP) - GAP + 8) + 'px)';
+        }
+      }
+
+      /* Advance cur after slide completes */
+      setTimeout(function() {
+        cur = idx(1);   /* advance queue by 1 */
+        busy = false;
+        updateDots();
+      }, SLIDE_MS + 20);
+
+    }, 100);  /* wait for opacity fade */
   }
 
+  /* Dot indicators — one dot per card (cycles through all) */
   function buildDots() {
     dotsEl.innerHTML = '';
-    var groups = Math.ceil(total / vis());
-    for (var i = 0; i < groups; i++) {
+    for (var i = 0; i < total; i++) {
       var dot = document.createElement('button');
-      dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', 'Slide ' + (i + 1));
-      dot.dataset.idx = String(i * vis());
+      dot.className = 'slideshow-dot';
+      dot.setAttribute('aria-label', 'Card ' + (i + 1));
+      dot.dataset.i = String(i);
       dot.addEventListener('click', function() {
         clearInterval(timer);
-        cur = parseInt(this.dataset.idx);
-        setHeight(); place(true);
-        timer = setInterval(goNext, STAY_MS + SLIDE_MS * 2);
+        cur = parseInt(this.dataset.i);
+        placeAll();
+        timer = setInterval(advance, STAY_MS);
       });
       dotsEl.appendChild(dot);
     }
+    updateDots();
   }
 
   function updateDots() {
     var dots = dotsEl.querySelectorAll('.slideshow-dot');
-    var grp  = Math.floor(cur / vis());
-    dots.forEach(function(d, i) { d.classList.toggle('active', i === grp); });
+    dots.forEach(function(d, i) {
+      d.classList.toggle('active', i === cur);
+    });
   }
 
+  /* Pause on hover / touch */
   wrap.addEventListener('mouseenter', function() { clearInterval(timer); });
-  wrap.addEventListener('mouseleave', function() { timer = setInterval(goNext, STAY_MS + SLIDE_MS * 2); });
+  wrap.addEventListener('mouseleave', function() { timer = setInterval(advance, STAY_MS); });
   wrap.addEventListener('touchstart',  function() { clearInterval(timer); }, { passive: true });
-  wrap.addEventListener('touchend',    function() { timer = setInterval(goNext, STAY_MS + SLIDE_MS * 2); }, { passive: true });
+  wrap.addEventListener('touchend',    function() { timer = setInterval(advance, STAY_MS); }, { passive: true });
 
+  /* Rebuild on resize */
   var resizeT;
   window.addEventListener('resize', function() {
     clearInterval(timer); clearTimeout(resizeT);
     resizeT = setTimeout(function() {
-      cur = 0; buildDots(); setHeight(); place(false);
-      timer = setInterval(goNext, STAY_MS + SLIDE_MS * 2);
+      setHeight(); placeAll();
+      timer = setInterval(advance, STAY_MS);
     }, 200);
   });
 
-  setHeight(); buildDots(); place(false);
-  timer = setInterval(goNext, STAY_MS + SLIDE_MS * 2);
+  /* Init */
+  setHeight();
+  buildDots();
+  placeAll();
+  timer = setInterval(advance, STAY_MS);
+
 })();
 </script>
 
