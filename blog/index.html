@@ -164,7 +164,9 @@ nav {
 
 /* ── BLOG GRID ── */
 .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.blog-card { background: var(--white); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: var(--transition); }
+
+.blog-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.10); transform: translateY(-2px); }
+.blog-card { display: block; background: var(--white); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: var(--transition); text-decoration: none; color: inherit; cursor: pointer; }
 .blog-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
 .blog-card-img { height: 128px; overflow: hidden; background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-mid) 60%, var(--navy-light) 100%); display: flex; align-items: flex-end; padding: 1.2rem; position: relative; }
 .blog-card-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, rgba(12,26,53,0.7)); }
@@ -290,7 +292,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
   <!-- Article grid -->
   <div class="blog-grid" id="blogGrid">
 
-    <div class="blog-card" data-category="Commercial Contracts" data-title="business guide to commercial contracts drafting negotiating">
+    <a class="blog-card" href="commercial-contracts-guide.html" data-category="Commercial Contracts" data-title="business guide to commercial contracts drafting negotiating">
       <div class="blog-card-img" style="background:linear-gradient(135deg,#1a2c4e 0%,#2c4770 60%,#c8943a 100%)">
         <div class="blog-card-cat">Commercial Contracts</div>
       </div>
@@ -298,11 +300,11 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
         <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; 12 min read</div>
         <h3>Business Guide to Commercial Contracts</h3>
         <p>What every business owner must know about drafting, negotiating and protecting commercial relationships — and why using someone else's template exposes you to serious risk.</p>
-        <a href="commercial-contracts-guide.html" class="read-more">Read Article →</a>
+        <span class="read-more">Read Article →</span>
       </div>
-    </div>
+    </a>
 
-    <div class="blog-card" data-category="Labour Law" data-title="india new labour codes wages industrial relations social security osh">
+    <a class="blog-card" href="india-new-labour-codes.html" data-category="Labour Law" data-title="india new labour codes wages industrial relations social security osh">
       <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#112349 60%,#1a3a6e 100%)">
         <div class="blog-card-cat">Labour Law</div>
       </div>
@@ -310,11 +312,11 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
         <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
         <h3>India's New Labour Codes — A Comprehensive Summary</h3>
         <p>A deep-dive into India's four new Labour Codes covering key provisions from both employer and employee perspectives, with the complete list of 29 repealed central laws.</p>
-        <a href="india-new-labour-codes.html" class="read-more">Read Article →</a>
+        <span class="read-more">Read Article →</span>
       </div>
-    </div>
+    </a>
 
-    <div class="blog-card" data-category="India Entry" data-title="india entry foreign company setup eor employer of record fdi branch office">
+    <a class="blog-card" href="india-entry-guide.html" data-category="India Entry" data-title="india entry foreign company setup eor employer of record fdi branch office">
       <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 100%)">
         <div class="blog-card-cat">India Entry</div>
       </div>
@@ -322,11 +324,11 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
         <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 13 min read</div>
         <h3>Business Guide on India Entry: How Foreign Companies Can Set Up & Operate in India</h3>
         <p>A comprehensive guide covering every structural option from liaison offices to EOR — FDI routes, entity types, compliance obligations, and practical setup steps.</p>
-        <a href="india-entry-guide.html" class="read-more">Read Article →</a>
+        <span class="read-more">Read Article →</span>
       </div>
-    </div>
+    </a>
 
-    <div class="blog-card" data-category="HR Compliance" data-title="posh act sexual harassment icc internal complaints committee compliance">
+    <a class="blog-card" href="posh-complete-guide.html" data-category="HR Compliance" data-title="posh act sexual harassment icc internal complaints committee compliance">
       <div class="blog-card-img" style="background:linear-gradient(135deg,#112349 0%,#243d72 100%)">
         <div class="blog-card-cat">HR Compliance</div>
       </div>
@@ -334,11 +336,11 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
         <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
         <h3>POSH in Your Organization — A Complete Guide</h3>
         <p>India's POSH Act 2013 explained — employer obligations, ICC constitution, complaint process, statutory penalties, and best practices for a harassment-free workplace.</p>
-        <a href="posh-complete-guide.html" class="read-more">Read Article →</a>
+        <span class="read-more">Read Article →</span>
       </div>
-    </div>
+    </a>
 
-    <div class="blog-card" data-category="HR Compliance" data-title="hr policies legal drafting employment law india standing orders disciplinary termination">
+    <a class="blog-card" href="hr-policies-legal-drafting.html" data-category="HR Compliance" data-title="hr policies legal drafting employment law india standing orders disciplinary termination">
       <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 50%,#b8922a 100%)">
         <div class="blog-card-cat">HR Compliance</div>
       </div>
@@ -346,11 +348,11 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
         <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; 14 min read</div>
         <h3>HR Policies That Actually Protect You — Why Legal Drafting Makes All the Difference</h3>
         <p>Most HR policies fail when tested at a disciplinary hearing or labour court. Discover what separates a legally drafted policy from a template — and why the difference matters more than most organizations realize.</p>
-        <a href="hr-policies-legal-drafting.html" class="read-more">Read Article →</a>
+        <span class="read-more">Read Article →</span>
       </div>
-    </div>
+    </a>
 
-    <div class="blog-card" data-category="Corporate Legal Advisory" data-title="legal consultant corporate environment contract management nda retainer litigation non-litigation outside counsel">
+    <a class="blog-card" href="your-legal-guardian-role-of-legal-consultant.html" data-category="Corporate Legal Advisory" data-title="legal consultant corporate environment contract management nda retainer litigation non-litigation outside counsel">
       <div class="blog-card-img" style="background:linear-gradient(135deg,#0f1e32 0%,#2c4770 55%,#c9a84c 100%)">
         <div class="blog-card-cat">Corporate Legal Advisory</div>
       </div>
@@ -358,9 +360,9 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
         <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2025 &nbsp;·&nbsp; 12 min read</div>
         <h3>Your Legal Guardian — The Strategic Role of a Legal Consultant in the Corporate Environment</h3>
         <p>How a legal consultant protects your business — contract management, NDAs, retainer advantages, and the critical difference between litigation and non-litigation lawyers.</p>
-        <a href="your-legal-guardian-role-of-legal-consultant.html" class="read-more">Read Article →</a>
+        <span class="read-more">Read Article →</span>
       </div>
-    </div>
+    </a>
 
   </div>
 
