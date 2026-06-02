@@ -317,7 +317,7 @@
        PAGE LAYOUT — two-column
     ════════════════════════════════════════════════════ */
     .page-wrap {
-      max-width: 900px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 2.5rem 1.5rem 4rem;
       display: grid;
@@ -697,6 +697,16 @@
       .whatsapp-float { padding: .7rem; border-radius: 50%; }
     }
 
+  
+    @media (max-width: 768px) {
+      .article-body p,
+      .article-body td,
+      .article-body li { text-align: left; }
+    }
+  
+    @media (max-width: 600px) {
+      .page-wrap { padding: 1.5rem 1rem 3rem; }
+    }
   </style>
 </head>
 <body>
