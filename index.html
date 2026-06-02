@@ -1207,7 +1207,7 @@ const obs = new IntersectionObserver(entries => {
     if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.who-card,.service-card,.blog-card,.engagement-card,.why-point').forEach(el => {
+document.querySelectorAll('.who-card,.service-card,.engagement-card,.why-point').forEach(el => {
   el.style.opacity='0'; el.style.transform='translateY(18px)';
   el.style.transition='opacity 0.55s ease, transform 0.55s ease';
   obs.observe(el);
