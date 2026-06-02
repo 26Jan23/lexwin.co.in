@@ -183,11 +183,11 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
 <script>
-  // Skip Analytics if internal visitor cookie is set
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // Skip config call for internal visitor (lexwin_notrack cookie)
   if (document.cookie.indexOf('lexwin_notrack=1') === -1) {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
     gtag('config', 'G-995KV4HXM1');
   }
 </script>
