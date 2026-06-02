@@ -700,6 +700,57 @@
       .article-body td { text-align: left; }
       .page-wrap { padding: 1rem 0.75rem 3rem; }
     }
+  
+    /* ── IN THIS ARTICLE — TOC ── */
+    .toc-box {
+      background: var(--blue-pale);
+      border: 1px solid var(--blue-border);
+      border-left: 4px solid var(--navy-mid);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.5rem 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .toc-box-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--navy-mid);
+      margin-bottom: .8rem;
+    }
+    .toc-box ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      padding: 0; margin: 0;
+    }
+    .toc-box ol li {
+      counter-increment: toc-counter;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem;
+      padding: .28rem 0 .28rem 1.8rem;
+      position: relative;
+      border-bottom: 1px dotted var(--border);
+      line-height: 1.4;
+    }
+    .toc-box ol li:last-child { border-bottom: none; }
+    .toc-box ol li::before {
+      content: counter(toc-counter) '.';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .82rem;
+    }
+    .toc-box ol li a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .toc-box ol li a:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
@@ -815,6 +866,22 @@
     -->
 
     <!-- EXAMPLE STRUCTURE — replace with actual content -->
+
+    <!-- ═══════════════════════════════════════════════════════
+         IN THIS ARTICLE — TOC
+         One <li> per h2 section. href must match the h2 id= attribute.
+         Add/remove items to match actual sections in this article.
+    ════════════════════════════════════════════════════════ -->
+    <div class="toc-box">
+      <div class="toc-box-title">In this article</div>
+      <ol>
+        <li><a href="#{{SECTION_1_ID}}">{{SECTION_1_HEADING_SHORT}}</a></li>
+        <!-- Add one <li> per h2 section — must match h2 id= anchors below -->
+        <li><a href="#who-needs">{{WHO_NEEDS_HEADING_SHORT}}</a></li>
+        <li><a href="#checklist">{{CHECKLIST_HEADING_SHORT}}</a></li>
+        <li><a href="#conclusion">{{CONCLUSION_HEADING_SHORT}}</a></li>
+      </ol>
+    </div>
 
     <p>{{INTRO_PARAGRAPH_1}}</p>
 
