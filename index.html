@@ -441,60 +441,23 @@ nav {
 .engagement-card.featured .engagement-features li { color: var(--text-mid); }
 .engagement-features li::before { content: '—'; color: var(--gold); font-weight: 600; flex-shrink: 0; }
 
-/* ── BLOG CAROUSEL ── */
-.carousel-outer {
-  overflow: hidden;
-}
-.blog-grid {
-  display: flex;
-  gap: 1.5rem;
-  width: max-content;
-  animation: carousel-scroll 28s linear infinite;
-}
-.blog-grid:hover { animation-play-state: paused; }
-@keyframes carousel-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.blog-card {
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: 4px; overflow: hidden; transition: var(--transition);
-  /* Desktop: 3.5 cards visible — card width = viewport/3.5 approx */
+/* Desktop: 3.5 cards visible — card width = viewport/3.5 approx */
   width: 320px;
   flex-shrink: 0;
 }
-.blog-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); animation-play-state: paused; }
-.blog-card-img {
-  height: 128px; overflow: hidden;
-  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
-  display: flex; align-items: flex-end; padding: 1.2rem;
-  position: relative;
-}
-.blog-card-img::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 30%, rgba(12,26,53,0.7));
-}
-.blog-card-cat {
-  position: relative; z-index: 1;
-  background: var(--gold); color: var(--navy-deep);
-  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 0.2rem 0.7rem; border-radius: 2rem;
-}
-.blog-card-body { padding: 1.6rem; }
-.blog-card-meta { font-size: 0.74rem; color: var(--text-light); margin-bottom: 0.6rem; letter-spacing: 0.02em; }
-.blog-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy-deep); line-height: 1.35; margin-bottom: 0.65rem; }
-.blog-card p { font-size: 0.83rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1.3rem; font-weight: 300; }
-.read-more {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  font-size: 0.8rem; font-weight: 600; color: var(--gold-dark);
-  text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;
-  transition: var(--transition); border-bottom: 1px solid rgba(184,146,42,0.3);
-  padding-bottom: 1px;
-}
-.read-more:hover { color: var(--gold); border-bottom-color: var(--gold); gap: 0.6rem; }
+
+
+
+
+
+
+
+
+
+
 /* Mobile: 1.5 cards visible */
 @media (max-width: 768px) {
-  .blog-card { width: 78vw; }
+  
 }
 
 /* ── CTA BAND ── */
@@ -615,6 +578,85 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 .d2 { animation-delay: 0.25s; opacity: 0; }
 .d3 { animation-delay: 0.4s; opacity: 0; }
 .d4 { animation-delay: 0.55s; opacity: 0; }
+
+/* ── BLOG SLIDESHOW ── */
+.slideshow-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.slideshow-track {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+.blog-card {
+  position: absolute;
+  top: 0; left: 0;
+  width: 320px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  /* off-screen to the right by default */
+  transform: translateX(110vw);
+  transition: none;
+  will-change: transform;
+}
+.blog-card-img {
+  height: 128px;
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
+  display: flex; align-items: flex-end; padding: 1.2rem;
+  position: relative;
+}
+.blog-card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 30%, rgba(12,26,53,0.7));
+}
+.blog-card-cat {
+  position: relative; z-index: 1;
+  background: var(--gold); color: var(--navy-deep);
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.2rem 0.7rem; border-radius: 2rem;
+}
+.blog-card-body { padding: 1.6rem; }
+.blog-card-meta { font-size: 0.74rem; color: var(--text-light); margin-bottom: 0.6rem; letter-spacing: 0.02em; }
+.blog-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy-deep); line-height: 1.35; margin-bottom: 0.65rem; }
+.blog-card p { font-size: 0.83rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1.3rem; font-weight: 300; }
+.read-more {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.8rem; font-weight: 600; color: var(--gold-dark);
+  text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;
+  border-bottom: 1px solid rgba(184,146,42,0.3); padding-bottom: 1px;
+  transition: color 0.2s, gap 0.2s;
+}
+.read-more:hover { color: var(--gold); border-bottom-color: var(--gold); gap: 0.6rem; }
+/* Dot indicators */
+.slideshow-dots {
+  display: flex; justify-content: center; gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+.slideshow-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--border); cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  border: none; padding: 0;
+}
+.slideshow-dot.active {
+  background: var(--gold);
+  transform: scale(1.3);
+}
+/* Desktop: show 3 cards side by side */
+@media (min-width: 769px) {
+  .slideshow-track { height: 280px; }
+  .blog-card { width: calc((100% - 3rem) / 3); }
+}
+/* Mobile: show 1 card full width */
+@media (max-width: 768px) {
+  .slideshow-track { height: 360px; }
+  .blog-card { width: 100%; }
+}
+
 </style>
   <!-- Calendly popup widget -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -977,144 +1019,78 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       <h2>Stay Ahead of India's Regulatory Landscape</h2>
       <p>Practical legal and HR insights from our practice — written for business owners and decision-makers, not just lawyers.</p>
     </div>
-    <div class="carousel-outer">
-      <div class="blog-grid" id="blogCarousel">
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#1a2c4e 0%,#2c4770 60%,#c8943a 100%)">
-              <div class="blog-card-cat">Commercial Contracts</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; 12 min read</div>
-              <h3>Business Guide to Commercial Contracts</h3>
-              <p>What every business owner must know about drafting, negotiating and protecting commercial relationships — and why using someone else's template exposes you to serious risk.</p>
-              <a href="blog/commercial-contracts-guide.html" class="read-more">Read Article →</a>
-            </div>
+    <div class="slideshow-wrap">
+      <div class="slideshow-track" id="slideshowTrack">
+        <div class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#1a2c4e 0%,#2c4770 60%,#c8943a 100%)">
+            <div class="blog-card-cat">Commercial Contracts</div>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#112349 60%,#1a3a6e 100%)">
-              <div class="blog-card-cat">Labour Law</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
-              <h3>India's New Labour Codes — A Comprehensive Summary</h3>
-              <p>A deep-dive into India's four new Labour Codes covering key provisions from both employer and employee perspectives, with the complete list of 29 repealed central laws.</p>
-              <a href="blog/india-new-labour-codes.html" class="read-more">Read Article →</a>
-            </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; 12 min read</div>
+            <h3>Business Guide to Commercial Contracts</h3>
+            <p>What every business owner must know about drafting, negotiating and protecting commercial relationships — and why using someone else's template exposes you to serious risk.</p>
+            <a href="blog/commercial-contracts-guide.html" class="read-more">Read Article →</a>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 100%)">
-              <div class="blog-card-cat">India Entry</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 13 min read</div>
-              <h3>Business Guide on India Entry: How Foreign Companies Can Set Up &amp; Operate in India</h3>
-              <p>A comprehensive guide covering every structural option from liaison offices to EOR — FDI routes, entity types, compliance obligations, and practical setup steps.</p>
-              <a href="blog/india-entry-guide.html" class="read-more">Read Article →</a>
-            </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#112349 60%,#1a3a6e 100%)">
+            <div class="blog-card-cat">Labour Law</div>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#112349 0%,#243d72 100%)">
-              <div class="blog-card-cat">HR Compliance</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
-              <h3>POSH in Your Organization — A Complete Guide</h3>
-              <p>India's POSH Act 2013 explained — employer obligations, ICC constitution, complaint process, statutory penalties, and best practices for a harassment-free workplace.</p>
-              <a href="blog/posh-complete-guide.html" class="read-more">Read Article →</a>
-            </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
+            <h3>India's New Labour Codes — A Comprehensive Summary</h3>
+            <p>A deep-dive into India's four new Labour Codes covering key provisions from both employer and employee perspectives, with the complete list of 29 repealed central laws.</p>
+            <a href="blog/india-new-labour-codes.html" class="read-more">Read Article →</a>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 50%,#b8922a 100%)">
-              <div class="blog-card-cat">HR Compliance</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; 14 min read</div>
-              <h3>HR Policies That Actually Protect You — Why Legal Drafting Makes All the Difference</h3>
-              <p>Most HR policies fail when tested at a disciplinary hearing or labour court. Discover what separates a legally drafted policy from a template — and why it matters more than most realize.</p>
-              <a href="blog/hr-policies-legal-drafting.html" class="read-more">Read Article →</a>
-            </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 100%)">
+            <div class="blog-card-cat">India Entry</div>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0f1e32 0%,#2c4770 55%,#c9a84c 100%)">
-              <div class="blog-card-cat">Corporate Legal Advisory</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2025 &nbsp;·&nbsp; 12 min read</div>
-              <h3>Your Legal Guardian — The Strategic Role of a Legal Consultant in the Corporate Environment</h3>
-              <p>How a legal consultant protects your business — contract management, NDAs, retainer advantages, and the critical difference between litigation and non-litigation lawyers.</p>
-              <a href="blog/your-legal-guardian-role-of-legal-consultant.html" class="read-more">Read Article →</a>
-            </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 13 min read</div>
+            <h3>Business Guide on India Entry: How Foreign Companies Can Set Up &amp; Operate in India</h3>
+            <p>A comprehensive guide covering every structural option from liaison offices to EOR — FDI routes, entity types, compliance obligations, and practical setup steps.</p>
+            <a href="blog/india-entry-guide.html" class="read-more">Read Article →</a>
           </div>
-        <!-- duplicate set for seamless loop -->
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#1a2c4e 0%,#2c4770 60%,#c8943a 100%)">
-              <div class="blog-card-cat">Commercial Contracts</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; 12 min read</div>
-              <h3>Business Guide to Commercial Contracts</h3>
-              <p>What every business owner must know about drafting, negotiating and protecting commercial relationships — and why using someone else's template exposes you to serious risk.</p>
-              <a href="blog/commercial-contracts-guide.html" class="read-more">Read Article →</a>
-            </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#112349 0%,#243d72 100%)">
+            <div class="blog-card-cat">HR Compliance</div>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#112349 60%,#1a3a6e 100%)">
-              <div class="blog-card-cat">Labour Law</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
-              <h3>India's New Labour Codes — A Comprehensive Summary</h3>
-              <p>A deep-dive into India's four new Labour Codes covering key provisions from both employer and employee perspectives, with the complete list of 29 repealed central laws.</p>
-              <a href="blog/india-new-labour-codes.html" class="read-more">Read Article →</a>
-            </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
+            <h3>POSH in Your Organization — A Complete Guide</h3>
+            <p>India's POSH Act 2013 explained — employer obligations, ICC constitution, complaint process, statutory penalties, and best practices for a harassment-free workplace.</p>
+            <a href="blog/posh-complete-guide.html" class="read-more">Read Article →</a>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 100%)">
-              <div class="blog-card-cat">India Entry</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 13 min read</div>
-              <h3>Business Guide on India Entry: How Foreign Companies Can Set Up &amp; Operate in India</h3>
-              <p>A comprehensive guide covering every structural option from liaison offices to EOR — FDI routes, entity types, compliance obligations, and practical setup steps.</p>
-              <a href="blog/india-entry-guide.html" class="read-more">Read Article →</a>
-            </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 50%,#b8922a 100%)">
+            <div class="blog-card-cat">HR Compliance</div>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#112349 0%,#243d72 100%)">
-              <div class="blog-card-cat">HR Compliance</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; May 2025 &nbsp;·&nbsp; 9 min read</div>
-              <h3>POSH in Your Organization — A Complete Guide</h3>
-              <p>India's POSH Act 2013 explained — employer obligations, ICC constitution, complaint process, statutory penalties, and best practices for a harassment-free workplace.</p>
-              <a href="blog/posh-complete-guide.html" class="read-more">Read Article →</a>
-            </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; 14 min read</div>
+            <h3>HR Policies That Actually Protect You — Why Legal Drafting Makes All the Difference</h3>
+            <p>Most HR policies fail when tested at a disciplinary hearing or labour court. Discover what separates a legally drafted policy from a template.</p>
+            <a href="blog/hr-policies-legal-drafting.html" class="read-more">Read Article →</a>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a35 0%,#1a3a6e 50%,#b8922a 100%)">
-              <div class="blog-card-cat">HR Compliance</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; 14 min read</div>
-              <h3>HR Policies That Actually Protect You — Why Legal Drafting Makes All the Difference</h3>
-              <p>Most HR policies fail when tested at a disciplinary hearing or labour court. Discover what separates a legally drafted policy from a template — and why it matters more than most realize.</p>
-              <a href="blog/hr-policies-legal-drafting.html" class="read-more">Read Article →</a>
-            </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#0f1e32 0%,#2c4770 55%,#c9a84c 100%)">
+            <div class="blog-card-cat">Corporate Legal Advisory</div>
           </div>
-          <div class="blog-card">
-            <div class="blog-card-img" style="background:linear-gradient(135deg,#0f1e32 0%,#2c4770 55%,#c9a84c 100%)">
-              <div class="blog-card-cat">Corporate Legal Advisory</div>
-            </div>
-            <div class="blog-card-body">
-              <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2025 &nbsp;·&nbsp; 12 min read</div>
-              <h3>Your Legal Guardian — The Strategic Role of a Legal Consultant in the Corporate Environment</h3>
-              <p>How a legal consultant protects your business — contract management, NDAs, retainer advantages, and the critical difference between litigation and non-litigation lawyers.</p>
-              <a href="blog/your-legal-guardian-role-of-legal-consultant.html" class="read-more">Read Article →</a>
-            </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">LexWin Consulting &nbsp;·&nbsp; June 2025 &nbsp;·&nbsp; 12 min read</div>
+            <h3>Your Legal Guardian — The Strategic Role of a Legal Consultant in the Corporate Environment</h3>
+            <p>How a legal consultant protects your business — contract management, NDAs, retainer advantages, and the critical difference between litigation and non-litigation lawyers.</p>
+            <a href="blog/your-legal-guardian-role-of-legal-consultant.html" class="read-more">Read Article →</a>
           </div>
+        </div>
       </div>
+      <div class="slideshow-dots" id="slideshowDots"></div>
     </div>
-    <div style="text-align:center;margin-top:3rem;">
+    <div style="text-align:center;margin-top:2rem;">
       <a href="blog/index.html" class="btn-navy">View All Articles →</a>
     </div>
   </div>
@@ -1317,28 +1293,186 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+
+
+
 <script>
 (function() {
-  var carousel = document.getElementById('blogCarousel');
-  if (!carousel) return;
+  var DESKTOP_SHOW = 3;   // cards visible at once on desktop
+  var MOBILE_SHOW  = 1;   // cards visible at once on mobile
+  var STAY_MS      = 3000; // how long each set stays visible
+  var SLIDE_MS     = 420;  // slide-in/out duration (ms) — quick snap
+  var GAP_PX       = 16;   // gap between cards (matches CSS gap: 1rem)
 
-  // Pause on mouse enter/leave (desktop)
-  carousel.parentElement.addEventListener('mouseenter', function() {
-    carousel.style.animationPlayState = 'paused';
+  var track   = document.getElementById('slideshowTrack');
+  var dotsEl  = document.getElementById('slideshowDots');
+  if (!track) return;
+
+  var cards   = Array.from(track.querySelectorAll('.blog-card'));
+  var total   = cards.length;
+  var current = 0;
+  var timer   = null;
+  var running = true;
+
+  function isMobile() { return window.innerWidth <= 768; }
+  function showCount() { return isMobile() ? MOBILE_SHOW : DESKTOP_SHOW; }
+
+  // Build dot indicators
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    var groups = Math.ceil(total / showCount());
+    for (var i = 0; i < groups; i++) {
+      var dot = document.createElement('button');
+      dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.dataset.index = i;
+      dot.addEventListener('click', function() {
+        goTo(parseInt(this.dataset.index) * showCount(), true);
+      });
+      dotsEl.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    var dots = dotsEl.querySelectorAll('.slideshow-dot');
+    var activeGroup = Math.floor(current / showCount());
+    dots.forEach(function(d, i) {
+      d.classList.toggle('active', i === activeGroup);
+    });
+  }
+
+  // Position all cards: visible ones side-by-side, others offscreen right
+  function layout(direction) {
+    var n    = showCount();
+    var w    = track.offsetWidth;
+    var cardW = (w - GAP_PX * (n - 1)) / n;
+
+    cards.forEach(function(card, i) {
+      card.style.width      = cardW + 'px';
+      card.style.transition = 'none';
+      var slot = i - current;
+      if (slot >= 0 && slot < n) {
+        // Visible position — start offscreen in the direction
+        var x = direction === 'in'
+          ? (w + GAP_PX)                      // enter from right
+          : (slot * (cardW + GAP_PX));        // already-visible position
+        card.style.transform = direction === 'in'
+          ? 'translateX(' + (w + GAP_PX) + 'px)'
+          : 'translateX(' + (slot * (cardW + GAP_PX)) + 'px)';
+      } else {
+        // Off-screen right (waiting)
+        card.style.transform = 'translateX(' + (w * 2) + 'px)';
+      }
+    });
+  }
+
+  function show(direction) {
+    var n    = showCount();
+    var w    = track.offsetWidth;
+    var cardW = (w - GAP_PX * (n - 1)) / n;
+
+    // Step 1: position incoming cards off-screen right, outgoing in place
+    cards.forEach(function(card, i) {
+      card.style.width      = cardW + 'px';
+      card.style.transition = 'none';
+      var slot = i - current;
+      if (slot >= 0 && slot < n) {
+        // New visible cards — start from right
+        card.style.transform = 'translateX(' + (w + GAP_PX) + 'px)';
+      } else {
+        // Keep everything else off right (hidden)
+        card.style.transform = 'translateX(' + (w * 2) + 'px)';
+      }
+    });
+
+    // Force reflow so transition fires
+    track.offsetHeight;
+
+    // Step 2: slide everything into final position
+    cards.forEach(function(card, i) {
+      card.style.transition = 'transform ' + SLIDE_MS + 'ms cubic-bezier(0.25,0.46,0.45,0.94)';
+      var slot = i - current;
+      if (slot >= 0 && slot < n) {
+        // Slide into place
+        card.style.transform = 'translateX(' + (slot * (cardW + GAP_PX)) + 'px)';
+      } else if (i < current) {
+        // Previously visible — slide out to the left
+        card.style.transition = 'transform ' + SLIDE_MS + 'ms cubic-bezier(0.25,0.46,0.45,0.94)';
+        card.style.transform  = 'translateX(-' + (w + GAP_PX) + 'px)';
+      }
+    });
+
+    updateDots();
+  }
+
+  function next() {
+    var n = showCount();
+    current = (current + n) % total;
+    // Wrap: if remaining cards < n, go back to 0
+    if (current + n > total) current = 0;
+    show('in');
+  }
+
+  function goTo(idx, resetTimer) {
+    current = idx;
+    show('in');
+    if (resetTimer) {
+      clearInterval(timer);
+      if (running) timer = setInterval(next, STAY_MS + SLIDE_MS);
+    }
+  }
+
+  function start() {
+    buildDots();
+    show('initial');
+    timer = setInterval(next, STAY_MS + SLIDE_MS);
+  }
+
+  // Initial show — place first set without animation
+  function initialShow() {
+    var n    = showCount();
+    var w    = track.offsetWidth;
+    var cardW = (w - GAP_PX * (n - 1)) / n;
+    cards.forEach(function(card, i) {
+      card.style.width      = cardW + 'px';
+      card.style.transition = 'none';
+      var slot = i - current;
+      if (slot >= 0 && slot < n) {
+        card.style.transform = 'translateX(' + (slot * (cardW + GAP_PX)) + 'px)';
+      } else {
+        card.style.transform = 'translateX(' + (w * 2) + 'px)';
+      }
+    });
+    updateDots();
+  }
+
+  // Pause on hover / touch
+  track.parentElement.addEventListener('mouseenter', function() {
+    running = false; clearInterval(timer);
   });
-  carousel.parentElement.addEventListener('mouseleave', function() {
-    carousel.style.animationPlayState = 'running';
+  track.parentElement.addEventListener('mouseleave', function() {
+    running = true; timer = setInterval(next, STAY_MS + SLIDE_MS);
+  });
+  track.parentElement.addEventListener('touchstart', function() {
+    clearInterval(timer);
+  }, { passive: true });
+  track.parentElement.addEventListener('touchend', function() {
+    timer = setInterval(next, STAY_MS + SLIDE_MS);
+  }, { passive: true });
+
+  // Rebuild on resize
+  window.addEventListener('resize', function() {
+    clearInterval(timer);
+    current = 0;
+    buildDots();
+    initialShow();
+    timer = setInterval(next, STAY_MS + SLIDE_MS);
   });
 
-  // Pause on touch start/end (mobile)
-  carousel.parentElement.addEventListener('touchstart', function() {
-    carousel.style.animationPlayState = 'paused';
-  }, { passive: true });
-  carousel.parentElement.addEventListener('touchend', function() {
-    setTimeout(function() {
-      carousel.style.animationPlayState = 'running';
-    }, 1200);
-  }, { passive: true });
+  // Kick off
+  buildDots();
+  initialShow();
+  timer = setInterval(next, STAY_MS + SLIDE_MS);
 })();
 </script>
 
