@@ -317,17 +317,16 @@
        PAGE LAYOUT — two-column
     ════════════════════════════════════════════════════ */
     .page-wrap {
-      max-width: 1200px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 2.5rem 1.5rem 4rem;
       display: grid;
-      grid-template-columns: 1fr 290px;
+      grid-template-columns: 1fr;
       gap: 2.2rem;
       align-items: start;
     }
-    @media (max-width: 900px) {
-      .page-wrap { grid-template-columns: 1fr; }
-      .sidebar { order: 2; position: static; top: auto; }
+    
+      
     }
 
     /* ═══════════════════════════════════════════════════
@@ -581,122 +580,29 @@
       border: 1px solid var(--blue-border);
     }
 
-    /* ═══════════════════════════════════════════════════
-       SIDEBAR
-    ════════════════════════════════════════════════════ */
-    .sidebar {
-      position: sticky;
-      top: 80px;
-      display: flex;
-      flex-direction: column;
-      gap: 1.4rem;
-    }
-    .sidebar-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
-    }
-    .sidebar-card-header {
-      background: var(--navy-mid);
-      color: var(--white);
-      font-family: 'DM Sans', sans-serif;
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      padding: .6rem 1rem;
-    }
-    .sidebar-card-body { padding: .9rem 1rem; }
-
     /* TOC */
-    .toc-list {
-      list-style: none;
-      counter-reset: toc;
-      padding: 0; margin: 0;
-    }
-    .toc-list li {
-      counter-increment: toc;
-      font-family: 'DM Sans', sans-serif;
-      font-size: .82rem;
-      line-height: 1.4;
-      margin-bottom: .55rem;
-      padding-left: 1.6rem;
-      position: relative;
-    }
-    .toc-list li::before {
-      content: counter(toc) '.';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-      font-weight: 700;
-      font-size: .78rem;
-    }
-    .toc-list a { color: var(--navy); text-decoration: none; }
-    .toc-list a:hover { color: var(--link); text-decoration: underline; }
+    
+    
+    
+    
+    
 
     /* CTA card */
-    .cta-card-wrap { border-top: 3px solid var(--gold); }
-    .cta-card-body p {
-      font-family: 'DM Sans', sans-serif;
-      font-size: .84rem;
-      color: var(--slate);
-      margin-bottom: .6rem;
-      line-height: 1.6;
-      text-align: left;
-    }
-    .cta-card-body strong {
-      display: block;
-      font-size: .88rem;
-      color: var(--navy);
-      margin-bottom: .5rem;
-    }
-    .cta-card-body ul {
-      list-style: none;
-      padding: 0; margin: 0 0 .9rem;
-    }
-    .cta-card-body ul li {
-      font-family: 'DM Sans', sans-serif;
-      font-size: .81rem;
-      color: var(--slate);
-      padding: .2rem 0 .2rem 1.2rem;
-      position: relative;
-    }
-    .cta-card-body ul li::before {
-      content: '›';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-      font-weight: 700;
-    }
-    .cta-btn {
-      display: block;
-      text-align: center;
-      background: var(--gold);
-      color: var(--navy-deep);
-      font-family: 'DM Sans', sans-serif;
-      font-size: .82rem;
-      font-weight: 700;
-      padding: .65rem;
-      border-radius: var(--radius);
-      text-decoration: none;
-      letter-spacing: .04em;
-      transition: background .2s;
-    }
-    .cta-btn:hover { background: var(--gold-light); }
+    
+    
+    
+    
+    
+    
+    
+    
 
     /* Related articles */
-    .related-list { list-style: none; padding: 0; margin: 0; }
-    .related-list li {
-      font-family: 'DM Sans', sans-serif;
-      font-size: .83rem;
-      padding: .45rem 0;
-      border-bottom: 1px dotted var(--border);
-      line-height: 1.4;
-    }
-    .related-list li:last-child { border-bottom: none; }
-    .related-list a { color: var(--navy-mid); text-decoration: none; }
-    .related-list a:hover { color: var(--link); text-decoration: underline; }
+    
+    
+    
+    
+    
 
     /* ═══════════════════════════════════════════════════
        FOOTER
@@ -965,60 +871,6 @@
     </div>
 
   </main><!-- end .article-body -->
-
-  <!-- ── SIDEBAR ─────────────────────────────────────── -->
-  <aside class="sidebar" aria-label="Article sidebar">
-
-    <!-- TABLE OF CONTENTS
-         li items must match h2 id= anchors in article body -->
-    <div class="sidebar-card">
-      <div class="sidebar-card-header">Contents</div>
-      <div class="sidebar-card-body">
-        <ol class="toc-list">
-          <li><a href="#{{SECTION_1_ID}}">{{SECTION_1_HEADING_SHORT}}</a></li>
-          <!-- Add one li per h2 in the article -->
-          <li><a href="#who-needs">{{WHO_NEEDS_HEADING_SHORT}}</a></li>
-          <li><a href="#checklist">{{CHECKLIST_HEADING_SHORT}}</a></li>
-          <li><a href="#conclusion">{{CONCLUSION_HEADING_SHORT}}</a></li>
-        </ol>
-      </div>
-    </div>
-
-    <!-- CTA CARD
-         Title + bullet list of what LexWin covers for this topic + Calendly button -->
-    <div class="sidebar-card cta-card-wrap">
-      <div class="sidebar-card-header">{{CTA_CARD_HEADER}}</div>
-      <div class="sidebar-card-body cta-card-body">
-        <p>{{CTA_CARD_INTRO}}</p>
-        <strong>What we cover:</strong>
-        <ul>
-          <li>{{CTA_BULLET_1}}</li>
-          <li>{{CTA_BULLET_2}}</li>
-          <li>{{CTA_BULLET_3}}</li>
-          <!-- Add bullets as needed -->
-        </ul>
-        <a href="https://calendly.com/sadanand-sonar/30min"
-           class="cta-btn"
-           target="_blank"
-           rel="noopener">Book Free Consultation →</a>
-      </div>
-    </div>
-
-    <!-- RELATED ARTICLES
-         Link to other relevant blog articles -->
-    <div class="sidebar-card">
-      <div class="sidebar-card-header">Related Articles</div>
-      <div class="sidebar-card-body">
-        <ul class="related-list">
-          <li><a href="{{RELATED_1_URL}}">{{RELATED_1_TITLE}}</a></li>
-          <li><a href="{{RELATED_2_URL}}">{{RELATED_2_TITLE}}</a></li>
-          <li><a href="{{RELATED_3_URL}}">{{RELATED_3_TITLE}}</a></li>
-          <!-- Add links as needed -->
-        </ul>
-      </div>
-    </div>
-
-  </aside><!-- end .sidebar -->
 
 </div><!-- end .page-wrap -->
 
