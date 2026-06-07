@@ -837,7 +837,37 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
       .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
     }
 
-  </style>
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
 </head>
 <body>
 
@@ -1038,7 +1068,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
     </div>
 
     <h2 id="penalties">Penalties for Non-Compliance</h2>
-    <table class="data-table">
+    <div class="table-wrapper"><table class="data-table">
       <thead><tr><th>Non-Compliance</th><th>Penalty</th></tr></thead>
       <tbody>
         <tr><td>Failure to constitute ICC</td><td>Fine up to ₹50,000</td></tr>
@@ -1047,7 +1077,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
         <tr><td>Failure to submit annual report</td><td>Fine up to ₹50,000</td></tr>
         <tr><td>Filing false or malicious complaint</td><td>Action against complainant (but burden of proof on employer — mere inability to prove does not make complaint malicious)</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2 id="obligations">Employer Obligations — Complete Checklist</h2>
     <ul>
