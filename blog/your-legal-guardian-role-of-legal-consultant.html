@@ -592,7 +592,37 @@
       .article-body td { text-align: left; }
       .page-wrap { padding: 1rem 0.75rem 3rem; }
     }
-  </style>
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
 </head>
 <body>
 
@@ -843,7 +873,7 @@
 
     <p>One of the most important — and most commonly misunderstood — distinctions in the legal profession is between a litigation lawyer and a non-litigation (or transactional / advisory) lawyer. This is not merely a categorization of legal specialization. It reflects fundamentally different skills, orientations, and value propositions. Understanding this distinction is essential for any business owner seeking legal support.</p>
 
-    <table class="compare-table">
+    <div class="table-wrapper"><table class="compare-table">
       <thead>
         <tr>
           <th>Dimension</th>
@@ -903,7 +933,7 @@
           <td>From day one of your business — and continuously thereafter</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h3>5.1 Why this distinction matters for your business</h3>
     <p>Many business owners make the mistake of calling a litigation lawyer when they need business legal support. A senior advocate who appears regularly before the High Court is an exceptional resource when you need representation in court. They are, however, typically not the right person to draft your vendor agreement, review your employment contracts, or advise you on DPDP Act compliance. The skills are genuinely different — and the cost of using the wrong kind of lawyer is both financial and practical.</p>
@@ -948,7 +978,7 @@
     <h2 id="who-needs">7. Which businesses need a legal consultant?</h2>
     <p>The short answer is: virtually every business operating in a commercial environment. The more nuanced answer acknowledges that the intensity of the need varies by stage, size, and sector.</p>
 
-    <table class="compare-table">
+    <div class="table-wrapper"><table class="compare-table">
       <thead>
         <tr>
           <th>Business Type</th>
@@ -988,7 +1018,7 @@
           <td><span class="no">Project basis may suffice</span></td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <!-- SECTION 8 — CHECKLIST -->
     <h2 id="checklist">8. Self-diagnostic checklist — does your business need a legal consultant now?</h2>
