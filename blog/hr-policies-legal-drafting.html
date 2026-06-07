@@ -916,7 +916,37 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
       .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
     }
 
-  </style>
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
 </head>
 <body>
 
@@ -1104,7 +1134,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
     <h2 id="comparison">Template vs. Legally Drafted — A Direct Comparison</h2>
     <p>The differences are not theoretical. Here is how the same policy areas compare in practice across the dimensions that matter most:</p>
 
-    <table class="compare-table">
+    <div class="table-wrapper"><table class="compare-table">
       <thead>
         <tr>
           <th>Policy Area</th>
@@ -1154,7 +1184,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
           <td><span class="compare-icon-yes">✓</span> Dedicated policy covering attendance, data security, equipment, and performance management in WFH context</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2 id="realworld">What Happens When Policies Are Tested</h2>
     <p>The value of a legally drafted HR policy is most visible in the moments of tension — when a policy must do the work it was designed for. Consider these scenarios, which are representative of real situations that Indian employers face regularly.</p>
@@ -1230,7 +1260,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
     <h2 id="who">Who Needs This — and When</h2>
     <p>Legally drafted HR policies are not exclusively for large organizations. The risk of a poorly drafted policy is proportionate to headcount — but the consequences of a dispute can be existential for a smaller business precisely because it lacks the resources to absorb them.</p>
 
-    <table class="data-table">
+    <div class="table-wrapper"><table class="data-table">
       <thead><tr><th>Organization Profile</th><th>Primary Risk Areas</th><th>Priority Policies</th></tr></thead>
       <tbody>
         <tr>
@@ -1259,7 +1289,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
           <td>Harmonized policy suite, service continuity terms, revised standing orders</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2 id="checklist">Policy Health Check — 10 Questions to Ask About Your Current Policies</h2>
     <p>Before commissioning a full policy review, run this quick diagnostic against your existing HR documents. If you answer "no" or "unsure" to more than three, your current policies carry meaningful legal risk.</p>
