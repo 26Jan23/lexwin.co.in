@@ -864,7 +864,37 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
       .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
     }
 
-  </style>
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
 </head>
 <body>
 
@@ -1061,7 +1091,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
 
     <h2 id="repealed">29 Laws Repealed — Complete List</h2>
     <p>The four Labour Codes repeal and consolidate the following 29 central labour laws:</p>
-    <table class="data-table">
+    <div class="table-wrapper"><table class="data-table">
       <thead><tr><th>Sr.</th><th>Law Repealed</th><th>Subsumed Into</th></tr></thead>
       <tbody>
         <tr><td>1</td><td>Payment of Wages Act, 1936</td><td>Code on Wages</td></tr>
@@ -1094,7 +1124,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
         <tr><td>28</td><td>Cine Workers & Cinema Theatre Workers Act, 1981</td><td>OSH Code</td></tr>
         <tr><td>29</td><td>Beedi & Cigar Workers (Conditions of Employment) Act, 1966</td><td>OSH Code</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2 id="employer">Key Employer Action Points</h2>
     <div class="callout">
