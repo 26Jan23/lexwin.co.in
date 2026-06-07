@@ -819,7 +819,37 @@
       .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
     }
 
-  </style>
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
 </head>
 <body>
 
@@ -994,7 +1024,7 @@
     <h2 id="vs-alternatives">Virtual CHRO vs. HR Manager vs. HR Consultant</h2>
     <p>The positioning of the Virtual CHRO relative to other HR roles is important to understand — both for making the right decision about what your business needs, and for ensuring the people you engage are actually delivering at the right level.</p>
 
-    <table class="compare-table">
+    <div class="table-wrapper"><table class="compare-table">
       <thead>
         <tr>
           <th>Dimension</th>
@@ -1044,7 +1074,7 @@
           <td>40–60% of equivalent full-time CHRO cost</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <p>The comparison with a traditional HR consultant is different. A consultant is engaged for a defined project — an HR audit, a policy review, a compensation benchmarking exercise — and then exits. The engagement is transactional and time-bound. A Virtual CHRO is embedded. They know your business. They attend leadership meetings. They are accountable for outcomes, not just deliverables. The relationship is ongoing and the mandate is continuous.</p>
 
@@ -1056,7 +1086,7 @@
     <h2 id="who-needs">Who Needs a Virtual CHRO — and When</h2>
     <p>The Virtual CHRO model is not a universal solution. It is a precisely targeted one — and the businesses that benefit most from it share common characteristics.</p>
 
-    <table class="data-table">
+    <div class="table-wrapper"><table class="data-table">
       <thead><tr><th>Business Profile</th><th>Why a Virtual CHRO Fits</th><th>Trigger Point</th></tr></thead>
       <tbody>
         <tr>
@@ -1090,7 +1120,7 @@
           <td>Pre-funding round or post-investment governance uplift</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2 id="india-context">The India-Specific Case: Why This Model Fits</h2>
     <p>The Virtual CHRO model has gained traction globally, but the case for it in India is particularly compelling — and for reasons that are specific to the Indian employment law and business environment.</p>
