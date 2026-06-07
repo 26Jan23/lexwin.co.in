@@ -838,7 +838,37 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
       .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
     }
 
-  </style>
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
 </head>
 <body>
 
@@ -1000,7 +1030,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
     <h3>Approval Route</h3>
     <p>Certain sensitive sectors require prior government approval through the Foreign Investment Facilitation Portal (FIFP). These include defence (above 74%), multi-brand retail, broadcasting, print media, and satellite establishment. A few sectors — gambling, lottery, chit funds, and certain agriculture activities — are completely prohibited for FDI.</p>
     <h3>Sectoral Caps</h3>
-    <table class="data-table">
+    <div class="table-wrapper"><table class="data-table">
       <thead><tr><th>Sector</th><th>FDI Cap</th><th>Route</th></tr></thead>
       <tbody>
         <tr><td>IT / Software Services</td><td>100%</td><td>Automatic</td></tr>
@@ -1011,7 +1041,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
         <tr><td>Multi-brand Retail</td><td>51%</td><td>Approval</td></tr>
         <tr><td>Print Media</td><td>26%</td><td>Approval</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2 id="wos">Setting Up a WOS — Step by Step</h2>
     <p>For most foreign companies, incorporating a Wholly Owned Subsidiary (Private Limited Company) is the recommended path. Here is the complete process:</p>
