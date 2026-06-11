@@ -284,6 +284,9 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
     <button class="filter-btn" onclick="setFilter('HR Compliance', this)">HR Compliance</button>
     <button class="filter-btn" onclick="setFilter('India Entry', this)">India Entry</button>
     <button class="filter-btn" onclick="setFilter('Corporate Legal Advisory', this)">Corporate Legal Advisory</button>
+    <button class="filter-btn" onclick="setFilter('Employment Law', this)">Employment Law</button>
+    <button class="filter-btn" onclick="setFilter('Startup Legal', this)">Startup Legal</button>
+    <button class="filter-btn" onclick="setFilter('HR Leadership', this)">HR Leadership</button>
   </div>
 
   <!-- Results count -->
@@ -526,8 +529,8 @@ function filterArticles() {
   noResults.style.display = visible === 0 ? 'block' : 'none';
 }
 
-// Run on page load to set correct article count from DOM
-filterArticles();
+// Run on page load after full DOM is ready
+document.addEventListener('DOMContentLoaded', function() { filterArticles(); });
 
 document.querySelectorAll('.blog-card').forEach(el => {
   el.style.opacity = '0'; el.style.transform = 'translateY(18px)';
