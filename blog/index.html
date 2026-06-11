@@ -529,8 +529,8 @@ function filterArticles() {
   noResults.style.display = visible === 0 ? 'block' : 'none';
 }
 
-// Run on page load after full DOM is ready
-document.addEventListener('DOMContentLoaded', function() { filterArticles(); });
+// Script is at bottom of body — DOM is already ready, call directly
+filterArticles();
 
 document.querySelectorAll('.blog-card').forEach(el => {
   el.style.opacity = '0'; el.style.transform = 'translateY(18px)';
