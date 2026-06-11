@@ -526,6 +526,9 @@ function filterArticles() {
   noResults.style.display = visible === 0 ? 'block' : 'none';
 }
 
+// Run on page load to set correct article count from DOM
+filterArticles();
+
 document.querySelectorAll('.blog-card').forEach(el => {
   el.style.opacity = '0'; el.style.transform = 'translateY(18px)';
   el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
