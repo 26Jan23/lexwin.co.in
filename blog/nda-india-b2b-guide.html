@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SEO — FILL ALL FIELDS FOR EVERY NEW ARTICLE
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Non-Disclosure Agreements (NDA) in India: A B2B Guide for Business Owners — Free Template | LexWin</title>
+  <meta name="description"        content="What an NDA does and doesn't protect, mutual vs. unilateral NDAs, enforceability under Indian law, and how non-circumvention, non-compete, and employee NDAs differ. Includes a free downloadable B2B NDA template." />
+  <meta name="keywords"           content="NDA India, non-disclosure agreement India, B2B NDA template, mutual NDA, confidentiality agreement India, non-compete India, non-circumvention agreement, free NDA template, Indian Contract Act Section 27, LexWin" />
+  <link rel="canonical"           href="https://www.lexwin.co.in/blog/nda-india-b2b-guide.html" />
+  <meta name="google-site-verification" content="61C6F194U8QSocNUBvV7N2gDyIar_2zgtFRcAHBigbw" />
+  <meta name="robots"             content="index, follow" />
+  <meta name="author"             content="LexWin Legal & HR Consulting" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:site_name"   content="LexWin Legal & HR Consulting" />
+  <meta property="og:title"       content="Non-Disclosure Agreements (NDA) in India: A B2B Guide — Free Template" />
+  <meta property="og:description" content="What an NDA actually protects, mutual vs. unilateral structures, enforceability under Indian law, and the difference between confidentiality, non-circumvention, and non-compete. Free downloadable B2B NDA template included." />
+  <meta property="og:url"         content="https://www.lexwin.co.in/blog/nda-india-b2b-guide.html" />
+  <meta property="og:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Non-Disclosure Agreements (NDA) in India: A B2B Guide — Free Template" />
+  <meta name="twitter:description" content="What an NDA actually protects, mutual vs. unilateral structures, enforceability under Indian law, and the difference between confidentiality, non-circumvention, and non-compete. Free downloadable B2B NDA template included." />
+  <meta name="twitter:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Article Schema — JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Non-Disclosure Agreements (NDA) in India: A B2B Guide — Free Template",
+    "description": "What an NDA does and doesn't protect, mutual vs. unilateral NDAs, enforceability under Indian law, and how non-circumvention, non-compete, and employee NDAs differ. Includes a free downloadable B2B NDA template.",
+    "author": { "@type": "Organization", "name": "LexWin Legal & HR Consulting" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LexWin Legal & HR Consulting",
+      "logo": { "@type": "ImageObject", "url": "https://www.lexwin.co.in/assets/lexwin-og.png" }
+    },
+    "datePublished": "2026-06-12",
+    "url": "https://www.lexwin.co.in/blog/nda-india-b2b-guide.html"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — G-995KV4HXM1
+       RULE: async loader is ALWAYS unconditional.
+             dataLayer init, gtag function, gtag('js') are ALWAYS
+             outside any if-block.
+             ONLY gtag('config') is inside the notrack cookie check.
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    if (!document.cookie.split(';').some(function(c){ return c.trim().startsWith('lexwin_notrack='); })) {
+      gtag('config', 'G-995KV4HXM1');
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       DESIGN TOKENS — single source of truth
+    ════════════════════════════════════════════════════ */
+    :root {
+      --navy-deep:   #0f1e32;
+      --navy:        #1a2e4a;
+      --navy-mid:    #2c4770;
+      --navy-light:  #3a5a8a;
+      --gold:        #c9a84c;
+      --gold-light:  #e8d5a3;
+      --gold-pale:   #fdf8ee;
+      --white:       #ffffff;
+      --bg:          #f5f7fa;
+      --text:        #2d3748;
+      --text-muted:  #718096;
+      --slate:       #4a5568;
+      --border:      #e2e8f0;
+      --blue-pale:   #eff6ff;
+      --blue-border: #c6deff;
+      --link:        #0066ff;
+      --tag-bg:      #eef4ff;
+      --radius:      4px;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08);
+      --shadow-md:   0 2px 8px rgba(0,0,0,.10);
+      /* ── Extended vars from article components ── */
+      --text-light:  #6b7280;
+      --text-mid:    #374151;
+      --bg-page:     #f5f7fa;
+      --bg-white:    #ffffff;
+      --red:         #b91c1c;
+      --red-light:   #fef2f2;
+      --red-border:  #fca5a5;
+      --green:       #166534;
+      --green-light: #f0fdf4;
+      --green-border:#86efac;
+      --amber:       #92400e;
+      --amber-light: #fffbeb;
+      --amber-border:#fcd34d;
+      --teal:        #0d6e6e;
+      --teal-light:  #e8f4f4;
+      --accent:      var(--gold);
+      --accent-light:var(--gold-light);
+      --accent-pale: var(--gold-pale);
+      --navy-l:      #1a3a6e;
+      --gold-b:      #c9a43a;
+      --gold-l:      #e8d5a3;
+      --gold-cream:  #fdf8ed;
+      --off:         #f8fafc;
+      --t:           0.28s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESET & BASE
+    ════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      overflow-x: hidden;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: var(--link); }
+    img { max-width: 100%; height: auto; display: block; }
+
+        /* ── NAVIGATION — identical to main site ── */
+    nav {
+      position: sticky; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(12,26,53,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(184,146,42,0.2);
+      transition: box-shadow 0.3s;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 70px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; font-weight: 700;
+      color: #ffffff; letter-spacing: 0.02em;
+    }
+    .nav-logo-divider { width: 1px; height: 20px; background: rgba(184,146,42,0.4); }
+    .nav-logo-sub {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem; font-weight: 400;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(232,201,106,0.7);
+    }
+    .nav-links { display: flex; align-items: center; gap: 0.15rem; list-style: none; }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none; padding: 0.5rem 0.9rem;
+      border-radius: 4px; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: rgba(232,201,106,1); }
+    .nav-cta-btn {
+      background: var(--gold) !important;
+      color: var(--navy-deep) !important;
+      font-weight: 700 !important;
+      padding: 0.5rem 1.2rem !important;
+      border-radius: 4px;
+    }
+    .nav-cta-btn:hover { background: var(--gold-light) !important; }
+    .nav-hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: #fff; margin: 0; border-radius: 2px; transition: 0.3s; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-links.open {
+        display: flex; flex-direction: column; align-items: flex-start;
+        position: absolute; top: 70px; left: 0; right: 0;
+        background: rgba(12,26,53,0.98); backdrop-filter: blur(16px);
+        padding: 1rem 1.5rem 1.5rem; gap: 0.2rem;
+        border-bottom: 1px solid rgba(184,146,42,0.2); z-index: 199;
+      }
+      .nav-links.open a { padding: 0.65rem 0.5rem; font-size: 0.85rem; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links.open a:last-child { border-bottom: none; margin-top: 0.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       BREADCRUMB
+    ════════════════════════════════════════════════════ */
+    .breadcrumb-bar {
+      background: var(--navy);
+      padding: .55rem 1.5rem;
+    }
+    .breadcrumb-bar a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: .03em;
+    }
+    .breadcrumb-bar a:hover { color: var(--white); }
+
+    /* ═══════════════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════════════════ */
+    .hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #1c3356 100%);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a84c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .hero-category {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,.12);
+      border: 1px solid rgba(201,168,76,.3);
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      margin-bottom: 1.1rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.22;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-byline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .85rem;
+      color: rgba(255,255,255,.52);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-byline span { display: flex; align-items: center; gap: .3rem; }
+    .hero-byline .sep { color: rgba(255,255,255,.25); }
+
+    /* ═══════════════════════════════════════════════════
+       STAT STRIP
+    ════════════════════════════════════════════════════ */
+    .stat-strip {
+      background: var(--gold);
+    }
+    .stat-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .8rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .stat-strip-inner { grid-template-columns: repeat(2, 1fr); padding: .8rem; }
+    }
+    .stat-item .stat-num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.1;
+    }
+    .stat-item .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       PAGE LAYOUT — two-column
+    ════════════════════════════════════════════════════ */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.2rem;
+      align-items: start;
+    }
+    
+      
+    }
+
+    /* ═══════════════════════════════════════════════════
+       ARTICLE BODY
+    ════════════════════════════════════════════════════ */
+    
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      overflow-x: hidden;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.4rem 2.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.25;color:var(--navy)}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{background:var(--navy);border-bottom:1px solid rgba(184,146,42,0.2);padding:0 2rem;position:sticky;top:0;z-index:100}
+.nav-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:0.5rem;text-decoration:none}
+.nav-logo-mark{width:30px;height:30px;border-radius:5px;background:linear-gradient(135deg,var(--gold),var(--gold-b));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:var(--navy);flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--white)}
+.nav-logo-sub{font-size:0.6rem;color:rgba(255,255,255,0.38);letter-spacing:0.18em;text-transform:uppercase}
+.nav-back{font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:var(--t)}
+.nav-back:hover{color:var(--gold-l);text-decoration:none}
+
+/* PROGRESS BAR */
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));z-index:200;transition:width 0.1s}
+
+/* HERO */
+.hero{background:linear-gradient(155deg,#060e1e 0%,var(--navy) 45%,var(--navy-mid) 100%);padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,42,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,42,0.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-in{max-width:800px;margin:0 auto;position:relative;z-index:2}
+.hero-cat{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(184,146,42,0.15);border:1px solid rgba(184,146,42,0.3);padding:0.28rem 0.85rem;border-radius:2rem;margin-bottom:1.4rem}
+.hero-cat-dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.hero-cat span{font-size:0.68rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-l)}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;color:var(--white);margin-bottom:1rem;line-height:1.15}
+.hero h1 em{font-style:italic;color:var(--gold-l)}
+.hero-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.hero-meta-item{font-size:0.78rem;color:rgba(255,255,255,0.5)}
+.hero-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,0.3);display:inline-block;margin:0 0.3rem}
+.hero-intro{font-size:1.08rem;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;max-width:700px}
+
+/* STAT STRIP */
+.stat-strip{background:var(--gold-cream);border-bottom:1px solid var(--border)}
+.stat-strip-in{max-width:1100px;margin:0 auto;padding:1.8rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);line-height:1}
+.stat-label{font-size:0.75rem;color:var(--text-l);margin-top:0.3rem;font-weight:400}
+
+/* CONTENT */
+.content-wrap{max-width:1100px;margin:0 auto;padding:3.5rem 2rem;display:grid;grid-template-columns:1fr 280px;gap:3.5rem;align-items:start}
+.article-body{min-width:0}
+.article-body h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.8rem 0 0.8rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold-pale)}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.18rem;font-weight:600;color:var(--navy-mid);margin:1.8rem 0 0.6rem}
+.article-body p{font-size:1rem;color:var(--text-mid);line-height:1.82;margin-bottom:1.2rem;font-weight:300}
+.article-body ul,.article-body ol{margin:0.6rem 0 1.2rem 1.4rem;color:var(--text-mid);font-weight:300}
+.article-body li{font-size:0.97rem;line-height:1.75;margin-bottom:0.4rem}
+.article-body strong{font-weight:600;color:var(--navy)}
+
+/* CALLOUTS */
+.callout{border-left:4px solid var(--gold);background:var(--gold-cream);padding:1.2rem 1.5rem;border-radius:0 6px 6px 0;margin:1.8rem 0}
+.callout-title{font-family:'Source Sans 3',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.callout p{font-size:0.92rem;color:var(--text-mid);margin-bottom:0;font-weight:400}
+.callout.warning{border-left-color:var(--red);background:var(--red-bg)}
+.callout.warning .callout-title{color:var(--red)}
+.callout.success{border-left-color:#166534;background:var(--green-bg)}
+.callout.success .callout-title{color:#166534}
+
+/* COMPARISON TABLE */
+.compare-table{width:100%;border-collapse:collapse;margin:1.8rem 0;font-size:0.9rem}
+.compare-table th{padding:0.8rem 1rem;text-align:left;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase}
+.compare-table th:first-child{background:var(--navy);color:rgba(255,255,255,0.8);width:32%}
+.compare-table th:nth-child(2){background:#e8f4f4;color:#0f5856;width:34%}
+.compare-table th:nth-child(3){background:var(--navy-mid);color:var(--gold-l);width:34%}
+.compare-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6}
+.compare-table td:first-child{font-weight:500;color:var(--navy);background:#fafaf7;font-size:0.88rem}
+.compare-table td:nth-child(2){color:var(--text-mid);font-weight:300;background:#f8fffe}
+.compare-table td:nth-child(3){color:var(--text-mid);font-weight:300}
+.compare-table tr:nth-child(even) td:nth-child(2){background:#f0fafa}
+.compare-table tr:nth-child(even) td:nth-child(3){background:var(--gold-cream)}
+.compare-icon-no{color:var(--red);font-weight:700}
+.compare-icon-yes{color:#166534;font-weight:700}
+
+/* POLICY CARDS */
+.policy-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.policy-card{border:1px solid var(--border);border-radius:6px;padding:1.4rem;position:relative;overflow:hidden}
+.policy-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.policy-card.labour::before{background:linear-gradient(90deg,#b8922a,#e8c96a)}
+.policy-card.conduct::before{background:linear-gradient(90deg,#1a3a6e,#2e5ea8)}
+.policy-card.leave::before{background:linear-gradient(90deg,#14532d,#22c55e)}
+.policy-card.exit::before{background:linear-gradient(90deg,#7c2d12,#ea580c)}
+.policy-card.data::before{background:linear-gradient(90deg,#4c1d95,#8b5cf6)}
+.policy-card.grievance::before{background:linear-gradient(90deg,#0f5856,#0d9488)}
+.policy-card-icon{font-size:1.5rem;margin-bottom:0.6rem}
+.policy-card h4{font-family:'Playfair Display',serif;font-size:0.98rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.policy-card p{font-size:0.82rem;color:var(--text-l);line-height:1.6;margin-bottom:0;font-weight:300}
+.policy-card .risk-tag{display:inline-block;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.55rem;border-radius:2rem;margin-top:0.6rem}
+.risk-high{background:#fee2e2;color:#991b1b}
+.risk-medium{background:#fef9c3;color:#854d0e}
+
+/* SCENARIO BOXES */
+.scenario{border-radius:6px;padding:1.4rem 1.6rem;margin:1.5rem 0}
+.scenario.bad{background:var(--red-bg);border:1px solid #fca5a5}
+.scenario.good{background:var(--green-bg);border:1px solid #86efac}
+.scenario-label{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem}
+.scenario.bad .scenario-label{color:var(--red)}
+.scenario.good .scenario-label{color:#166534}
+.scenario p{font-size:0.92rem;line-height:1.75;margin-bottom:0;font-weight:300;font-style:italic}
+
+/* PROCESS STEPS */
+.process-steps{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;position:relative}
+.process-steps::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;background:var(--border)}
+.process-step{display:flex;gap:1.2rem;position:relative;padding-bottom:1.5rem}
+.process-step:last-child{padding-bottom:0}
+.step-circle{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);z-index:1;border:3px solid var(--white)}
+.step-content h4{font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem}
+.step-content p{font-size:0.88rem;color:var(--text-mid);font-weight:300;margin-bottom:0;line-height:1.7}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.88rem}
+.data-table th{background:var(--navy);color:rgba(255,255,255,0.9);font-family:'Source Sans 3',sans-serif;font-weight:600;padding:0.7rem 1rem;text-align:left}
+.data-table td{padding:0.65rem 1rem;border-bottom:1px solid var(--border);color:var(--text-mid);font-weight:300;vertical-align:top}
+.data-table tr:nth-child(even) td{background:#fafaf7}
+
+/* CHECKLIST */
+.checklist{list-style:none;margin:1rem 0 1.4rem;padding:0;display:flex;flex-direction:column;gap:0.5rem}
+.checklist li{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.95rem;color:var(--text-mid);font-weight:300;line-height:1.65}
+.checklist li::before{content:'✓';color:#166534;font-weight:700;font-size:0.85rem;flex-shrink:0;margin-top:0.15rem}
+
+/* TAGS */
+.tag{display:inline-block;background:var(--gold-pale);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.65rem;border-radius:2rem;border:1px solid rgba(184,146,42,0.25);margin:0.2rem}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:84px}
+.sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.5rem;margin-bottom:1.2rem}
+.sidebar-card.featured{background:var(--navy);border-color:rgba(184,146,42,0.3)}
+.sidebar-title{font-family:'Source Sans 3',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sidebar-card.featured .sidebar-title{color:var(--gold-l)}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.toc-list a{font-size:0.82rem;color:var(--text-mid);text-decoration:none;display:block;padding:0.3rem 0;border-left:2px solid transparent;padding-left:0.7rem;transition:var(--t)}
+.toc-list a:hover{color:var(--gold);border-left-color:var(--gold)}
+.sidebar-card.featured p{font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:1rem;font-weight:300}
+.btn-gold-sm{display:inline-flex;align-items:center;gap:0.4rem;background:var(--gold);color:var(--navy);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.65rem 1.2rem;border-radius:3px;text-decoration:none;transition:var(--t)}
+.btn-gold-sm:hover{background:var(--gold-b);text-decoration:none}
+.audit-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.6rem}
+.audit-list li{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.8rem;color:var(--text-mid);font-weight:300;line-height:1.5}
+.audit-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.35rem}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding:2.5rem 2rem}
+.footer-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--white)}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.3)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:var(--t)}
+.footer-links a:hover{color:var(--gold-l)}
+
+/* WHATSAPP */
+.whatsapp-btn{position:fixed;bottom:2rem;right:2rem;z-index:50;width:54px;height:54px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:var(--t)}
+.whatsapp-btn:hover{transform:scale(1.08)}
+
+/* RESPONSIVE */
+@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.policy-grid{grid-template-columns:1fr}.stat-strip-in{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sidebar{grid-template-columns:1fr}.hero{padding:3rem 1.2rem 2rem}.content-wrap{padding:2rem 1.2rem}.hero h1{font-size:1.7rem}.stat-strip-in{grid-template-columns:1fr 1fr}.compare-table{font-size:0.8rem}}
+.article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+    .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--link);
+      padding: .25rem .75rem;
+      border-radius: 20px;
+      border: 1px solid var(--blue-border);
+    }
+
+    /* TOC */
+    
+    
+    
+    
+    
+
+    /* CTA card */
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /* Related articles */
+    
+    
+    
+    
+    
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════════════════ */
+    .site-footer {
+      background: var(--navy-deep);
+      padding: 2rem 1.5rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: .03em;
+    }
+    .footer-logo span { color: var(--white); font-weight: 400; }
+    .footer-tagline {
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: .85rem;
+      color: rgba(255,255,255,.45);
+    }
+    .footer-nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+    .footer-nav a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .footer-nav a:hover { color: var(--white); }
+    .footer-copy {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .footer-disclaimer {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      color: rgba(255,255,255,.22);
+      max-width: 640px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON — same as main site
+    ════════════════════════════════════════════════════ */
+    @media (max-width: 480px) {
+      }
+
+  
+    @media (max-width: 768px) {
+      .article-body p,
+      .article-body td,
+      .article-body li { text-align: left; }
+    }
+  
+    @media (max-width: 600px) {
+      .page-wrap { padding: 1.5rem 1rem 3rem; }
+    }
+  
+    /* ── WHATSAPP BUTTON — identical to main site ── */
+    .whatsapp-btn {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25d366; color: white; font-size: 1.4rem;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      transition: transform .2s;
+    }
+    .whatsapp-btn:hover { transform: scale(1.08); }
+  
+    @media (max-width: 600px) {
+      .article-body {
+      overflow-x: hidden; padding: 1.2rem 1rem; }
+      .article-body p,
+      .article-body li,
+      .article-body td { text-align: left; }
+      .page-wrap { padding: 1rem 0.75rem 3rem; }
+    }
+  
+    /* ── IN THIS ARTICLE — TOC ── */
+    .toc-box {
+      background: var(--blue-pale);
+      border: 1px solid var(--blue-border);
+      border-left: 4px solid var(--navy-mid);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.5rem 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .toc-box-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--navy-mid);
+      margin-bottom: .8rem;
+    }
+    .toc-box ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      padding: 0; margin: 0;
+    }
+    .toc-box ol li {
+      counter-increment: toc-counter;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem;
+      padding: .28rem 0 .28rem 1.8rem;
+      position: relative;
+      border-bottom: 1px dotted var(--border);
+      line-height: 1.4;
+    }
+    .toc-box ol li:last-child { border-bottom: none; }
+    .toc-box ol li::before {
+      content: counter(toc-counter) '.';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .82rem;
+    }
+    .toc-box ol li a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .toc-box ol li a:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+  
+    /* ═══════════════════════════════════════════════════
+       EXTENDED VISUAL COMPONENTS — ported from articles
+    ════════════════════════════════════════════════════ */
+
+    /* Banded table — all tables get banded rows by default */
+    .article-body table {
+      width: 100%; border-collapse: collapse;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem; margin: 1.4rem 0;
+      border: 1px solid var(--border);
+    }
+    .article-body table thead tr { background: var(--navy-mid); }
+    .article-body table th {
+      padding: .65rem .9rem; text-align: left;
+      font-weight: 600; color: var(--white); letter-spacing: .02em;
+    }
+    .article-body table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .article-body table tbody tr:nth-child(even) { background: #f0fdff; }
+    .article-body table tbody tr:hover { background: var(--gold-pale); }
+    .article-body table .yes, .compare-icon-yes { color: #166534; font-weight: 700; }
+    .article-body table .no,  .compare-icon-no  { color: var(--red); font-weight: 700; }
+
+    /* data-table & clause-table & code-table */
+    .data-table, .clause-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: .88rem; box-shadow: var(--shadow-sm); border-radius: 4px; overflow: hidden;
+    }
+    .data-table th, .clause-table th {
+      background: var(--navy-mid); color: var(--white);
+      padding: .65rem .9rem; text-align: left; font-weight: 600;
+    }
+    .data-table td, .clause-table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    .data-table tbody tr:nth-child(even),
+    .clause-table tbody tr:nth-child(even) { background: #f0fdff; }
+    .data-table tbody tr:hover,
+    .clause-table tbody tr:hover { background: var(--gold-pale); }
+
+    /* Callout variants */
+    .callout-danger {
+      border-left: 4px solid var(--red); background: var(--red-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-warning {
+      border-left: 4px solid #d97706; background: var(--amber-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-info {
+      border-left: 4px solid #2563eb; background: #eff6ff;
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-danger p, .callout-warning p, .callout-info p { margin: 0; }
+    .callout-title {
+      font-family: 'DM Sans', sans-serif; font-size: .72rem; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--navy-mid); margin-bottom: .4rem;
+      display: flex; align-items: center; gap: .4rem;
+    }
+    .callout.success { border-left-color: var(--green); background: var(--green-light); }
+    .callout.warning { border-left-color: #d97706; background: var(--amber-light); }
+    .callout.bad     { border-left-color: var(--red);   background: var(--red-light); }
+    .callout.good    { border-left-color: var(--green); background: var(--green-light); }
+
+    /* Policy grid cards */
+    .policy-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .policy-card-icon { font-size: 1.5rem; margin-bottom: .6rem; }
+
+    /* Code cards (Labour Codes) */
+    .code-table { display: grid; gap: 1rem; margin: 1.5rem 0; }
+    .code-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem 1.6rem;
+    }
+    .code-card-num {
+      font-family: 'Playfair Display', serif; font-size: 2.2rem;
+      font-weight: 700; color: var(--gold-pale); line-height: 1; margin-bottom: .4rem;
+    }
+    .code-card-title {
+      font-family: 'Playfair Display', serif; font-size: 1.1rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .3rem;
+    }
+    .code-card-year {
+      font-size: .72rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .7rem;
+    }
+
+    /* ICC grid cards */
+    .icc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .icc-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.3rem;
+    }
+    .icc-card-role {
+      font-size: .68rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .4rem;
+    }
+
+    /* Structure grid */
+    .structure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .struct-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem;
+    }
+    .struct-tag {
+      font-size: .65rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .6rem; display: block;
+    }
+    .struct-pros, .struct-cons {
+      font-size: .83rem; color: var(--slate); font-weight: 300; line-height: 1.65;
+    }
+    .struct-cons strong { color: var(--red); }
+
+    /* Risk grid */
+    .risk-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .risk-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 4px solid; border-radius: var(--radius); padding: 1.2rem 1.3rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .risk-tag {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; padding: .15rem .5rem;
+      border-radius: 20px; margin-bottom: .4rem;
+    }
+    .risk-tag.risk-high, .risk-tag.risk-medium { background: #fed7d7; color: #9b2c2c; }
+    .risk-tag.risk-medium                       { background: #fefcbf; color: #744210; }
+    .risk-tag.risk-low                          { background: #c6f6d5; color: #276749; }
+
+    /* Step variants */
+    .steps-list { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+    .step-circle {
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: var(--gold); display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy-deep);
+    }
+    .step-content h4 {
+      font-family: 'DM Sans', sans-serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .25rem;
+    }
+    .step-content p { margin: 0; font-size: .88rem; color: var(--slate); }
+
+    /* Highlight box */
+    .highlight-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: var(--radius); padding: 1.8rem 2rem; margin: 2rem 0;
+      color: var(--white);
+    }
+    .highlight-box h3, .highlight-box h4 { color: var(--gold-light); margin-bottom: .5rem; }
+    .highlight-box p { color: rgba(255,255,255,.8); margin-bottom: 0; }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 4px solid var(--gold); padding: .8rem 1.5rem;
+      margin: 2rem 0; background: var(--gold-pale);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic; color: var(--navy);
+    }
+
+    /* Lead paragraph */
+    .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem; }
+
+    /* Section heading with number */
+    .section-heading {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem;
+      font-weight: 700; color: var(--navy-mid); margin-top: 2.5rem;
+      margin-bottom: .65rem; padding-bottom: .4rem;
+      border-bottom: 2px solid var(--gold-light);
+      display: flex; align-items: baseline; gap: .6rem;
+    }
+    .section-num {
+      font-size: .72rem; font-weight: 700; color: var(--gold);
+      letter-spacing: .08em; text-transform: uppercase;
+      background: var(--gold-pale); padding: .15rem .5rem; border-radius: 3px;
+    }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1rem 1.3rem; margin-top: 2rem;
+      font-family: 'DM Sans', sans-serif; font-size: .78rem;
+      color: var(--text-muted); line-height: 1.6;
+    }
+
+    /* Conclusion band */
+    .conclusion-band {
+      background: linear-gradient(135deg, var(--navy) 0%, #0d2240 100%);
+      padding: 2.5rem 2rem; border-radius: var(--radius);
+      margin-top: 2.5rem; text-align: center;
+    }
+    .conclusion-band h3 { color: var(--white); margin-bottom: .8rem; }
+    .conclusion-band p  { color: rgba(255,255,255,.75); margin-bottom: 1.2rem; }
+    .conclusion-btn {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .85rem; font-weight: 700; color: var(--navy-deep);
+      background: var(--gold); padding: .65rem 1.8rem;
+      border-radius: 3px; text-decoration: none; letter-spacing: .04em;
+    }
+    .conclusion-btn:hover { background: var(--gold-light); }
+
+    /* Bullet list */
+    .bullet-list { list-style: none; padding: 0; margin: .8rem 0 1.2rem; }
+    .bullet-list li {
+      padding: .3rem 0 .3rem 1.6rem; position: relative;
+      font-size: .95rem; border-bottom: 1px dotted var(--border);
+    }
+    .bullet-list li:last-child { border-bottom: none; }
+    .bullet-list li::before { content: '›'; position: absolute; left: 0; color: var(--gold); font-weight: 700; font-size: 1.1rem; }
+
+    /* Sub-heading */
+    .sub-heading {
+      font-family: 'DM Sans', sans-serif; font-size: 1rem;
+      font-weight: 700; color: var(--navy); margin: 1.7rem 0 .4rem;
+    }
+
+    /* Responsive for all new grids */
+    @media (max-width: 600px) {
+      .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
+    }
+
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SITE NAV — identical to main site
+════════════════════════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://www.lexwin.co.in/index.html" class="nav-logo" aria-label="LexWin Home">
+      <span class="nav-logo-main">LexWin</span>
+      <div class="nav-logo-divider"></div>
+      <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#who-we-help">Who We Help</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#engagement">Engagement</a></li>
+      <li><a href="https://www.lexwin.co.in/blog/index.html">Insights</a></li>
+      <li><a href="https://calendly.com/sadanand-sonar/30min" class="nav-cta-btn" target="_blank" rel="noopener">Free Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BREADCRUMB
+════════════════════════════════════════════════════════════ -->
+<div class="breadcrumb-bar">
+  <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+     FILL: HR Compliance | HR Policies That Actually Protect You — Why Legal Drafting Makes All the Difference (use <em> for accent word)
+           14 | June 2026
+════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-category">Commercial Contracts</div>
+    <h1>Non-Disclosure Agreements in India: A Practical <em>B2B Guide</em> — With a Free Template</h1>
+    <div class="hero-byline">
+      <span>LexWin Consulting</span>
+      <span class="sep">·</span>
+      <span>13 min read</span>
+      <span class="sep">·</span>
+      <span>June 2026</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STAT STRIP — 4 stats relevant to article topic
+     FILL: stat-num + stat-label for each of the 4 items
+════════════════════════════════════════════════════════════ -->
+<div class="stat-strip" aria-hidden="true">
+  <div class="stat-strip-inner">
+    <div class="stat-item">
+      <span class="stat-num">1872</span>
+      <span class="stat-label">Indian Contract Act — still governs NDA enforceability today</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Sec. 27</span>
+      <span class="stat-label">renders most post-termination non-compete clauses void</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Free</span>
+      <span class="stat-label">downloadable mutual B2B NDA template — ready to adapt</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">2–5 yr</span>
+      <span class="stat-label">typical confidentiality survival period after disclosure</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN LAYOUT — Article + Sidebar
+════════════════════════════════════════════════════════════ -->
+<div class="page-wrap">
+
+  <!-- ── ARTICLE ─────────────────────────────────────── -->
+  <main class="article-body" id="article-top">
+    <div class="toc-box">
+      <div class="toc-box-title">In this article</div>
+      <ol>
+        <li><a href="#what">What an NDA actually does — and doesn't do</a></li>
+        <li><a href="#when">When B2B businesses need an NDA</a></li>
+        <li><a href="#types">Mutual vs. unilateral NDAs</a></li>
+        <li><a href="#clauses">The clauses that actually matter</a></li>
+        <li><a href="#enforceability">Enforceability in India — what the law actually says</a></li>
+        <li><a href="#beyond">Beyond confidentiality — non-circumvention, non-compete & employee NDAs</a></li>
+        <li><a href="#mistakes">Common mistakes that make an NDA worthless</a></li>
+        <li><a href="#template">Free B2B NDA template — download &amp; how to use it</a></li>
+        <li><a href="#howwehelp">How LexWin can help</a></li>
+        <li><a href="#checklist">Quick checklist before you sign</a></li>
+      </ol>
+    </div>
+
+    <h2 id="what">What an NDA Actually Does — and Doesn't Do</h2>
+    <p>A Non-Disclosure Agreement (NDA), sometimes called a Confidentiality Agreement, is a contract under which one or both parties agree not to disclose or misuse information shared with each other for a defined purpose. In a business-to-business (B2B) context, this is usually the first document signed before two companies start talking seriously — before a pitch deck is shared, before a data room is opened, before a product demo reveals how something actually works.</p>
+    <p>What an NDA does well: it creates a contractual obligation of confidentiality, defines what counts as "confidential," sets out exceptions, and — critically — gives the disclosing party a basis to seek an injunction or damages if the other side misuses or leaks the information.</p>
+    <p>What an NDA does not do: it does not stop a determined party from disclosing information if they are prepared to face the legal consequences, it does not protect information that was never properly marked or identified as confidential, and on its own, it does not prevent a counterparty from building a competing product, poaching your staff, or going around you to deal directly with a contact you introduced — those require separate clauses (non-compete, non-solicitation, non-circumvention), which we cover later in this article.</p>
+
+    <div class="callout-info">
+      <div class="callout-title">For B2B Use, Not Individuals</div>
+      <p>This article — and the free template below — is written for <strong>business-to-business</strong> NDAs: two companies (or a company and an LLP, OPC, sole proprietorship, etc.) signing an agreement before exploring a commercial relationship. If you need an NDA for an <strong>employee, consultant, or freelancer</strong>, the structure, language, and enforceability considerations are different — see Section 6 below.</p>
+    </div>
+
+    <h2 id="when">When B2B Businesses Need an NDA</h2>
+    <p>In practice, B2B NDAs in India are signed far more often than most founders and business owners realize is necessary — and far less often than is actually advisable. The most common situations include:</p>
+
+    <ul class="bullet-list">
+      <li><strong>Vendor and supplier discussions</strong> — before sharing pricing structures, production processes, client lists, or technical specifications with a potential supplier or service provider.</li>
+      <li><strong>Outsourcing and software development</strong> — before handing over source code access, business logic, API documentation, or proprietary datasets to an outsourced development team.</li>
+      <li><strong>Investment and fundraising conversations</strong> — before sharing a data room, cap table, financial projections, or proprietary technology with a potential investor.</li>
+      <li><strong>Mergers, acquisitions, and joint ventures</strong> — before due diligence begins, when both parties will see deep operational, financial, and strategic information about the other.</li>
+      <li><strong>Distribution, franchise, and channel partner discussions</strong> — before disclosing pricing models, territory plans, or trade secrets to a prospective distributor or franchisee.</li>
+      <li><strong>Strategic partnerships and pilot projects</strong> — before two companies run a trial integration, joint pilot, or co-development exercise.</li>
+    </ul>
+
+    <div class="scenario bad">
+      <div class="scenario-label">❌ What Often Happens Instead</div>
+      <p>A founder shares a detailed product roadmap and pricing model with a "potential partner" over email, on the strength of a verbal assurance of confidentiality. Three months later, a near-identical product appears from a company that never proceeded with the partnership. There is no signed NDA, no defined "Confidential Information," and no contractual basis to act — only a difficult, expensive, and uncertain claim based on the general law of confidence.</p>
+    </div>
+
+    <div class="scenario good">
+      <div class="scenario-label">✓ The Better Approach</div>
+      <p>A short, properly drafted mutual NDA is signed before the first substantive conversation — even before a single slide is shared. It costs nothing in business momentum, takes minutes to execute (especially with digital signatures), and gives both sides a documented, enforceable basis for confidentiality from day one.</p>
+    </div>
+
+    <h2 id="types">Mutual vs. Unilateral NDAs — Which Do You Need?</h2>
+    <p>The first structural decision in any NDA is whether it is <strong>unilateral</strong> (one-way) or <strong>mutual</strong> (two-way, also called bilateral or reciprocal).</p>
+
+    <div class="table-wrapper"><table class="compare-table">
+      <thead>
+        <tr><th>Type</th><th>How It Works</th><th>Typical B2B Use Case</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Unilateral NDA</strong></td>
+          <td>Only one party (the "Disclosing Party") shares confidential information; only the other party (the "Receiving Party") has confidentiality obligations.</td>
+          <td>A company shares its product specifications with a manufacturer who is purely quoting for a job and not sharing anything sensitive in return.</td>
+        </tr>
+        <tr>
+          <td><strong>Mutual NDA</strong></td>
+          <td>Both parties may disclose confidential information to each other, and both have identical obligations as both "Disclosing Party" and "Receiving Party."</td>
+          <td>Two companies exploring a joint venture, partnership, investment, or M&amp;A transaction, where both sides will see sensitive information about the other.</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+    <p>In most B2B exploratory discussions — partnerships, JV talks, vendor onboarding where both sides exchange pricing and process information, investment conversations — a <strong>mutual NDA</strong> is the more balanced and commonly used structure, and it is the structure used in the free template provided with this article. A unilateral NDA is appropriate only where the information flow is genuinely one-directional.</p>
+
+    <h2 id="clauses">The Clauses That Actually Matter</h2>
+    <p>Many NDAs circulating in Indian business circles are downloaded templates that "look right" but are missing — or get wrong — the clauses that determine whether the agreement actually protects you when it is tested. Here is what a properly drafted B2B NDA should contain.</p>
+
+    <h3>1. A Clear Definition of "Confidential Information"</h3>
+    <p>This is the foundation of the entire agreement. A vague definition ("any information shared between the parties") is both over-broad and under-protective — it is unenforceable in practice because it covers everything and nothing. A well-drafted definition specifies the categories of information covered (technical data, business plans, financial information, customer lists, pricing, source code, know-how) and, where appropriate, requires that information be marked as "Confidential" or, if disclosed orally, confirmed in writing within a reasonable period.</p>
+
+    <h3>2. Carve-Outs — What Is <em>Not</em> Confidential</h3>
+    <p>Every NDA must exclude information that: (a) is or becomes publicly available through no fault of the Receiving Party; (b) was already lawfully in the Receiving Party's possession before disclosure; (c) is independently developed without reference to the Confidential Information; or (d) is rightfully received from a third party without restriction. Without these carve-outs, the agreement technically prohibits the Receiving Party from using information they already legitimately had — which is both unfair and, if challenged, makes the entire confidentiality clause look unreasonable to a court.</p>
+
+    <h3>3. Defined Purpose and Permitted Use</h3>
+    <p>The NDA should state precisely <em>why</em> the information is being shared (the "Purpose") — for example, "evaluating a potential commercial partnership for distribution of [X] in [territory]." The Receiving Party's obligations should be tied to using the information solely for that Purpose. This single clause is what stops a counterparty from taking information shared for one reason and using it to build a competing offering for an entirely different reason.</p>
+
+    <h3>4. Term and Survival</h3>
+    <p>Two different timeframes matter here: how long the agreement itself runs (commonly one to three years from signing), and how long the confidentiality obligations survive <em>after</em> the agreement ends or after a specific disclosure is made (commonly two to five years, or — for genuine trade secrets — for as long as the information remains confidential). An NDA that simply says "this Agreement shall remain confidential forever" with no other term is both impractical and, in many circumstances, unenforceable as an unreasonable restraint.</p>
+
+    <h3>5. Return or Destruction of Information</h3>
+    <p>On termination of discussions, the Receiving Party should be required to return or destroy all Confidential Information (including copies, notes, and — where personal data is involved — data held in any system), and to certify that this has been done on request. This clause has become considerably more important since the Digital Personal Data Protection Act, 2023, where any personal data shared during due diligence or vendor evaluation also triggers data-handling obligations independent of the NDA itself.</p>
+
+    <h3>6. Remedies — Why an Injunction Clause Matters</h3>
+    <p>Confidential business information is, by its nature, difficult to "un-disclose" — once a trade secret is out, monetary damages rarely make the disclosing party whole. A properly drafted NDA explicitly acknowledges that breach would cause irreparable harm for which damages alone would be an inadequate remedy, and that the disclosing party is entitled to seek injunctive relief (in addition to, not instead of, damages) without being required to prove actual loss as a precondition. This clause does not guarantee an injunction will be granted — that remains a matter for the court — but it materially strengthens the disclosing party's position when seeking one.</p>
+
+    <h3>7. Governing Law, Jurisdiction, and Dispute Resolution</h3>
+    <p>For a domestic Indian B2B NDA, this is usually straightforward — the laws of India, with courts at a specified city having jurisdiction. For cross-border arrangements (an Indian company and an overseas counterparty), this clause needs careful thought: which country's courts will actually hear a dispute, whether arbitration is preferable to litigation, and — if arbitration is chosen — the seat, rules, and language of arbitration. Getting this wrong does not invalidate the NDA, but it can make enforcement slow, expensive, or practically impossible if a dispute actually arises.</p>
+
+    <h2 id="enforceability">Enforceability in India — What the Law Actually Says</h2>
+    <p>India does not have a standalone "NDA Act." Confidentiality agreements are enforced as ordinary contracts under the <strong>Indian Contract Act, 1872</strong>, supplemented by the equitable doctrine of breach of confidence, and — where personal data is involved — by the <strong>Digital Personal Data Protection Act, 2023</strong>. This has a few practical implications worth understanding before you sign or rely on one.</p>
+
+    <div class="callout-warning">
+      <div class="callout-title">Stamping Matters More Than People Think</div>
+      <p>Depending on the state in which an NDA is executed, it may attract stamp duty as an "agreement" under the applicable State Stamp Act (for example, the Maharashtra Stamp Act for agreements executed or acted upon in Maharashtra). An inadequately stamped document can face evidentiary hurdles if it ever needs to be relied upon or produced before a court — though such defects are typically curable on payment of the deficient duty and penalty. For high-value or high-risk B2B arrangements, it is worth confirming the stamping position for the relevant state before execution, particularly where the agreement may need to be enforced.</p>
+    </div>
+
+    <p>For ordinary confidentiality obligations — "do not disclose or misuse the information we share with you for this Purpose" — Indian courts generally have no difficulty enforcing properly drafted NDAs, and will grant interim injunctions to prevent ongoing or threatened misuse of confidential information where the balance of convenience favours the disclosing party. The areas where enforceability becomes genuinely complicated are restrictions that go <em>beyond</em> confidentiality — non-compete and, to a lesser extent, non-solicitation clauses — which brings us to the next section.</p>
+
+    <h2 id="beyond">Beyond Confidentiality — Non-Circumvention, Non-Compete &amp; Employee NDAs</h2>
+    <p>"NDA" is often used as a catch-all term in Indian business conversation for several distinct types of restriction, each with different drafting requirements and very different enforceability profiles. Understanding the difference matters — because signing (or relying on) the wrong document for the situation can leave you with no real protection at all.</p>
+
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-icon">🔒</div>
+        <h4>Confidentiality (NDA)</h4>
+        <p>The core obligation: do not disclose or misuse information shared for a defined purpose. Generally well-enforced in India when properly drafted — this is what the free template below covers.</p>
+        <span class="risk-tag risk-low">Enforceability: Generally Strong</span>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-icon">🤝</div>
+        <h4>Non-Circumvention</h4>
+        <p>Prevents one party from going around the other to deal directly with contacts, suppliers, or customers introduced during the relationship — common in broker, agency, sourcing, and introducer arrangements.</p>
+        <span class="risk-tag risk-medium">Enforceability: Reasonable, If Scoped Carefully</span>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-icon">🚫</div>
+        <h4>Non-Compete</h4>
+        <p>Restricts a party from operating in the same line of business — within India, largely unenforceable against individuals post-termination under Section 27 of the Contract Act, but more viable in narrow business-to-business contexts.</p>
+        <span class="risk-tag risk-high">Enforceability: Limited &amp; Context-Dependent</span>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-icon">👤</div>
+        <h4>Employee NDA</h4>
+        <p>Confidentiality and IP-assignment obligations owed by an employee or consultant, usually built into the employment or consultancy agreement rather than standing alone — drafted very differently from a B2B mutual NDA.</p>
+        <span class="risk-tag risk-medium">Different Document Entirely</span>
+      </div>
+    </div>
+
+    <h3>Non-Circumvention Clauses</h3>
+    <p>A non-circumvention clause prevents a party — typically one acting as an introducer, broker, agent, or sourcing partner — from "cutting out" the other party and dealing directly with a supplier, buyer, manufacturer, or client introduced to them during the relationship. These are extremely common in trading, sourcing, real estate brokerage, and agency arrangements, and are frequently bundled into the same document as confidentiality terms (a combined "NDA and Non-Circumvention Agreement," or "NDNC"). Indian courts generally treat reasonable non-circumvention restrictions — limited in scope, duration, and to specifically identified counterparties or introductions — as enforceable contractual obligations, distinct from the broader restraint-of-trade concerns that apply to non-compete clauses.</p>
+
+    <h3>Non-Compete Clauses</h3>
+    <p>This is the area where Indian law diverges most sharply from what many business owners expect — especially those familiar with non-compete practice in jurisdictions like the US or UK. Section 27 of the Indian Contract Act, 1872 states that <strong>"every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void"</strong> — subject to a narrow statutory exception for the sale of the goodwill of a business.</p>
+    <p>In practice, this means:</p>
+    <ul class="bullet-list">
+      <li>A clause preventing an <strong>employee or consultant</strong> from working in a competing business <em>after</em> their employment or engagement ends is generally unenforceable in India, regardless of how it is worded.</li>
+      <li>Restrictions that operate <em>during</em> the term of an employment or service relationship (i.e., not moonlighting for a competitor while still engaged) are generally enforceable, since the person is not yet "restrained" from a trade they are free to pursue once the relationship ends.</li>
+      <li>In a genuine <strong>business-to-business</strong> context — such as the sale of a business along with its goodwill, or restrictions between companies in a joint venture or franchise agreement, reasonably limited in scope, geography, and duration — non-compete style restrictions have a materially better (though still not guaranteed) chance of being upheld, because they fall closer to a reasonable commercial restraint between equal parties rather than a restraint on an individual's livelihood.</li>
+    </ul>
+
+    <div class="callout-danger">
+      <div class="callout-title">A Common, Costly Mistake</div>
+      <p>Many B2B NDAs downloaded from generic template sites include a broad non-compete clause — "the Receiving Party shall not engage in any business competitive with the Disclosing Party for a period of [X] years" — applied to <em>both</em> companies and, by extension, to the individuals who sign on their behalf. If this clause is challenged, a court is likely to find the non-compete element void under Section 27, and — depending on how the clause is drafted and whether it can be severed — this can in some cases cast doubt over the document as a whole. The confidentiality and non-circumvention obligations should be drafted as <em>independent, severable</em> clauses, not bundled with an overreaching non-compete.</p>
+    </div>
+
+    <h3>Employee, Consultant &amp; Freelancer NDAs</h3>
+    <p>A separate but related need is confidentiality with <strong>individuals</strong> — employees, consultants, freelance developers, interns, or advisors. These should not simply be the B2B mutual NDA with names swapped in. An employee NDA typically:</p>
+    <ul class="bullet-list">
+      <li>Is <strong>unilateral</strong> (the individual owes confidentiality to the company, not the reverse) and is often embedded within the employment agreement, offer letter, or a standalone confidentiality and IP assignment undertaking rather than a free-standing "NDA."</li>
+      <li>Includes an <strong>IP assignment clause</strong> — confirming that any work product, code, designs, or inventions created during the engagement belong to the company, which a B2B mutual NDA typically does not need to address.</li>
+      <li>Addresses confidentiality obligations <em>after</em> the relationship ends in a way that is realistic and survives the Section 27 limitations on post-termination restraint — focused on protecting genuinely confidential information and trade secrets, rather than attempting a broad post-employment non-compete.</li>
+      <li>May include reasonable, narrowly scoped non-solicitation of clients or co-employees post-termination, which Indian courts have shown more willingness to enforce than outright non-competes, provided the scope is reasonable.</li>
+    </ul>
+    <p>If you need confidentiality protection for your workforce — whether full-time employees, contractors, or interns — this should be addressed through your employment documentation and HR policy framework, not by adapting the B2B template provided below.</p>
+
+    <h2 id="mistakes">Common Mistakes That Make an NDA Worthless</h2>
+    <div class="table-wrapper"><table class="data-table">
+      <thead><tr><th>Sr</th><th>Mistake</th><th>Why It Matters</th></tr></thead>
+      <tbody>
+        <tr><td>1.</td><td>Signing after sensitive information has already been shared</td><td>An NDA has no retrospective effect on disclosures made before it was signed — sequence the conversation so the NDA comes first.</td></tr>
+        <tr><td>2.</td><td>No defined "Purpose"</td><td>Without a stated Purpose, there is no basis to argue the counterparty is using information outside the scope of why it was shared.</td></tr>
+        <tr><td>3.</td><td>Generic "all information" definition with no carve-outs</td><td>Over-broad definitions are difficult to enforce and can be challenged as unreasonable in their entirety.</td></tr>
+        <tr><td>4.</td><td>Wrong signatory</td><td>The agreement should be signed by someone with actual authority to bind the company — an authorised signatory under the company's board resolution, MOA/AOA, or power of attorney, not just any available employee.</td></tr>
+        <tr><td>5.</td><td>No governing law / jurisdiction clause for cross-border deals</td><td>Without this, a dispute can become a fight about <em>where</em> to fight, before the actual issue is even addressed.</td></tr>
+        <tr><td>6.</td><td>Overreaching non-compete bundled into the NDA</td><td>Risks being struck down under Section 27 and can undermine confidence in the document's other (enforceable) provisions.</td></tr>
+        <tr><td>7.</td><td>No provision for return/destruction of data</td><td>Leaves both parties without a clean process to wind down access — and creates DPDP Act exposure where personal data is involved.</td></tr>
+        <tr><td>8.</td><td>Unstamped or under-stamped execution copy</td><td>Can create evidentiary complications if the agreement ever needs to be produced or relied upon.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2 id="template">Free B2B NDA Template — Download &amp; How to Use It</h2>
+    <p>To help businesses get the basics right, LexWin is making available a <strong>free, downloadable Mutual Non-Disclosure Agreement template</strong>, designed for B2B use — two companies exploring a commercial relationship, partnership, vendor arrangement, or similar business discussion. It includes a confidentiality framework along with a non-solicitation / anti-poaching clause for key personnel, drafted with Indian law in mind.</p>
+
+    <div class="highlight-box">
+      <h3>📄 Download: Mutual NDA Template (B2B) — India</h3>
+      <p>A ready-to-adapt Word document covering definitions, confidentiality obligations, carve-outs, non-solicitation of key personnel, term, remedies, and general clauses including governing law and jurisdiction.</p>
+      <p style="margin-top:1rem;"><a href="../assets/templates/nda-template-b2b-india.docx" class="conclusion-btn" download>⬇ Download Free Template (.docx)</a></p>
+    </div>
+
+    <h3>Before You Use This Template — Read This</h3>
+
+    <div class="callout-warning">
+      <div class="callout-title">1. Every Placeholder Must Be Reviewed and Completed</div>
+      <p>Throughout the template, you will find bracketed placeholder text — for example <span style="color:#0066ff;">&lt;Name of Company&gt;</span>, <span style="color:#0066ff;">&lt;DD Month YYYY&gt;</span>, <span style="color:#0066ff;">&lt;Registered Address&gt;</span>, and similar fields shown in <span style="color:#0066ff;font-weight:600;">blue text</span>. These are <strong>not optional</strong> and must each be carefully reviewed and replaced with the correct, accurate information for your specific transaction before the document is executed — including:</p>
+      <ul class="bullet-list" style="margin-top:.6rem;">
+        <li>The full legal names, entity types (Private Limited, LLP, OPC, etc.), CIN/registration numbers, and registered addresses of <strong>both</strong> parties</li>
+        <li>The Effective Date and the duration of the agreement and the "Restricted Period"</li>
+        <li>A clear, accurate description of the <strong>Purpose</strong> for which information is being exchanged</li>
+        <li>The governing law / jurisdiction details applicable to your transaction</li>
+        <li>Details and designation of the authorised signatories for each party</li>
+      </ul>
+      <p style="margin-top:.6rem;">Leaving placeholder text unedited, or filling it in carelessly, can render the relevant clause ambiguous, unenforceable, or simply incorrect for your situation.</p>
+    </div>
+
+    <div class="callout-danger">
+      <div class="callout-title">2. Disclaimer — Use of This Template Is At Your Own Risk</div>
+      <p>This template is provided <strong>free of charge, for general informational purposes only</strong>, as a starting point for discussion and adaptation. It does not constitute legal advice, and downloading or using it does not create an advisor-client or attorney-client relationship between you and LexWin Legal &amp; HR Consulting.</p>
+      <p style="margin-top:.6rem;">LexWin makes no representation or warranty — express or implied — as to the suitability, accuracy, completeness, or enforceability of this template for your specific transaction, counterparty, or jurisdiction. <strong>LexWin shall not be responsible or liable for any loss, damage, dispute, or legal consequence arising from the use, adaptation, or execution of this template</strong>, whether used as-is or modified. Before signing any NDA based on this template — or any NDA at all — we strongly recommend having it reviewed by a qualified legal professional in light of your specific facts.</p>
+    </div>
+
+    <div class="callout-info">
+      <div class="callout-title">3. This Template Is for B2B Use Only</div>
+      <p>This template is drafted as a <strong>mutual (two-way) agreement between two business entities</strong> — companies, LLPs, or similar — exploring a commercial relationship. It is <strong>not</strong> designed for, and should not be used as-is for:</p>
+      <ul class="bullet-list" style="margin-top:.6rem;">
+        <li>Confidentiality agreements with <strong>employees, consultants, freelancers, or interns</strong> — these need a different structure (typically unilateral, with IP assignment, embedded in employment/consultancy documentation)</li>
+        <li>Pure <strong>non-circumvention</strong> arrangements with brokers, agents, or introducers — these require additional clauses specific to that relationship</li>
+        <li>Stand-alone <strong>non-compete</strong> arrangements — including those connected to the sale of a business, which fall under a narrow statutory exception and need carefully tailored drafting</li>
+      </ul>
+      <p style="margin-top:.6rem;">If your need falls into any of these categories, please get in touch — LexWin can prepare a version tailored to your specific situation.</p>
+    </div>
+
+    <h2 id="howwehelp">How LexWin Can Help</h2>
+    <p>While this free template is a useful starting point for straightforward B2B confidentiality discussions, every commercial relationship has its own risk profile — the value of the information being shared, the relative bargaining position of the parties, whether the counterparty is based in India or overseas, and what happens if the relationship doesn't work out. LexWin works with businesses across these situations:</p>
+
+    <div class="steps-list" style="display:flex;flex-direction:column;gap:1.2rem;">
+      <div class="process-step" style="display:flex;gap:1rem;align-items:flex-start;">
+        <div class="step-circle">1</div>
+        <div class="step-content">
+          <h4>Reviewing an NDA Sent to You</h4>
+          <p>Counterparties often send their own NDA for you to sign. We review these quickly to flag one-sided terms, overreaching restrictions, missing carve-outs, and jurisdiction issues — before you sign something that may bind your business for years.</p>
+        </div>
+      </div>
+      <div class="process-step" style="display:flex;gap:1rem;align-items:flex-start;">
+        <div class="step-circle">2</div>
+        <div class="step-content">
+          <h4>Drafting a Tailored NDA</h4>
+          <p>For high-value transactions, cross-border arrangements, or situations involving trade secrets, source code, or sensitive personal data, we draft NDAs and NDNCs (Non-Disclosure and Non-Circumvention agreements) built around your specific transaction.</p>
+        </div>
+      </div>
+      <div class="process-step" style="display:flex;gap:1rem;align-items:flex-start;">
+        <div class="step-circle">3</div>
+        <div class="step-content">
+          <h4>Employee, Consultant &amp; Vendor Confidentiality Frameworks</h4>
+          <p>We build confidentiality and IP-assignment clauses into employment agreements, consultancy agreements, and vendor contracts — correctly distinguished from B2B mutual NDAs and drafted to maximise enforceability under Indian law.</p>
+        </div>
+      </div>
+      <div class="process-step" style="display:flex;gap:1rem;align-items:flex-start;">
+        <div class="step-circle">4</div>
+        <div class="step-content">
+          <h4>Non-Compete &amp; Non-Circumvention Advisory</h4>
+          <p>Where a transaction genuinely calls for competitive restrictions — a business sale, JV, or franchise arrangement — we advise on what is realistically enforceable in India and draft accordingly, rather than relying on boilerplate that is unlikely to hold up.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="checklist">Quick Checklist Before You Sign Any NDA</h2>
+    <ul class="checklist">
+      <li>Is the NDA being signed <em>before</em> any sensitive information is shared — not after?</li>
+      <li>Is the "Purpose" of the disclosure clearly and accurately described?</li>
+      <li>Is "Confidential Information" defined precisely, with standard carve-outs (public domain, prior possession, independent development, lawful third-party receipt)?</li>
+      <li>Is the agreement structured correctly — mutual if both sides are sharing information, unilateral if only one side is?</li>
+      <li>Are the term and survival period for confidentiality obligations realistic and clearly stated?</li>
+      <li>Does the agreement include a return/destruction of information clause?</li>
+      <li>Is there a remedies clause acknowledging the inadequacy of damages and the availability of injunctive relief?</li>
+      <li>Is governing law and jurisdiction (or arbitration) clearly specified — especially for cross-border deals?</li>
+      <li>Are non-compete elements, if any, scoped narrowly enough to have a realistic chance of enforceability under Section 27 of the Contract Act?</li>
+      <li>Is the agreement being signed by someone with actual authority to bind their company?</li>
+      <li>Has the stamping position for the relevant state been considered for high-value or high-risk agreements?</li>
+      <li>If individuals (employees, consultants, freelancers) are involved, is a separate, appropriately structured confidentiality document being used instead of this B2B template?</li>
+    </ul>
+
+    <div class="conclusion-band">
+      <h3>Get Your NDA Right Before You Need It</h3>
+      <p>Whether you need a quick review of an NDA sent to you, a tailored agreement for a high-value transaction, or a confidentiality framework for your team and vendors — LexWin can help you get it right the first time.</p>
+      <a href="https://calendly.com/sadanand-sonar/30min" class="conclusion-btn" target="_blank" rel="noopener">Book a Free Consultation</a>
+    </div>
+
+    <div class="disclaimer">
+      This article, and the accompanying free template, are provided for general informational purposes only and do not constitute legal advice. Laws and their interpretation may change, and their application depends on the specific facts of each situation. LexWin Legal &amp; HR Consulting accepts no liability for actions taken or not taken on the basis of this article or the accompanying template. Please consult a qualified legal professional before entering into any agreement.
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Tags</div>
+      <p><span class="tag">NDA India</span><span class="tag">Non-Disclosure Agreement</span><span class="tag">B2B Contracts</span><span class="tag">Confidentiality Agreement</span><span class="tag">Non-Compete India</span><span class="tag">Non-Circumvention</span><span class="tag">Commercial Contracts</span><span class="tag">Free Template</span><span class="tag">LexWin</span></p>
+    </div>
+
+
+  </main><!-- end .article-body -->
+
+</div><!-- end .page-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER — identical structure to main site
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">LexWin <span>Legal &amp; HR Consulting</span></div>
+    <div class="footer-tagline">Precision in law. Clarity in counsel. Speed in execution.</div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="https://www.lexwin.co.in/index.html">Home</a></li>
+        <li><a href="https://www.lexwin.co.in/blog/index.html">All Articles</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy">© 2025 LexWin Legal &amp; HR Consulting. Pune, India.</div>
+    <div class="footer-disclaimer">This article is for informational purposes only and does not constitute legal advice. For specific legal guidance, please consult a qualified legal professional.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp-btn" href="https://wa.me/919823385085" target="_blank" title="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<!--Start of Tawk.to Script - widget fully hidden, tracking only-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.visibility = {desktop: 'hidden', mobile: 'hidden', tablet: 'hidden'};
+Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a1a94b50698cf1c2c1da7fd/1jprt9q1g';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
