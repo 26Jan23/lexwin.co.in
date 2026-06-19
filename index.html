@@ -1130,7 +1130,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       <div class="ornament"></div>
       <h2>Stay Ahead of India’s Regulatory Landscape</h2>
       <p>Practical legal and HR insights from our practice — written for business owners and decision-makers, not just lawyers.</p>
-      <div class="blog-count-badge"><span class="blog-count-num">13</span> free articles &amp; counting</div>
+      <div class="blog-count-badge"><span class="blog-count-num" id="blogCountNum">0</span> free articles &amp; counting</div>
     </div>
     <div class="slideshow-wrap">
       <div class="slideshow-track" id="slideshowTrack">
@@ -1490,6 +1490,9 @@ s0.parentNode.insertBefore(s1,s0);
   if(!track)return;
   var cards=Array.from(track.querySelectorAll('.blog-card'));
   var N=cards.length,cur=0,timer=null,busy=false;
+  // Auto-update blog count badge from actual card count — never needs manual editing
+  var countEl=document.getElementById('blogCountNum');
+  if(countEl) countEl.textContent=N;
   function vis(){return window.innerWidth>=769?3:1;}
   function cw(){return Math.floor((wrap.offsetWidth-GAP*(vis()-1)-PEEK)/vis());}
   function ix(o){return(cur+o+N)%N;}
