@@ -49,7 +49,7 @@
 <!-- tawk.to -->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  Tawk_API.customStyle = {visibility:{desktop:'hidden',mobile:'hidden',tablet:'hidden'}};
+  Tawk_API.onLoad = function(){ Tawk_API.hideWidget(); };
   (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
@@ -319,7 +319,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 .footer-bottom a { color: rgba(255,255,255,0.3); text-decoration: none; }
 
 /* ── WHATSAPP ── */
-.whatsapp-btn { position: fixed; bottom: 2rem; right: 2rem; z-index: 50; width: 54px; height: 54px; border-radius: 50%; background: #25d366; color: white; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: var(--transition); }
+.whatsapp-btn { position: fixed; bottom: 2rem; right: 2rem; z-index: 9999; width: 54px; height: 54px; border-radius: 50%; background: #25d366; color: white; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: var(--transition); }
 .whatsapp-btn:hover { transform: scale(1.08); }
 
 /* ── ANIMATE ── */
