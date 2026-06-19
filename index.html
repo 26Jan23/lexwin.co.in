@@ -228,6 +228,23 @@ nav {
 .nav-mobile-services-trigger svg { transition: transform 0.25s ease; }
 .nav-mobile-services-trigger.open svg { transform: rotate(180deg); }
 
+.blog-count-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-top: 1rem;
+  background: rgba(200,148,58,0.12);
+  border: 1px solid rgba(200,148,58,0.35);
+  border-radius: 2rem;
+  padding: 0.35rem 1.1rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.82rem; font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+.blog-count-num {
+  font-size: 1.1rem; font-weight: 800;
+  color: var(--gold-light, #e8b96a);
+}
+
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
@@ -609,7 +626,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 
 /* ── WHATSAPP ── */
 .whatsapp-btn {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 50;
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 9999;
   width: 54px; height: 54px; border-radius: 50%;
   background: #25d366; color: white; font-size: 1.4rem;
   display: flex; align-items: center; justify-content: center;
@@ -632,6 +649,8 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
   .nav-links { display: none; }
   .nav-toggle { display: block; }
   .form-row { grid-template-columns: 1fr; }
+  /* Hide desktop rich dropdown on mobile — mobile uses nav-mobile-dropdown instead */
+  .nav-dropdown { display: none !important; }
 }
 @media (max-width: 600px) {
   .who-grid, .services-grid { grid-template-columns: 1fr; }
@@ -1111,6 +1130,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       <div class="ornament"></div>
       <h2>Stay Ahead of India’s Regulatory Landscape</h2>
       <p>Practical legal and HR insights from our practice — written for business owners and decision-makers, not just lawyers.</p>
+      <div class="blog-count-badge"><span class="blog-count-num">13</span> free articles &amp; counting</div>
     </div>
     <div class="slideshow-wrap">
       <div class="slideshow-track" id="slideshowTrack">
