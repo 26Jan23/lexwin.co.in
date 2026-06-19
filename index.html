@@ -1482,6 +1482,14 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 <script>
+// Blog article count — reads directly from DOM, works on all screen sizes
+(function(){
+  var n = document.querySelectorAll('#slideshowTrack .blog-card').length;
+  var el = document.getElementById('blogCountNum');
+  if(el && n > 0) el.textContent = n;
+})();
+</script>
+<script>
 (function(){
   var STAY=3000,SLIDE=320,GAP=16,PEEK=48;
   var wrap=document.querySelector('.slideshow-wrap');
@@ -1490,9 +1498,6 @@ s0.parentNode.insertBefore(s1,s0);
   if(!track)return;
   var cards=Array.from(track.querySelectorAll('.blog-card'));
   var N=cards.length,cur=0,timer=null,busy=false;
-  // Auto-update blog count badge from actual card count — never needs manual editing
-  var countEl=document.getElementById('blogCountNum');
-  if(countEl) countEl.textContent=N;
   function vis(){return window.innerWidth>=769?3:1;}
   function cw(){return Math.floor((wrap.offsetWidth-GAP*(vis()-1)-PEEK)/vis());}
   function ix(o){return(cur+o+N)%N;}
