@@ -692,7 +692,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LegalService", "ProfessionalService"],
+    "@type": ["Organization", "LegalService", "ProfessionalService"],
     "name": "LexWin Legal & HR Consulting",
     "url": "https://www.lexwin.co.in",
     "logo": "https://www.lexwin.co.in/assets/lexwin-og.png",
@@ -706,21 +706,116 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       "postalCode": "411071",
       "addressCountry": "IN"
     },
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Pune, Maharashtra, India"
+    },
     "telephone": "+919823385085",
     "email": "info@lexwin.co.in",
-    "areaServed": ["IN", "US", "GB", "AE", "SG"],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+919823385085",
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi", "Marathi"]
+      },
+      {
+        "@type": "ContactPoint",
+        "url": "https://wa.me/919823385085",
+        "contactType": "customer support",
+        "availableLanguage": ["English", "Hindi", "Marathi"]
+      },
+      {
+        "@type": "ContactPoint",
+        "url": "https://calendly.com/sadanand-sonar/30min",
+        "contactType": "sales",
+        "contactOption": "HearingImpairedSupported",
+        "availableLanguage": "English"
+      }
+    ],
+    "areaServed": [
+      {"@type": "Country", "name": "India"},
+      {"@type": "Country", "name": "United States"},
+      {"@type": "Country", "name": "United Kingdom"},
+      {"@type": "Country", "name": "United Arab Emirates"},
+      {"@type": "Country", "name": "Singapore"}
+    ],
     "serviceType": [
       "Corporate Legal Advisory",
-      "HR Compliance",
+      "HR Compliance Consulting",
       "Business Setup in India",
       "POSH Compliance",
-      "Data Privacy DPDP",
+      "Data Privacy DPDP Advisory",
       "Legal Outsourcing",
-      "Employment Law",
-      "Labour Law Compliance"
+      "Employment Law Advisory",
+      "Labour Law Compliance",
+      "Real Estate Legal Due Diligence"
     ],
+    "knowsAbout": [
+      "Indian Corporate Law",
+      "HR Compliance India",
+      "POSH Act 2013",
+      "Digital Personal Data Protection Act",
+      "Foreign Direct Investment India",
+      "FEMA Compliance",
+      "Labour Codes India",
+      "Company Incorporation India",
+      "Real Estate Due Diligence India",
+      "Employment Contracts India"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "LexWin Legal & HR Services",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "HR Consulting",
+          "url": "https://www.lexwin.co.in/services/hr-consultant.html",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "HR Policy Drafting"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "POSH Compliance & Training"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Employment Contract Drafting"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Virtual CHRO Services"}}
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Corporate Legal Advisory",
+          "url": "https://www.lexwin.co.in/services/corporate-legal-consultant.html",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Contract Drafting & Review"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "NDA & Confidentiality Agreements"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "DPDP Act Compliance"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate Legal Retainer"}}
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Business Setup in India",
+          "url": "https://www.lexwin.co.in/services/business-setup-india.html",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Incorporation in India"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "FDI & FEMA Advisory"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Market Entry Strategy"}}
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Real Estate Legal Due Diligence",
+          "url": "https://www.lexwin.co.in/services/real-estate-legal-due-diligence.html",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Title Verification & Investigation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lease Deed Drafting & Review"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "RERA Compliance Advisory"}}
+          ]
+        }
+      ]
+    },
     "sameAs": [
-      "https://www.linkedin.com/company/lexwin"
+      "https://www.linkedin.com/company/lexwin",
+      "https://wa.me/919823385085"
     ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
