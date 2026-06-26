@@ -157,5 +157,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.lexwin.co.in/blog/dpo-as-a-service-dpdp.html</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
