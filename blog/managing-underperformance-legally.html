@@ -227,6 +227,16 @@
     /* PULL QUOTE */
     .pull-quote{border-left:4px solid var(--gold);padding:.8rem 1.5rem;margin:2rem 0;background:var(--gold-pale);border-radius:0 var(--radius) var(--radius) 0;font-style:italic;color:var(--navy);font-size:1.05rem;line-height:1.7}
 
+    /* SINGLE-CASE BANNER */
+    .single-case-banner{display:flex;gap:1.2rem;align-items:flex-start;background:linear-gradient(135deg,var(--navy) 0%,#0d2240 100%);border:1px solid rgba(201,168,76,.35);border-radius:var(--radius);padding:1.6rem 1.8rem;margin:0 0 2.4rem;box-shadow:var(--shadow-md)}
+    .single-case-icon{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.4);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--gold)}
+    .single-case-content{flex:1;min-width:0}
+    .single-case-title{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:var(--white);margin-bottom:.5rem;line-height:1.35}
+    .single-case-content p{color:rgba(255,255,255,.78);font-size:.9rem;font-weight:300;line-height:1.65;margin-bottom:.9rem}
+    .single-case-btn{display:inline-block;background:var(--gold);color:var(--navy-deep)!important;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.02em;padding:.6rem 1.3rem;border-radius:4px;text-decoration:none}
+    .single-case-btn:hover{background:var(--gold-light)}
+    @media(max-width:600px){.single-case-banner{flex-direction:column;align-items:flex-start;padding:1.3rem 1.4rem}}
+
     /* LEAD */
     .lead{font-size:1.05rem;line-height:1.8;color:var(--text);margin-bottom:1.5rem}
 
@@ -353,6 +363,15 @@
   <p class="lead">Performance-based termination is the most legally complex exit an Indian employer will face. Unlike misconduct — where a specific act can be proven and a domestic enquiry conducted — poor performance is diffuse, evolving, and deeply subjective. Courts understand this complexity and apply a demanding standard: the employer must demonstrate not just that the employee underperformed, but that the employer gave the employee a fair, genuine, and well-documented opportunity to improve before making the termination decision.</p>
 
   <p>Most performance exits that end in labour court are not lost because the employee was actually performing well. They are lost because the employer cannot produce the documentation that proves they followed a fair process. This guide tells you exactly what that documentation must look like — before you start the process, not after it goes wrong.</p>
+
+  <div class="single-case-banner">
+    <div class="single-case-icon">⚖</div>
+    <div class="single-case-content">
+      <div class="single-case-title">Managing one underperforming employee right now? You don't need a company-wide PIP framework to get help.</div>
+      <p>Most of what follows is written for building a defensible process end to end — but if you're dealing with a single underperformer today, LexWin advises on that one case on its own: PIP design, warning letters, and the exit itself, sized to that one employee, not a larger engagement.</p>
+      <a href="" class="single-case-btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/sadanand-sonar/30min'});return false;">Get help with this one case →</a>
+    </div>
+  </div>
 
   <!-- ══════════════════════════════════════════════════ -->
   <h2 id="why-hard">Why Managing Underperformance Is Legally Harder Than Misconduct</h2>
