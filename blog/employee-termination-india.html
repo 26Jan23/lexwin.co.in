@@ -222,6 +222,16 @@
     /* PULL QUOTE */
     .pull-quote{border-left:4px solid var(--gold);padding:.8rem 1.5rem;margin:2rem 0;background:var(--gold-pale);border-radius:0 var(--radius) var(--radius) 0;font-style:italic;color:var(--navy);font-size:1.05rem;line-height:1.7}
 
+    /* SINGLE-CASE BANNER */
+    .single-case-banner{display:flex;gap:1.2rem;align-items:flex-start;background:linear-gradient(135deg,var(--navy) 0%,#0d2240 100%);border:1px solid rgba(201,168,76,.35);border-radius:var(--radius);padding:1.6rem 1.8rem;margin:0 0 2.4rem;box-shadow:var(--shadow-md)}
+    .single-case-icon{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.4);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--gold)}
+    .single-case-content{flex:1;min-width:0}
+    .single-case-title{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:var(--white);margin-bottom:.5rem;line-height:1.35}
+    .single-case-content p{color:rgba(255,255,255,.78);font-size:.9rem;font-weight:300;line-height:1.65;margin-bottom:.9rem}
+    .single-case-btn{display:inline-block;background:var(--gold);color:var(--navy-deep)!important;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.02em;padding:.6rem 1.3rem;border-radius:4px;text-decoration:none}
+    .single-case-btn:hover{background:var(--gold-light)}
+    @media(max-width:600px){.single-case-banner{flex-direction:column;align-items:flex-start;padding:1.3rem 1.4rem}}
+
     /* LEAD */
     .lead{font-size:1.05rem;line-height:1.8;color:var(--text);margin-bottom:1.5rem}
 
@@ -349,6 +359,15 @@
   <p class="lead">Terminating an employee in India is a legal act, not merely an HR decision. It does not matter how strong the reason is, how clear the misconduct was, or how amicably the conversation ends — if the correct legal procedure was not followed, a labour court can set aside the termination, order reinstatement, and award back wages for every month the employee was out of employment. In cases involving long-serving workmen, that liability can run into years.</p>
 
   <p>This guide is written for business owners, HR heads, and directors who need to understand the legal framework before they act — not after a notice lands on their desk. It covers the procedure for every type of termination, the distinction that changes everything (workman vs. non-workman), the domestic enquiry process most employers get wrong, F&F obligations that vary by state, and what the Industrial Relations Code 2020 changes for exits going forward.</p>
+
+  <div class="single-case-banner">
+    <div class="single-case-icon">⚖</div>
+    <div class="single-case-content">
+      <div class="single-case-title">Dealing with just one difficult termination? You don't need a full HR overhaul to get help.</div>
+      <p>Most of what follows is written for building a defensible process end to end — but if you're facing a single, specific termination right now, LexWin advises on that one case on its own: correct procedure, documentation, and F&F, sized to that one exit, not a larger engagement.</p>
+      <a href="" class="single-case-btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/sadanand-sonar/30min'});return false;">Get help with this one case →</a>
+    </div>
+  </div>
 
   <!-- ══════════════════════════════════════════════════ -->
   <h2 id="why-it-matters">Why Termination Is the Highest-Risk HR Decision in India</h2>
