@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SEO — FILL ALL FIELDS FOR EVERY NEW ARTICLE
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Workplace Incident &amp; Grievance Management — Near-Misses, Accidents &amp; Behavioural Incidents Explained | LexWin</title>
+  <meta name="description"        content="Most employers treat every workplace incident the same way. But near-misses, accidents, and behavioural incidents each trigger different legal obligations, timelines, and documentation requirements. Learn how to build a defensible incident and grievance management system." />
+  <meta name="keywords"           content="workplace incident management India, grievance redressal policy, near miss reporting, workplace accident reporting India, behavioural incident HR, OSH Code India, grievance mechanism Industrial Relations Code, employee grievance handling, LexWin HR consulting" />
+  <link rel="canonical"           href="https://www.lexwin.co.in/blog/workplace-incident-grievance-management.html" />
+  <meta name="google-site-verification" content="61C6F194U8QSocNUBvV7N2gDyIar_2zgtFRcAHBigbw" />
+  <meta name="robots"             content="index, follow" />
+  <meta name="author"             content="LexWin Legal & HR Consulting" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:site_name"   content="LexWin Legal & HR Consulting" />
+  <meta property="og:title"       content="Workplace Incident & Grievance Management — Near-Misses, Accidents & Behavioural Incidents Explained" />
+  <meta property="og:description" content="Near-misses, accidents, and behavioural incidents are legally distinct events. Here is how to build an incident and grievance management system that actually holds up." />
+  <meta property="og:url"         content="https://www.lexwin.co.in/blog/workplace-incident-grievance-management.html" />
+  <meta property="og:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Workplace Incident & Grievance Management — Near-Misses, Accidents & Behavioural Incidents Explained" />
+  <meta name="twitter:description" content="Why treating every workplace incident the same way is a legal risk — and how to build a system that distinguishes near-misses, accidents, and behavioural incidents correctly." />
+  <meta name="twitter:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Article Schema — JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Workplace Incident & Grievance Management — Near-Misses, Accidents & Behavioural Incidents Explained",
+    "description": "Most employers treat every workplace incident the same way. But near-misses, accidents, and behavioural incidents each trigger different legal obligations, timelines, and documentation requirements. Learn how to build a defensible incident and grievance management system.",
+    "author": { "@type": "Organization", "name": "LexWin Legal & HR Consulting" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LexWin Legal & HR Consulting",
+      "logo": { "@type": "ImageObject", "url": "https://www.lexwin.co.in/assets/lexwin-og.png" }
+    },
+    "datePublished": "2026-07-10",
+    "url": "https://www.lexwin.co.in/blog/workplace-incident-grievance-management.html"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — G-995KV4HXM1
+       RULE: async loader is ALWAYS unconditional.
+             dataLayer init, gtag function, gtag('js') are ALWAYS
+             outside any if-block.
+             ONLY gtag('config') is inside the notrack cookie check.
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    if (!document.cookie.split(';').some(function(c){ return c.trim().startsWith('lexwin_notrack='); })) {
+      gtag('config', 'G-995KV4HXM1');
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       DESIGN TOKENS — single source of truth
+    ════════════════════════════════════════════════════ */
+    :root {
+      --navy-deep:   #0f1e32;
+      --navy:        #1a2e4a;
+      --navy-mid:    #2c4770;
+      --navy-light:  #3a5a8a;
+      --gold:        #c9a84c;
+      --gold-light:  #e8d5a3;
+      --gold-pale:   #fdf8ee;
+      --white:       #ffffff;
+      --bg:          #f5f7fa;
+      --text:        #2d3748;
+      --text-muted:  #718096;
+      --slate:       #4a5568;
+      --border:      #e2e8f0;
+      --blue-pale:   #eff6ff;
+      --blue-border: #c6deff;
+      --link:        #0066ff;
+      --tag-bg:      #eef4ff;
+      --radius:      4px;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08);
+      --shadow-md:   0 2px 8px rgba(0,0,0,.10);
+      /* ── Extended vars from article components ── */
+      --text-light:  #6b7280;
+      --text-mid:    #374151;
+      --bg-page:     #f5f7fa;
+      --bg-white:    #ffffff;
+      --red:         #b91c1c;
+      --red-light:   #fef2f2;
+      --red-border:  #fca5a5;
+      --green:       #166534;
+      --green-light: #f0fdf4;
+      --green-border:#86efac;
+      --amber:       #92400e;
+      --amber-light: #fffbeb;
+      --amber-border:#fcd34d;
+      --teal:        #0d6e6e;
+      --teal-light:  #e8f4f4;
+      --accent:      var(--gold);
+      --accent-light:var(--gold-light);
+      --accent-pale: var(--gold-pale);
+      --navy-l:      #1a3a6e;
+      --gold-b:      #c9a43a;
+      --gold-l:      #e8d5a3;
+      --gold-cream:  #fdf8ed;
+      --off:         #f8fafc;
+      --t:           0.28s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESET & BASE
+    ════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      overflow-x: hidden;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: var(--link); }
+    img { max-width: 100%; height: auto; display: block; }
+
+        /* ── NAVIGATION — identical to main site ── */
+    nav {
+      position: sticky; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(12,26,53,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(184,146,42,0.2);
+      transition: box-shadow 0.3s;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 70px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; font-weight: 700;
+      color: #ffffff; letter-spacing: 0.02em;
+    }
+    .nav-logo-divider { width: 1px; height: 20px; background: rgba(184,146,42,0.4); }
+    .nav-logo-sub {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem; font-weight: 400;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(232,201,106,0.7);
+    }
+    .nav-links { display: flex; align-items: center; gap: 0.15rem; list-style: none; }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none; padding: 0.5rem 0.9rem;
+      border-radius: 4px; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: rgba(232,201,106,1); }
+    .nav-cta-btn {
+      background: var(--gold) !important;
+      color: var(--navy-deep) !important;
+      font-weight: 700 !important;
+      padding: 0.5rem 1.2rem !important;
+      border-radius: 4px;
+    }
+    .nav-cta-btn:hover { background: var(--gold-light) !important; }
+    .nav-hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: #fff; margin: 0; border-radius: 2px; transition: 0.3s; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-links.open {
+        display: flex; flex-direction: column; align-items: flex-start;
+        position: absolute; top: 70px; left: 0; right: 0;
+        background: rgba(12,26,53,0.98); backdrop-filter: blur(16px);
+        padding: 1rem 1.5rem 1.5rem; gap: 0.2rem;
+        border-bottom: 1px solid rgba(184,146,42,0.2); z-index: 199;
+      }
+      .nav-links.open a { padding: 0.65rem 0.5rem; font-size: 0.85rem; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links.open a:last-child { border-bottom: none; margin-top: 0.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       BREADCRUMB
+    ════════════════════════════════════════════════════ */
+    .breadcrumb-bar {
+      background: var(--navy);
+      padding: .55rem 1.5rem;
+    }
+    .breadcrumb-bar a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: .03em;
+    }
+    .breadcrumb-bar a:hover { color: var(--white); }
+
+    /* ═══════════════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════════════════ */
+    .hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #1c3356 100%);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a84c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .hero-category {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,.12);
+      border: 1px solid rgba(201,168,76,.3);
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      margin-bottom: 1.1rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.22;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-byline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .85rem;
+      color: rgba(255,255,255,.52);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-byline span { display: flex; align-items: center; gap: .3rem; }
+    .hero-byline .sep { color: rgba(255,255,255,.25); }
+
+    /* ═══════════════════════════════════════════════════
+       STAT STRIP
+    ════════════════════════════════════════════════════ */
+    .stat-strip {
+      background: var(--gold);
+    }
+    .stat-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .8rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .stat-strip-inner { grid-template-columns: repeat(2, 1fr); padding: .8rem; }
+    }
+    .stat-item .stat-num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.1;
+    }
+    .stat-item .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       PAGE LAYOUT — two-column
+    ════════════════════════════════════════════════════ */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.2rem;
+      align-items: start;
+    }
+    
+      
+    }
+
+    /* ═══════════════════════════════════════════════════
+       ARTICLE BODY
+    ════════════════════════════════════════════════════ */
+    
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      overflow-x: hidden;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.4rem 2.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.25;color:var(--navy)}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{background:var(--navy);border-bottom:1px solid rgba(184,146,42,0.2);padding:0 2rem;position:sticky;top:0;z-index:100}
+.nav-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:0.5rem;text-decoration:none}
+.nav-logo-mark{width:30px;height:30px;border-radius:5px;background:linear-gradient(135deg,var(--gold),var(--gold-b));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:var(--navy);flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--white)}
+.nav-logo-sub{font-size:0.6rem;color:rgba(255,255,255,0.38);letter-spacing:0.18em;text-transform:uppercase}
+.nav-back{font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:var(--t)}
+.nav-back:hover{color:var(--gold-l);text-decoration:none}
+
+/* PROGRESS BAR */
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));z-index:200;transition:width 0.1s}
+
+/* HERO */
+.hero{background:linear-gradient(155deg,#060e1e 0%,var(--navy) 45%,var(--navy-mid) 100%);padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,42,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,42,0.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-in{max-width:800px;margin:0 auto;position:relative;z-index:2}
+.hero-cat{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(184,146,42,0.15);border:1px solid rgba(184,146,42,0.3);padding:0.28rem 0.85rem;border-radius:2rem;margin-bottom:1.4rem}
+.hero-cat-dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.hero-cat span{font-size:0.68rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-l)}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;color:var(--white);margin-bottom:1rem;line-height:1.15}
+.hero h1 em{font-style:italic;color:var(--gold-l)}
+.hero-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.hero-meta-item{font-size:0.78rem;color:rgba(255,255,255,0.5)}
+.hero-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,0.3);display:inline-block;margin:0 0.3rem}
+.hero-intro{font-size:1.08rem;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;max-width:700px}
+
+/* STAT STRIP */
+.stat-strip{background:var(--gold-cream);border-bottom:1px solid var(--border)}
+.stat-strip-in{max-width:1100px;margin:0 auto;padding:1.8rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);line-height:1}
+.stat-label{font-size:0.75rem;color:var(--text-l);margin-top:0.3rem;font-weight:400}
+
+/* CONTENT */
+.content-wrap{max-width:860px;margin:0 auto;padding:3.5rem 2rem;display:block}
+.article-body{min-width:0}
+.article-body h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.8rem 0 0.8rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold-pale)}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.18rem;font-weight:600;color:var(--navy-mid);margin:1.8rem 0 0.6rem}
+.article-body p{font-size:1rem;color:var(--text-mid);line-height:1.82;margin-bottom:1.2rem;font-weight:300}
+.article-body ul,.article-body ol{margin:0.6rem 0 1.2rem 1.4rem;color:var(--text-mid);font-weight:300}
+.article-body li{font-size:0.97rem;line-height:1.75;margin-bottom:0.4rem}
+.article-body strong{font-weight:600;color:var(--navy)}
+
+/* CALLOUTS */
+.callout{border-left:4px solid var(--gold);background:var(--gold-cream);padding:1.2rem 1.5rem;border-radius:0 6px 6px 0;margin:1.8rem 0}
+.callout-title{font-family:'Source Sans 3',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.callout p{font-size:0.92rem;color:var(--text-mid);margin-bottom:0;font-weight:400}
+.callout.warning{border-left-color:var(--red);background:var(--red-bg)}
+.callout.warning .callout-title{color:var(--red)}
+.callout.success{border-left-color:#166534;background:var(--green-bg)}
+.callout.success .callout-title{color:#166534}
+
+/* COMPARISON TABLE */
+.compare-table{width:100%;border-collapse:collapse;margin:1.8rem 0;font-size:0.9rem}
+.compare-table th{padding:0.8rem 1rem;text-align:left;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase}
+.compare-table th:first-child{background:var(--navy);color:rgba(255,255,255,0.8);width:32%}
+.compare-table th:nth-child(2){background:#e8f4f4;color:#0f5856;width:34%}
+.compare-table th:nth-child(3){background:var(--navy-mid);color:var(--gold-l);width:34%}
+.compare-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6}
+.compare-table td:first-child{font-weight:500;color:var(--navy);background:#fafaf7;font-size:0.88rem}
+.compare-table td:nth-child(2){color:var(--text-mid);font-weight:300;background:#f8fffe}
+.compare-table td:nth-child(3){color:var(--text-mid);font-weight:300}
+.compare-table tr:nth-child(even) td:nth-child(2){background:#f0fafa}
+.compare-table tr:nth-child(even) td:nth-child(3){background:var(--gold-cream)}
+.compare-icon-no{color:var(--red);font-weight:700}
+.compare-icon-yes{color:#166534;font-weight:700}
+
+/* POLICY CARDS */
+.policy-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.policy-card{border:1px solid var(--border);border-radius:6px;padding:1.4rem;position:relative;overflow:hidden}
+.policy-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.policy-card.labour::before{background:linear-gradient(90deg,#b8922a,#e8c96a)}
+.policy-card.conduct::before{background:linear-gradient(90deg,#1a3a6e,#2e5ea8)}
+.policy-card.leave::before{background:linear-gradient(90deg,#14532d,#22c55e)}
+.policy-card.exit::before{background:linear-gradient(90deg,#7c2d12,#ea580c)}
+.policy-card.data::before{background:linear-gradient(90deg,#4c1d95,#8b5cf6)}
+.policy-card.grievance::before{background:linear-gradient(90deg,#0f5856,#0d9488)}
+.policy-card-icon{font-size:1.5rem;margin-bottom:0.6rem}
+.policy-card h4{font-family:'Playfair Display',serif;font-size:0.98rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.policy-card p{font-size:0.82rem;color:var(--text-l);line-height:1.6;margin-bottom:0;font-weight:300}
+.policy-card .risk-tag{display:inline-block;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.55rem;border-radius:2rem;margin-top:0.6rem}
+.risk-high{background:#fee2e2;color:#991b1b}
+.risk-medium{background:#fef9c3;color:#854d0e}
+
+/* SCENARIO BOXES */
+.scenario{border-radius:6px;padding:1.4rem 1.6rem;margin:1.5rem 0}
+.scenario.bad{background:var(--red-bg);border:1px solid #fca5a5}
+.scenario.good{background:var(--green-bg);border:1px solid #86efac}
+.scenario-label{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem}
+.scenario.bad .scenario-label{color:var(--red)}
+.scenario.good .scenario-label{color:#166534}
+.scenario p{font-size:0.92rem;line-height:1.75;margin-bottom:0;font-weight:300;font-style:italic}
+
+/* PROCESS STEPS */
+.process-steps{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;position:relative}
+.process-steps::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;background:var(--border)}
+.process-step{display:flex;gap:1.2rem;position:relative;padding-bottom:1.5rem}
+.process-step:last-child{padding-bottom:0}
+.step-circle{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);z-index:1;border:3px solid var(--white)}
+.step-content h4{font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem}
+.step-content p{font-size:0.88rem;color:var(--text-mid);font-weight:300;margin-bottom:0;line-height:1.7}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.88rem}
+.data-table th{background:var(--navy);color:rgba(255,255,255,0.9);font-family:'Source Sans 3',sans-serif;font-weight:600;padding:0.7rem 1rem;text-align:left}
+.data-table td{padding:0.65rem 1rem;border-bottom:1px solid var(--border);color:var(--text-mid);font-weight:300;vertical-align:top}
+.data-table tr:nth-child(even) td{background:#fafaf7}
+
+/* CHECKLIST */
+.checklist{list-style:none;margin:1rem 0 1.4rem;padding:0;display:flex;flex-direction:column;gap:0.5rem}
+.checklist li{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.95rem;color:var(--text-mid);font-weight:300;line-height:1.65}
+.checklist li::before{content:'✓';color:#166534;font-weight:700;font-size:0.85rem;flex-shrink:0;margin-top:0.15rem}
+
+/* TAGS */
+.tag{display:inline-block;background:var(--gold-pale);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.65rem;border-radius:2rem;border:1px solid rgba(184,146,42,0.25);margin:0.2rem}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:84px}
+.sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.5rem;margin-bottom:1.2rem}
+.sidebar-card.featured{background:var(--navy);border-color:rgba(184,146,42,0.3)}
+.sidebar-title{font-family:'Source Sans 3',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sidebar-card.featured .sidebar-title{color:var(--gold-l)}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.toc-list a{font-size:0.82rem;color:var(--text-mid);text-decoration:none;display:block;padding:0.3rem 0;border-left:2px solid transparent;padding-left:0.7rem;transition:var(--t)}
+.toc-list a:hover{color:var(--gold);border-left-color:var(--gold)}
+.sidebar-card.featured p{font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:1rem;font-weight:300}
+.btn-gold-sm{display:inline-flex;align-items:center;gap:0.4rem;background:var(--gold);color:var(--navy);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.65rem 1.2rem;border-radius:3px;text-decoration:none;transition:var(--t)}
+.btn-gold-sm:hover{background:var(--gold-b);text-decoration:none}
+.audit-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.6rem}
+.audit-list li{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.8rem;color:var(--text-mid);font-weight:300;line-height:1.5}
+.audit-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.35rem}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding:2.5rem 2rem}
+.footer-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--white)}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.3)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:var(--t)}
+.footer-links a:hover{color:var(--gold-l)}
+
+/* WHATSAPP */
+.whatsapp-btn{position:fixed;bottom:2rem;right:2rem;z-index:50;width:54px;height:54px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:var(--t)}
+.whatsapp-btn:hover{transform:scale(1.08)}
+
+/* RESPONSIVE */
+@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.policy-grid{grid-template-columns:1fr}.stat-strip-in{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sidebar{grid-template-columns:1fr}.hero{padding:3rem 1.2rem 2rem}.content-wrap{padding:2rem 1.2rem}.hero h1{font-size:1.7rem}.stat-strip-in{grid-template-columns:1fr 1fr}.compare-table{font-size:0.8rem}}
+.article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+    .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--link);
+      padding: .25rem .75rem;
+      border-radius: 20px;
+      border: 1px solid var(--blue-border);
+    }
+
+    /* TOC */
+    
+    
+    
+    
+    
+
+    /* CTA card */
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /* Related articles */
+    
+    
+    
+    
+    
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════════════════ */
+    .site-footer {
+      background: var(--navy-deep);
+      padding: 2rem 1.5rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: .03em;
+    }
+    .footer-logo span { color: var(--white); font-weight: 400; }
+    .footer-tagline {
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: .85rem;
+      color: rgba(255,255,255,.45);
+    }
+    .footer-nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+    .footer-nav a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .footer-nav a:hover { color: var(--white); }
+    .footer-copy {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .footer-disclaimer {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      color: rgba(255,255,255,.22);
+      max-width: 640px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON — same as main site
+    ════════════════════════════════════════════════════ */
+    @media (max-width: 480px) {
+      }
+
+  
+    @media (max-width: 768px) {
+      .article-body p,
+      .article-body td,
+      .article-body li { text-align: left; }
+    }
+  
+    @media (max-width: 600px) {
+      .page-wrap { padding: 1.5rem 1rem 3rem; }
+    }
+  
+    /* ── WHATSAPP BUTTON — identical to main site ── */
+    .whatsapp-btn {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25d366; color: white; font-size: 1.4rem;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      transition: transform .2s;
+    }
+    .whatsapp-btn:hover { transform: scale(1.08); }
+  
+    @media (max-width: 600px) {
+      .article-body {
+      overflow-x: hidden; padding: 1.2rem 1rem; }
+      .article-body p,
+      .article-body li,
+      .article-body td { text-align: left; }
+      .page-wrap { padding: 1rem 0.75rem 3rem; }
+    }
+  
+    /* ── IN THIS ARTICLE — TOC ── */
+    .toc-box {
+      background: var(--blue-pale);
+      border: 1px solid var(--blue-border);
+      border-left: 4px solid var(--navy-mid);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.5rem 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .toc-box-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--navy-mid);
+      margin-bottom: .8rem;
+    }
+    .toc-box ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      padding: 0; margin: 0;
+    }
+    .toc-box ol li {
+      counter-increment: toc-counter;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem;
+      padding: .28rem 0 .28rem 1.8rem;
+      position: relative;
+      border-bottom: 1px dotted var(--border);
+      line-height: 1.4;
+    }
+    .toc-box ol li:last-child { border-bottom: none; }
+    .toc-box ol li::before {
+      content: counter(toc-counter) '.';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .82rem;
+    }
+    .toc-box ol li a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .toc-box ol li a:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+  
+    /* ═══════════════════════════════════════════════════
+       EXTENDED VISUAL COMPONENTS — ported from articles
+    ════════════════════════════════════════════════════ */
+
+    /* Banded table — all tables get banded rows by default */
+    .article-body table {
+      width: 100%; border-collapse: collapse;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem; margin: 1.4rem 0;
+      border: 1px solid var(--border);
+    }
+    .article-body table thead tr { background: var(--navy-mid); }
+    .article-body table th {
+      padding: .65rem .9rem; text-align: left;
+      font-weight: 600; color: var(--white); letter-spacing: .02em;
+    }
+    .article-body table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .article-body table tbody tr:nth-child(even) { background: #f0fdff; }
+    .article-body table tbody tr:hover { background: var(--gold-pale); }
+    .article-body table .yes, .compare-icon-yes { color: #166534; font-weight: 700; }
+    .article-body table .no,  .compare-icon-no  { color: var(--red); font-weight: 700; }
+
+    /* data-table & clause-table & code-table */
+    .data-table, .clause-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: .88rem; box-shadow: var(--shadow-sm); border-radius: 4px; overflow: hidden;
+    }
+    .data-table th, .clause-table th {
+      background: var(--navy-mid); color: var(--white);
+      padding: .65rem .9rem; text-align: left; font-weight: 600;
+    }
+    .data-table td, .clause-table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    .data-table tbody tr:nth-child(even),
+    .clause-table tbody tr:nth-child(even) { background: #f0fdff; }
+    .data-table tbody tr:hover,
+    .clause-table tbody tr:hover { background: var(--gold-pale); }
+
+    /* Callout variants */
+    .callout-danger {
+      border-left: 4px solid var(--red); background: var(--red-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-warning {
+      border-left: 4px solid #d97706; background: var(--amber-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-info {
+      border-left: 4px solid #2563eb; background: #eff6ff;
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-danger p, .callout-warning p, .callout-info p { margin: 0; }
+    .callout-title {
+      font-family: 'DM Sans', sans-serif; font-size: .72rem; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--navy-mid); margin-bottom: .4rem;
+      display: flex; align-items: center; gap: .4rem;
+    }
+    .callout.success { border-left-color: var(--green); background: var(--green-light); }
+    .callout.warning { border-left-color: #d97706; background: var(--amber-light); }
+    .callout.bad     { border-left-color: var(--red);   background: var(--red-light); }
+    .callout.good    { border-left-color: var(--green); background: var(--green-light); }
+
+    /* Policy grid cards */
+    .policy-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .policy-card-icon { font-size: 1.5rem; margin-bottom: .6rem; }
+
+    /* Code cards (Labour Codes) */
+    .code-table { display: grid; gap: 1rem; margin: 1.5rem 0; }
+    .code-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem 1.6rem;
+    }
+    .code-card-num {
+      font-family: 'Playfair Display', serif; font-size: 2.2rem;
+      font-weight: 700; color: var(--gold-pale); line-height: 1; margin-bottom: .4rem;
+    }
+    .code-card-title {
+      font-family: 'Playfair Display', serif; font-size: 1.1rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .3rem;
+    }
+    .code-card-year {
+      font-size: .72rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .7rem;
+    }
+
+    /* ICC grid cards */
+    .icc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .icc-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.3rem;
+    }
+    .icc-card-role {
+      font-size: .68rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .4rem;
+    }
+
+    /* Structure grid */
+    .structure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .struct-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem;
+    }
+    .struct-tag {
+      font-size: .65rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .6rem; display: block;
+    }
+    .struct-pros, .struct-cons {
+      font-size: .83rem; color: var(--slate); font-weight: 300; line-height: 1.65;
+    }
+    .struct-cons strong { color: var(--red); }
+
+    /* Risk grid */
+    .risk-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .risk-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 4px solid; border-radius: var(--radius); padding: 1.2rem 1.3rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .risk-tag {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; padding: .15rem .5rem;
+      border-radius: 20px; margin-bottom: .4rem;
+    }
+    .risk-tag.risk-high, .risk-tag.risk-medium { background: #fed7d7; color: #9b2c2c; }
+    .risk-tag.risk-medium                       { background: #fefcbf; color: #744210; }
+    .risk-tag.risk-low                          { background: #c6f6d5; color: #276749; }
+
+    /* Step variants */
+    .steps-list { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+    .step-circle {
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: var(--gold); display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy-deep);
+    }
+    .step-content h4 {
+      font-family: 'DM Sans', sans-serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .25rem;
+    }
+    .step-content p { margin: 0; font-size: .88rem; color: var(--slate); }
+
+    /* Highlight box */
+    .highlight-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: var(--radius); padding: 1.8rem 2rem; margin: 2rem 0;
+      color: var(--white);
+    }
+    .highlight-box h3, .highlight-box h4 { color: var(--gold-light); margin-bottom: .5rem; }
+    .highlight-box p { color: rgba(255,255,255,.8); margin-bottom: 0; }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 4px solid var(--gold); padding: .8rem 1.5rem;
+      margin: 2rem 0; background: var(--gold-pale);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic; color: var(--navy);
+    }
+
+    /* Lead paragraph */
+    .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem; }
+
+    /* Section heading with number */
+    .section-heading {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem;
+      font-weight: 700; color: var(--navy-mid); margin-top: 2.5rem;
+      margin-bottom: .65rem; padding-bottom: .4rem;
+      border-bottom: 2px solid var(--gold-light);
+      display: flex; align-items: baseline; gap: .6rem;
+    }
+    .section-num {
+      font-size: .72rem; font-weight: 700; color: var(--gold);
+      letter-spacing: .08em; text-transform: uppercase;
+      background: var(--gold-pale); padding: .15rem .5rem; border-radius: 3px;
+    }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1rem 1.3rem; margin-top: 2rem;
+      font-family: 'DM Sans', sans-serif; font-size: .78rem;
+      color: var(--text-muted); line-height: 1.6;
+    }
+
+    /* Conclusion band */
+    .conclusion-band {
+      background: linear-gradient(135deg, var(--navy) 0%, #0d2240 100%);
+      padding: 2.5rem 2rem; border-radius: var(--radius);
+      margin-top: 2.5rem; text-align: center;
+    }
+    .conclusion-band h3 { color: var(--white); margin-bottom: .8rem; }
+    .conclusion-band p  { color: rgba(255,255,255,.75); margin-bottom: 1.2rem; }
+    .conclusion-btn {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .85rem; font-weight: 700; color: var(--navy-deep);
+      background: var(--gold); padding: .65rem 1.8rem;
+      border-radius: 3px; text-decoration: none; letter-spacing: .04em;
+    }
+    .conclusion-btn:hover { background: var(--gold-light); }
+
+    /* Bullet list */
+    .bullet-list { list-style: none; padding: 0; margin: .8rem 0 1.2rem; }
+    .bullet-list li {
+      padding: .3rem 0 .3rem 1.6rem; position: relative;
+      font-size: .95rem; border-bottom: 1px dotted var(--border);
+    }
+    .bullet-list li:last-child { border-bottom: none; }
+    .bullet-list li::before { content: '›'; position: absolute; left: 0; color: var(--gold); font-weight: 700; font-size: 1.1rem; }
+
+    /* Sub-heading */
+    .sub-heading {
+      font-family: 'DM Sans', sans-serif; font-size: 1rem;
+      font-weight: 700; color: var(--navy); margin: 1.7rem 0 .4rem;
+    }
+
+    /* Responsive for all new grids */
+    @media (max-width: 600px) {
+      .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
+    }
+
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SITE NAV — identical to main site
+════════════════════════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://www.lexwin.co.in/index.html" class="nav-logo" aria-label="LexWin Home">
+      <span class="nav-logo-main">LexWin</span>
+      <div class="nav-logo-divider"></div>
+      <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#who-we-help">Who We Help</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#engagement">Engagement</a></li>
+      <li><a href="https://www.lexwin.co.in/blog/index.html">Insights</a></li>
+      <li><a href="https://calendly.com/sadanand-sonar/30min" class="nav-cta-btn" target="_blank" rel="noopener">Free Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BREADCRUMB
+════════════════════════════════════════════════════════════ -->
+<div class="breadcrumb-bar">
+  <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+     Workplace Incident & Grievance Management article
+════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-category">HR Compliance</div>
+    <h1>Workplace Incident &amp; Grievance Management — Getting Near-Misses, Accidents &amp; Behavioural Incidents <em>Right</em></h1>
+    <div class="hero-byline">
+      <span>LexWin Consulting</span>
+      <span class="sep">·</span>
+      <span>16 min read</span>
+      <span class="sep">·</span>
+      <span>July 2026</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STAT STRIP — 4 stats relevant to article topic
+════════════════════════════════════════════════════════════ -->
+<div class="stat-strip" aria-hidden="true">
+  <div class="stat-strip-inner">
+    <div class="stat-item">
+      <span class="stat-num">1:29:300</span>
+      <span class="stat-label">the ratio between serious accidents, minor accidents & near-misses</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">48 hrs</span>
+      <span class="stat-label">typical window to report a serious workplace accident to authorities</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">10+</span>
+      <span class="stat-label">employees — threshold at which a formal grievance mechanism becomes mandatory</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">90%</span>
+      <span class="stat-label">of behavioural incidents that escalate had an earlier, unrecorded warning sign</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN LAYOUT — Article + Sidebar
+════════════════════════════════════════════════════════════ -->
+<div class="page-wrap">
+
+  <!-- ── ARTICLE ─────────────────────────────────────── -->
+  <main class="article-body" id="article-top">
+
+    
+
+    <div class="toc-box">
+      <div class="toc-box-title">In this article</div>
+      <ol>
+        <li><a href="#problem">The problem: one incident form for three different events</a></li>
+        <li><a href="#definitions">Near-miss, incident, and accident — what actually separates them</a></li>
+        <li><a href="#behavioural">Behavioural incidents — a fourth, distinct category</a></li>
+        <li><a href="#comparison">Reporting, timeline & documentation — a direct comparison</a></li>
+        <li><a href="#grievance">Grievance redressal — the legal mechanism behind the process</a></li>
+        <li><a href="#realworld">What happens when incidents are mishandled</a></li>
+        <li><a href="#law">The legal framework — OSH Code, IR Code & POSH</a></li>
+        <li><a href="#howwedraft">How LexWin builds incident & grievance systems</a></li>
+        <li><a href="#who">Who needs this — and when</a></li>
+        <li><a href="#checklist">Incident readiness check</a></li>
+      </ol>
+    </div>
+
+<h2 id="problem">The Problem: One Incident Form for Three Different Events</h2>
+    <p>Walk into most Indian workplaces and ask what happens when something goes wrong — a machine guard fails, a worker slips on a wet floor, or a manager shouts at a subordinate in front of the team — and you will typically get the same answer for all three: "We fill out an incident report." One form. One process. One filing cabinet, or one shared drive folder, where all of it disappears until someone asks for it.</p>
+    <p>This single-form approach feels efficient. It is, in fact, one of the more consequential blind spots in Indian workplace risk management. A near-miss, a workplace accident, and a behavioural incident between two employees are not variations of the same event with different severity levels. They are legally distinct categories, each governed by a different part of the law, each carrying a different reporting obligation, a different investigation standard, and a different consequence if handled incorrectly.</p>
+    <p>Treat them identically and two things go wrong at once. Genuine safety hazards — the near-misses that are trying to warn you before someone gets hurt — get logged and forgotten because they look identical to a hundred other minor entries. And behavioural incidents, which need a structured, confidential, natural-justice-compliant process, get closed out with the same three-line note used for a dropped toolbox. Both failures are expensive. One shows up as a lost-time injury. The other shows up as a labour court order, a POSH complaint that was never escalated correctly, or a resignation followed by a legal notice.</p>
+
+    <div class="callout warning">
+      <div class="callout-title">Why This Matters More Than It Looks</div>
+      <p>Under Indian law, "incident," "accident," and "grievance" are not interchangeable words — they are triggers. Each one, correctly classified, activates a specific statutory clock: a reporting deadline, a documentation standard, or an investigation timeline. Misclassify the event, and the clock either never starts, or starts and is missed. Both outcomes are treated the same way by a labour inspector or a court: as a failure of the employer's system, not an unfortunate one-off.</p>
+    </div>
+
+    <h2 id="definitions">Near-Miss, Incident, and Accident — What Actually Separates Them</h2>
+    <p>These three terms get used loosely in everyday conversation, but each has a specific, functional meaning in workplace safety and labour law. Getting the definitions right is the foundation of every reporting obligation that follows.</p>
+
+    <h3>Near-Miss</h3>
+    <p>A near-miss is an event that had the potential to cause injury, illness, or damage, but did not — usually because of luck, timing, or a last-second intervention rather than because the underlying hazard was controlled. A forklift that swerves to avoid a worker who stepped into its path. A scaffold plank that cracks but does not give way. A chemical container that is nearly mislabelled before someone catches the error. Nothing happened. But something very nearly did, and the conditions that nearly caused it are still present.</p>
+    <p>Near-misses are the most under-reported category of workplace event by a wide margin, precisely because nothing visible occurred. There is no injury to explain, no damage to account for, and often a natural — but legally dangerous — instinct among employees and supervisors to let it go unrecorded. This is exactly backwards. Near-misses are the cheapest, earliest signal an employer will ever get of a hazard that, left unaddressed, produces an actual accident. Occupational safety research consistently shows that for every serious injury, there are dozens of minor incidents and several hundred near-misses arising from the same underlying hazards — which means a near-miss register, properly maintained, is one of the most powerful predictive tools an employer has, and increasingly one that occupier due-diligence and audit standards expect to see.</p>
+
+    <h3>Incident vs. Accident — A Distinction With Legal Consequences</h3>
+    <p>"Incident" is the broader, umbrella term — any unplanned event that disrupts normal operations, whether or not it causes harm. An "accident" is a specific subset of incident: one that results in actual injury, illness, death, or property damage. Every accident is an incident. Not every incident is an accident. This is not a semantic nicety — Indian factory and safety legislation ties specific, mandatory reporting obligations to the occurrence of an accident, particularly where it results in bodily injury preventing the worker from working for a defined number of days, or where it results in death or serious bodily injury.</p>
+    <p>Where an employer's internal terminology blurs this line — logging a reportable accident using the same generic "incident report" used for a spilled tray of stationery — the risk is not merely administrative untidiness. It is a missed statutory notification. Factories and establishments legislation across Indian states requires the occupier or employer to notify the relevant Chief Inspector of Factories or equivalent authority of specified categories of accidents, typically within 24 to 48 hours, followed by a more detailed report within a prescribed period thereafter. Under the incoming Occupational Safety, Health and Working Conditions (OSH) Code, this obligation is being consolidated and, in several respects, tightened.</p>
+
+    <div class="policy-grid">
+      <div class="policy-card labour">
+        <div class="policy-card-icon">🔍</div>
+        <h4>Near-Miss</h4>
+        <p>No injury, no damage — but the hazard was live. Under-reported by default; the single most valuable predictive data an employer can collect.</p>
+        <span class="risk-tag risk-medium">Reporting Duty: Internal only</span>
+      </div>
+      <div class="policy-card conduct">
+        <div class="policy-card-icon">⚠️</div>
+        <h4>Incident (Non-Injury)</h4>
+        <p>An unplanned event that disrupted operations — equipment failure, process deviation, security breach — without resulting bodily harm.</p>
+        <span class="risk-tag risk-medium">Reporting Duty: Internal, escalate if pattern</span>
+      </div>
+      <div class="policy-card exit">
+        <div class="policy-card-icon">🚑</div>
+        <h4>Accident</h4>
+        <p>An incident resulting in injury, illness, death, or property damage. Triggers statutory notification timelines under factories & OSH legislation.</p>
+        <span class="risk-tag risk-high">Reporting Duty: Statutory — time-bound</span>
+      </div>
+      <div class="policy-card data">
+        <div class="policy-card-icon">🗣️</div>
+        <h4>Behavioural Incident</h4>
+        <p>Conduct between people — harassment, bullying, discrimination, threats. Governed by natural justice and, where applicable, POSH procedure, not safety reporting.</p>
+        <span class="risk-tag risk-high">Reporting Duty: Grievance / ICC route</span>
+      </div>
+    </div>
+
+    <div class="scenario bad">
+      <div class="scenario-label">❌ What Goes Wrong — The Generic Log</div>
+      <p>A warehouse worker reports that a stacked pallet nearly toppled onto a colleague. The supervisor logs it in the same "incident register" used for every minor complaint, writes "no injury — resolved," and moves on. Six weeks later, an identical stack does topple, causing a fracture. The employer's safety audit trail shows no record of the earlier near-miss as a distinct, analysed event — because it was buried, unclassified, among unrelated entries. The inspector's finding: an inadequate hazard identification system, not a single unfortunate accident.</p>
+    </div>
+
+    <div class="scenario good">
+      <div class="scenario-label">✓ What Changes — A Classified System</div>
+      <p>The same near-miss, logged in a dedicated near-miss register with its own review cadence, triggers a root-cause review within the week — pallet stacking height, racking condition, training gap. The hazard is corrected before it produces an accident. If an accident does later occur despite this, the employer's documented, functioning near-miss system is itself evidence of a reasonably diligent safety management process — a materially different position in any subsequent inquiry.</p>
+    </div>
+
+    <h2 id="behavioural">Behavioural Incidents — A Fourth, Distinct Category</h2>
+    <p>Behavioural incidents sit entirely outside physical safety reporting, and treating them as a subtype of "incident" is one of the most common and costly classification errors employers make. A behavioural incident is any event involving interpersonal conduct between employees — or between an employee and a third party in the workplace — that breaches the employer's code of conduct. This spans a wide spectrum: a raised-voice argument between colleagues, persistent belittling of a junior team member, discriminatory remarks, bullying, threats, and, at the most serious end, sexual harassment.</p>
+    <p>What separates a behavioural incident from a safety incident is not severity — it is the nature of the process the law requires. A safety incident is investigated against physical evidence: what broke, what failed, what the inspection log shows. A behavioural incident is investigated against testimony, credibility, and process fairness. It requires confidentiality, protection against retaliation, a structured hearing that satisfies the principles of natural justice, and — where the conduct falls within its scope — the specific procedure mandated by the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013, run through a validly constituted Internal Complaints Committee rather than a general HR grievance desk.</p>
+
+    <h3>Why the Line Matters in Practice</h3>
+    <p>Employers frequently route a behavioural complaint — say, a complaint of persistent bullying by a manager — through the same generic grievance form used for a payroll query, resolve it informally over a corridor conversation, and consider the matter closed. If that complaint later turns out to have a sexual harassment dimension the complainant did not initially articulate, or if it escalates because the complainant felt unheard, the employer's informal handling becomes the central weakness in its defence. Courts and tribunals examine not just the outcome but whether the process followed was the one the law required for that category of complaint. An informally resolved behavioural incident that should have gone to the ICC, or should have triggered a documented disciplinary enquiry, exposes the employer regardless of whether the underlying conduct was ultimately serious.</p>
+
+    <h3>Early Warning Signs Are Data, Not Noise</h3>
+    <p>Most serious behavioural incidents are preceded by smaller, earlier signals — an informal complaint that was waved off, a pattern of one-on-one friction that several people mention separately, a team member who quietly stops attending optional meetings involving a particular colleague. Treated as isolated, unrecorded events, these signals vanish. Logged systematically — even where no formal complaint was made — they become a pattern that a competent HR function can act on before the situation escalates into a formal complaint, a resignation, or litigation.</p>
+
+    <h2 id="comparison">Reporting, Timeline & Documentation — A Direct Comparison</h2>
+    <p>The practical difference between these categories becomes clearest when you line up what each one actually requires of an employer, side by side.</p>
+
+    <div class="table-wrapper"><table class="compare-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Reporting Route</th>
+          <th>Employer Obligation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Near-miss</td>
+          <td><span class="compare-icon-yes">✓</span> Dedicated near-miss register, reviewed periodically</td>
+          <td>No external notification; internal root-cause review and corrective action expected as part of due diligence</td>
+        </tr>
+        <tr>
+          <td>Non-injury incident</td>
+          <td><span class="compare-icon-yes">✓</span> General incident log, escalated if repeated or systemic</td>
+          <td>Internal investigation; external notification only if it indicates a wider regulatory breach (e.g. environmental, fire safety)</td>
+        </tr>
+        <tr>
+          <td>Reportable accident</td>
+          <td><span class="compare-icon-no">✗</span> Cannot use a generic log — statutory notification required</td>
+          <td>Notify Chief Inspector of Factories / equivalent authority within the prescribed window (typically 24–48 hours), followed by a detailed report; maintain accident register under applicable Rules</td>
+        </tr>
+        <tr>
+          <td>Behavioural incident (general)</td>
+          <td><span class="compare-icon-no">✗</span> Not a safety log — routed through grievance redressal mechanism</td>
+          <td>Acknowledge within a defined period, investigate confidentially, document findings, communicate outcome, protect against retaliation</td>
+        </tr>
+        <tr>
+          <td>Behavioural incident (POSH-scope)</td>
+          <td><span class="compare-icon-no">✗</span> Must go to the Internal Complaints Committee, not general HR</td>
+          <td>ICC inquiry to be completed within 90 days of the complaint; interim relief available on request; annual reporting to the District Officer</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+    <div class="callout">
+      <div class="callout-title">The Overlap Trap</div>
+      <p>A single event can sit in more than one category at once. A machine malfunction (accident, statutory notification) that occurs because a supervisor pressured a worker to bypass a safety interlock to meet a target (behavioural incident, disciplinary and possibly grievance matter) needs two parallel processes running simultaneously — not one investigation trying to serve both purposes with one file.</p>
+    </div>
+
+    <h2 id="grievance">Grievance Redressal — The Legal Mechanism Behind the Process</h2>
+    <p>Every behavioural incident, and a good number of non-behavioural workplace disputes, ultimately funnels through a grievance redressal mechanism. In India this is not an optional HR nicety — it is a legal requirement with roots in the Industrial Employment (Standing Orders) Act, model standing orders, and now consolidated more explicitly under the Industrial Relations Code. Every industrial establishment employing 20 or more workers is required to constitute a Grievance Redressal Committee, with equal representation of employer and worker nominees, to resolve individual worker grievances arising out of their employment.</p>
+
+    <h3>What a Legally Valid Grievance Mechanism Actually Requires</h3>
+    <p>A functioning grievance mechanism is not a suggestion box. It requires a defined committee with named members and a clear tenure, a written procedure specifying how a grievance is raised, acknowledged, and escalated, defined timelines at each stage — typically an acknowledgment within days and a resolution attempt within a matter of weeks — and an escalation path to a designated authority (often, ultimately, the Labour Commissioner) if the internal process fails to resolve the matter. Where the mechanism exists only on paper — a policy document that has never actually processed a complaint — its absence in substance is treated the same as its absence in form when a dispute is examined by a labour authority.</p>
+
+    <h3>Grievance Committee vs. Internal Complaints Committee — Not the Same Body</h3>
+    <p>A common and serious error is routing a sexual harassment complaint through the general Grievance Redressal Committee instead of the ICC mandated under the POSH Act, or vice versa — routing an ordinary pay dispute through the ICC. The two bodies have different composition requirements, different confidentiality obligations, different timelines, and different legal consequences for getting the process wrong. The ICC must be chaired by a woman, include a specified proportion of women members, and include an external member with relevant expertise — none of which is required, or necessarily appropriate, for a general grievance committee handling a dispute about shift allocation.</p>
+
+    <div class="scenario bad">
+      <div class="scenario-label">❌ Wrong Route</div>
+      <p>An employee's complaint about a colleague's repeated inappropriate comments is handled by the general HR grievance process — a manager has an informal conversation with both parties and asks them to "sort it out." No ICC referral is made because the complaint was not initially labelled as "sexual harassment" by the complainant. When the complainant later files a formal POSH complaint, the earlier informal handling becomes evidence that the employer had notice of the conduct and failed to route it correctly — materially worsening the employer's position.</p>
+    </div>
+
+    <div class="scenario good">
+      <div class="scenario-label">✓ Correct Route</div>
+      <p>The same complaint is screened at intake against a simple triage checklist: does this describe conduct that could fall within the POSH Act's definition of sexual harassment? If there is any reasonable possibility, it goes to the ICC, not general HR — regardless of how the complainant personally labelled it. The ICC's confidential, time-bound process protects both the complainant and the employer's legal position, whatever the ultimate finding.</p>
+    </div>
+
+    <h2 id="realworld">What Happens When Incidents Are Mishandled</h2>
+    <p>These distinctions are not academic. They play out in specific, recurring situations across Indian workplaces.</p>
+
+    <h3>The Accident No One Reported in Time</h3>
+    <p>A worker at a mid-sized manufacturing unit suffers a hand injury that keeps him off work for eleven days. The unit's HR team, unfamiliar with the specific notification threshold under the applicable Factories Rules, treats it as an internal matter — first aid was given, the worker was compensated for lost days, and no external report was filed. Four months later, a routine factory inspection uncovers the unreported accident. The absence of timely notification is treated as a standalone violation, entirely separate from the accident itself, carrying its own penalty — and it undermines the credibility of every other safety record the inspector subsequently reviews.</p>
+
+    <h3>The Near-Miss Register That Did Not Exist</h3>
+    <p>Following a serious accident, an employer's legal counsel is asked, as part of the resulting inquiry, to produce the unit's near-miss records for the preceding year. None exist in any structured form — only scattered mentions in shift handover notes. The absence of a functioning near-miss system is used to argue that the employer's safety management approach was reactive rather than preventive, materially affecting both the liability finding and the compensation quantum awarded.</p>
+
+    <h3>The Behavioural Complaint That Escalated Because It Was Delayed</h3>
+    <p>An employee raises a grievance about a manager's consistently demeaning conduct in team meetings. The complaint sits with a single HR executive for six weeks without acknowledgment, no committee is convened, and no timeline is communicated to the complainant. The employee resigns and sends a legal notice alleging constructive dismissal, citing the employer's own — unfollowed — grievance policy as evidence that the process existed but was denied to her. The dispute that could have been resolved through a functioning three-week grievance process becomes an eighteen-month legal matter.</p>
+
+    <div class="callout success">
+      <div class="callout-title">The Common Thread</div>
+      <p>In each case, the employer had a policy. What was missing was correct classification at the point of intake — recognising which category the event fell into, and routing it through the specific process, timeline, and documentation standard the law attaches to that category. Classification is the single highest-leverage step in the entire system, and it is the one most employers skip.</p>
+    </div>
+
+    <h2 id="law">The Legal Framework — OSH Code, Industrial Relations Code &amp; POSH</h2>
+    <p>Three overlapping strands of law govern incident and grievance management in India, and an employer's system needs to speak to all three simultaneously.</p>
+
+    <h3>Occupational Safety, Health and Working Conditions Code</h3>
+    <p>The OSH Code consolidates thirteen earlier central safety and welfare statutes, including the Factories Act, into a single framework. It carries forward — and in places sharpens — the obligation to notify specified categories of accidents to the relevant authority within a defined window, to maintain prescribed safety records, and to constitute Safety Committees at establishments above a defined size. As the Code and its accompanying state rules are progressively notified and operationalised, employers with outdated, Factories-Act-era incident reporting templates will need those templates realigned to the Code's specific notification categories and timelines.</p>
+
+    <h3>Industrial Relations Code — Grievance Redressal Committee</h3>
+    <p>The Industrial Relations Code carries forward the requirement for a Grievance Redressal Committee at establishments employing 20 or more workers, with defined composition and a structured escalation path. It also reshapes standing order requirements and the threshold at which model standing orders apply — directly affecting how disciplinary and behavioural incidents involving "workmen" must be processed.</p>
+
+    <h3>The POSH Act — Still the Most Specific, and Most Litigated, Layer</h3>
+    <p>For any behavioural incident with even a plausible sexual harassment dimension, the POSH Act's ICC procedure takes precedence over general grievance handling. Its ninety-day inquiry timeline, its confidentiality mandate — including restrictions on publicising the identity of the parties — and its requirement of interim relief on request are specific and strictly enforced by courts. An employer's general grievance policy, however well written, does not substitute for a correctly constituted and correctly used ICC. <a href="posh-complete-guide.html">Read our complete POSH guide →</a></p>
+
+    <h2 id="howwedraft">How LexWin Builds Incident &amp; Grievance Systems</h2>
+    <p>At LexWin, incident and grievance management is treated as a single integrated system with distinct, correctly branched pathways — not a single form with a severity dropdown. Our approach is built to hold up under audit, inspection, and, where necessary, litigation.</p>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-circle">1</div>
+        <div class="step-content">
+          <h4>Classification Framework Design</h4>
+          <p>We build a simple, usable intake triage that any supervisor or HR executive can apply in the moment — distinguishing near-miss, incident, reportable accident, and behavioural incident (including POSH-scope screening) at the point of first report, before the routing decision is made.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">2</div>
+        <div class="step-content">
+          <h4>Statutory Timeline Mapping</h4>
+          <p>Every reporting obligation applicable to your establishment — factory notification windows, Grievance Redressal Committee timelines, ICC's ninety-day clock — is mapped against your specific state, industry, and headcount, and built into the process as hard deadlines, not general guidance.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">3</div>
+        <div class="step-content">
+          <h4>Committee Constitution</h4>
+          <p>We draft the constitution documents and appointment letters for your Grievance Redressal Committee, Internal Complaints Committee, and Safety Committee where applicable — ensuring composition, tenure, and external member requirements are correctly met and properly documented.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">4</div>
+        <div class="step-content">
+          <h4>Documentation & Register Design</h4>
+          <p>Separate, purpose-built registers for near-misses, incidents, accidents, and grievances — each structured to capture what a subsequent inquiry or inspection will actually ask for, and to demonstrate a functioning, not merely notional, system.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">5</div>
+        <div class="step-content">
+          <h4>Manager Training & Escalation Drills</h4>
+          <p>A classification framework only works if the people receiving reports on the shop floor or in the office actually use it correctly. We train supervisors and HR teams on triage, and periodically test the escalation path so gaps surface during a drill, not during a real event.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="who">Who Needs This — and When</h2>
+    <p>The right level of formality scales with headcount and sector, but no organisation is genuinely too small to need a functioning classification and reporting system — only too small to need every layer of it at once.</p>
+
+    <div class="table-wrapper"><table class="data-table">
+      <thead><tr><th>Organisation Profile</th><th>Primary Exposure</th><th>Priority Actions</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Manufacturing & Factories (any size)</strong></td>
+          <td>Direct exposure to reportable accidents under Factories Act / OSH Code; safety committee obligations</td>
+          <td>Accident register, statutory notification protocol, near-miss system, Safety Committee constitution</td>
+        </tr>
+        <tr>
+          <td><strong>Offices & Services (10+ employees)</strong></td>
+          <td>POSH applies at 10 employees regardless of sector; behavioural incidents most common exposure</td>
+          <td>ICC constitution, POSH policy, general grievance intake triage</td>
+        </tr>
+        <tr>
+          <td><strong>Growing Companies (20+ employees)</strong></td>
+          <td>Grievance Redressal Committee becomes mandatory under Industrial Relations Code thresholds</td>
+          <td>GRC constitution, escalation path to Labour Commissioner, documented timelines</td>
+        </tr>
+        <tr>
+          <td><strong>Multi-location Employers</strong></td>
+          <td>Different state-level accident notification rules and thresholds across locations</td>
+          <td>Location-specific reporting matrices, centralised register with local compliance overlays</td>
+        </tr>
+        <tr>
+          <td><strong>Contract Labour / Site-Based Work</strong></td>
+          <td>Principal employer and contractor obligations often unclear on who reports what, and when</td>
+          <td>Contractual allocation of reporting responsibility, joint incident protocol, unified register</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+    <h2 id="checklist">Incident Readiness Check — 10 Questions to Ask Right Now</h2>
+    <p>Run this against your current system. If you answer "no" or "unsure" to more than three, your incident and grievance handling carries meaningful, avoidable legal risk.</p>
+
+    <ul class="checklist">
+      <li>Do you maintain a near-miss register that is separate from your general incident log — and is it actually being used?</li>
+      <li>Does your team know, without checking, the exact notification window for a reportable accident under your applicable Factories Rules or OSH Code obligations?</li>
+      <li>Is your Grievance Redressal Committee formally constituted, with named members, and does it meet the equal-representation requirement?</li>
+      <li>Is your Internal Complaints Committee validly constituted, with a current external member, and correctly distinguished from your general grievance process?</li>
+      <li>Does your intake process include a triage step to decide whether a complaint should go to the ICC before anyone attempts informal resolution?</li>
+      <li>Are your accident, incident, and grievance registers structured differently, reflecting the different documentation each legally requires?</li>
+      <li>Do frontline supervisors know how to distinguish a reportable accident from a non-reportable incident at the point of first report?</li>
+      <li>Have you reviewed your incident classification framework since the OSH Code and Industrial Relations Code provisions began taking effect?</li>
+      <li>Is there a documented timeline — acknowledgment, investigation, resolution — attached to every grievance category, and is it actually being met?</li>
+      <li>Were your current incident and grievance procedures drafted or last reviewed by someone with employment and safety law expertise, rather than adapted from a generic template?</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-title">How LexWin Can Help</div>
+      <p>LexWin designs and implements complete incident and grievance management systems — from classification frameworks and statutory timeline mapping to committee constitution, register design, and manager training. Our work combines employment and occupational safety law expertise with practical, shop-floor-usable process design, so the system we build is both legally sound and something your teams will actually use correctly under pressure. We work with manufacturing units, offices, and multi-location employers across Maharashtra and beyond.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Tags</div>
+      <p><span class="tag">Workplace Safety</span><span class="tag">Grievance Redressal</span><span class="tag">OSH Code</span><span class="tag">Industrial Relations Code</span><span class="tag">POSH Compliance</span><span class="tag">Near-Miss Reporting</span><span class="tag">HR Compliance</span><span class="tag">LexWin</span></p>
+    </div>
+
+  </main><!-- end .article-body -->
+
+
+</div><!-- end .page-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER — identical structure to main site
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">LexWin <span>Legal &amp; HR Consulting</span></div>
+    <div class="footer-tagline">Precision in law. Clarity in counsel. Speed in execution.</div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="https://www.lexwin.co.in/index.html">Home</a></li>
+        <li><a href="https://www.lexwin.co.in/blog/index.html">All Articles</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy">© 2025 LexWin Legal &amp; HR Consulting. Pune, India.</div>
+    <div class="footer-disclaimer">This article is for informational purposes only and does not constitute legal advice. For specific legal guidance, please consult a qualified legal professional.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp-btn" href="https://wa.me/919823385085" target="_blank" title="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<!--Start of Tawk.to Script - widget fully hidden, tracking only-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.visibility = {desktop: 'hidden', mobile: 'hidden', tablet: 'hidden'};
+Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a1a94b50698cf1c2c1da7fd/1jprt9q1g';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
