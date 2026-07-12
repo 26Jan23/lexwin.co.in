@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SEO — FILL ALL FIELDS FOR EVERY NEW ARTICLE
+  ════════════════════════════════════════════════════════════════ -->
+  <title>Legal Due Diligence for Mergers & Acquisitions — What a Corporate Lawyer Checks Before You Sign | LexWin</title>
+  <meta name="description"        content="M&A legal due diligence uncovers the risks a balance sheet cannot show — contract change-of-control clauses, undisclosed litigation, non-compliant employment terms, and defective title. What a corporate lawyer investigates, the red flags that stop deals, and how to get it right." />
+  <meta name="keywords"           content="legal due diligence M&A, mergers and acquisitions due diligence, corporate lawyer, M&A lawyer India, due diligence checklist, acquisition due diligence India, share purchase agreement, business acquisition legal advisory, corporate legal advisory, M&A legal risk, deal lawyer, LexWin" />
+  <link rel="canonical"           href="https://www.lexwin.co.in/blog/ma-legal-due-diligence-guide.html" />
+  <meta name="google-site-verification" content="61C6F194U8QSocNUBvV7N2gDyIar_2zgtFRcAHBigbw" />
+  <meta name="robots"             content="index, follow" />
+  <meta name="author"             content="LexWin Legal & HR Consulting" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:site_name"   content="LexWin Legal & HR Consulting" />
+  <meta property="og:title"       content="Legal Due Diligence for Mergers & Acquisitions — What a Corporate Lawyer Checks Before You Sign" />
+  <meta property="og:description" content="M&A legal due diligence uncovers the risks a balance sheet cannot show. What a corporate lawyer investigates, the red flags that stop deals, and how to get it right." />
+  <meta property="og:url"         content="https://www.lexwin.co.in/blog/ma-legal-due-diligence-guide.html" />
+  <meta property="og:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Legal Due Diligence for Mergers & Acquisitions — What a Corporate Lawyer Checks Before You Sign" />
+  <meta name="twitter:description" content="What a corporate lawyer investigates in M&A legal due diligence, the red flags that stop deals, and how to get it right." />
+  <meta name="twitter:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Article Schema — JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Legal Due Diligence for Mergers & Acquisitions — What a Corporate Lawyer Checks Before You Sign",
+    "description": "M&A legal due diligence uncovers the risks a balance sheet cannot show — contract change-of-control clauses, undisclosed litigation, non-compliant employment terms, and defective title. What a corporate lawyer investigates, the red flags that stop deals, and how to get it right.",
+    "author": { "@type": "Organization", "name": "LexWin Legal & HR Consulting" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LexWin Legal & HR Consulting",
+      "logo": { "@type": "ImageObject", "url": "https://www.lexwin.co.in/assets/lexwin-og.png" }
+    },
+    "datePublished": "2026-07-12",
+    "dateModified": "2026-07-12",
+    "url": "https://www.lexwin.co.in/blog/ma-legal-due-diligence-guide.html"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — G-995KV4HXM1
+       RULE: async loader is ALWAYS unconditional.
+             dataLayer init, gtag function, gtag('js') are ALWAYS
+             outside any if-block.
+             ONLY gtag('config') is inside the notrack cookie check.
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    if (!document.cookie.split(';').some(function(c){ return c.trim().startsWith('lexwin_notrack='); })) {
+      gtag('config', 'G-995KV4HXM1');
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       DESIGN TOKENS — single source of truth
+    ════════════════════════════════════════════════════ */
+    :root {
+      --navy-deep:   #0f1e32;
+      --navy:        #1a2e4a;
+      --navy-mid:    #2c4770;
+      --navy-light:  #3a5a8a;
+      --gold:        #c9a84c;
+      --gold-light:  #e8d5a3;
+      --gold-pale:   #fdf8ee;
+      --white:       #ffffff;
+      --bg:          #f5f7fa;
+      --text:        #2d3748;
+      --text-muted:  #718096;
+      --slate:       #4a5568;
+      --border:      #e2e8f0;
+      --blue-pale:   #eff6ff;
+      --blue-border: #c6deff;
+      --link:        #0066ff;
+      --tag-bg:      #eef4ff;
+      --radius:      4px;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08);
+      --shadow-md:   0 2px 8px rgba(0,0,0,.10);
+      /* ── Extended vars from article components ── */
+      --text-light:  #6b7280;
+      --text-mid:    #374151;
+      --bg-page:     #f5f7fa;
+      --bg-white:    #ffffff;
+      --red:         #b91c1c;
+      --red-light:   #fef2f2;
+      --red-border:  #fca5a5;
+      --green:       #166534;
+      --green-light: #f0fdf4;
+      --green-border:#86efac;
+      --amber:       #92400e;
+      --amber-light: #fffbeb;
+      --amber-border:#fcd34d;
+      --teal:        #0d6e6e;
+      --teal-light:  #e8f4f4;
+      --accent:      var(--gold);
+      --accent-light:var(--gold-light);
+      --accent-pale: var(--gold-pale);
+      --navy-l:      #1a3a6e;
+      --gold-b:      #c9a43a;
+      --gold-l:      #e8d5a3;
+      --gold-cream:  #fdf8ed;
+      --off:         #f8fafc;
+      --t:           0.28s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESET & BASE
+    ════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      overflow-x: hidden;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: var(--link); }
+    img { max-width: 100%; height: auto; display: block; }
+
+        /* ── NAVIGATION — identical to main site ── */
+    nav {
+      position: sticky; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(12,26,53,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(184,146,42,0.2);
+      transition: box-shadow 0.3s;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 70px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; font-weight: 700;
+      color: #ffffff; letter-spacing: 0.02em;
+    }
+    .nav-logo-divider { width: 1px; height: 20px; background: rgba(184,146,42,0.4); }
+    .nav-logo-sub {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem; font-weight: 400;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(232,201,106,0.7);
+    }
+    .nav-links { display: flex; align-items: center; gap: 0.15rem; list-style: none; }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none; padding: 0.5rem 0.9rem;
+      border-radius: 4px; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: rgba(232,201,106,1); }
+    .nav-cta-btn {
+      background: var(--gold) !important;
+      color: var(--navy-deep) !important;
+      font-weight: 700 !important;
+      padding: 0.5rem 1.2rem !important;
+      border-radius: 4px;
+    }
+    .nav-cta-btn:hover { background: var(--gold-light) !important; }
+    .nav-hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: #fff; margin: 0; border-radius: 2px; transition: 0.3s; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-links.open {
+        display: flex; flex-direction: column; align-items: flex-start;
+        position: absolute; top: 70px; left: 0; right: 0;
+        background: rgba(12,26,53,0.98); backdrop-filter: blur(16px);
+        padding: 1rem 1.5rem 1.5rem; gap: 0.2rem;
+        border-bottom: 1px solid rgba(184,146,42,0.2); z-index: 199;
+      }
+      .nav-links.open a { padding: 0.65rem 0.5rem; font-size: 0.85rem; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links.open a:last-child { border-bottom: none; margin-top: 0.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       BREADCRUMB
+    ════════════════════════════════════════════════════ */
+    .breadcrumb-bar {
+      background: var(--navy);
+      padding: .55rem 1.5rem;
+    }
+    .breadcrumb-bar a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: .03em;
+    }
+    .breadcrumb-bar a:hover { color: var(--white); }
+
+    /* ═══════════════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════════════════ */
+    .hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #1c3356 100%);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a84c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .hero-category {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,.12);
+      border: 1px solid rgba(201,168,76,.3);
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      margin-bottom: 1.1rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.22;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-byline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .85rem;
+      color: rgba(255,255,255,.52);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-byline span { display: flex; align-items: center; gap: .3rem; }
+    .hero-byline .sep { color: rgba(255,255,255,.25); }
+
+    /* ═══════════════════════════════════════════════════
+       STAT STRIP
+    ════════════════════════════════════════════════════ */
+    .stat-strip {
+      background: var(--gold);
+    }
+    .stat-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .8rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .stat-strip-inner { grid-template-columns: repeat(2, 1fr); padding: .8rem; }
+    }
+    .stat-item .stat-num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.1;
+    }
+    .stat-item .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       PAGE LAYOUT — two-column
+    ════════════════════════════════════════════════════ */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.2rem;
+      align-items: start;
+    }
+    
+      
+    }
+
+    /* ═══════════════════════════════════════════════════
+       ARTICLE BODY
+    ════════════════════════════════════════════════════ */
+    
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      overflow-x: hidden;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.4rem 2.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.25;color:var(--navy)}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{background:var(--navy);border-bottom:1px solid rgba(184,146,42,0.2);padding:0 2rem;position:sticky;top:0;z-index:100}
+.nav-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:0.5rem;text-decoration:none}
+.nav-logo-mark{width:30px;height:30px;border-radius:5px;background:linear-gradient(135deg,var(--gold),var(--gold-b));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:var(--navy);flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--white)}
+.nav-logo-sub{font-size:0.6rem;color:rgba(255,255,255,0.38);letter-spacing:0.18em;text-transform:uppercase}
+.nav-back{font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:var(--t)}
+.nav-back:hover{color:var(--gold-l);text-decoration:none}
+
+/* PROGRESS BAR */
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));z-index:200;transition:width 0.1s}
+
+/* HERO */
+.hero{background:linear-gradient(155deg,#060e1e 0%,var(--navy) 45%,var(--navy-mid) 100%);padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,42,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,42,0.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-in{max-width:800px;margin:0 auto;position:relative;z-index:2}
+.hero-cat{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(184,146,42,0.15);border:1px solid rgba(184,146,42,0.3);padding:0.28rem 0.85rem;border-radius:2rem;margin-bottom:1.4rem}
+.hero-cat-dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.hero-cat span{font-size:0.68rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-l)}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;color:var(--white);margin-bottom:1rem;line-height:1.15}
+.hero h1 em{font-style:italic;color:var(--gold-l)}
+.hero-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.hero-meta-item{font-size:0.78rem;color:rgba(255,255,255,0.5)}
+.hero-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,0.3);display:inline-block;margin:0 0.3rem}
+.hero-intro{font-size:1.08rem;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;max-width:700px}
+
+/* STAT STRIP */
+.stat-strip{background:var(--gold-cream);border-bottom:1px solid var(--border)}
+.stat-strip-in{max-width:1100px;margin:0 auto;padding:1.8rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);line-height:1}
+.stat-label{font-size:0.75rem;color:var(--text-l);margin-top:0.3rem;font-weight:400}
+
+/* CONTENT */
+.content-wrap{max-width:860px;margin:0 auto;padding:3.5rem 2rem;display:block}
+.article-body{min-width:0}
+.article-body h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.8rem 0 0.8rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold-pale)}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.18rem;font-weight:600;color:var(--navy-mid);margin:1.8rem 0 0.6rem}
+.article-body p{font-size:1rem;color:var(--text-mid);line-height:1.82;margin-bottom:1.2rem;font-weight:300}
+.article-body ul,.article-body ol{margin:0.6rem 0 1.2rem 1.4rem;color:var(--text-mid);font-weight:300}
+.article-body li{font-size:0.97rem;line-height:1.75;margin-bottom:0.4rem}
+.article-body strong{font-weight:600;color:var(--navy)}
+
+/* CALLOUTS */
+.callout{border-left:4px solid var(--gold);background:var(--gold-cream);padding:1.2rem 1.5rem;border-radius:0 6px 6px 0;margin:1.8rem 0}
+.callout-title{font-family:'Source Sans 3',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.callout p{font-size:0.92rem;color:var(--text-mid);margin-bottom:0;font-weight:400}
+.callout.warning{border-left-color:var(--red);background:var(--red-bg)}
+.callout.warning .callout-title{color:var(--red)}
+.callout.success{border-left-color:#166534;background:var(--green-bg)}
+.callout.success .callout-title{color:#166534}
+
+/* COMPARISON TABLE */
+.compare-table{width:100%;border-collapse:collapse;margin:1.8rem 0;font-size:0.9rem}
+.compare-table th{padding:0.8rem 1rem;text-align:left;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase}
+.compare-table th:first-child{background:var(--navy);color:rgba(255,255,255,0.8);width:32%}
+.compare-table th:nth-child(2){background:#e8f4f4;color:#0f5856;width:34%}
+.compare-table th:nth-child(3){background:var(--navy-mid);color:var(--gold-l);width:34%}
+.compare-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6}
+.compare-table td:first-child{font-weight:500;color:var(--navy);background:#fafaf7;font-size:0.88rem}
+.compare-table td:nth-child(2){color:var(--text-mid);font-weight:300;background:#f8fffe}
+.compare-table td:nth-child(3){color:var(--text-mid);font-weight:300}
+.compare-table tr:nth-child(even) td:nth-child(2){background:#f0fafa}
+.compare-table tr:nth-child(even) td:nth-child(3){background:var(--gold-cream)}
+.compare-icon-no{color:var(--red);font-weight:700}
+.compare-icon-yes{color:#166534;font-weight:700}
+
+/* POLICY CARDS */
+.policy-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.policy-card{border:1px solid var(--border);border-radius:6px;padding:1.4rem;position:relative;overflow:hidden}
+.policy-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.policy-card.labour::before{background:linear-gradient(90deg,#b8922a,#e8c96a)}
+.policy-card.conduct::before{background:linear-gradient(90deg,#1a3a6e,#2e5ea8)}
+.policy-card.leave::before{background:linear-gradient(90deg,#14532d,#22c55e)}
+.policy-card.exit::before{background:linear-gradient(90deg,#7c2d12,#ea580c)}
+.policy-card.data::before{background:linear-gradient(90deg,#4c1d95,#8b5cf6)}
+.policy-card.grievance::before{background:linear-gradient(90deg,#0f5856,#0d9488)}
+.policy-card-icon{font-size:1.5rem;margin-bottom:0.6rem}
+.policy-card h4{font-family:'Playfair Display',serif;font-size:0.98rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.policy-card p{font-size:0.82rem;color:var(--text-l);line-height:1.6;margin-bottom:0;font-weight:300}
+.policy-card .risk-tag{display:inline-block;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.55rem;border-radius:2rem;margin-top:0.6rem}
+.risk-high{background:#fee2e2;color:#991b1b}
+.risk-medium{background:#fef9c3;color:#854d0e}
+
+/* SCENARIO BOXES */
+.scenario{border-radius:6px;padding:1.4rem 1.6rem;margin:1.5rem 0}
+.scenario.bad{background:var(--red-bg);border:1px solid #fca5a5}
+.scenario.good{background:var(--green-bg);border:1px solid #86efac}
+.scenario-label{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem}
+.scenario.bad .scenario-label{color:var(--red)}
+.scenario.good .scenario-label{color:#166534}
+.scenario p{font-size:0.92rem;line-height:1.75;margin-bottom:0;font-weight:300;font-style:italic}
+
+/* PROCESS STEPS */
+.process-steps{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;position:relative}
+.process-steps::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;background:var(--border)}
+.process-step{display:flex;gap:1.2rem;position:relative;padding-bottom:1.5rem}
+.process-step:last-child{padding-bottom:0}
+.step-circle{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);z-index:1;border:3px solid var(--white)}
+.step-content h4{font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem}
+.step-content p{font-size:0.88rem;color:var(--text-mid);font-weight:300;margin-bottom:0;line-height:1.7}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.88rem}
+.data-table th{background:var(--navy);color:rgba(255,255,255,0.9);font-family:'Source Sans 3',sans-serif;font-weight:600;padding:0.7rem 1rem;text-align:left}
+.data-table td{padding:0.65rem 1rem;border-bottom:1px solid var(--border);color:var(--text-mid);font-weight:300;vertical-align:top}
+.data-table tr:nth-child(even) td{background:#fafaf7}
+
+/* CHECKLIST */
+.checklist{list-style:none;margin:1rem 0 1.4rem;padding:0;display:flex;flex-direction:column;gap:0.5rem}
+.checklist li{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.95rem;color:var(--text-mid);font-weight:300;line-height:1.65}
+.checklist li::before{content:'✓';color:#166534;font-weight:700;font-size:0.85rem;flex-shrink:0;margin-top:0.15rem}
+
+/* TAGS */
+.tag{display:inline-block;background:var(--gold-pale);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.65rem;border-radius:2rem;border:1px solid rgba(184,146,42,0.25);margin:0.2rem}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:84px}
+.sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.5rem;margin-bottom:1.2rem}
+.sidebar-card.featured{background:var(--navy);border-color:rgba(184,146,42,0.3)}
+.sidebar-title{font-family:'Source Sans 3',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sidebar-card.featured .sidebar-title{color:var(--gold-l)}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.toc-list a{font-size:0.82rem;color:var(--text-mid);text-decoration:none;display:block;padding:0.3rem 0;border-left:2px solid transparent;padding-left:0.7rem;transition:var(--t)}
+.toc-list a:hover{color:var(--gold);border-left-color:var(--gold)}
+.sidebar-card.featured p{font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:1rem;font-weight:300}
+.btn-gold-sm{display:inline-flex;align-items:center;gap:0.4rem;background:var(--gold);color:var(--navy);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.65rem 1.2rem;border-radius:3px;text-decoration:none;transition:var(--t)}
+.btn-gold-sm:hover{background:var(--gold-b);text-decoration:none}
+.audit-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.6rem}
+.audit-list li{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.8rem;color:var(--text-mid);font-weight:300;line-height:1.5}
+.audit-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.35rem}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding:2.5rem 2rem}
+.footer-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--white)}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.3)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:var(--t)}
+.footer-links a:hover{color:var(--gold-l)}
+
+/* WHATSAPP */
+.whatsapp-btn{position:fixed;bottom:2rem;right:2rem;z-index:50;width:54px;height:54px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:var(--t)}
+.whatsapp-btn:hover{transform:scale(1.08)}
+
+/* RESPONSIVE */
+@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.policy-grid{grid-template-columns:1fr}.stat-strip-in{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sidebar{grid-template-columns:1fr}.hero{padding:3rem 1.2rem 2rem}.content-wrap{padding:2rem 1.2rem}.hero h1{font-size:1.7rem}.stat-strip-in{grid-template-columns:1fr 1fr}.compare-table{font-size:0.8rem}}
+.article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+    .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--link);
+      padding: .25rem .75rem;
+      border-radius: 20px;
+      border: 1px solid var(--blue-border);
+    }
+
+    /* TOC */
+    
+    
+    
+    
+    
+
+    /* CTA card */
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /* Related articles */
+    
+    
+    
+    
+    
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════════════════ */
+    .site-footer {
+      background: var(--navy-deep);
+      padding: 2rem 1.5rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: .03em;
+    }
+    .footer-logo span { color: var(--white); font-weight: 400; }
+    .footer-tagline {
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: .85rem;
+      color: rgba(255,255,255,.45);
+    }
+    .footer-nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+    .footer-nav a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .footer-nav a:hover { color: var(--white); }
+    .footer-copy {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .footer-disclaimer {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .72rem;
+      color: rgba(255,255,255,.22);
+      max-width: 640px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON — same as main site
+    ════════════════════════════════════════════════════ */
+    @media (max-width: 480px) {
+      }
+
+  
+    @media (max-width: 768px) {
+      .article-body p,
+      .article-body td,
+      .article-body li { text-align: left; }
+    }
+  
+    @media (max-width: 600px) {
+      .page-wrap { padding: 1.5rem 1rem 3rem; }
+    }
+  
+    /* ── WHATSAPP BUTTON — identical to main site ── */
+    .whatsapp-btn {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25d366; color: white; font-size: 1.4rem;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      transition: transform .2s;
+    }
+    .whatsapp-btn:hover { transform: scale(1.08); }
+  
+    @media (max-width: 600px) {
+      .article-body {
+      overflow-x: hidden; padding: 1.2rem 1rem; }
+      .article-body p,
+      .article-body li,
+      .article-body td { text-align: left; }
+      .page-wrap { padding: 1rem 0.75rem 3rem; }
+    }
+  
+    /* ── IN THIS ARTICLE — TOC ── */
+    .toc-box {
+      background: var(--blue-pale);
+      border: 1px solid var(--blue-border);
+      border-left: 4px solid var(--navy-mid);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.5rem 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .toc-box-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--navy-mid);
+      margin-bottom: .8rem;
+    }
+    .toc-box ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      padding: 0; margin: 0;
+    }
+    .toc-box ol li {
+      counter-increment: toc-counter;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem;
+      padding: .28rem 0 .28rem 1.8rem;
+      position: relative;
+      border-bottom: 1px dotted var(--border);
+      line-height: 1.4;
+    }
+    .toc-box ol li:last-child { border-bottom: none; }
+    .toc-box ol li::before {
+      content: counter(toc-counter) '.';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .82rem;
+    }
+    .toc-box ol li a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .toc-box ol li a:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+  
+    /* ═══════════════════════════════════════════════════
+       EXTENDED VISUAL COMPONENTS — ported from articles
+    ════════════════════════════════════════════════════ */
+
+    /* Banded table — all tables get banded rows by default */
+    .article-body table {
+      width: 100%; border-collapse: collapse;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem; margin: 1.4rem 0;
+      border: 1px solid var(--border);
+    }
+    .article-body table thead tr { background: var(--navy-mid); }
+    .article-body table th {
+      padding: .65rem .9rem; text-align: left;
+      font-weight: 600; color: var(--white); letter-spacing: .02em;
+    }
+    .article-body table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .article-body table tbody tr:nth-child(even) { background: #f0fdff; }
+    .article-body table tbody tr:hover { background: var(--gold-pale); }
+    .article-body table .yes, .compare-icon-yes { color: #166534; font-weight: 700; }
+    .article-body table .no,  .compare-icon-no  { color: var(--red); font-weight: 700; }
+
+    /* data-table & clause-table & code-table */
+    .data-table, .clause-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: .88rem; box-shadow: var(--shadow-sm); border-radius: 4px; overflow: hidden;
+    }
+    .data-table th, .clause-table th {
+      background: var(--navy-mid); color: var(--white);
+      padding: .65rem .9rem; text-align: left; font-weight: 600;
+    }
+    .data-table td, .clause-table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    .data-table tbody tr:nth-child(even),
+    .clause-table tbody tr:nth-child(even) { background: #f0fdff; }
+    .data-table tbody tr:hover,
+    .clause-table tbody tr:hover { background: var(--gold-pale); }
+
+    /* Callout variants */
+    .callout-danger {
+      border-left: 4px solid var(--red); background: var(--red-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-warning {
+      border-left: 4px solid #d97706; background: var(--amber-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-info {
+      border-left: 4px solid #2563eb; background: #eff6ff;
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-danger p, .callout-warning p, .callout-info p { margin: 0; }
+    .callout-title {
+      font-family: 'DM Sans', sans-serif; font-size: .72rem; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--navy-mid); margin-bottom: .4rem;
+      display: flex; align-items: center; gap: .4rem;
+    }
+    .callout.success { border-left-color: var(--green); background: var(--green-light); }
+    .callout.warning { border-left-color: #d97706; background: var(--amber-light); }
+    .callout.bad     { border-left-color: var(--red);   background: var(--red-light); }
+    .callout.good    { border-left-color: var(--green); background: var(--green-light); }
+
+    /* Policy grid cards */
+    .policy-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .policy-card-icon { font-size: 1.5rem; margin-bottom: .6rem; }
+
+    /* Code cards (Labour Codes) */
+    .code-table { display: grid; gap: 1rem; margin: 1.5rem 0; }
+    .code-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem 1.6rem;
+    }
+    .code-card-num {
+      font-family: 'Playfair Display', serif; font-size: 2.2rem;
+      font-weight: 700; color: var(--gold-pale); line-height: 1; margin-bottom: .4rem;
+    }
+    .code-card-title {
+      font-family: 'Playfair Display', serif; font-size: 1.1rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .3rem;
+    }
+    .code-card-year {
+      font-size: .72rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .7rem;
+    }
+
+    /* ICC grid cards */
+    .icc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .icc-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.3rem;
+    }
+    .icc-card-role {
+      font-size: .68rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .4rem;
+    }
+
+    /* Structure grid */
+    .structure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .struct-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem;
+    }
+    .struct-tag {
+      font-size: .65rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .6rem; display: block;
+    }
+    .struct-pros, .struct-cons {
+      font-size: .83rem; color: var(--slate); font-weight: 300; line-height: 1.65;
+    }
+    .struct-cons strong { color: var(--red); }
+
+    /* Risk grid */
+    .risk-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .risk-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 4px solid; border-radius: var(--radius); padding: 1.2rem 1.3rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .risk-tag {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; padding: .15rem .5rem;
+      border-radius: 20px; margin-bottom: .4rem;
+    }
+    .risk-tag.risk-high, .risk-tag.risk-medium { background: #fed7d7; color: #9b2c2c; }
+    .risk-tag.risk-medium                       { background: #fefcbf; color: #744210; }
+    .risk-tag.risk-low                          { background: #c6f6d5; color: #276749; }
+
+    /* Step variants */
+    .steps-list { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+    .step-circle {
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: var(--gold); display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy-deep);
+    }
+    .step-content h4 {
+      font-family: 'DM Sans', sans-serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .25rem;
+    }
+    .step-content p { margin: 0; font-size: .88rem; color: var(--slate); }
+
+    /* Highlight box */
+    .highlight-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: var(--radius); padding: 1.8rem 2rem; margin: 2rem 0;
+      color: var(--white);
+    }
+    .highlight-box h3, .highlight-box h4 { color: var(--gold-light); margin-bottom: .5rem; }
+    .highlight-box p { color: rgba(255,255,255,.8); margin-bottom: 0; }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 4px solid var(--gold); padding: .8rem 1.5rem;
+      margin: 2rem 0; background: var(--gold-pale);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic; color: var(--navy);
+    }
+
+    /* Lead paragraph */
+    .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem; }
+
+    /* Section heading with number */
+    .section-heading {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem;
+      font-weight: 700; color: var(--navy-mid); margin-top: 2.5rem;
+      margin-bottom: .65rem; padding-bottom: .4rem;
+      border-bottom: 2px solid var(--gold-light);
+      display: flex; align-items: baseline; gap: .6rem;
+    }
+    .section-num {
+      font-size: .72rem; font-weight: 700; color: var(--gold);
+      letter-spacing: .08em; text-transform: uppercase;
+      background: var(--gold-pale); padding: .15rem .5rem; border-radius: 3px;
+    }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1rem 1.3rem; margin-top: 2rem;
+      font-family: 'DM Sans', sans-serif; font-size: .78rem;
+      color: var(--text-muted); line-height: 1.6;
+    }
+
+    /* Conclusion band */
+    .conclusion-band {
+      background: linear-gradient(135deg, var(--navy) 0%, #0d2240 100%);
+      padding: 2.5rem 2rem; border-radius: var(--radius);
+      margin-top: 2.5rem; text-align: center;
+    }
+    .conclusion-band h3 { color: var(--white); margin-bottom: .8rem; }
+    .conclusion-band p  { color: rgba(255,255,255,.75); margin-bottom: 1.2rem; }
+    .conclusion-btn {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .85rem; font-weight: 700; color: var(--navy-deep);
+      background: var(--gold); padding: .65rem 1.8rem;
+      border-radius: 3px; text-decoration: none; letter-spacing: .04em;
+    }
+    .conclusion-btn:hover { background: var(--gold-light); }
+
+    /* Bullet list */
+    .bullet-list { list-style: none; padding: 0; margin: .8rem 0 1.2rem; }
+    .bullet-list li {
+      padding: .3rem 0 .3rem 1.6rem; position: relative;
+      font-size: .95rem; border-bottom: 1px dotted var(--border);
+    }
+    .bullet-list li:last-child { border-bottom: none; }
+    .bullet-list li::before { content: '›'; position: absolute; left: 0; color: var(--gold); font-weight: 700; font-size: 1.1rem; }
+
+    /* Sub-heading */
+    .sub-heading {
+      font-family: 'DM Sans', sans-serif; font-size: 1rem;
+      font-weight: 700; color: var(--navy); margin: 1.7rem 0 .4rem;
+    }
+
+    /* Responsive for all new grids */
+    @media (max-width: 600px) {
+      .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
+    }
+
+  
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SITE NAV — identical to main site
+════════════════════════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://www.lexwin.co.in/index.html" class="nav-logo" aria-label="LexWin Home">
+      <span class="nav-logo-main">LexWin</span>
+      <div class="nav-logo-divider"></div>
+      <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#who-we-help">Who We Help</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#engagement">Engagement</a></li>
+      <li><a href="https://www.lexwin.co.in/blog/index.html">Insights</a></li>
+      <li><a href="https://calendly.com/sadanand-sonar/30min" class="nav-cta-btn" target="_blank" rel="noopener">Free Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BREADCRUMB
+════════════════════════════════════════════════════════════ -->
+<div class="breadcrumb-bar">
+  <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-category">Corporate Legal Advisory</div>
+    <h1>Legal Due Diligence for Mergers & Acquisitions — What a <em>Corporate Lawyer</em> Checks Before You Sign</h1>
+    <div class="hero-byline">
+      <span>LexWin Consulting</span>
+      <span class="sep">·</span>
+      <span>17 min read</span>
+      <span class="sep">·</span>
+      <span>July 2026</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STAT STRIP
+════════════════════════════════════════════════════════════ -->
+<div class="stat-strip" aria-hidden="true">
+  <div class="stat-strip-inner">
+    <div class="stat-item">
+      <span class="stat-num">70%+</span>
+      <span class="stat-label">of failed M&A deals trace back to overlooked legal risk</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">8–12</span>
+      <span class="stat-label">weeks — typical legal due diligence timeline for a mid-market deal</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">6+</span>
+      <span class="stat-label">statutes routinely engaged in an Indian M&A transaction</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">₹Crores</span>
+      <span class="stat-label">in indemnity exposure a single undisclosed liability can create</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN LAYOUT — Article + Sidebar
+════════════════════════════════════════════════════════════ -->
+<div class="page-wrap">
+
+  <!-- ── ARTICLE ─────────────────────────────────────── -->
+  <main class="article-body" id="article-top">
+
+    <div class="toc-box">
+      <div class="toc-box-title">In this article</div>
+      <ol>
+        <li><a href="#problem">The deal that looked perfect on paper</a></li>
+        <li><a href="#why">Why legal due diligence is non-negotiable in M&A</a></li>
+        <li><a href="#areas">The eight areas every corporate lawyer investigates</a></li>
+        <li><a href="#redflags">Red flags that should stop or reprice a deal</a></li>
+        <li><a href="#comparison">Legal due diligence vs. financial due diligence</a></li>
+        <li><a href="#realworld">What happens when due diligence is skipped or rushed</a></li>
+        <li><a href="#urgency">Why the stakes are rising in India</a></li>
+        <li><a href="#howwehelp">How LexWin approaches M&A legal due diligence</a></li>
+        <li><a href="#who">Who needs this — and when</a></li>
+        <li><a href="#checklist">Due diligence checklist — before you sign</a></li>
+      </ol>
+    </div>
+
+    <h2 id="problem">The Deal That Looked Perfect on Paper</h2>
+    <p>Every acquisition begins the same way — with a business that looks good on the outside. Revenue is growing, the founder tells a compelling story, the financials have been reviewed by a reputable accountant, and both sides are eager to close before momentum fades. What is far less visible in the early stages is the layer of legal risk sitting underneath the numbers: contracts that terminate automatically on a change of control, employees engaged on terms that do not comply with Indian labour law, litigation that was never disclosed, intellectual property that was never properly assigned to the company, or a title to premises that cannot withstand scrutiny.</p>
+    <p>This is precisely the gap that legal due diligence is designed to close. A corporate lawyer conducting due diligence for a merger or acquisition is not auditing the numbers — that is the accountant's role. The lawyer is examining whether the business, as a legal entity, actually owns what it claims to own, is bound by what it says it is bound by, and carries no hidden obligations that will become the buyer's problem the moment the transaction closes.</p>
+    <p>The uncomfortable truth about M&A is that most transactions that go wrong do not fail because the target's business model was flawed. They fail — or turn expensive — because a legal issue that existed all along surfaced only after the ink was dry, when the buyer had already taken on the target's contracts, employees, disputes, and liabilities as its own.</p>
+
+    <div class="callout warning">
+      <div class="callout-title">Due Diligence Is Not a Formality</div>
+      <p>Many first-time acquirers treat legal due diligence as a box-ticking exercise that slows down a deal both sides are eager to close. In practice, it is the single activity most likely to change the price, the structure, or the decision to proceed at all. A corporate lawyer's job during due diligence is not to find reasons to say no — it is to make sure that whatever the buyer says yes to is the transaction they actually think they are entering.</p>
+    </div>
+
+    <h2 id="why">Why Legal Due Diligence Is Non-Negotiable in M&A</h2>
+    <p>Under Indian law, the structure of a transaction determines exactly what a buyer inherits. In a share acquisition, the buyer acquires the company as it stands — with every contract, employee, licence, liability, and dispute intact, known or unknown. In a slump sale or business transfer, many of these can be selectively excluded, but only if they are identified and addressed in the transaction documents beforehand. In either structure, the buyer's ability to protect itself depends entirely on knowing what exists inside the target before the transaction closes — because after closing, ignorance is no defence.</p>
+    <p>Legal due diligence exists to surface exactly this information, in time for it to matter. It answers three questions that no financial statement can answer on its own: does the target legally own the assets and rights it claims to own; is the target bound by any obligation, restriction, or dispute that is not reflected in its financial statements; and what will the buyer inherit — automatically, and often irreversibly — the moment the transaction completes.</p>
+    <p>A corporate lawyer's due diligence report becomes the foundation for three critical decisions that follow: whether to proceed with the transaction at all, how the purchase price and structure should be adjusted to reflect the risks identified, and what representations, warranties, indemnities, and conditions precedent must be built into the transaction documents to allocate the risks that cannot be eliminated before closing.</p>
+
+    <div class="scenario bad">
+      <div class="scenario-label">❌ Skipping Depth — What Goes Wrong</div>
+      <p>A buyer relies on a two-page "legal summary" prepared by the seller's own counsel and a quick review of incorporation documents. Six months after closing, a former employee's wrongful termination claim from before the acquisition surfaces, along with a supplier contract that terminated automatically on change of control — cutting off a key input the buyer assumed would continue. Both risks existed on day one. Neither was priced into the deal, disclosed as a warranty, or protected by an indemnity, because no one looked for them.</p>
+    </div>
+
+    <div class="scenario good">
+      <div class="scenario-label">✓ Independent Diligence — What Changes</div>
+      <p>An independent corporate lawyer conducts a structured legal review of the target's contracts, litigation history, employment records, and statutory filings before the transaction documents are finalised. Both risks above are identified during the review. The supplier contract's change-of-control clause is renegotiated as a condition precedent to closing, and the employee claim is carved out through a specific indemnity with an escrow holdback. The buyer closes the deal fully aware of what it is inheriting — and protected against what it is not willing to inherit.</p>
+    </div>
+
+    <h3>Share Purchase, Asset Purchase, or Merger — Structure Changes the Diligence Scope</h3>
+    <p>The legal due diligence exercise itself is shaped by how the transaction is structured. In a share purchase, the target company continues to exist as the same legal person — simply under new ownership — which means every historical liability, contract, and dispute remains attached to it and, indirectly, becomes the buyer's problem. In an asset purchase or slump sale, the buyer can be more selective, acquiring specific assets and assuming only specific liabilities, but this requires the due diligence exercise to precisely identify which contracts are assignable, which employees transfer under applicable labour law, and which liabilities genuinely stay behind with the seller. A statutory merger under the Companies Act, sanctioned by the National Company Law Tribunal, carries its own diligence considerations around the scheme of arrangement, creditor and shareholder approvals, and the treatment of minority interests. A corporate lawyer advising on structure will typically run a preliminary diligence pass before the structure is finalised, precisely because the risks uncovered often influence which structure makes the most commercial sense in the first place.</p>
+
+    <h2 id="areas">The Eight Areas Every Corporate Lawyer Investigates</h2>
+    <p>A thorough legal due diligence exercise is not a single review — it is a series of parallel investigations, each covering a distinct category of legal risk. The scope and depth vary with deal size and sector, but a competent M&A lawyer will systematically work through each of the following areas.</p>
+
+    <div class="policy-grid">
+      <div class="policy-card labour">
+        <div class="policy-card-icon">🏛️</div>
+        <h4>Corporate & Regulatory Standing</h4>
+        <p>Incorporation documents, shareholding structure, cap table, board and shareholder resolutions, statutory registers, and ROC filing history. Confirms the target legally exists as represented and has been compliant with the Companies Act throughout its life.</p>
+        <span class="risk-tag risk-high">Foundational Risk: High</span>
+      </div>
+      <div class="policy-card conduct">
+        <div class="policy-card-icon">📑</div>
+        <h4>Material Contracts & Commercial Agreements</h4>
+        <p>Customer, supplier, licensing, financing, and lease agreements — with specific attention to change-of-control clauses, exclusivity terms, termination rights, and unfulfilled obligations that transfer with the business.</p>
+        <span class="risk-tag risk-high">Deal Risk: High</span>
+      </div>
+      <div class="policy-card exit">
+        <div class="policy-card-icon">⚖️</div>
+        <h4>Litigation & Regulatory Disputes</h4>
+        <p>Pending and threatened litigation, arbitration, consumer complaints, tax disputes, and regulatory show-cause notices — including matters the target may not consider material enough to disclose voluntarily.</p>
+        <span class="risk-tag risk-high">Contingent Liability: High</span>
+      </div>
+      <div class="policy-card labour">
+        <div class="policy-card-icon">👥</div>
+        <h4>Employment & HR Compliance</h4>
+        <p>Employment contracts, statutory registrations (PF, ESI, gratuity), POSH compliance, contractor classification, and any severance or restructuring obligations that will crystallise on or after acquisition.</p>
+        <span class="risk-tag risk-medium">Compliance Risk: Medium–High</span>
+      </div>
+      <div class="policy-card data">
+        <div class="policy-card-icon">💡</div>
+        <h4>Intellectual Property & Data Protection</h4>
+        <p>Ownership and assignment of IP created by founders, employees, and contractors; trademark and patent status; and DPDP Act compliance for any business that processes personal data — increasingly a standalone diligence workstream.</p>
+        <span class="risk-tag risk-high">Value Risk: High</span>
+      </div>
+      <div class="policy-card grievance">
+        <div class="policy-card-icon">🏢</div>
+        <h4>Real Estate & Physical Assets</h4>
+        <p>Title verification for owned property, lease validity and assignability, encumbrances, and statutory approvals for the premises from which the business operates — frequently overlooked when the deal is framed as a "share purchase," not a property purchase.</p>
+        <span class="risk-tag risk-medium">Asset Risk: Medium</span>
+      </div>
+      <div class="policy-card leave">
+        <div class="policy-card-icon">💰</div>
+        <h4>Tax & Statutory Compliance</h4>
+        <p>GST, income tax, TDS, and other statutory filing history; outstanding demands, notices, and assessments; and structuring implications of the transaction itself, reviewed jointly with tax advisors.</p>
+        <span class="risk-tag risk-high">Financial Risk: High</span>
+      </div>
+      <div class="policy-card conduct">
+        <div class="policy-card-icon">🌿</div>
+        <h4>Environmental, Sectoral & Licensing Compliance</h4>
+        <p>Sector-specific licences, environmental clearances, and regulatory approvals required to operate — particularly relevant for manufacturing, healthcare, financial services, and other regulated sectors where a lapsed licence can halt operations post-acquisition.</p>
+        <span class="risk-tag risk-medium">Operational Risk: Medium</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Why This Cannot Be Delegated to a Checklist Alone</div>
+      <p>A due diligence checklist tells a corporate lawyer what documents to request. It does not tell them what those documents mean for a specific buyer's specific objectives. The same change-of-control clause that is immaterial in an asset-light services business can be deal-breaking for a manufacturer whose single largest customer contract contains one. Interpreting significance, not merely cataloguing documents, is what separates genuine legal due diligence from a document-collection exercise.</p>
+    </div>
+
+    <h3>The POSH and Related-Party Blind Spots</h3>
+    <p>Two categories deserve special mention because they are consistently under-scoped by buyers who are not working with experienced corporate lawyers. First, POSH Act compliance — the constitution and functioning of the Internal Complaints Committee — is a mandatory statutory requirement for any employer with ten or more employees, and its absence or defective constitution is both a compliance gap and a signal about how seriously the target has treated statutory obligations generally. Second, related-party transactions between the target and its founders, promoters, or their affiliated entities require specific Companies Act approvals depending on their value and nature; transactions that were never properly approved create both a compliance liability and, in some cases, a question over whether the underlying transaction can be unwound or challenged after closing.</p>
+
+    <h2 id="redflags">Red Flags That Should Stop or Reprice a Deal</h2>
+    <p>Not every issue uncovered during due diligence is fatal — most transactions proceed with some identified risks, addressed through pricing adjustments, indemnities, or conditions precedent. But certain categories of findings warrant a fundamentally different conversation: whether the transaction should proceed at all, and on what terms.</p>
+
+    <div class="table-wrapper"><table class="compare-table">
+      <thead>
+        <tr>
+          <th>Red Flag Category</th>
+          <th>Why It Matters</th>
+          <th>Typical Response</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Defective title to core assets</td>
+          <td><span class="compare-icon-no">✗</span> The target does not clearly own the property, IP, or equipment central to its business</td>
+          <td><span class="compare-icon-yes">✓</span> Rectification as a condition precedent, or price reduction reflecting the risk</td>
+        </tr>
+        <tr>
+          <td>Undisclosed or contingent litigation</td>
+          <td><span class="compare-icon-no">✗</span> Material disputes not reflected in financial statements or management disclosures</td>
+          <td><span class="compare-icon-yes">✓</span> Specific indemnity, escrow holdback, or purchase price adjustment</td>
+        </tr>
+        <tr>
+          <td>Change-of-control clauses in key contracts</td>
+          <td><span class="compare-icon-no">✗</span> Customer or supplier agreements terminate or require consent on acquisition</td>
+          <td><span class="compare-icon-yes">✓</span> Pre-closing consent as a condition precedent; renegotiation before signing</td>
+        </tr>
+        <tr>
+          <td>Non-compliant employment structure</td>
+          <td><span class="compare-icon-no">✗</span> Misclassified contractors, unpaid statutory dues, or unresolved POSH matters</td>
+          <td><span class="compare-icon-yes">✓</span> Regularisation before closing; indemnity for pre-closing liabilities</td>
+        </tr>
+        <tr>
+          <td>Unassigned intellectual property</td>
+          <td><span class="compare-icon-no">✗</span> Core IP created by founders or early contractors was never formally assigned to the company</td>
+          <td><span class="compare-icon-yes">✓</span> Assignment execution as a condition precedent — non-negotiable in most deals</td>
+        </tr>
+        <tr>
+          <td>Related-party transactions without proper approval</td>
+          <td><span class="compare-icon-no">✗</span> Transactions with founders or affiliates lacking Companies Act-compliant approvals</td>
+          <td><span class="compare-icon-yes">✓</span> Ratification, ring-fencing, and enhanced warranty coverage</td>
+        </tr>
+        <tr>
+          <td>Regulatory or licensing non-compliance</td>
+          <td><span class="compare-icon-no">✗</span> Operating without a mandatory sectoral licence, or with one that has lapsed</td>
+          <td><span class="compare-icon-yes">✓</span> Cure before closing where possible; otherwise a deal-structure or timing decision</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+    <h2 id="comparison">Legal Due Diligence vs. Financial Due Diligence</h2>
+    <p>Buyers new to M&A sometimes assume that a thorough financial and accounting review substitutes for legal due diligence. It does not — the two exercises examine fundamentally different questions, using different sources, and produce different kinds of protection.</p>
+
+    <div class="table-wrapper"><table class="data-table">
+      <thead><tr><th>Dimension</th><th>Financial Due Diligence</th><th>Legal Due Diligence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Core Question</strong></td>
+          <td>Is the business financially healthy, and are the numbers accurate?</td>
+          <td>Does the business legally own what it claims, and what obligations come with it?</td>
+        </tr>
+        <tr>
+          <td><strong>Primary Sources</strong></td>
+          <td>Audited financials, management accounts, tax returns, banking records</td>
+          <td>Contracts, corporate records, litigation history, statutory filings, title deeds</td>
+        </tr>
+        <tr>
+          <td><strong>Conducted By</strong></td>
+          <td>Chartered accountants and financial advisors</td>
+          <td>Corporate lawyers and M&A legal counsel</td>
+        </tr>
+        <tr>
+          <td><strong>Typical Output</strong></td>
+          <td>Adjusted EBITDA, quality-of-earnings report, working capital analysis</td>
+          <td>Due diligence report, risk matrix, red-flag summary, recommended contractual protections</td>
+        </tr>
+        <tr>
+          <td><strong>Feeds Into</strong></td>
+          <td>Valuation and purchase price calculation</td>
+          <td>Representations, warranties, indemnities, conditions precedent, deal structure</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p>The two workstreams are complementary, not interchangeable, and the strongest transaction teams run them in parallel with regular cross-referencing — a litigation matter uncovered by the lawyers may need to be reflected in the financial model's contingent liability provisions, and a revenue concentration issue flagged by the accountants may prompt the lawyers to scrutinise that specific customer contract more closely.</p>
+
+    <h2 id="realworld">What Happens When Due Diligence Is Skipped or Rushed</h2>
+    <p>The value of rigorous legal due diligence is clearest in hindsight — in the disputes and losses that a more thorough review would have prevented. These scenarios are representative of situations that recur across Indian M&A transactions, particularly those completed under competitive pressure or compressed timelines.</p>
+
+    <h3>The Customer Contract That Evaporated</h3>
+    <p>A buyer acquires a B2B services company whose revenue is concentrated in three large enterprise clients. Post-closing, the buyer discovers that the largest client's master services agreement contained an assignment clause requiring the client's written consent for any change of control — consent that was never sought or obtained. The client, uncomfortable with the change in ownership and using the breach as leverage, renegotiates its contract on materially worse terms. A thorough contract review during due diligence would have flagged this clause well before signing, allowing the buyer to obtain consent as a condition precedent to closing.</p>
+
+    <h3>The Employment Liability Nobody Disclosed</h3>
+    <p>An acquirer takes over a manufacturing business through a share purchase. Eight months later, a group of workers files a claim before the Industrial Tribunal alleging that they were misclassified as contract labour to avoid statutory obligations spanning three years prior to the acquisition — a common but legally risky practice the seller never disclosed. Because the transaction was structured as a share purchase without a specific indemnity carving out pre-closing employment liabilities, the new owner inherits the claim in full, along with the reputational and operational disruption of a labour dispute at its newly acquired facility.</p>
+
+    <h3>The IP That Was Never Actually Owned</h3>
+    <p>A buyer acquires a technology company primarily for its proprietary software. Post-acquisition, a routine IP audit reveals that a significant portion of the core codebase was written by an early-stage contractor under an informal arrangement, with no signed assignment agreement transferring IP ownership to the company. The company — and now the buyer — do not have clear title to the very asset the acquisition was built around. Resolving this required protracted negotiation with a former contractor who now understood exactly how much leverage the gap gave them.</p>
+
+    <div class="callout success">
+      <div class="callout-title">What These Scenarios Have in Common</div>
+      <p>In each case, the underlying legal defect existed well before the transaction — it was not created by the acquisition. What changed the outcome was not the presence or absence of the risk, but whether it was identified, priced, and contractually addressed before closing. A thorough legal due diligence exercise does not eliminate every risk in a target business — no diligence process can. What it does is ensure the buyer enters the transaction with full knowledge of what it is acquiring, and with the contractual protections in place to allocate the risks it chooses not to bear.</p>
+    </div>
+
+    <h2 id="urgency">Why the Stakes Are Rising in India</h2>
+    <p>Legal due diligence has always mattered in M&A. Several developments in India's regulatory landscape are making it materially more consequential — and more complex — for transactions closing in 2026 and beyond.</p>
+
+    <h3>The DPDP Act and Data as a Diligence Category</h3>
+    <p>The Digital Personal Data Protection Act 2023 has turned data handling practices into a standalone diligence workstream, particularly for any target that processes customer or employee personal data at scale. A buyer now needs to understand not only what data the target holds, but under what consent basis it was collected, how it is secured, whether the target qualifies as a Significant Data Fiduciary, and what breach history exists — because these obligations, and any associated liabilities, transfer with the acquisition.</p>
+
+    <h3>Competition Act Thresholds and Merger Control</h3>
+    <p>Transactions crossing the asset and turnover thresholds prescribed under the Competition Act require notification to the Competition Commission of India before closing, with significant penalties for consummating a notifiable transaction without approval. Determining whether a transaction is notifiable — and managing the CCI process where it is — has become an integral part of legal due diligence and deal timeline planning, not a separate afterthought.</p>
+
+    <h3>FDI and FEMA Considerations for Cross-Border Deals</h3>
+    <p>Where either party to the transaction is a foreign entity, or the target operates in a sector subject to sectoral FDI caps or government-route approval, legal due diligence must also verify historical FEMA compliance — including whether prior foreign investment into the target was reported correctly, whether pricing guidelines were followed, and whether any past non-compliance creates inherited regulatory exposure for the buyer.</p>
+
+    <h3>Increased Scrutiny of Related-Party and Founder Transactions</h3>
+    <p>As corporate governance enforcement in India has tightened, related-party transactions between founders, their family entities, and the target company are receiving closer scrutiny in due diligence — both for Companies Act compliance at the time they occurred, and for the risk they pose to post-acquisition governance if not properly unwound or ring-fenced.</p>
+
+    <h2 id="howwehelp">How LexWin Approaches M&A Legal Due Diligence</h2>
+    <p>At LexWin, legal due diligence is treated as a deal-shaping exercise, not a document review performed after the commercial terms are already settled. Our approach is structured to give clients findings early enough to actually influence price, structure, and terms.</p>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-circle">1</div>
+        <div class="step-content">
+          <h4>Scoping & Risk Prioritisation</h4>
+          <p>Before requesting a single document, we align on what matters most for this specific transaction — the sector, the deal structure, the buyer's strategic objectives, and the areas of highest inherent risk. This shapes a due diligence plan that goes deep where it matters, rather than spreading effort evenly across every category.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">2</div>
+        <div class="step-content">
+          <h4>Structured Document Request & Data Room Review</h4>
+          <p>We issue a comprehensive, deal-specific due diligence questionnaire and systematically review the target's data room — corporate records, contracts, litigation files, employment documentation, and statutory filings — cross-referencing gaps and inconsistencies as they emerge.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">3</div>
+        <div class="step-content">
+          <h4>Management Interviews & Clarification</h4>
+          <p>Documents alone rarely tell the full story. We conduct structured interviews with the target's management and, where relevant, its existing legal and compliance teams, to close gaps that documentation alone cannot resolve.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">4</div>
+        <div class="step-content">
+          <h4>Risk Matrix & Due Diligence Report</h4>
+          <p>Findings are consolidated into a clear risk matrix — categorised by materiality and likelihood — accompanied by a due diligence report that translates legal findings into practical recommendations: proceed, renegotiate price, insist on specific conditions precedent, or walk away.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">5</div>
+        <div class="step-content">
+          <h4>Transaction Document Integration</h4>
+          <p>Every material finding is reflected in the transaction documents we draft or negotiate — representations and warranties, specific indemnities, escrow arrangements, and conditions precedent — so the due diligence exercise translates directly into contractual protection, not just a report that sits unused after signing.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="who">Who Needs This — and When</h2>
+    <p>Legal due diligence is relevant to every acquisition, but the scope, depth, and urgency vary meaningfully by the type of buyer and the nature of the transaction.</p>
+
+    <div class="table-wrapper"><table class="data-table">
+      <thead><tr><th>Buyer / Transaction Profile</th><th>Primary Risk Areas</th><th>Priority Diligence Focus</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>First-Time Acquirers</strong></td>
+          <td>Limited experience reading deal risk; reliance on seller-provided summaries</td>
+          <td>Full-scope diligence, plain-language risk translation, deal structure guidance</td>
+        </tr>
+        <tr>
+          <td><strong>Strategic / Trade Buyers</strong></td>
+          <td>Integration risk; overlapping contracts, IP, and customer relationships with existing business</td>
+          <td>Contract diligence, IP ownership, competition law/CCI notifiability assessment</td>
+        </tr>
+        <tr>
+          <td><strong>Private Equity & Financial Investors</strong></td>
+          <td>Governance quality, exit-readiness, minority protection, contingent liabilities</td>
+          <td>Corporate governance review, litigation history, related-party transaction audit</td>
+        </tr>
+        <tr>
+          <td><strong>Foreign Companies Acquiring in India</strong></td>
+          <td>FEMA/FDI compliance history, sector-specific approval requirements, local employment law</td>
+          <td>FEMA compliance verification, sectoral licensing, labour and employment due diligence</td>
+        </tr>
+        <tr>
+          <td><strong>Asset / Slump Sale Structures</strong></td>
+          <td>Correctly identifying which assets, contracts, and liabilities transfer versus stay behind</td>
+          <td>Asset title verification, contract assignability, employee transfer compliance</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+    <h2 id="checklist">Due Diligence Checklist — Before You Sign</h2>
+    <p>Before finalising a term sheet or signing definitive transaction documents, run this diagnostic. If you cannot confidently answer "yes" to more than a few of these, your legal due diligence is not yet complete enough to price or structure the deal safely.</p>
+
+    <ul class="checklist">
+      <li>Has a corporate lawyer independently verified the target's shareholding structure, cap table, and history of board and shareholder approvals?</li>
+      <li>Have all material contracts been reviewed specifically for change-of-control, assignment, and termination clauses that could be triggered by this transaction?</li>
+      <li>Has a complete litigation and regulatory dispute search been conducted — not limited to what the seller has voluntarily disclosed?</li>
+      <li>Has the target's employment structure been reviewed for statutory compliance, correct worker classification, and any unresolved POSH or disciplinary matters?</li>
+      <li>Has ownership of the target's core intellectual property been verified through signed assignment agreements from every founder, employee, and contractor who contributed to it?</li>
+      <li>If personal data is processed at scale, has DPDP Act compliance been assessed as part of the diligence scope?</li>
+      <li>Has title to any owned or leased real estate been independently verified, including encumbrance checks?</li>
+      <li>Has the transaction been assessed for Competition Act notifiability, and is the CCI approval timeline reflected in the closing schedule if required?</li>
+      <li>Do the transaction documents contain specific representations, warranties, and indemnities addressing every material risk identified during diligence — not just boilerplate language?</li>
+      <li>Is there a clear position, backed by escrow or holdback mechanisms, for any risk that could not be resolved before closing?</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-title">How LexWin Can Help</div>
+      <p>LexWin provides end-to-end M&A legal due diligence and transaction advisory services — from initial risk scoping through to drafting and negotiating the definitive agreements that reflect what diligence uncovers. Our corporate lawyers work alongside your financial and tax advisors so that legal risk, valuation, and deal structure are addressed as a single coordinated exercise, not three disconnected workstreams. We support Indian businesses making acquisitions, private equity and strategic investors, and foreign companies acquiring Indian targets for the first time.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Tags</div>
+      <p><span class="tag">Legal Due Diligence</span><span class="tag">Mergers & Acquisitions</span><span class="tag">Corporate Lawyer</span><span class="tag">M&A Due Diligence</span><span class="tag">Corporate Legal Advisory</span><span class="tag">Share Purchase Agreement</span><span class="tag">Transaction Advisory</span><span class="tag">LexWin</span></p>
+    </div>
+
+  </main><!-- end .article-body -->
+
+
+</div><!-- end .page-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER — identical structure to main site
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">LexWin <span>Legal &amp; HR Consulting</span></div>
+    <div class="footer-tagline">Precision in law. Clarity in counsel. Speed in execution.</div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="https://www.lexwin.co.in/index.html">Home</a></li>
+        <li><a href="https://www.lexwin.co.in/blog/index.html">All Articles</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy">© 2025 LexWin Legal &amp; HR Consulting. Pune, India.</div>
+    <div class="footer-disclaimer">This article is for informational purposes only and does not constitute legal advice. For specific legal guidance, please consult a qualified legal professional.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp-btn" href="https://wa.me/919823385085" target="_blank" title="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<!--Start of Tawk.to Script - widget fully hidden, tracking only-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.visibility = {desktop: 'hidden', mobile: 'hidden', tablet: 'hidden'};
+Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a1a94b50698cf1c2c1da7fd/1jprt9q1g';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
