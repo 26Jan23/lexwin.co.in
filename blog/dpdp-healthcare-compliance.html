@@ -598,6 +598,99 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+
+<!-- ═══════════════════════════════════════════════════════════════
+     UNIFIED NAV — Services dropdown + About/Pune consistency
+     (added site-wide for navigation parity across all pages)
+════════════════════════════════════════════════════════════════ -->
+<style>
+.nav-has-dropdown { position: relative; }
+.nav-dropdown-trigger {
+  display: flex; align-items: center; gap: 0.3rem;
+  font-family: 'DM Sans', 'Source Sans 3', sans-serif;
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none; padding: 0.5rem 0.55rem;
+  border-radius: 4px; transition: color 0.2s;
+  cursor: pointer; background: none; border: none;
+  white-space: nowrap;
+}
+.nav-dropdown-trigger:hover { color: #e8d5a3; }
+.nav-dropdown-trigger svg { transition: transform 0.25s ease; flex-shrink: 0; }
+.nav-has-dropdown:hover .nav-dropdown-trigger svg { transform: rotate(180deg); }
+.nav-has-dropdown:hover .nav-dropdown-trigger { color: #e8d5a3; }
+.nav-dropdown {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10,20,45,0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(184,146,42,0.22);
+  border-top: 2px solid #c9a84c;
+  border-radius: 4px;
+  min-width: 260px;
+  padding: 0.5rem 0;
+  opacity: 0; visibility: hidden;
+  transform: translateX(-50%) translateY(6px);
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  z-index: 200;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+.nav-has-dropdown:hover .nav-dropdown {
+  opacity: 1; visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown-item {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  padding: 0.75rem 1.2rem;
+  text-decoration: none;
+  transition: background 0.18s ease;
+  border-bottom: 1px solid rgba(184,146,42,0.08);
+}
+.nav-dropdown-item:last-child { border-bottom: none; }
+.nav-dropdown-item:hover { background: rgba(184,146,42,0.08); }
+.nav-dropdown-item-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; width: 28px; text-align: center; }
+.nav-dropdown-item-title {
+  font-family: 'DM Sans', 'Source Sans 3', sans-serif;
+  font-size: 0.82rem; font-weight: 600;
+  color: rgba(255,255,255,0.88);
+  letter-spacing: 0.02em; line-height: 1.3;
+  margin-bottom: 0.18rem;
+}
+.nav-dropdown-item:hover .nav-dropdown-item-title { color: #e8d5a3; }
+.nav-dropdown-item-sub { font-size: 0.72rem; color: rgba(255,255,255,0.38); font-weight: 300; line-height: 1.4; }
+.nav-mobile-dropdown { display: none; flex-direction: column; gap: 0; padding-left: 1rem; }
+.nav-mobile-dropdown.open { display: flex; }
+.nav-mobile-dropdown-item {
+  font-family: 'DM Sans', 'Source Sans 3', sans-serif;
+  font-size: 0.8rem; font-weight: 400;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none; padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  letter-spacing: 0.04em;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.nav-mobile-dropdown-item:hover { color: #e8d5a3; }
+.nav-mobile-services-trigger { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.nav-mobile-services-trigger svg { transition: transform 0.25s ease; }
+.nav-mobile-services-trigger.open svg { transform: rotate(180deg); }
+
+/* single-line guarantee + desktop density match, so the extra About/Pune
+   items never cause the menu row to wrap */
+@media (min-width: 1081px) {
+  .nav-hamburger, .nav-toggle { display: none !important; }
+  .nav-links { display: flex !important; gap: 0.05rem !important; }
+  .nav-links > li > a, .nav-links > li > button.nav-dropdown-trigger { font-size: 0.72rem !important; padding: 0.5rem 0.55rem !important; }
+  .nav-cta-btn, .nav-cta { padding: 0.5rem 0.85rem !important; font-size: 0.72rem !important; }
+}
+@media (max-width: 1080px) {
+  .nav-links { display: none !important; }
+  .nav-hamburger, .nav-toggle { display: flex !important; }
+  .nav-dropdown { display: none !important; }
+}
+.nav-open .nav-links, .nav-links.open { display: flex !important; }
+</style>
+
 </head>
 <body>
 
@@ -613,12 +706,57 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+            <li class="nav-has-dropdown">
+        <button class="nav-dropdown-trigger nav-mobile-services-trigger">
+          Services
+          <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L5.5 6L10 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-mobile-dropdown">
+          <a href="/services/hr-consultant.html" class="nav-mobile-dropdown-item">👥 HR Consulting</a>
+          <a href="/services/corporate-legal-consultant.html" class="nav-mobile-dropdown-item">⚖️ Corporate Legal</a>
+          <a href="/services/business-setup-india.html" class="nav-mobile-dropdown-item">🏢 Setting Up Business in India</a>
+          <a href="/services/real-estate-legal-due-diligence.html" class="nav-mobile-dropdown-item">🏛️ Real Estate Due Diligence</a>
+        </div>
+        <div class="nav-dropdown">
+          <a href="/services/hr-consultant.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">👥</span>
+            <div>
+              <div class="nav-dropdown-item-title">HR Consulting</div>
+              <div class="nav-dropdown-item-sub">Policies · POSH · Contracts · Performance</div>
+            </div>
+          </a>
+          <a href="/services/corporate-legal-consultant.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">⚖️</span>
+            <div>
+              <div class="nav-dropdown-item-title">Corporate Legal</div>
+              <div class="nav-dropdown-item-sub">Contracts · M&amp;A · DPDP · Retainer</div>
+            </div>
+          </a>
+          <a href="/services/business-setup-india.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">🏢</span>
+            <div>
+              <div class="nav-dropdown-item-title">Setting Up Business in India</div>
+              <div class="nav-dropdown-item-sub">Incorporation · Compliance · Market Entry</div>
+            </div>
+          </a>
+          <a href="/services/real-estate-legal-due-diligence.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">🏛️</span>
+            <div>
+              <div class="nav-dropdown-item-title">Real Estate Due Diligence</div>
+              <div class="nav-dropdown-item-sub">Title · Lease · Sale Agreement</div>
+            </div>
+          </a>
+        </div>
+      </li>
       <li><a href="https://www.lexwin.co.in/index.html#who-we-help">Who We Help</a></li>
       <li><a href="https://www.lexwin.co.in/index.html#engagement">Engagement</a></li>
       <li><a href="https://www.lexwin.co.in/blog/index.html">Insights</a></li>
       <li><a href="https://www.lexwin.co.in/free-tools.html">Free Tools</a></li>
       <li><a href="https://www.lexwin.co.in/pune-legal-hr-consultant.html">Pune &amp; Maharashtra</a></li>
+            <li><a href="https://www.lexwin.co.in/about.html">About</a></li>
+      <li><a href="https://www.lexwin.co.in/pune-legal-hr-consultant.html">Pune</a></li>
       <li><a href="https://calendly.com/sadanand-sonar/30min" class="nav-cta-btn" target="_blank" rel="noopener">Free Consultation</a></li>
     </ul>
   </div>
@@ -1389,5 +1527,20 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+<script>
+(function(){
+  var t = document.querySelector('.nav-mobile-services-trigger');
+  var d = document.querySelector('.nav-mobile-dropdown');
+  if (t && d && !t.dataset.gnavBound) {
+    t.dataset.gnavBound = '1';
+    t.addEventListener('click', function(e){
+      e.stopPropagation();
+      d.classList.toggle('open');
+      t.classList.toggle('open');
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
