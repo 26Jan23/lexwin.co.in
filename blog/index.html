@@ -58,6 +58,7 @@
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
+@media (max-width: 768px) { html { scroll-behavior: auto !important; } }
 body {
   font-family: 'Source Sans 3', sans-serif;
   color: var(--text-dark);
@@ -704,9 +705,16 @@ if (navToggle) {
     link.addEventListener('click', () => navEl.classList.remove('nav-open'));
   });
 }
+let __navTicking = false;
 window.addEventListener('scroll', () => {
-  document.querySelector('nav').style.boxShadow = window.scrollY > 40 ? '0 2px 24px rgba(0,0,0,0.3)' : 'none';
-});
+  if (!__navTicking) {
+    requestAnimationFrame(() => {
+      document.querySelector('nav').style.boxShadow = window.scrollY > 40 ? '0 2px 24px rgba(0,0,0,0.3)' : 'none';
+      __navTicking = false;
+    });
+    __navTicking = true;
+  }
+}, { passive: true });
 
 let activeFilter = 'all';
 
