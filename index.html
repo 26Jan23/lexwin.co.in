@@ -1936,9 +1936,14 @@ s0.parentNode.insertBefore(s1,s0);
     }
     updateDots();
   }
+  function getX(el){
+    var m=/translateX\(([-\d.]+)px\)/.exec(el.style.transform);
+    return m?parseFloat(m[1]):0;
+  }
   function advance(){
     if(busy)return;busy=true;
     var w=cw(),ww=wrap.offsetWidth,n=vis(),ease='cubic-bezier(0.4,0,0.2,1)';
+    var velocity=(w+GAP)/SLIDE; // px/ms — one normal slot-shift takes exactly SLIDE ms
     cards[ix(0)].style.transition='opacity 80ms ease';
     cards[ix(0)].style.opacity='0';
     setTimeout(function(){
@@ -1948,13 +1953,17 @@ s0.parentNode.insertBefore(s1,s0);
       var nc=cards[ix(n+1)];
       nc.style.transition='none';nc.style.transform='translateX('+(ww+w+40)+'px)';nc.style.opacity='1';
       track.offsetHeight;
+      var maxDur=SLIDE;
       for(var k=1;k<=n+1;k++){
         var card=cards[ix(k)],slot=k-1;
-        card.style.transition='transform '+SLIDE+'ms '+ease;card.style.opacity='1';
-        if(slot<n){card.style.transform='translateX('+(slot*(w+GAP))+'px)';}
-        else{card.style.transform='translateX('+(n*(w+GAP)-GAP+8)+'px)';}
+        var oldX=getX(card);
+        var targetX=(slot<n)?(slot*(w+GAP)):(n*(w+GAP)-GAP+8);
+        var dur=Math.max(160,Math.round(Math.abs(targetX-oldX)/velocity));
+        if(dur>maxDur)maxDur=dur;
+        card.style.transition='transform '+dur+'ms '+ease;card.style.opacity='1';
+        card.style.transform='translateX('+targetX+'px)';
       }
-      setTimeout(function(){cur=ix(1);busy=false;updateDots();},SLIDE+20);
+      setTimeout(function(){cur=ix(1);busy=false;updateDots();},maxDur+20);
     },100);
   }
   function buildDots(){
