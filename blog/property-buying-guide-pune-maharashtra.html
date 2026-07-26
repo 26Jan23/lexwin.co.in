@@ -778,45 +778,45 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
         }
 
     /* ── Due diligence process flow ── */
-    .dd-flow { display: flex; gap: 0; margin: 2rem 0 1rem; overflow-x: auto; padding-bottom: .5rem; }
-    .dd-step { flex: 1 1 0; min-width: 165px; position: relative; padding: 0 1rem; text-align: center; }
-    .dd-step:not(:last-child)::after {
+    .icon-flow { display: flex; gap: 0; margin: 2rem 0 1rem; overflow-x: auto; padding-bottom: .5rem; }
+    .flow-step { flex: 1 1 0; min-width: 165px; position: relative; padding: 0 1rem; text-align: center; }
+    .flow-step:not(:last-child)::after {
       content: ''; position: absolute; top: 30px; left: calc(50% + 44px); right: calc(-50% + 44px);
       height: 2px; background: repeating-linear-gradient(90deg, var(--gold) 0 6px, transparent 6px 11px);
     }
-    .dd-icon {
+    .flow-icon {
       width: 60px; height: 60px; margin: 0 auto .9rem; border-radius: 50%;
       background: var(--navy); border: 2px solid var(--gold);
       display: flex; align-items: center; justify-content: center; position: relative; z-index: 1;
     }
-    .dd-icon svg { width: 28px; height: 28px; stroke: var(--gold-light); fill: none; stroke-width: 1.6; }
-    .dd-step h4 { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 700; color: var(--navy); margin: 0 0 .35rem; }
-    .dd-step p { font-family: 'DM Sans', sans-serif; font-size: .78rem; font-weight: 400; color: var(--text-muted); line-height: 1.55; max-width: 150px; margin: 0 auto; }
+    .flow-icon svg { width: 28px; height: 28px; stroke: var(--gold-light); fill: none; stroke-width: 1.6; }
+    .flow-step h4 { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 700; color: var(--navy); margin: 0 0 .35rem; }
+    .flow-step p { font-family: 'DM Sans', sans-serif; font-size: .78rem; font-weight: 400; color: var(--text-muted); line-height: 1.55; max-width: 150px; margin: 0 auto; }
     @media (max-width: 700px) {
-      .dd-flow { flex-direction: column; align-items: stretch; gap: 1.6rem; }
-      .dd-step { display: flex; align-items: flex-start; gap: 1rem; text-align: left; padding: 0; }
-      .dd-step:not(:last-child)::after {
+      .icon-flow { flex-direction: column; align-items: stretch; gap: 1.6rem; }
+      .flow-step { display: flex; align-items: flex-start; gap: 1rem; text-align: left; padding: 0; }
+      .flow-step:not(:last-child)::after {
         top: 60px; left: 29px; right: auto; bottom: -1.6rem; width: 2px; height: 1.6rem;
         background: repeating-linear-gradient(180deg, var(--gold) 0 6px, transparent 6px 11px);
       }
-      .dd-icon { margin: 0; flex-shrink: 0; }
-      .dd-step p { max-width: none; }
+      .flow-icon { margin: 0; flex-shrink: 0; }
+      .flow-step p { max-width: none; }
     }
 
     /* ── Six property types icon grid ── */
-    .ptype-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0 1rem; }
-    .ptype-card {
+    .icon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0 1rem; }
+    .icon-card {
       background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold);
       border-radius: var(--radius); padding: 1.3rem 1.1rem; text-align: center;
       transition: box-shadow .2s, transform .2s;
     }
-    .ptype-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-    .ptype-icon { width: 48px; height: 48px; margin: 0 auto .8rem; border-radius: 50%; background: var(--gold-pale); display: flex; align-items: center; justify-content: center; }
-    .ptype-icon svg { width: 24px; height: 24px; stroke: var(--navy); fill: none; stroke-width: 1.6; }
-    .ptype-card h4 { font-family: 'Playfair Display', serif; font-size: .92rem; font-weight: 700; color: var(--navy); margin: 0 0 .3rem; line-height: 1.3; }
-    .ptype-card p { font-family: 'DM Sans', sans-serif; font-size: .74rem; color: var(--text-muted); margin: 0; line-height: 1.5; }
+    .icon-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .icon-card-icon { width: 48px; height: 48px; margin: 0 auto .8rem; border-radius: 50%; background: var(--gold-pale); display: flex; align-items: center; justify-content: center; }
+    .icon-card-icon svg { width: 24px; height: 24px; stroke: var(--navy); fill: none; stroke-width: 1.6; }
+    .icon-card h4 { font-family: 'Playfair Display', serif; font-size: .92rem; font-weight: 700; color: var(--navy); margin: 0 0 .3rem; line-height: 1.3; }
+    .icon-card p { font-family: 'DM Sans', sans-serif; font-size: .74rem; color: var(--text-muted); margin: 0; line-height: 1.5; }
     @media (max-width: 640px) {
-      .ptype-grid { grid-template-columns: repeat(2, 1fr); }
+      .icon-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
         </style>
@@ -1009,34 +1009,34 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
     <h2 id="property-types">Six Kinds of Property You Might Be Buying</h2>
     <p>Each property type carries its own risk profile, its own governing records, and its own common points of failure. Knowing which category you are in tells you which questions matter most.</p>
 
-    <div class="ptype-grid">
-      <div class="ptype-card">
-        <div class="ptype-icon"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v10h12V10" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke-linejoin="round"/></svg></div>
+    <div class="icon-grid">
+      <div class="icon-card">
+        <div class="icon-card-icon"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v10h12V10" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke-linejoin="round"/></svg></div>
         <h4>Home / Apartment</h4>
         <p>RERA-regulated, chain-of-title risk on resale</p>
       </div>
-      <div class="ptype-card">
-        <div class="ptype-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke-linejoin="round"/><path d="M15 6.5V4h2v4" stroke-linejoin="round"/></svg></div>
+      <div class="icon-card">
+        <div class="icon-card-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke-linejoin="round"/><path d="M15 6.5V4h2v4" stroke-linejoin="round"/></svg></div>
         <h4>Farm House</h4>
         <p>Agricultural land, NA conversion status matters</p>
       </div>
-      <div class="ptype-card">
-        <div class="ptype-icon"><svg viewBox="0 0 24 24"><path d="M3 21V11l4-3 4 3v10M11 21V8l5-4 5 4v17" stroke-linejoin="round" stroke-linecap="round"/><path d="M3 21h18" stroke-linecap="round"/></svg></div>
+      <div class="icon-card">
+        <div class="icon-card-icon"><svg viewBox="0 0 24 24"><path d="M3 21V11l4-3 4 3v10M11 21V8l5-4 5 4v17" stroke-linejoin="round" stroke-linecap="round"/><path d="M3 21h18" stroke-linecap="round"/></svg></div>
         <h4>Industrial Shed</h4>
         <p>MIDC leasehold terms, fire &amp; pollution NOCs</p>
       </div>
-      <div class="ptype-card">
-        <div class="ptype-icon"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h.01M12 7h.01M15 7h.01M9 11h.01M12 11h.01M15 11h.01M9 15h.01M12 15h.01M15 15h.01" stroke-linecap="round" stroke-width="2.4"/></svg></div>
+      <div class="icon-card">
+        <div class="icon-card-icon"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h.01M12 7h.01M15 7h.01M9 11h.01M12 11h.01M15 11h.01M9 15h.01M12 15h.01M15 15h.01" stroke-linecap="round" stroke-width="2.4"/></svg></div>
         <h4>Corporate Office</h4>
         <p>Occupation certificate for commercial use</p>
       </div>
-      <div class="ptype-card">
-        <div class="ptype-icon"><svg viewBox="0 0 24 24"><path d="M3 17l4-9 4 5 3-7 7 11" stroke-linejoin="round" stroke-linecap="round"/><path d="M3 20h18" stroke-linecap="round"/></svg></div>
+      <div class="icon-card">
+        <div class="icon-card-icon"><svg viewBox="0 0 24 24"><path d="M3 17l4-9 4 5 3-7 7 11" stroke-linejoin="round" stroke-linecap="round"/><path d="M3 20h18" stroke-linecap="round"/></svg></div>
         <h4>Open Land / Plot</h4>
         <p>Development Plan reservation status, boundary demarcation</p>
       </div>
-      <div class="ptype-card">
-        <div class="ptype-icon"><svg viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l6-6M6.5 15.5l4-4M16 10l-8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 22l4-1 5-5-3-3-5 5z" stroke-linejoin="round"/></svg></div>
+      <div class="icon-card">
+        <div class="icon-card-icon"><svg viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l6-6M6.5 15.5l4-4M16 10l-8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 22l4-1 5-5-3-3-5 5z" stroke-linejoin="round"/></svg></div>
         <h4>Auction Property</h4>
         <p>Sold "as-is"; buyer bears the diligence burden</p>
       </div>
@@ -1164,30 +1164,30 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
 
     <p>Legal due diligence on property is the systematic verification of three things: that the seller genuinely owns what they are selling, that the property is free of undisclosed encumbrances or claims, and that the transaction — once completed — will actually give the buyer the rights they believe they are paying for. It is not a single document check. It is a process.</p>
 
-    <div class="dd-flow">
-      <div class="dd-step">
-        <div class="dd-icon">
+    <div class="icon-flow">
+      <div class="flow-step">
+        <div class="flow-icon">
           <svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L20 20" stroke-linecap="round"/></svg>
         </div>
         <h4>Title Search</h4>
         <p>Trace ownership back 30+ years through sale deeds, gift deeds, and court orders</p>
       </div>
-      <div class="dd-step">
-        <div class="dd-icon">
+      <div class="flow-step">
+        <div class="flow-icon">
           <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M8 9h8M8 13h8M8 17h5" stroke-linecap="round"/></svg>
         </div>
         <h4>Mutation &amp; Revenue Records</h4>
         <p>Confirm the 7/12 extract or Property Card actually reflects the registered transfer</p>
       </div>
-      <div class="dd-step">
-        <div class="dd-icon">
+      <div class="flow-step">
+        <div class="flow-icon">
           <svg viewBox="0 0 24 24"><path d="M12 3v18M7 7l-4 8a4 4 0 008 0l-4-8zM17 7l-4 8a4 4 0 008 0l-4-8zM5 7h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h4>Litigation &amp; Encumbrance</h4>
         <p>Search court and Sub-Registrar records for pending suits or registered charges</p>
       </div>
-      <div class="dd-step">
-        <div class="dd-icon">
+      <div class="flow-step">
+        <div class="flow-icon">
           <svg viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg>
         </div>
         <h4>Physical Verification</h4>

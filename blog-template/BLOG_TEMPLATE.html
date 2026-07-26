@@ -446,6 +446,54 @@
       font-size: 1rem;
     }
 
+    /* 10. Icon process flow — a sequence of steps with custom SVG icons
+       and a dashed gold connector. Use where the article describes a
+       genuine ordered process (a legal procedure, a deal lifecycle).
+       Collapses to a vertical connected list on mobile automatically. */
+    .icon-flow { display: flex; gap: 0; margin: 2rem 0 1rem; overflow-x: auto; padding-bottom: .5rem; }
+    .flow-step { flex: 1 1 0; min-width: 165px; position: relative; padding: 0 1rem; text-align: center; }
+    .flow-step:not(:last-child)::after {
+      content: ''; position: absolute; top: 30px; left: calc(50% + 44px); right: calc(-50% + 44px);
+      height: 2px; background: repeating-linear-gradient(90deg, var(--gold) 0 6px, transparent 6px 11px);
+    }
+    .flow-icon {
+      width: 60px; height: 60px; margin: 0 auto .9rem; border-radius: 50%;
+      background: var(--navy); border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center; position: relative; z-index: 1;
+    }
+    .flow-icon svg { width: 28px; height: 28px; stroke: var(--gold-light); fill: none; stroke-width: 1.6; }
+    .flow-step h4 { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 700; color: var(--navy); margin: 0 0 .35rem; }
+    .flow-step p { font-family: 'DM Sans', sans-serif; font-size: .78rem; font-weight: 400; color: var(--text-muted); line-height: 1.55; max-width: 150px; margin: 0 auto; text-align: center; }
+    @media (max-width: 700px) {
+      .icon-flow { flex-direction: column; align-items: stretch; gap: 1.6rem; }
+      .flow-step { display: flex; align-items: flex-start; gap: 1rem; text-align: left; padding: 0; }
+      .flow-step:not(:last-child)::after {
+        top: 60px; left: 29px; right: auto; bottom: -1.6rem; width: 2px; height: 1.6rem;
+        background: repeating-linear-gradient(180deg, var(--gold) 0 6px, transparent 6px 11px);
+      }
+      .flow-icon { margin: 0; flex-shrink: 0; }
+      .flow-step p { max-width: none; text-align: left; }
+    }
+
+    /* 11. Icon category grid — a scannable index of categories, each
+       with a custom SVG icon. Use where the article covers a set of
+       distinct types/categories, usually placed above the detailed
+       table or prose that covers each one. 3 columns -> 2 on mobile. */
+    .icon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0 1rem; }
+    .icon-card {
+      background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold);
+      border-radius: var(--radius); padding: 1.3rem 1.1rem; text-align: center;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .icon-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .icon-card-icon { width: 48px; height: 48px; margin: 0 auto .8rem; border-radius: 50%; background: var(--gold-pale); display: flex; align-items: center; justify-content: center; }
+    .icon-card-icon svg { width: 24px; height: 24px; stroke: var(--navy); fill: none; stroke-width: 1.6; }
+    .icon-card h4 { font-family: 'Playfair Display', serif; font-size: .92rem; font-weight: 700; color: var(--navy); margin: 0 0 .3rem; line-height: 1.3; }
+    .icon-card p { font-family: 'DM Sans', sans-serif; font-size: .74rem; color: var(--text-muted); margin: 0; line-height: 1.5; text-align: center; }
+    @media (max-width: 640px) {
+      .icon-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     /* Article tags */
     .article-tags {
       display: flex;
@@ -997,6 +1045,22 @@
     ║  .highlight-card  — icon + label + risk badge       ║
     ║  .checklist       — ✓ self-diagnostic list          ║
     ║                                                      ║
+    ║  DIAGRAMS — include at least one where content fits: ║
+    ║  .icon-flow       — SVG-icon process flow with       ║
+    ║                     dashed connectors, for genuine   ║
+    ║                     ordered sequences (a legal       ║
+    ║                     procedure, a deal lifecycle)     ║
+    ║  .icon-grid       — SVG-icon category cards, for a   ║
+    ║                     set of distinct types; place     ║
+    ║                     above the detailed table/prose   ║
+    ║  Icons: hand-drawn inline SVG, 24x24 viewBox,        ║
+    ║  stroke-based (no fill) — the CSS sets stroke color  ║
+    ║  and width. NEVER external/stock images (licensing). ║
+    ║  Draw each icon specific to its concept, not         ║
+    ║  generic clip-art. Don't force a diagram into an     ║
+    ║  article whose content has no process/category       ║
+    ║  structure — skip it there.                          ║
+    ║                                                      ║
     ║  EACH h2 MUST have a matching id= for TOC links     ║
     ╚══════════════════════════════════════════════════════╝
     -->
@@ -1031,6 +1095,65 @@
     <p>{{SECTION_1_CONTENT}}</p>
 
     <!-- Add more h2 sections as needed following the structure guide above -->
+
+    <!-- ═══════════════════════════════════════════════════════
+         DIAGRAM EXAMPLES — keep whichever fits this article's
+         content, delete the other (or both if neither fits).
+         Icons: inline SVG, viewBox="0 0 24 24", stroke-based
+         paths only (no fill attribute — CSS handles color).
+         Draw each icon for its specific concept. First icon
+         below (magnifier) is a real example of the style.
+    ════════════════════════════════════════════════════════ -->
+
+    <!-- A. Process flow — for a genuine ordered sequence.
+         3-5 steps works best; place after the intro paragraph
+         of the section whose process it summarises. -->
+    <div class="icon-flow">
+      <div class="flow-step">
+        <div class="flow-icon">
+          <svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L20 20" stroke-linecap="round"/></svg>
+        </div>
+        <h4>{{FLOW_STEP_1_TITLE}}</h4>
+        <p>{{FLOW_STEP_1_TEXT}}</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">
+          <!-- custom SVG icon for step 2 -->
+        </div>
+        <h4>{{FLOW_STEP_2_TITLE}}</h4>
+        <p>{{FLOW_STEP_2_TEXT}}</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">
+          <!-- custom SVG icon for step 3 -->
+        </div>
+        <h4>{{FLOW_STEP_3_TITLE}}</h4>
+        <p>{{FLOW_STEP_3_TEXT}}</p>
+      </div>
+      <!-- Add .flow-step blocks as needed (max ~5 before it crowds) -->
+    </div>
+
+    <!-- B. Category icon grid — for a set of distinct types.
+         Place ABOVE the detailed table/prose covering the same
+         categories, as a scannable index — it complements the
+         detail, it doesn't replace it. 6 cards (3x2) is ideal. -->
+    <div class="icon-grid">
+      <div class="icon-card">
+        <div class="icon-card-icon">
+          <!-- custom SVG icon for this category -->
+        </div>
+        <h4>{{CATEGORY_1_NAME}}</h4>
+        <p>{{CATEGORY_1_ONE_LINER}}</p>
+      </div>
+      <div class="icon-card">
+        <div class="icon-card-icon">
+          <!-- custom SVG icon for this category -->
+        </div>
+        <h4>{{CATEGORY_2_NAME}}</h4>
+        <p>{{CATEGORY_2_ONE_LINER}}</p>
+      </div>
+      <!-- Add .icon-card blocks as needed -->
+    </div>
 
     <!-- WHO NEEDS THIS TABLE -->
     <h2 id="who-needs">{{WHO_NEEDS_HEADING}}</h2>

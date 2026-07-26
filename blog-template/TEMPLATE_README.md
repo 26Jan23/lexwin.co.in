@@ -92,6 +92,43 @@ Minimum 2,500 words. Target 3,500+.
 | Card grid | `.card-grid` + `.policy-card` | Listing services, agreement types, policy areas |
 | Highlight cards | `.highlight-card` | Policies/topics with risk badge (high/med/low) |
 | Checklist | `.checklist` | Self-diagnostic or recommended action list |
+| Icon process flow | `.icon-flow` + `.flow-step` | A genuine ordered sequence — a legal procedure, a deal lifecycle. 3–5 steps. |
+| Icon category grid | `.icon-grid` + `.icon-card` | A set of distinct types/categories, placed **above** the detailed table or prose it indexes. 6 cards (3×2) is ideal. |
+
+---
+
+## Diagrams — every article should carry at least one where the content fits
+
+The two diagram components (`.icon-flow`, `.icon-grid`) are what keep
+articles from being walls of text. The rule:
+
+- **If the article explains a process or sequence** → add an `.icon-flow`
+  summarising it visually, placed right after the intro paragraph of the
+  section whose process it depicts. The detailed prose stays below it —
+  the diagram is an overview, not a replacement.
+- **If the article covers a set of categories/types** → add an
+  `.icon-grid` as a scannable index above the detailed comparison table
+  or prose.
+- **If neither structure genuinely exists in the content** → skip the
+  diagram. A forced diagram is worse than none.
+
+Icon rules (both components):
+
+- Hand-drawn **inline SVG**, `viewBox="0 0 24 24"`, stroke-based paths
+  only — no `fill` attribute, no `stroke` attribute on the SVG itself
+  (the component CSS sets stroke color and width).
+- Draw each icon for its **specific concept** — a warehouse roofline for
+  industrial property, a magnifier for a title search — not generic
+  clip-art. The template's example flow-step contains a reference icon.
+- **Never** use external images, stock photos, or icon-font/CDN icons —
+  licensing cannot be verified, and external requests are a dependency.
+  Everything must be drawn in the file.
+- Both components handle mobile automatically (flow → vertical connected
+  list below 700px; grid → 2 columns below 640px). Nothing extra needed.
+
+Reference implementation live on the site:
+`blog/property-buying-guide-pune-maharashtra.html` (due-diligence flow +
+six-property-types grid).
 
 ---
 
@@ -167,6 +204,7 @@ matching each section's `id=`.
 - [ ] All `h2` elements have unique `id=` attributes
 - [ ] TOC `li` links match `h2` ids
 - [ ] Stat strip has 4 relevant stats
+- [ ] At least one diagram (`.icon-flow` or `.icon-grid`) where the content has a genuine process or category structure — with hand-drawn inline SVG icons, never external images. (Skip only if the content truly has neither; delete the unused example blocks either way.)
 - [ ] Minimum 2,500 words in article body
 - [ ] Every `<table>` is wrapped in `<div class="table-wrapper">...</div>`
 - [ ] Tags section populated (6–10 tags)

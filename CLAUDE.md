@@ -38,7 +38,17 @@ headline than the `<title>` tag — they don't have to match. Only the
    the single shared stylesheet for all blog articles. If the site-wide
    nav/footer ever needs to change, edit that file and the template
    first, then nothing else needs updating per-article.
-3. Add the new article's card to `blog/index.html`, the homepage
+3. Every article should include at least one diagram where the content
+   has a genuine process or category structure — the template ships two
+   components for this: `.icon-flow` (SVG-icon process flow) and
+   `.icon-grid` (SVG-icon category index, placed above the detailed
+   table it summarises). Icons are hand-drawn inline SVG (24×24
+   viewBox, stroke-based, styled by the component CSS) — **never**
+   external/stock images, whose licensing can't be verified. Skip the
+   diagram only when the content truly has neither structure; a forced
+   diagram is worse than none. Reference implementation:
+   `blog/property-buying-guide-pune-maharashtra.html`.
+4. Add the new article's card to `blog/index.html`, the homepage
    slideshow in `index.html`, and an entry in `sitemap.xml` — this is
    currently manual, not automated. Bump the `#blogCountNum` count where
    it's still hardcoded.
