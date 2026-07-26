@@ -243,6 +243,13 @@ nav {
   font-size: 0.82rem; font-weight: 600;
   color: var(--gold);
   letter-spacing: 0.04em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.blog-count-badge:hover {
+  background: rgba(200,148,58,0.22);
+  border-color: rgba(200,148,58,0.6);
 }
 .blog-count-num {
   font-size: 1.1rem; font-weight: 800;
@@ -1312,7 +1319,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       <div class="ornament"></div>
       <h2>Stay Ahead of India’s Regulatory Landscape</h2>
       <p>Practical legal and HR insights from our practice — written for business owners and decision-makers, not just lawyers.</p>
-      <div class="blog-count-badge"><span class="blog-count-num" id="blogCountNum">0</span> free articles &amp; counting</div>
+      <a href="blog/index.html" class="blog-count-badge"><span class="blog-count-num" id="blogCountNum">0</span> free articles &amp; counting</a>
     </div>
     <div class="slideshow-wrap">
       <div class="slideshow-track" id="slideshowTrack">
