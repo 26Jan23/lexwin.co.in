@@ -444,18 +444,18 @@ nav {
 }
 
 /* ── DOMAINS ── */
-.domains-strip { background: var(--navy-deep); padding: 3.5rem 2rem; }
+.domains-strip { background: var(--white); padding: 3.5rem 2rem; }
 .domains-inner { max-width: 1200px; margin: 0 auto; }
 .domains-label { text-align: center; margin-bottom: 2rem; }
 .domains-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
 .domain-pill {
-  background: rgba(184,146,42,0.08);
+  background: var(--gold-pale);
   border: 1px solid rgba(184,146,42,0.25);
-  color: rgba(255,255,255,0.7); font-size: 0.82rem; font-weight: 400;
+  color: var(--gold-dark); font-size: 0.82rem; font-weight: 400;
   padding: 0.55rem 1.3rem; border-radius: 2rem; letter-spacing: 0.04em;
   transition: var(--transition);
 }
-.domain-pill:hover { background: rgba(184,146,42,0.2); border-color: rgba(184,146,42,0.5); color: var(--gold-light); }
+.domain-pill:hover { background: var(--gold-light); border-color: var(--gold); color: var(--navy-deep); }
 
 /* ── WHY LEXWIN ── */
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: start; }
@@ -1191,23 +1191,6 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
   </div>
 </section>
 
-<!-- DOMAINS -->
-<div class="domains-strip">
-  <div class="domains-inner">
-    <div class="domains-label"><div class="label label-light">Domains We Serve</div></div>
-    <div class="domains-grid">
-      <div class="domain-pill">Indian Subsidiaries of Foreign Companies</div>
-      <div class="domain-pill">IT & ITES</div>
-      <div class="domain-pill">Manufacturing & Industrial</div>
-      <div class="domain-pill">Cosmeceuticals & Life Sciences</div>
-      <div class="domain-pill">Infrastructure & Real Estate</div>
-      <div class="domain-pill">Deep Tech & Drone Technology</div>
-      <div class="domain-pill">Renewable Energy</div>
-      <div class="domain-pill">Logistics & Supply Chain</div>
-    </div>
-  </div>
-</div>
-
 <!-- WHY LEXWIN -->
 <section class="section" id="why">
   <div class="section-inner">
@@ -1690,6 +1673,23 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
     </div>
   </div>
 </section>
+
+<!-- DOMAINS -->
+<div class="domains-strip">
+  <div class="domains-inner">
+    <div class="domains-label"><div class="label">Domains We Serve</div></div>
+    <div class="domains-grid">
+      <div class="domain-pill">Indian Subsidiaries of Foreign Companies</div>
+      <div class="domain-pill">IT & ITES</div>
+      <div class="domain-pill">Manufacturing & Industrial</div>
+      <div class="domain-pill">Cosmeceuticals & Life Sciences</div>
+      <div class="domain-pill">Infrastructure & Real Estate</div>
+      <div class="domain-pill">Deep Tech & Drone Technology</div>
+      <div class="domain-pill">Renewable Energy</div>
+      <div class="domain-pill">Logistics & Supply Chain</div>
+    </div>
+  </div>
+</div>
 
 <!-- CTA BAND -->
 <div class="cta-band">
