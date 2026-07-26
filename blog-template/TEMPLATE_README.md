@@ -3,6 +3,15 @@
 ## File to copy for every new article
 `BLOG_TEMPLATE.html` → copy to `/blog/{{ARTICLE_SLUG}}.html`
 
+## Already built in — do not rebuild these per article
+Nav (with Services dropdown + About/Pune), footer, favicon links, GA4,
+Tawk.to chat widget, WhatsApp button, and mobile-responsive table CSS
+are all already wired into this template exactly as they appear on
+every live page. Copy them as-is — do not hand-write them per article.
+If the site-wide nav or footer ever changes, update this template
+first so it stays the single source of truth, then update live
+articles to match — not the other way round.
+
 ---
 
 ## Mandatory fills — EVERY article
@@ -86,7 +95,11 @@ Minimum 2,500 words. Target 3,500+.
 
 ---
 
-## Sidebar placeholders
+## Table of contents + remaining body placeholders
+
+The layout is single-column (no sidebar) — the "In this article" box at
+the top of `.article-body` is the TOC. Add one `<li>` per `h2` section,
+matching each section's `id=`.
 
 | Placeholder | What to put |
 |---|---|
@@ -94,11 +107,16 @@ Minimum 2,500 words. Target 3,500+.
 | `{{WHO_NEEDS_HEADING_SHORT}}` | e.g. `Who needs this` |
 | `{{CHECKLIST_HEADING_SHORT}}` | e.g. `Self-diagnostic` |
 | `{{CONCLUSION_HEADING_SHORT}}` | e.g. `Conclusion` |
-| `{{CTA_CARD_HEADER}}` | e.g. `Get Expert Legal Advice` |
-| `{{CTA_CARD_INTRO}}` | 1–2 sentences explaining the offer. |
-| `{{CTA_BULLET_1–3}}` | What LexWin covers for this specific topic. |
-| `{{RELATED_1–3_URL}}` | Full path, e.g. `/blog/posh-complete-guide.html` |
-| `{{RELATED_1–3_TITLE}}` | Article title (short form). |
+| `{{WHO_NEEDS_HEADING}}` | Full heading, e.g. `Who Needs This — and When` |
+| `{{WHO_ROW_1_PROFILE}}` / `{{WHO_ROW_1_RISKS}}` / `{{WHO_ROW_1_ACTIONS}}` | One row of the who-needs-this table. Copy the `<tr>` for additional rows/profiles. |
+| `{{CHECKLIST_HEADING}}` | Full heading, e.g. `Pre-Engagement Checklist` |
+| `{{CHECKLIST_ITEM_1}}`, `{{CHECKLIST_ITEM_2}}` | One self-diagnostic question per `<li>`. Add more `<li>` as needed. |
+| `{{CONCLUSION_HEADING}}` | Full heading, e.g. `Conclusion` |
+| `{{CONCLUSION_TEXT}}` | Closing paragraph(s) before the LexWin CTA callout. |
+| `{{LEXWIN_CTA_CALLOUT}}` | 1–2 sentences on how LexWin helps with this specific topic. |
+| `{{TAG_1}}`, `{{TAG_2}}`, `{{TAG_3}}` | Article tags (6–10 recommended — copy the `<span class="tag">` for more). |
+
+**Note:** every `<table>` must be wrapped in `<div class="table-wrapper">...</div>` (already done around the who-needs-this table in the template) — this is what makes wide tables scroll on mobile instead of breaking the layout. Keep this wrapper on any additional tables you add.
 
 ---
 
