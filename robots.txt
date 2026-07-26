@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /blog-template/
 
 Sitemap: https://www.lexwin.co.in/sitemap.xml
