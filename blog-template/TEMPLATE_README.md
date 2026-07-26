@@ -19,8 +19,8 @@ articles to match — not the other way round.
 | Placeholder | What to put |
 |---|---|
 | `{{ARTICLE_SLUG}}` | URL-safe filename, e.g. `legal-consultant-corporate` |
-| `{{ARTICLE_TITLE}}` | Full title. Wrap accent word in `<em>` tag in the `<h1>`. Use plain text in `<title>` and meta tags. |
-| `{{META_DESCRIPTION}}` | 140–160 chars. Action-oriented. Summarise the reader's benefit. |
+| `{{ARTICLE_TITLE}}` | The `<h1>` can be a longer, richer headline (wrap the accent word in `<em>`) — but the `<title>` tag itself must be a **short** version, 60–65 chars including ` | LexWin`, since Google truncates longer titles in search results. They don't have to be the same text; the `<h1>` sells the article, the `<title>` just needs to fit. |
+| `{{META_DESCRIPTION}}` | 120–160 chars, ideally ~150. Action-oriented. Summarise the reader's benefit. Anything longer gets truncated mid-sentence in Google's search snippet. |
 | `{{META_KEYWORDS}}` | 6–10 comma-separated keywords. Include "LexWin" as one. |
 | `{{OG_TITLE}}` | Same as article title (plain text, no `<em>`). Max 60 chars. |
 | `{{OG_DESCRIPTION}}` | Same as meta description or a short variant. |
@@ -156,14 +156,19 @@ matching each section's `id=`.
 
 ## Checklist before publishing
 
+- [ ] Run `python3 scripts/check_seo_meta.py` from the repo root — must report "All N pages OK" with no new failures
 - [ ] All `{{PLACEHOLDER}}` values replaced — none remaining in file
-- [ ] `<title>` includes article title + `| LexWin`
+- [ ] `<title>` is 60–65 characters max, including ` | LexWin`, and unique across the site — Google truncates longer titles in search results
+- [ ] `META_DESCRIPTION` is 120–160 characters — Google truncates the search snippet past ~155-160 chars, so anything longer just gets cut off mid-sentence
+- [ ] JSON-LD `"headline"` matches the `<title>` text with the ` | LexWin` suffix removed
+- [ ] JSON-LD `"description"` matches `META_DESCRIPTION` exactly (same string, both places — single source of truth)
 - [ ] Canonical URL matches actual file path
 - [ ] `datePublished` in JSON-LD is correct
 - [ ] All `h2` elements have unique `id=` attributes
 - [ ] TOC `li` links match `h2` ids
 - [ ] Stat strip has 4 relevant stats
 - [ ] Minimum 2,500 words in article body
+- [ ] Every `<table>` is wrapped in `<div class="table-wrapper">...</div>`
 - [ ] Tags section populated (6–10 tags)
 - [ ] Related articles links are valid and live
 - [ ] No broken internal links
