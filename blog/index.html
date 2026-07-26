@@ -85,7 +85,7 @@ h1, h2, h3, h4 {
 }
 
 /* ── NAV ── */
-nav {
+nav:not([aria-label="Footer navigation"]) {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: rgba(12,26,53,0.97);
   backdrop-filter: blur(16px);

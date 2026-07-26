@@ -117,7 +117,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; color
 .ornament { display: inline-block; width: 40px; height: 2px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); margin: 0.6rem 0 0.4rem; vertical-align: middle; }
 
 /* ── NAV ── */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,26,53,0.97); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(184,146,42,0.2); transition: var(--transition); }
+nav:not([aria-label="Footer navigation"]) { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,26,53,0.97); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(184,146,42,0.2); transition: var(--transition); }
 .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 70px; }
 .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
 .nav-logo-main { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--white); letter-spacing: 0.02em; }

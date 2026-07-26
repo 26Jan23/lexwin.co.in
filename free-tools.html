@@ -130,7 +130,7 @@
     img { max-width: 100%; height: auto; display: block; }
 
         /* ── NAVIGATION — identical to main site ── */
-    nav {
+    nav:not([aria-label="Footer navigation"]) {
       position: sticky; top: 0; left: 0; right: 0; z-index: 200;
       background: rgba(12,26,53,0.97);
       backdrop-filter: blur(16px);
@@ -337,16 +337,6 @@ body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--w
 h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.25;color:var(--navy)}
 a{color:var(--gold);text-decoration:none}
 a:hover{text-decoration:underline}
-
-/* NAV */
-nav{background:var(--navy);border-bottom:1px solid rgba(184,146,42,0.2);padding:0 2rem;position:sticky;top:0;z-index:100}
-.nav-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
-.nav-logo{display:flex;align-items:center;gap:0.5rem;text-decoration:none}
-.nav-logo-mark{width:30px;height:30px;border-radius:5px;background:linear-gradient(135deg,var(--gold),var(--gold-b));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:var(--navy);flex-shrink:0}
-.nav-logo-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--white)}
-.nav-logo-sub{font-size:0.6rem;color:rgba(255,255,255,0.38);letter-spacing:0.18em;text-transform:uppercase}
-.nav-back{font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:var(--t)}
-.nav-back:hover{color:var(--gold-l);text-decoration:none}
 
 /* PROGRESS BAR */
 .progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));z-index:200;transition:width 0.1s}

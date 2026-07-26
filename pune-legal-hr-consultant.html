@@ -129,7 +129,7 @@
     img { max-width: 100%; height: auto; display: block; }
 
     /* ── NAV ── */
-    nav {
+    nav:not([aria-label="Footer navigation"]) {
       position: sticky; top: 0; left: 0; right: 0; z-index: 200;
       background: rgba(12,26,53,0.97);
       backdrop-filter: blur(16px);
