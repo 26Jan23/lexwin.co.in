@@ -256,6 +256,79 @@
 
     /* WHATSAPP */
 
+    /* ── Icon process flow (misconduct sequence + engagement process) ── */
+    .icon-flow { display: flex; gap: 0; margin: 2rem 0 1rem; overflow-x: auto; padding-bottom: .5rem; }
+    .flow-step { flex: 1 1 0; min-width: 138px; position: relative; padding: 0 .7rem; text-align: center; }
+    .flow-step:not(:last-child)::after {
+      content: ''; position: absolute; top: 30px; left: calc(50% + 44px); right: calc(-50% + 44px);
+      height: 2px; background: repeating-linear-gradient(90deg, var(--gold) 0 6px, transparent 6px 11px);
+    }
+    .flow-icon {
+      width: 60px; height: 60px; margin: 0 auto .9rem; border-radius: 50%;
+      background: var(--navy); border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center; position: relative; z-index: 1;
+    }
+    .flow-icon svg { width: 28px; height: 28px; stroke: var(--gold-light); fill: none; stroke-width: 1.6; }
+    .flow-step h4 { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 700; color: var(--navy); margin: 0 0 .35rem; }
+    .flow-step p { font-family: 'DM Sans', sans-serif; font-size: .78rem; font-weight: 400; color: var(--text-muted); line-height: 1.55; max-width: 150px; margin: 0 auto; text-align: center; }
+    @media (max-width: 700px) {
+      .icon-flow { flex-direction: column; align-items: stretch; gap: 1.6rem; }
+      .flow-step { display: flex; align-items: flex-start; gap: 1rem; text-align: left; padding: 0; }
+      .flow-step:not(:last-child)::after {
+        top: 60px; left: 29px; right: auto; bottom: -1.6rem; width: 2px; height: 1.6rem;
+        background: repeating-linear-gradient(180deg, var(--gold) 0 6px, transparent 6px 11px);
+      }
+      .flow-icon { margin: 0; flex-shrink: 0; }
+      .flow-step p { max-width: none; text-align: left; }
+    }
+
+    /* ── Urgent engagement panel ── */
+    .urgent-panel {
+      background: linear-gradient(180deg, var(--gold-pale) 0%, var(--white) 100%);
+      border: 1px solid rgba(201,168,76,.45); border-top: 4px solid var(--gold);
+      border-radius: 6px; padding: 1.8rem 2rem 2rem; margin: 2.2rem 0;
+    }
+    .urgent-panel-label {
+      font-family: 'DM Sans', sans-serif; font-size: .7rem; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: .4rem;
+    }
+    .urgent-panel h3 {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700;
+      color: var(--navy); margin: 0 0 .6rem; line-height: 1.3;
+    }
+    .urgent-panel > p { font-family: 'DM Sans', sans-serif; font-size: .92rem; color: var(--text-mid); margin: 0 0 1.4rem; line-height: 1.7; }
+    .urgent-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: .6rem; }
+    .urgent-fact {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.1rem 1.2rem;
+    }
+    .urgent-fact-icon { width: 40px; height: 40px; border-radius: 50%; background: var(--gold-pale); display: flex; align-items: center; justify-content: center; margin-bottom: .7rem; }
+    .urgent-fact-icon svg { width: 21px; height: 21px; stroke: var(--navy); fill: none; stroke-width: 1.7; }
+    .urgent-fact h4 { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 700; color: var(--navy); margin: 0 0 .35rem; }
+    .urgent-fact p { font-family: 'DM Sans', sans-serif; font-size: .8rem; color: var(--slate); margin: 0; line-height: 1.6; }
+    .urgent-flow-label {
+      font-family: 'DM Sans', sans-serif; font-size: .7rem; font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--navy-mid); margin: 1.4rem 0 0;
+    }
+    .urgent-cta-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.4rem; }
+    .urgent-btn {
+      display: inline-block; font-family: 'DM Sans', sans-serif; font-size: .85rem; font-weight: 700;
+      background: var(--gold); color: var(--navy-deep); padding: .7rem 1.5rem;
+      border-radius: 4px; text-decoration: none; letter-spacing: .02em;
+    }
+    .urgent-btn:hover { background: var(--gold-light); }
+    .urgent-btn-outline {
+      display: inline-block; font-family: 'DM Sans', sans-serif; font-size: .85rem; font-weight: 600;
+      background: transparent; color: var(--navy); border: 1.5px solid var(--navy-mid);
+      padding: .7rem 1.5rem; border-radius: 4px; text-decoration: none;
+    }
+    .urgent-btn-outline:hover { background: var(--navy); color: var(--white); }
+    @media (max-width: 640px) {
+      .urgent-panel { padding: 1.4rem 1.2rem 1.6rem; }
+      .urgent-facts { grid-template-columns: 1fr; }
+      .urgent-cta-row a { width: 100%; text-align: center; }
+    }
+
   </style>
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
@@ -381,6 +454,7 @@
   <div class="toc-box">
     <div class="toc-box-title">In this article</div>
     <ol>
+      <li><a href="#urgent-help">Need it handled urgently? Speed, fees &amp; process — answered</a></li>
       <li><a href="#why-it-matters">Why termination is the highest-risk HR decision in India</a></li>
       <li><a href="#workmen-vs-non">The first question: workman or non-workman?</a></li>
       <li><a href="#types">Types of termination — and which rules apply to each</a></li>
@@ -410,6 +484,68 @@
       <div class="single-case-title">Dealing with just one difficult termination? You don't need a full HR overhaul to get help.</div>
       <p>Most of what follows is written for building a defensible process end to end — but if you're facing a single, specific termination right now, LexWin advises on that one case on its own: correct procedure, documentation, and F&F, sized to that one exit, not a larger engagement.</p>
       <a href="" class="single-case-btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/sadanand-sonar/30min'});return false;">Get help with this one case →</a>
+    </div>
+  </div>
+
+  <div class="urgent-panel" id="urgent-help">
+    <div class="urgent-panel-label">Urgent Termination Support</div>
+    <h3>Need This Handled This Week, Not This Quarter?</h3>
+    <p>Most termination questions arrive with a deadline attached. Here is exactly what working with LexWin on an urgent exit looks like — no ambiguity about speed, fees, or process.</p>
+
+    <div class="urgent-facts">
+      <div class="urgent-fact">
+        <div class="urgent-fact-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>Roadmap in 24 Hours</h4>
+        <p>Once you engage us and share your documents, you receive the complete termination roadmap and every document you need — charge sheet to F&amp;F — within 24 hours.</p>
+      </div>
+      <div class="urgent-fact">
+        <div class="urgent-fact-icon"><svg viewBox="0 0 24 24"><path d="M7 4h10M7 8h10M7 4c5.5 0 7.5 1.5 7.5 4S12.5 12 7 12l7.5 8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>Fees Quoted Upfront</h4>
+        <p>A fixed fee for the defined scope, agreed before you engage — not metered by the hour. Predictable from the first call; no surprises on the invoice.</p>
+      </div>
+      <div class="urgent-fact">
+        <div class="urgent-fact-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5 5-2z" stroke-linejoin="round"/></svg></div>
+        <h4>A Defined Process</h4>
+        <p>You always know the next step. One consultant handles your matter start to finish — you are never left wondering what happens next or when.</p>
+      </div>
+    </div>
+
+    <div class="urgent-flow-label">The Process — Four Steps, No Mystery</div>
+    <div class="icon-flow">
+      <div class="flow-step">
+        <div class="flow-icon">
+          <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12.5 12.5 0 005 5L15 13l5 2v4a2 2 0 01-2 2A17 17 0 013 6a2 2 0 012-2z" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>1. Call LexWin</h4>
+        <p>One call or a booked slot — describe the situation as it stands today</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">
+          <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 12.5l2 2 4-4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>2. Engage</h4>
+        <p>Scope and fixed fee agreed upfront — engagement confirmed the same day</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 3L10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5 21 3z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>3. Send Your Documents</h4>
+        <p>Share the contract, correspondence, and emails connected to the case</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">
+          <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 3h6v3H9z" stroke-linejoin="round"/><path d="M9 13l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>4. Receive the Solution</h4>
+        <p>Complete roadmap plus ready-to-use documents — within 24 hours</p>
+      </div>
+    </div>
+
+    <div class="urgent-cta-row">
+      <a class="urgent-btn" href="tel:+919823385085">Call +91 98233 85085</a>
+      <a class="urgent-btn-outline" href="https://wa.me/919823385085" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="urgent-btn-outline" href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/sadanand-sonar/30min'});return false;">Book a Free 30-Min Slot</a>
     </div>
   </div>
 
@@ -603,6 +739,44 @@
   <div class="scenario good">
     <div class="scenario-label">✓ What the Law Requires</div>
     <p>"Rahul was served a charge sheet specifying the incident. He submitted an explanation that was considered insufficient. A neutral Enquiry Officer conducted a hearing, cross-examined witnesses, and produced written findings. A second show-cause notice on punishment was issued. Rahul's representation was considered. A termination order citing the full record was issued. F&F was processed. Every step is documented and signed."</p>
+  </div>
+
+  <div class="icon-flow">
+    <div class="flow-step">
+      <div class="flow-icon">
+        <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M12 7.5v5.5M12 16.5v.01" stroke-linecap="round" stroke-width="2"/></svg>
+      </div>
+      <h4>Charge Sheet</h4>
+      <p>Specific allegations served in writing — vague accusations don't count</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9.5L4 20V5z" stroke-linejoin="round"/><path d="M8 9.5h8M8 12.5h5" stroke-linecap="round"/></svg>
+      </div>
+      <h4>Employee's Explanation</h4>
+      <p>Written response received and genuinely considered before any next step</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 3v18M7 7l-4 8a4 4 0 008 0l-4-8zM17 7l-4 8a4 4 0 008 0l-4-8zM5 7h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Domestic Enquiry</h4>
+      <p>Neutral Enquiry Officer, hearing, cross-examination, written findings</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="1"/><path d="M3 7.5l9 6 9-6" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Second Show-Cause</h4>
+      <p>Notice on proposed punishment — the employee's representation considered</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-icon">
+        <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 3h6v3H9z" stroke-linejoin="round"/><path d="M9 13l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Order + F&amp;F</h4>
+      <p>Termination order citing the record, then full &amp; final settlement on time</p>
+    </div>
   </div>
 
   <p>The outcome in court is not determined by whether the employee was guilty. It is determined by whether the employer followed the correct procedure. A guilty employee who was dismissed without a domestic enquiry is reinstated. An innocent employee who was dismissed after a proper enquiry has no remedy. The procedure is the protection.</p>
@@ -941,6 +1115,8 @@
 
   <p>LexWin provides end-to-end support for the full cycle of employment exits — from the initial decision through documentation, enquiry, settlement, and dispute management, as part of our <a href="../services/hr-consultant.html">HR compliance advisory</a> practice. Our approach is to protect the employer's position at every step, while ensuring every obligation to the employee is met correctly and on time — read more on how this fits into the <a href="legal-side-of-hr-employee-lifecycle.html">full employee lifecycle</a>.</p>
 
+  <p>Two things clients tell us matter most on termination matters: <strong>speed</strong> and <strong>certainty</strong>. On speed — once you engage us and share your documents, you receive the complete termination roadmap and the full document set within 24 hours. On certainty — the fee is fixed and quoted upfront for the defined scope, before you commit. It is not metered by the hour, and it does not grow mid-engagement.</p>
+
   <div class="compare-grid">
     <div class="compare-card gold">
       <div class="compare-card-label">Service</div>
@@ -970,7 +1146,7 @@
 
   <div class="callout success">
     <div class="callout-title">✓ Facing a Difficult Termination? Talk to Us First.</div>
-    <p>A 30-minute conversation with a LexWin employment law consultant before you take any action can tell you exactly where you stand — the correct procedure, the risks, the documentation you need, and the F&F you must pay. No obligation, and no invoice for the first conversation.</p>
+    <p>A 30-minute conversation with a LexWin employment law consultant before you take any action can tell you exactly where you stand — the correct procedure, the risks, the documentation you need, and the F&F you must pay. No obligation, and no invoice for the first conversation. If you then engage us, the fee is quoted upfront and your complete roadmap and documents arrive within 24 hours. <a href="tel:+919823385085">Call +91 98233 85085</a> or <a href="https://wa.me/919823385085" target="_blank" rel="noopener">WhatsApp us</a> now.</p>
   </div>
 
   <hr class="divider" />
@@ -1018,7 +1194,7 @@
 
   <div class="conclusion-band">
     <h3>Every Wrong Termination Starts With the Same Mistake — Not Asking First</h3>
-    <p>Before you issue that letter, speak to a LexWin employment law consultant. We will tell you the correct procedure, the risks you are carrying, and exactly what you need to do to protect your business. The first 30 minutes are on us.</p>
+    <p>Before you issue that letter, speak to a LexWin employment law consultant. We will tell you the correct procedure, the risks you are carrying, and exactly what you need to do to protect your business. The first 30 minutes are on us — and if you engage us, the fee is fixed and quoted upfront, and your complete termination roadmap and documents arrive within 24 hours.</p>
     <a href="" class="conclusion-btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/sadanand-sonar/30min'});return false;">Book Free Consultation →</a>
   </div>
 
