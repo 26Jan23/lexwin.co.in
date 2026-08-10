@@ -1248,5 +1248,30 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 
+
+<script>
+(function(){
+  var link = document.querySelector('a[href*="nda-template-b2b-india.docx"]');
+  if (!link) return;
+  link.addEventListener('click', function(){
+    function notify(loc){
+      var fd = new FormData();
+      fd.append('_subject', 'NDA Template Downloaded');
+      fd.append('city', (loc && loc.city) || 'Unknown');
+      fd.append('country', (loc && loc.country_name) || 'Unknown');
+      fd.append('page', window.location.href);
+      fd.append('time', new Date().toISOString());
+      fd.append('_captcha', 'false');
+      fetch('https://formsubmit.co/ajax/info@lexwin.co.in', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: fd
+      }).catch(function(){});
+    }
+    fetch('https://ipapi.co/json/').then(function(r){ return r.json(); }).then(notify).catch(function(){ notify(null); });
+  });
+})();
+</script>
+
 </body>
 </html>
