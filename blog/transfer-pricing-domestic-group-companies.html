@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Transfer Pricing for Domestic Group Companies (Section 92BA) | LexWin</title>
+  <meta name="description"        content="Transfer pricing is not only a foreign-subsidiary rule. Purely Indian companies with two or more related domestic entities can trigger Specified Domestic Transactions under Section 92BA — here is exactly when, and what to do about it." />
+  <meta name="keywords"           content="specified domestic transactions, Section 92BA, transfer pricing domestic group companies, Section 40A(2)(b), domestic transfer pricing India, related party transactions India, Form 3CEB, transfer pricing advisor, corporate lawyer Pune, Indian promoter group companies" />
+  <link rel="canonical"           href="https://www.lexwin.co.in/blog/transfer-pricing-domestic-group-companies.html" />
+  <meta name="google-site-verification" content="61C6F194U8QSocNUBvV7N2gDyIar_2zgtFRcAHBigbw" />
+  <meta name="robots"             content="index, follow" />
+  <meta name="author"             content="LexWin Legal & HR Consulting" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:site_name"   content="LexWin Legal & HR Consulting" />
+  <meta property="og:title"       content="Transfer Pricing for Domestic Group Companies — What Section 92BA Actually Requires" />
+  <meta property="og:description" content="No foreign parent, no problem — until your related Indian companies cross the Specified Domestic Transaction threshold. A complete guide to Section 92BA for purely Indian corporate groups." />
+  <meta property="og:url"         content="https://www.lexwin.co.in/blog/transfer-pricing-domestic-group-companies.html" />
+  <meta property="og:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Transfer Pricing for Domestic Group Companies — What Section 92BA Actually Requires" />
+  <meta name="twitter:description" content="A complete guide to Specified Domestic Transactions under Section 92BA for purely Indian corporate groups with no foreign parent at all." />
+  <meta name="twitter:image"       content="https://www.lexwin.co.in/assets/lexwin-og.png" />
+
+  <!-- Article Schema — JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Transfer Pricing for Domestic Group Companies — What Section 92BA Actually Requires",
+    "description": "Transfer pricing is not only a foreign-subsidiary rule. Purely Indian companies with two or more related domestic entities can trigger Specified Domestic Transactions under Section 92BA.",
+    "author": { "@type": "Organization", "name": "LexWin Legal & HR Consulting" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LexWin Legal & HR Consulting",
+      "logo": { "@type": "ImageObject", "url": "https://www.lexwin.co.in/assets/lexwin-og.png" }
+    },
+    "datePublished": "2026-08-26",
+    "dateModified": "2026-08-26",
+    "url": "https://www.lexwin.co.in/blog/transfer-pricing-domestic-group-companies.html"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — G-995KV4HXM1
+       RULE: async loader is ALWAYS unconditional.
+             dataLayer init, gtag function, gtag('js') are ALWAYS
+             outside any if-block.
+             ONLY gtag('config') is inside the notrack cookie check.
+  ════════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-995KV4HXM1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    if (!document.cookie.split(';').some(function(c){ return c.trim().startsWith('lexwin_notrack='); })) {
+      gtag('config', 'G-995KV4HXM1');
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/blog-chrome.css">
+  <style>
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      margin-bottom: 1.1rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.22;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-byline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .85rem;
+      color: rgba(255,255,255,.52);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-byline span { display: flex; align-items: center; gap: .3rem; }
+    .hero-byline .sep { color: rgba(255,255,255,.25); }
+
+    /* ═══════════════════════════════════════════════════
+       STAT STRIP
+    ════════════════════════════════════════════════════ */
+    .stat-strip {
+      background: var(--gold);
+    }
+    .stat-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .8rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .stat-strip-inner { grid-template-columns: repeat(2, 1fr); padding: .8rem; }
+    }
+    .stat-item .stat-num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.1;
+    }
+    .stat-item .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       PAGE LAYOUT — two-column
+    ════════════════════════════════════════════════════ */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.2rem;
+      align-items: start;
+    }
+
+    }
+
+    /* ═══════════════════════════════════════════════════
+       ARTICLE BODY
+    ════════════════════════════════════════════════════ */
+    
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      overflow-x: hidden;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.4rem 2.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.25;color:var(--navy)}
+
+a:hover{text-decoration:underline}
+
+/* NAV */
+
+.nav-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+
+.nav-logo-mark{width:30px;height:30px;border-radius:5px;background:linear-gradient(135deg,var(--gold),var(--gold-b));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:var(--navy);flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--white)}
+
+.nav-back{font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:var(--t)}
+.nav-back:hover{color:var(--gold-l);text-decoration:none}
+
+/* PROGRESS BAR */
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));z-index:200;transition:width 0.1s}
+
+/* HERO */
+.hero{background:linear-gradient(155deg,#060e1e 0%,var(--navy) 45%,var(--navy-mid) 100%);padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,42,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,42,0.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-in{max-width:800px;margin:0 auto;position:relative;z-index:2}
+.hero-cat{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(184,146,42,0.15);border:1px solid rgba(184,146,42,0.3);padding:0.28rem 0.85rem;border-radius:2rem;margin-bottom:1.4rem}
+.hero-cat-dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.hero-cat span{font-size:0.68rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-l)}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;color:var(--white);margin-bottom:1rem;line-height:1.15}
+.hero h1 em{font-style:italic;color:var(--gold-l)}
+.hero-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.hero-meta-item{font-size:0.78rem;color:rgba(255,255,255,0.5)}
+.hero-meta-dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,0.3);display:inline-block;margin:0 0.3rem}
+.hero-intro{font-size:1.08rem;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;max-width:700px}
+
+/* STAT STRIP */
+.stat-strip{background:var(--gold-cream);border-bottom:1px solid var(--border)}
+.stat-strip-in{max-width:1100px;margin:0 auto;padding:1.8rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);line-height:1}
+.stat-label{font-size:0.75rem;color:var(--text-l);margin-top:0.3rem;font-weight:400}
+
+/* CONTENT */
+.content-wrap{max-width:860px;margin:0 auto;padding:3.5rem 2rem;display:block}
+.article-body{min-width:0}
+.article-body h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin:2.8rem 0 0.8rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold-pale)}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.18rem;font-weight:600;color:var(--navy-mid);margin:1.8rem 0 0.6rem}
+.article-body p{font-size:1rem;color:var(--text-mid);line-height:1.82;margin-bottom:1.2rem;font-weight:300}
+.article-body ul,.article-body ol{margin:0.6rem 0 1.2rem 1.4rem;color:var(--text-mid);font-weight:300}
+.article-body li{font-size:0.97rem;line-height:1.75;margin-bottom:0.4rem}
+.article-body strong{font-weight:600;color:var(--navy)}
+
+/* CALLOUTS */
+.callout{border-left:4px solid var(--gold);background:var(--gold-cream);padding:1.2rem 1.5rem;border-radius:0 6px 6px 0;margin:1.8rem 0}
+.callout-title{font-family:'Source Sans 3',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.callout p{font-size:0.92rem;color:var(--text-mid);margin-bottom:0;font-weight:400}
+.callout.warning{border-left-color:var(--red);background:var(--red-bg)}
+.callout.warning .callout-title{color:var(--red)}
+.callout.success{border-left-color:#166534;background:var(--green-bg)}
+.callout.success .callout-title{color:#166534}
+
+/* COMPARISON TABLE */
+.compare-table{width:100%;border-collapse:collapse;margin:1.8rem 0;font-size:0.9rem}
+.compare-table th{padding:0.8rem 1rem;text-align:left;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase}
+.compare-table th:first-child{background:var(--navy);color:rgba(255,255,255,0.8);width:32%}
+.compare-table th:nth-child(2){background:#e8f4f4;color:#0f5856;width:34%}
+.compare-table th:nth-child(3){background:var(--navy-mid);color:var(--gold-l);width:34%}
+.compare-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6}
+.compare-table td:first-child{font-weight:500;color:var(--navy);background:#fafaf7;font-size:0.88rem}
+.compare-table td:nth-child(2){color:var(--text-mid);font-weight:300;background:#f8fffe}
+.compare-table td:nth-child(3){color:var(--text-mid);font-weight:300}
+.compare-table tr:nth-child(even) td:nth-child(2){background:#f0fafa}
+.compare-table tr:nth-child(even) td:nth-child(3){background:var(--gold-cream)}
+.compare-icon-no{color:var(--red);font-weight:700}
+.compare-icon-yes{color:#166534;font-weight:700}
+
+/* POLICY CARDS */
+.policy-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+.policy-card{border:1px solid var(--border);border-radius:6px;padding:1.4rem;position:relative;overflow:hidden}
+.policy-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.policy-card.labour::before{background:linear-gradient(90deg,#b8922a,#e8c96a)}
+.policy-card.conduct::before{background:linear-gradient(90deg,#1a3a6e,#2e5ea8)}
+.policy-card.leave::before{background:linear-gradient(90deg,#14532d,#22c55e)}
+.policy-card.exit::before{background:linear-gradient(90deg,#7c2d12,#ea580c)}
+.policy-card.data::before{background:linear-gradient(90deg,#4c1d95,#8b5cf6)}
+.policy-card.grievance::before{background:linear-gradient(90deg,#0f5856,#0d9488)}
+.policy-card-icon{font-size:1.5rem;margin-bottom:0.6rem}
+.policy-card h4{font-family:'Playfair Display',serif;font-size:0.98rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.policy-card p{font-size:0.82rem;color:var(--text-l);line-height:1.6;margin-bottom:0;font-weight:300}
+.policy-card .risk-tag{display:inline-block;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.55rem;border-radius:2rem;margin-top:0.6rem}
+.risk-high{background:#fee2e2;color:#991b1b}
+.risk-medium{background:#fef9c3;color:#854d0e}
+
+/* SCENARIO BOXES */
+.scenario{border-radius:6px;padding:1.4rem 1.6rem;margin:1.5rem 0}
+.scenario.bad{background:var(--red-bg);border:1px solid #fca5a5}
+.scenario.good{background:var(--green-bg);border:1px solid #86efac}
+.scenario-label{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem}
+.scenario.bad .scenario-label{color:var(--red)}
+.scenario.good .scenario-label{color:#166534}
+.scenario p{font-size:0.92rem;line-height:1.75;margin-bottom:0;font-weight:300;font-style:italic}
+
+/* PROCESS STEPS */
+.process-steps{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;position:relative}
+.process-steps::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;background:var(--border)}
+.process-step{display:flex;gap:1.2rem;position:relative;padding-bottom:1.5rem}
+.process-step:last-child{padding-bottom:0}
+.step-circle{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);z-index:1;border:3px solid var(--white)}
+.step-content h4{font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem}
+.step-content p{font-size:0.88rem;color:var(--text-mid);font-weight:300;margin-bottom:0;line-height:1.7}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.88rem}
+.data-table th{background:var(--navy);color:rgba(255,255,255,0.9);font-family:'Source Sans 3',sans-serif;font-weight:600;padding:0.7rem 1rem;text-align:left}
+.data-table td{padding:0.65rem 1rem;border-bottom:1px solid var(--border);color:var(--text-mid);font-weight:300;vertical-align:top}
+.data-table tr:nth-child(even) td{background:#fafaf7}
+
+/* CHECKLIST */
+.checklist{list-style:none;margin:1rem 0 1.4rem;padding:0;display:flex;flex-direction:column;gap:0.5rem}
+.checklist li{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.95rem;color:var(--text-mid);font-weight:300;line-height:1.65}
+.checklist li::before{content:'✓';color:#166534;font-weight:700;font-size:0.85rem;flex-shrink:0;margin-top:0.15rem}
+
+/* TAGS */
+.tag{display:inline-block;background:var(--gold-pale);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.65rem;border-radius:2rem;border:1px solid rgba(184,146,42,0.25);margin:0.2rem}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:84px}
+.sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.5rem;margin-bottom:1.2rem}
+.sidebar-card.featured{background:var(--navy);border-color:rgba(184,146,42,0.3)}
+.sidebar-title{font-family:'Source Sans 3',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sidebar-card.featured .sidebar-title{color:var(--gold-l)}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.toc-list a{font-size:0.82rem;color:var(--text-mid);text-decoration:none;display:block;padding:0.3rem 0;border-left:2px solid transparent;padding-left:0.7rem;transition:var(--t)}
+.toc-list a:hover{color:var(--gold);border-left-color:var(--gold)}
+.sidebar-card.featured p{font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:1rem;font-weight:300}
+.btn-gold-sm{display:inline-flex;align-items:center;gap:0.4rem;background:var(--gold);color:var(--navy);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.65rem 1.2rem;border-radius:3px;text-decoration:none;transition:var(--t)}
+.btn-gold-sm:hover{background:var(--gold-b);text-decoration:none}
+.audit-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.6rem}
+.audit-list li{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.8rem;color:var(--text-mid);font-weight:300;line-height:1.5}
+.audit-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:0.35rem}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding:2.5rem 2rem}
+.footer-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--white)}
+
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:0.78rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:var(--t)}
+.footer-links a:hover{color:var(--gold-l)}
+
+/* WHATSAPP */
+
+/* RESPONSIVE */
+@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.policy-grid{grid-template-columns:1fr}.stat-strip-in{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sidebar{grid-template-columns:1fr}.hero{padding:3rem 1.2rem 2rem}.content-wrap{padding:2rem 1.2rem}.hero h1{font-size:1.7rem}.stat-strip-in{grid-template-columns:1fr 1fr}.compare-table{font-size:0.8rem}}
+.article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+    .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--link);
+      padding: .25rem .75rem;
+      border-radius: 20px;
+      border: 1px solid var(--blue-border);
+    }
+
+    /* TOC */
+
+    
+
+    /* CTA card */
+
+    
+
+    
+
+    /* Related articles */
+
+    
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════════════════ */
+
+    
+
+    
+
+    
+
+    /* ═══════════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON — same as main site
+    ════════════════════════════════════════════════════ */
+    @media (max-width: 480px) {
+      }
+
+    @media (max-width: 768px) {
+      .article-body p,
+      .article-body td,
+      .article-body li { text-align: left; }
+    }
+  
+    @media (max-width: 600px) {
+      .page-wrap { padding: 1.5rem 1rem 3rem; }
+    }
+  
+    /* ── WHATSAPP BUTTON — identical to main site ── */
+
+  
+    @media (max-width: 600px) {
+      .article-body {
+      overflow-x: hidden; padding: 1.2rem 1rem; }
+      .article-body p,
+      .article-body li,
+      .article-body td { text-align: left; }
+      .page-wrap { padding: 1rem 0.75rem 3rem; }
+    }
+  
+    /* ── IN THIS ARTICLE — TOC ── */
+    .toc-box {
+      background: var(--blue-pale);
+      border: 1px solid var(--blue-border);
+      border-left: 4px solid var(--navy-mid);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.5rem 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .toc-box-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--navy-mid);
+      margin-bottom: .8rem;
+    }
+    .toc-box ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      padding: 0; margin: 0;
+    }
+    .toc-box ol li {
+      counter-increment: toc-counter;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .88rem;
+      padding: .28rem 0 .28rem 1.8rem;
+      position: relative;
+      border-bottom: 1px dotted var(--border);
+      line-height: 1.4;
+    }
+    .toc-box ol li:last-child { border-bottom: none; }
+    .toc-box ol li::before {
+      content: counter(toc-counter) '.';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .82rem;
+    }
+    .toc-box ol li a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .toc-box ol li a:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       EXTENDED VISUAL COMPONENTS — ported from articles
+    ════════════════════════════════════════════════════ */
+
+    /* Banded table — all tables get banded rows by default */
+    .article-body table {
+      width: 100%; border-collapse: collapse;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem; margin: 1.4rem 0;
+      border: 1px solid var(--border);
+    }
+    .article-body table thead tr { background: var(--navy-mid); }
+    .article-body table th {
+      padding: .65rem .9rem; text-align: left;
+      font-weight: 600; color: var(--white); letter-spacing: .02em;
+    }
+    .article-body table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .article-body table tbody tr:nth-child(even) { background: #f0fdff; }
+    .article-body table tbody tr:hover { background: var(--gold-pale); }
+    .article-body table .yes, .compare-icon-yes { color: #166534; font-weight: 700; }
+    .article-body table .no,  .compare-icon-no  { color: var(--red); font-weight: 700; }
+
+    /* data-table & clause-table & code-table */
+    .data-table, .clause-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: .88rem; box-shadow: var(--shadow-sm); border-radius: 4px; overflow: hidden;
+    }
+    .data-table th, .clause-table th {
+      background: var(--navy-mid); color: var(--white);
+      padding: .65rem .9rem; text-align: left; font-weight: 600;
+    }
+    .data-table td, .clause-table td {
+      padding: .55rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    .data-table tbody tr:nth-child(even),
+    .clause-table tbody tr:nth-child(even) { background: #f0fdff; }
+    .data-table tbody tr:hover,
+    .clause-table tbody tr:hover { background: var(--gold-pale); }
+
+    /* Callout variants */
+    .callout-danger {
+      border-left: 4px solid var(--red); background: var(--red-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-warning {
+      border-left: 4px solid #d97706; background: var(--amber-light);
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-info {
+      border-left: 4px solid #2563eb; background: #eff6ff;
+      padding: 1rem 1.3rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-danger p, .callout-warning p, .callout-info p { margin: 0; }
+    .callout-title {
+      font-family: 'DM Sans', sans-serif; font-size: .72rem; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--navy-mid); margin-bottom: .4rem;
+      display: flex; align-items: center; gap: .4rem;
+    }
+    .callout.success { border-left-color: var(--green); background: var(--green-light); }
+    .callout.warning { border-left-color: #d97706; background: var(--amber-light); }
+    .callout.bad     { border-left-color: var(--red);   background: var(--red-light); }
+    .callout.good    { border-left-color: var(--green); background: var(--green-light); }
+
+    /* Policy grid cards */
+    .policy-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .policy-card-icon { font-size: 1.5rem; margin-bottom: .6rem; }
+
+    /* Code cards (Labour Codes) */
+    .code-table { display: grid; gap: 1rem; margin: 1.5rem 0; }
+    .code-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem 1.6rem;
+    }
+    .code-card-num {
+      font-family: 'Playfair Display', serif; font-size: 2.2rem;
+      font-weight: 700; color: var(--gold-pale); line-height: 1; margin-bottom: .4rem;
+    }
+    .code-card-title {
+      font-family: 'Playfair Display', serif; font-size: 1.1rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .3rem;
+    }
+    .code-card-year {
+      font-size: .72rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .7rem;
+    }
+
+    /* ICC grid cards */
+    .icc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .icc-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.3rem;
+    }
+    .icc-card-role {
+      font-size: .68rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .4rem;
+    }
+
+    /* Structure grid */
+    .structure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .struct-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1.4rem;
+    }
+    .struct-tag {
+      font-size: .65rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .6rem; display: block;
+    }
+    .struct-pros, .struct-cons {
+      font-size: .83rem; color: var(--slate); font-weight: 300; line-height: 1.65;
+    }
+    .struct-cons strong { color: var(--red); }
+
+    /* Risk grid */
+    .risk-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .risk-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 4px solid; border-radius: var(--radius); padding: 1.2rem 1.3rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .risk-tag {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; padding: .15rem .5rem;
+      border-radius: 20px; margin-bottom: .4rem;
+    }
+    .risk-tag.risk-high, .risk-tag.risk-medium { background: #fed7d7; color: #9b2c2c; }
+    .risk-tag.risk-medium                       { background: #fefcbf; color: #744210; }
+    .risk-tag.risk-low                          { background: #c6f6d5; color: #276749; }
+
+    /* Step variants */
+    .steps-list { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+    .step-circle {
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: var(--gold); display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy-deep);
+    }
+    .step-content h4 {
+      font-family: 'DM Sans', sans-serif; font-size: .9rem;
+      font-weight: 700; color: var(--navy); margin-bottom: .25rem;
+    }
+    .step-content p { margin: 0; font-size: .88rem; color: var(--slate); }
+
+    /* Highlight box */
+    .highlight-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: var(--radius); padding: 1.8rem 2rem; margin: 2rem 0;
+      color: var(--white);
+    }
+    .highlight-box h3, .highlight-box h4 { color: var(--gold-light); margin-bottom: .5rem; }
+    .highlight-box p { color: rgba(255,255,255,.8); margin-bottom: 0; }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 4px solid var(--gold); padding: .8rem 1.5rem;
+      margin: 2rem 0; background: var(--gold-pale);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic; color: var(--navy);
+    }
+
+    /* Lead paragraph */
+    .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text); margin-bottom: 1.5rem; }
+
+    /* Section heading with number */
+    .section-heading {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem;
+      font-weight: 700; color: var(--navy-mid); margin-top: 2.5rem;
+      margin-bottom: .65rem; padding-bottom: .4rem;
+      border-bottom: 2px solid var(--gold-light);
+      display: flex; align-items: baseline; gap: .6rem;
+    }
+    .section-num {
+      font-size: .72rem; font-weight: 700; color: var(--gold);
+      letter-spacing: .08em; text-transform: uppercase;
+      background: var(--gold-pale); padding: .15rem .5rem; border-radius: 3px;
+    }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1rem 1.3rem; margin-top: 2rem;
+      font-family: 'DM Sans', sans-serif; font-size: .78rem;
+      color: var(--text-muted); line-height: 1.6;
+    }
+
+    /* Conclusion band */
+    .conclusion-band {
+      background: linear-gradient(135deg, var(--navy) 0%, #0d2240 100%);
+      padding: 2.5rem 2rem; border-radius: var(--radius);
+      margin-top: 2.5rem; text-align: center;
+    }
+    .conclusion-band h3 { color: var(--white); margin-bottom: .8rem; }
+    .conclusion-band p  { color: rgba(255,255,255,.75); margin-bottom: 1.2rem; }
+    .conclusion-btn {
+      display: inline-block; font-family: 'DM Sans', sans-serif;
+      font-size: .85rem; font-weight: 700; color: var(--navy-deep);
+      background: var(--gold); padding: .65rem 1.8rem;
+      border-radius: 3px; text-decoration: none; letter-spacing: .04em;
+    }
+    .conclusion-btn:hover { background: var(--gold-light); }
+
+    /* Bullet list */
+    .bullet-list { list-style: none; padding: 0; margin: .8rem 0 1.2rem; }
+    .bullet-list li {
+      padding: .3rem 0 .3rem 1.6rem; position: relative;
+      font-size: .95rem; border-bottom: 1px dotted var(--border);
+    }
+    .bullet-list li:last-child { border-bottom: none; }
+    .bullet-list li::before { content: '›'; position: absolute; left: 0; color: var(--gold); font-weight: 700; font-size: 1.1rem; }
+
+    /* Sub-heading */
+    .sub-heading {
+      font-family: 'DM Sans', sans-serif; font-size: 1rem;
+      font-weight: 700; color: var(--navy); margin: 1.7rem 0 .4rem;
+    }
+
+    /* Responsive for all new grids */
+    @media (max-width: 600px) {
+      .policy-grid, .icc-grid, .structure-grid { grid-template-columns: 1fr; }
+    }
+
+        /* ── Mobile-responsive tables ── */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .table-wrapper table {
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .article-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            table {
+                min-width: 480px;
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 8px 10px !important;
+                white-space: normal !important;
+            }
+        }
+
+        </style>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SITE NAV — identical to main site
+════════════════════════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://www.lexwin.co.in/index.html" class="nav-logo" aria-label="LexWin Home">
+      <span class="nav-logo-main">LexWin</span>
+      <div class="nav-logo-divider"></div>
+      <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+            <li class="nav-has-dropdown">
+        <button class="nav-dropdown-trigger nav-mobile-services-trigger">
+          Services
+          <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L5.5 6L10 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-mobile-dropdown">
+          <a href="/services/hr-consultant.html" class="nav-mobile-dropdown-item">👥 HR Consulting</a>
+          <a href="/services/corporate-legal-consultant.html" class="nav-mobile-dropdown-item">⚖️ Corporate Legal</a>
+          <a href="/services/business-setup-india.html" class="nav-mobile-dropdown-item">🏢 Setting Up Business in India</a>
+          <a href="/services/real-estate-legal-due-diligence.html" class="nav-mobile-dropdown-item">🏛️ Real Estate Due Diligence</a>
+        </div>
+        <div class="nav-dropdown">
+          <a href="/services/hr-consultant.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">👥</span>
+            <div>
+              <div class="nav-dropdown-item-title">HR Consulting</div>
+              <div class="nav-dropdown-item-sub">Policies · POSH · Contracts · Performance</div>
+            </div>
+          </a>
+          <a href="/services/corporate-legal-consultant.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">⚖️</span>
+            <div>
+              <div class="nav-dropdown-item-title">Corporate Legal</div>
+              <div class="nav-dropdown-item-sub">Contracts · M&amp;A · DPDP · Retainer</div>
+            </div>
+          </a>
+          <a href="/services/business-setup-india.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">🏢</span>
+            <div>
+              <div class="nav-dropdown-item-title">Setting Up Business in India</div>
+              <div class="nav-dropdown-item-sub">Incorporation · Compliance · Market Entry</div>
+            </div>
+          </a>
+          <a href="/services/real-estate-legal-due-diligence.html" class="nav-dropdown-item">
+            <span class="nav-dropdown-item-icon">🏛️</span>
+            <div>
+              <div class="nav-dropdown-item-title">Real Estate Due Diligence</div>
+              <div class="nav-dropdown-item-sub">Title · Lease · Sale Agreement</div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li><a href="https://www.lexwin.co.in/index.html#who-we-help">Who We Help</a></li>
+      <li><a href="https://www.lexwin.co.in/index.html#engagement">Engagement</a></li>
+      <li><a href="https://www.lexwin.co.in/blog/index.html">Insights</a></li>
+      <li><a href="https://www.lexwin.co.in/free-tools.html">Free Tools</a></li>
+            <li><a href="https://www.lexwin.co.in/about.html">About</a></li>
+      <li><a href="https://www.lexwin.co.in/pune-legal-hr-consultant.html">Pune</a></li>
+      <li><a href="https://calendly.com/sadanand-sonar/30min" class="nav-cta-btn" target="_blank" rel="noopener">Free Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BREADCRUMB
+════════════════════════════════════════════════════════════ -->
+<div class="breadcrumb-bar">
+  <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-category">Corporate Legal Advisory</div>
+    <h1>Transfer Pricing for Domestic Group Companies — <em>What Section 92BA Actually Requires</em></h1>
+    <div class="hero-byline">
+      <span>LexWin Consulting</span>
+      <span class="sep">·</span>
+      <span>17 min read</span>
+      <span class="sep">·</span>
+      <span>August 2026</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STAT STRIP
+════════════════════════════════════════════════════════════ -->
+<div class="stat-strip" aria-hidden="true">
+  <div class="stat-strip-inner">
+    <div class="stat-item">
+      <span class="stat-num">₹20 Cr</span>
+      <span class="stat-label">aggregate threshold that triggers Section 92BA</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">0</span>
+      <span class="stat-label">foreign parties required — this applies wholly within India</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">200%</span>
+      <span class="stat-label">maximum penalty on a disallowed domestic adjustment</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">No MAP</span>
+      <span class="stat-label">treaty relief available for a purely domestic dispute</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN LAYOUT
+════════════════════════════════════════════════════════════ -->
+<div class="page-wrap">
+
+  <main class="article-body" id="article-top">
+
+    <div class="toc-box">
+      <div class="toc-box-title">In this article</div>
+      <ol>
+        <li><a href="#problem">The myth that costs domestic groups the most</a></li>
+        <li><a href="#whatis92ba">What Section 92BA actually covers</a></li>
+        <li><a href="#threshold">The ₹20 crore threshold — how it's computed</a></li>
+        <li><a href="#40a2b">Section 40A(2)(b) — the most common trigger</a></li>
+        <li><a href="#structures">Structures that get caught without realising it</a></li>
+        <li><a href="#documentation">Documentation &amp; Form 3CEB for a domestic-only case</a></li>
+        <li><a href="#doubletax">The double taxation trap</a></li>
+        <li><a href="#apa">Safe Harbour Rules — do they apply here?</a></li>
+        <li><a href="#scrutiny">What a scrutiny assessment actually looks like</a></li>
+        <li><a href="#comparison">Domestic SDT vs. international transfer pricing</a></li>
+        <li><a href="#mistakes">Common mistakes we see</a></li>
+        <li><a href="#howwehelp">How LexWin Can Help</a></li>
+        <li><a href="#who">Who needs this — and when</a></li>
+        <li><a href="#checklist">Domestic transfer pricing readiness checklist</a></li>
+      </ol>
+    </div>
+
+<h2 id="problem">The Myth That Costs Domestic Groups the Most</h2>
+<p>"We don't have a foreign parent, so transfer pricing doesn't apply to us." This single sentence — said with complete confidence by finance teams, founders, and even some general practice accountants — is responsible for more undetected tax exposure among Indian promoter-led businesses than almost any other misconception in corporate tax compliance.</p>
+<p>It is true that the transfer pricing provisions most people have heard of — Sections 92 to 92F of the Income Tax Act 1961 — were originally designed to police cross-border pricing between multinational group entities. But Indian tax law does not stop there. Since the Finance Act 2012, Section 92BA has extended a version of the same arm's length discipline to certain transactions between related parties, both of whom are resident in India, with no foreign element involved anywhere in the transaction. These are called Specified Domestic Transactions, or SDTs.</p>
+<p>The businesses most exposed to this are exactly the ones least likely to know it applies to them: family-run manufacturing groups that have split operations across a manufacturing entity and a marketing or trading entity, real estate developers who separate the landholding company from the construction or operating company, promoters who set up a second entity for a new product line or geography under common ownership, and any group where directors, their relatives, or entities they control transact with each other above a certain scale. None of these structures involve a single foreign party. All of them can trigger Section 92BA.</p>
+
+<div class="callout warning">
+  <div class="callout-title">This Is Not a Rare or Marginal Provision</div>
+  <p>Section 92BA applies to an enormous and growing share of Indian mid-sized business, because splitting operations across two or more related companies — for genuine commercial, succession-planning, or risk-isolation reasons — is one of the most common structural choices Indian promoters make. The provision was not built for large conglomerates alone; it applies the moment a qualifying threshold is crossed, regardless of the group's overall size or sophistication.</p>
+</div>
+
+<h2 id="whatis92ba">What Section 92BA Actually Covers</h2>
+<p>Section 92BA defines a "Specified Domestic Transaction" as any of the following, where the aggregate value in a financial year exceeds the prescribed threshold:</p>
+
+<div class="policy-grid">
+  <div class="policy-card labour">
+    <div class="policy-card-icon">💰</div>
+    <h4>Section 40A(2)(b) Related-Party Payments</h4>
+    <p>Any expenditure for which payment has been made or is to be made to a specified related party — the single most common trigger for ordinary Indian promoter groups.</p>
+    <span class="risk-tag risk-high">Most Common</span>
+  </div>
+  <div class="policy-card conduct">
+    <div class="policy-card-icon">🏭</div>
+    <h4>Inter-Unit Transfers (Section 80-IA(8))</h4>
+    <p>Transfer of goods or services between an eligible business (claiming profit-linked deduction) and any other business of the same assessee, valued otherwise than at market value.</p>
+    <span class="risk-tag risk-medium">Deduction-Linked</span>
+  </div>
+  <div class="policy-card exit">
+    <div class="policy-card-icon">🏗️</div>
+    <h4>Transactions With Deduction-Linked Undertakings</h4>
+    <p>Any business transaction between the taxpayer and another person, where the taxpayer or that other person is claiming a deduction under specified provisions of Chapter VI-A or Section 10AA.</p>
+    <span class="risk-tag risk-medium">Deduction-Linked</span>
+  </div>
+  <div class="policy-card data">
+    <div class="policy-card-icon">📊</div>
+    <h4>Other Notified Transactions</h4>
+    <p>Any other transaction the CBDT may notify, brought within Section 92BA's scope from time to time as the provision has evolved since 2012.</p>
+    <span class="risk-tag risk-medium">Situational</span>
+  </div>
+</div>
+
+<p>For the overwhelming majority of purely Indian corporate groups without SEZ units, infrastructure undertakings, or other deduction-linked businesses, the Section 40A(2)(b) route is the one that actually matters — and it is worth understanding in detail, because its definition of "related party" is considerably broader than most promoters assume.</p>
+
+<h2 id="threshold">The ₹20 Crore Threshold — How It's Computed</h2>
+<p>Section 92BA applies once the aggregate value of specified domestic transactions in a financial year exceeds ₹20 crore. Two aspects of this threshold routinely trip up groups that have never had it explained clearly.</p>
+<p>First, the threshold is aggregate, not per-transaction and not per-related-party. Every Section 40A(2)(b) payment across the financial year — rent paid to a promoter-owned entity, purchases from a group company, management or consultancy fees paid to a related party, interest on loans from related parties, salaries or remuneration to relatives of directors above ordinary market terms — is added together. A group that assumes it is safe because no single transaction crosses ₹20 crore individually is applying the wrong test entirely.</p>
+<p>Second, once the aggregate threshold is crossed, <strong>every</strong> Section 40A(2)(b) transaction for that financial year becomes a Specified Domestic Transaction requiring arm's length pricing and documentation — not merely the transactions that pushed the total over the line. A group with fifteen separate related-party payments, only three of which are individually large, still needs to document and defend all fifteen once the aggregate crosses ₹20 crore.</p>
+
+<div class="table-wrapper"><table class="data-table">
+  <thead><tr><th>Transaction Category</th><th>Included in ₹20 Cr Aggregate?</th><th>Common Oversight</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Rent paid to promoter/director-owned entity</strong></td>
+      <td>Yes</td>
+      <td>Treated as a fixed, non-negotiable cost rather than tested against market rent</td>
+    </tr>
+    <tr>
+      <td><strong>Goods purchased from a group company</strong></td>
+      <td>Yes</td>
+      <td>Priced at "cost plus a standard margin" without independent benchmarking</td>
+    </tr>
+    <tr>
+      <td><strong>Management/consultancy fees to related entity</strong></td>
+      <td>Yes</td>
+      <td>No evidence of services actually rendered — the same "benefit test" issue seen in international TP</td>
+    </tr>
+    <tr>
+      <td><strong>Interest on loans from directors/relatives</strong></td>
+      <td>Yes</td>
+      <td>Interest-free or below-market loans excluded from the aggregate calculation entirely</td>
+    </tr>
+    <tr>
+      <td><strong>Remuneration to relatives of directors</strong></td>
+      <td>Yes, if excessive relative to role</td>
+      <td>Assumed to be a pure HR/payroll matter, never assessed against Section 40A(2)(b)</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="40a2b">Section 40A(2)(b) — The Most Common Trigger</h2>
+<p>Because this is the provision that actually catches most ordinary Indian promoter groups, it is worth understanding exactly who counts as a "related party" for this purpose. Section 40A(2)(b) casts a wide net: it includes any director of the company and their relatives, any individual who has a substantial interest in the business and their relatives, any company, firm, association of persons, or Hindu Undivided Family with a substantial interest in the company (and their directors, partners, members, or relatives), and any company of which a director of the taxpayer company is also a director.</p>
+<p>In practice, this means transactions with an entity that shares even one common director, a company substantially owned by the same promoter family, or a relative-controlled business are all within scope — well beyond the more intuitive idea of "our two group companies."</p>
+
+<div class="scenario bad">
+  <div class="scenario-label">❌ How This Plays Out for an Ordinary Manufacturing Group</div>
+  <p>A Pune-based auto components manufacturer has a sister company — owned by the same family, sharing two common directors — that supplies raw material machining services. Payments for machining, warehouse rent paid to a third family-owned entity, and a management fee paid to the promoter's holding company together cross ₹20 crore in a financial year. None of these arrangements were ever benchmarked against market rates; pricing was set informally based on what "felt fair" between family members. On assessment, the officer disallows a portion of the machining and management fee payments as excessive under Section 40A(2)(b), adding the disallowed amount back to taxable income — with interest and penalty following.</p>
+</div>
+
+<div class="scenario good">
+  <div class="scenario-label">✓ What a Compliant Structure Looks Like</div>
+  <p>The same group, structured correctly, maintains a benchmarking study establishing that the machining charges, warehouse rent, and management fee each reflect what an unrelated party would charge for comparable services — supported by comparable market rent data, a cost-plus analysis for the machining arrangement, and documented evidence of the actual management services rendered. Form 3CEB is filed alongside the return, and every Section 40A(2)(b) payment for the year is captured in the underlying documentation, not just the largest ones.</p>
+</div>
+
+<h2 id="structures">Structures That Get Caught Without Realising It</h2>
+<p>Certain group structures recur often enough in Indian business that they deserve specific mention, because each one routinely crosses the Section 92BA threshold without the promoters ever connecting their structure to the provision.</p>
+
+<div class="table-wrapper"><table class="compare-table">
+  <thead>
+    <tr><th>Structure</th><th>Typical Related-Party Flow</th><th>SDT Risk</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Manufacturing + Trading/Marketing split</td>
+      <td>Goods transferred from manufacturer to trading entity for onward sale</td>
+      <td>High — transfer pricing on every unit sold between the two</td>
+    </tr>
+    <tr>
+      <td>Landholding + Operating company (real estate/hospitality)</td>
+      <td>Rent or lease payments from operating company to landholding entity</td>
+      <td>High — rent is a classic Section 40A(2)(b) test case</td>
+    </tr>
+    <tr>
+      <td>Holding company + Operating subsidiaries</td>
+      <td>Management/brand fees charged by holding company to each subsidiary</td>
+      <td>High — aggregates quickly across multiple subsidiaries</td>
+    </tr>
+    <tr>
+      <td>Family business split for succession planning</td>
+      <td>Shared services, common facilities, informal cost allocations between branches</td>
+      <td>Medium-High — informality is itself the risk factor</td>
+    </tr>
+    <tr>
+      <td>New product line/geography spun into a separate entity</td>
+      <td>Shared overheads, personnel secondment, IP or brand usage between entities</td>
+      <td>Medium — often below threshold initially, but grows with the new entity</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="documentation">Documentation &amp; Form 3CEB for a Domestic-Only Case</h2>
+<p>Once Section 92BA applies, the compliance mechanics closely mirror international transfer pricing — Rule 10D documentation and Form 3CEB filing — but applied entirely within a domestic context, which creates its own practical differences worth understanding.</p>
+<p>The taxpayer must maintain contemporaneous documentation demonstrating that each Specified Domestic Transaction was priced at arm's length, using one of the prescribed methods, supported by a benchmarking analysis. An accountant's report in Form 3CEB, certifying the arm's length nature of the transactions, must be filed alongside the return — which also extends the filing deadline to 30 November rather than the standard 31 October.</p>
+<p>The practical challenge in a purely domestic case is often benchmarking itself: for international transactions, well-developed databases of foreign comparables exist for many transaction types. For a domestic-only case — particularly for something like intra-group rent, informal management services, or machining arrangements specific to a regional industry — building a genuinely comparable set requires more bespoke analysis, not a database lookup. This is precisely where a general compliance engagement, built around filing the form rather than building the underlying economic case, tends to produce the weakest documentation.</p>
+<p>Two of the five prescribed pricing methods tend to dominate domestic SDT work in practice. The Comparable Uncontrolled Price (CUP) method — comparing the related-party price directly against an independent transaction for the same or similar goods or services — works well for commodities, standard rental markets, and straightforward goods transfers where genuinely comparable independent transactions can be identified locally. The Cost Plus Method tends to fit better for intra-group services and manufacturing arrangements where the related entity performs a defined, limited-risk function — machining, contract manufacturing, or shared services — and an appropriate markup over cost can be benchmarked against what an independent service provider would charge for a comparable function. Choosing between them, and defending that choice, is itself part of what separates a documented position from a bare assertion.</p>
+
+<div class="callout">
+  <div class="callout-title">The Documentation Gap Is Usually the Real Exposure</div>
+  <p>In our experience, it is rare for a domestic group's actual pricing to be wildly unreasonable — family businesses generally do not deliberately shift profits between their own entities in ways that make no commercial sense. The exposure almost always comes from the absence of contemporaneous documentation proving the pricing was reasonable, not from the pricing itself being indefensible. A tax officer does not need to prove your price was wrong; the burden effectively falls on you to prove it was right, and silence is treated as a failure to meet that burden.</p>
+</div>
+
+<h2 id="doubletax">The Double Taxation Trap</h2>
+<p>This is the consequence of a domestic transfer pricing dispute that surprises promoters more than any other, because it has no equivalent in ordinary domestic tax disputes. When an assessing officer makes a transfer pricing adjustment — say, disallowing a portion of a management fee paid by Company A to Company B as excessive under Section 40A(2)(b) — the disallowed amount is added back to Company A's taxable income. But Company B, which actually received that fee and already paid tax on it as income, does not automatically get a corresponding reduction in its own taxable income.</p>
+<p>The result is that the same rupee of economic value can be taxed twice within the same group — once via the disallowance on the payer, and again via the tax the recipient already paid on the same amount as its own income. For international transactions, a taxpayer facing this kind of double taxation has some recourse through the Mutual Agreement Procedure under an applicable tax treaty, allowing the two countries' tax authorities to negotiate relief. <strong>A purely domestic dispute has no equivalent mechanism.</strong> There is no treaty, no foreign competent authority to invoke, and no MAP process — the group's only path to relief is the ordinary Indian appellate process, on the department's own timeline, for both entities separately.</p>
+
+<h2 id="apa">Safe Harbour Rules — Do They Apply to Domestic Transactions?</h2>
+<p>Businesses that have looked into international transfer pricing sometimes ask whether Safe Harbour Rules — the prescribed margins that let a taxpayer avoid further scrutiny on certain transaction categories — offer a similar shortcut for Specified Domestic Transactions. They do not, in any meaningful sense. Safe Harbour Rules under Rule 10TA onwards are specifically scoped to particular categories of international transactions — IT and ITeS services, contract R&amp;D, certain low-value-adding intra-group services, and a handful of other defined categories — and do not extend to Section 40A(2)(b) domestic payments. A domestic group cannot elect into a prescribed safe margin to sidestep benchmarking; the arm's length analysis has to be built specifically for the transaction, every time.</p>
+<p>Advance Pricing Agreements are similarly unavailable for purely domestic transactions in the way they exist for international ones — the APA framework under Sections 92CC and 92CD is built around international transactions and associated enterprises with a cross-border dimension. This absence of both shortcuts is part of why domestic groups often end up under-prepared: because neither Safe Harbour nor APA exists as an option, there is no obvious "easy route" prompting a group to think seriously about its transfer pricing position in the first place — the only path is proper benchmarking and documentation, done well, or not done at all.</p>
+
+<h2 id="scrutiny">What a Scrutiny Assessment Actually Looks Like</h2>
+<p>It helps to understand, concretely, how a Section 92BA issue typically surfaces and unfolds, because the process is different from an ordinary tax scrutiny in several respects that catch unprepared groups off guard.</p>
+<p>A case is usually referred to a Transfer Pricing Officer once the assessing officer notices related-party transactions on the face of the tax audit report (Form 3CD discloses Section 40A(2)(b) payments even before Section 92BA is separately considered) that appear disproportionate to the taxpayer's scale, or where the aggregate crosses the ₹20 crore threshold but no Form 3CEB was filed. The TPO's role is specifically to examine whether the reported price reflects arm's length value — a different, more specialised line of questioning than a general assessing officer would pursue on an ordinary expense disallowance.</p>
+<p>Once a TPO is involved, the burden effectively shifts to the taxpayer to justify the pricing with documented analysis. Groups that show up to this stage with nothing beyond invoices and a broad assertion that "the price was fair" are in a materially weaker position than groups that can produce a contemporaneous benchmarking study, however modest, prepared at the time the transactions occurred. The TPO's proposed adjustment then flows into the assessment order, triggering the tax, interest, and penalty consequences described earlier — and because Section 92BA disputes are still a comparatively newer and less-litigated area than international TP, precedent is thinner, giving tax officers more latitude to take an aggressive position than they might on a more settled question.</p>
+
+<div class="callout">
+  <div class="callout-title">The Precedent Gap Cuts Both Ways</div>
+  <p>Because Specified Domestic Transactions have generated less appellate litigation than international transfer pricing, there is less settled case law for either side to lean on. This is exactly why the quality of the taxpayer's own documentation matters more, not less, in a domestic case — with fewer binding precedents to constrain the department's position, a well-built, defensible benchmarking study becomes the primary thing standing between a reasonable assessment and an aggressive one.</p>
+</div>
+
+<h2 id="comparison">Domestic SDT vs. International Transfer Pricing</h2>
+
+<div class="table-wrapper"><table class="compare-table">
+  <thead>
+    <tr><th>Dimension</th><th>International Transfer Pricing</th><th>Specified Domestic Transactions</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Governing provisions</td>
+      <td>Sections 92 to 92F</td>
+      <td>Section 92BA (applies most provisions of 92–92F by reference)</td>
+    </tr>
+    <tr>
+      <td>Parties involved</td>
+      <td>At least one foreign associated enterprise</td>
+      <td>Both parties resident in India, no foreign element</td>
+    </tr>
+    <tr>
+      <td>Trigger</td>
+      <td>Any qualifying international transaction, generally no minimum threshold</td>
+      <td>Aggregate SDTs exceeding ₹20 crore in the financial year</td>
+    </tr>
+    <tr>
+      <td>Most common category</td>
+      <td>Goods, services, royalties, financing between group entities across borders</td>
+      <td>Section 40A(2)(b) related-party payments within India</td>
+    </tr>
+    <tr>
+      <td>Comparable data availability</td>
+      <td>Established international and domestic comparable databases</td>
+      <td>Often requires bespoke, industry-specific comparable analysis</td>
+    </tr>
+    <tr>
+      <td>Dispute relief mechanism</td>
+      <td>Mutual Agreement Procedure available under applicable DTAA</td>
+      <td>No treaty relief; ordinary Indian appellate process only</td>
+    </tr>
+    <tr>
+      <td>Filing deadline</td>
+      <td>30 November (extended due to Form 3CEB)</td>
+      <td>30 November (same extension applies)</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="mistakes">Common Mistakes We See</h2>
+<ul class="checklist">
+  <li><strong>Assuming "domestic" means "no transfer pricing"</strong> — the single most expensive misconception, and the one this article exists to correct.</li>
+  <li><strong>Testing only the largest transaction</strong> against the threshold, rather than aggregating every Section 40A(2)(b) payment across the financial year.</li>
+  <li><strong>Pricing informally "because it's family"</strong> — related-party status is precisely what triggers the arm's length requirement; informality is the risk, not a defence against it.</li>
+  <li><strong>Excluding interest-free or below-market related-party loans</strong> from the aggregate calculation, on the assumption that no interest means no transaction to price.</li>
+  <li><strong>Treating remuneration to relatives as a pure HR matter</strong>, never checked against whether the amount is reasonable for the role under Section 40A(2)(b).</li>
+  <li><strong>Preparing Form 3CEB documentation retrospectively</strong>, purely to meet the extended filing deadline, rather than contemporaneously as pricing decisions are made.</li>
+  <li><strong>Assuming a general CA firm's annual engagement already covers this</strong> — Section 92BA is unfamiliar even to many experienced general practitioners, precisely because cross-border transfer pricing dominates most training and practice.</li>
+</ul>
+
+<h2 id="howwehelp">How LexWin Can Help</h2>
+<p>LexWin advises purely Indian corporate groups — family businesses, promoter-led groups with multiple related entities, and holding-operating structures — on Specified Domestic Transaction compliance under Section 92BA, alongside the international transfer pricing work we do for foreign-owned subsidiaries. This is exactly the underserved segment most transfer pricing advisory in India overlooks by default.</p>
+
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-circle">1</div>
+    <div class="step-content">
+      <h4>Related-Party Transaction Audit</h4>
+      <p>We map every Section 40A(2)(b) transaction across your group's related entities — rent, purchases, fees, loans, remuneration — and aggregate them against the ₹20 crore threshold, so you know definitively whether Section 92BA applies to you.</p>
+    </div>
+  </div>
+  <div class="process-step">
+    <div class="step-circle">2</div>
+    <div class="step-content">
+      <h4>Benchmarking &amp; Pricing Analysis</h4>
+      <p>Where transactions require arm's length justification, we build the comparable analysis specific to your industry and structure — not a generic database pull, but analysis grounded in what your business actually does.</p>
+    </div>
+  </div>
+  <div class="process-step">
+    <div class="step-circle">3</div>
+    <div class="step-content">
+      <h4>Documentation &amp; Form 3CEB</h4>
+      <p>We prepare contemporaneous Rule 10D documentation and coordinate Form 3CEB filing, built to withstand scrutiny rather than merely meet the extended filing deadline.</p>
+    </div>
+  </div>
+  <div class="process-step">
+    <div class="step-circle">4</div>
+    <div class="step-content">
+      <h4>Intercompany Agreements</h4>
+      <p>We draft or formalise the underlying agreements — lease deeds, service agreements, supply arrangements — so the legal paper trail matches the economic analysis and the informal "family understanding" becomes a defensible, documented position.</p>
+    </div>
+  </div>
+  <div class="process-step">
+    <div class="step-circle">5</div>
+    <div class="step-content">
+      <h4>Ongoing Monitoring &amp; Dispute Support</h4>
+      <p>We provide periodic reviews as your group structure evolves — new entities, changed transaction volumes — and represent your position if a scrutiny notice arrives, from the assessing officer through appeal.</p>
+    </div>
+  </div>
+</div>
+
+<div class="callout">
+  <div class="callout-title">Not Sure Whether Section 92BA Applies to Your Group?</div>
+  <p>The fastest way to find out is a focused related-party transaction review, not a full annual engagement commitment. <a href="https://calendly.com/sadanand-sonar/30min" target="_blank" rel="noopener">Book a free consultation with LexWin →</a></p>
+</div>
+
+<h2 id="who">Who Needs This — and When</h2>
+
+<div class="table-wrapper"><table class="data-table">
+  <thead><tr><th>Group Profile</th><th>Typical SDT Exposure</th><th>Priority Action</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Manufacturing + Trading Split</strong></td>
+      <td>Inter-entity goods transfer pricing, often the largest single SDT category</td>
+      <td>Benchmark the transfer price against comparable independent distributors</td>
+    </tr>
+    <tr>
+      <td><strong>Family Groups With Landholding Entity</strong></td>
+      <td>Rent paid to promoter/family-owned property entity</td>
+      <td>Independent market rent valuation, documented and updated periodically</td>
+    </tr>
+    <tr>
+      <td><strong>Holding + Multiple Operating Subsidiaries</strong></td>
+      <td>Management/brand fees aggregating quickly across several entities</td>
+      <td>Group-wide Section 40A(2)(b) aggregation review</td>
+    </tr>
+    <tr>
+      <td><strong>Groups Undergoing Succession Planning</strong></td>
+      <td>New informal arrangements created by the split, undocumented from day one</td>
+      <td>Build SDT compliance into the restructuring plan itself</td>
+    </tr>
+    <tr>
+      <td><strong>Groups Already Under Scrutiny</strong></td>
+      <td>Existing Section 40A(2)(b) disallowance risk on assessment</td>
+      <td>Engage domestic TP-specific representation immediately</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="checklist">Domestic Transfer Pricing Readiness Checklist — 10 Questions to Ask</h2>
+<p>Run this quick diagnostic against your group's related-party transactions, even if every party involved is Indian. If you answer "no" or "unsure" to more than three, Section 92BA exposure is likely present and undocumented.</p>
+
+<ul class="checklist">
+  <li>Do any of your group companies share a common director, or are they owned substantially by the same family or promoters?</li>
+  <li>Have you aggregated every Section 40A(2)(b) payment across the financial year — rent, purchases, fees, interest, remuneration — against the ₹20 crore threshold?</li>
+  <li>Is intercompany rent, if any, supported by an independent market valuation rather than a figure set informally between related parties?</li>
+  <li>Are management or consultancy fees between group entities backed by evidence that the services were actually rendered?</li>
+  <li>Have interest-free or below-market related-party loans been reviewed for their transfer pricing implications, not just excluded because no interest was charged?</li>
+  <li>Is remuneration paid to relatives of directors benchmarked against what the role would command in the open market?</li>
+  <li>If Section 92BA applies, is your Form 3CEB documentation prepared contemporaneously, not assembled retrospectively for the extended filing deadline?</li>
+  <li>Does your current CA or tax advisor have specific experience with domestic transfer pricing, or only with statutory audit and general compliance?</li>
+  <li>Has your group structure changed in the last financial year — new entity, new related-party transaction type — without a corresponding SDT review?</li>
+  <li>If challenged on assessment, could your group demonstrate — with contemporaneous evidence — that each related-party payment reflects an arm's length price?</li>
+</ul>
+
+<div class="callout">
+  <div class="callout-title">Tags</div>
+  <p><span class="tag">Specified Domestic Transactions</span><span class="tag">Section 92BA</span><span class="tag">Section 40A(2)(b)</span><span class="tag">Transfer Pricing</span><span class="tag">Domestic Group Companies</span><span class="tag">Form 3CEB</span><span class="tag">Corporate Lawyer</span><span class="tag">Indian Promoter Groups</span><span class="tag">LexWin</span></p>
+</div>
+
+</main><!-- end .article-body -->
+
+</div><!-- end .page-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER — identical structure to main site
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">LexWin <span>Legal &amp; HR Consulting</span></div>
+    <div class="footer-tagline">Precision in law. Clarity in counsel. Speed in execution.</div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="https://www.lexwin.co.in/index.html">Home</a></li>
+        <li><a href="https://www.lexwin.co.in/blog/index.html">All Articles</a></li>
+        <li><a href="https://www.lexwin.co.in/free-tools.html">Free Tools</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#services">Services</a></li>
+        <li><a href="https://www.lexwin.co.in/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy">© 2025 LexWin Legal &amp; HR Consulting. Pune, India.</div>
+    <div class="footer-disclaimer">This article is for informational purposes only and does not constitute legal advice. For specific legal guidance, please consult a qualified legal professional.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp-btn" href="https://wa.me/919823385085" target="_blank" rel="noopener" title="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<!--Start of Tawk.to Script - widget fully hidden, tracking only-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.visibility = {desktop: 'hidden', mobile: 'hidden', tablet: 'hidden'};
+Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a1a94b50698cf1c2c1da7fd/1jprt9q1g';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script>
+(function(){
+  var t = document.querySelector('.nav-mobile-services-trigger');
+  var d = document.querySelector('.nav-mobile-dropdown');
+  if (t && d && !t.dataset.gnavBound) {
+    t.dataset.gnavBound = '1';
+    t.addEventListener('click', function(e){
+      e.stopPropagation();
+      d.classList.toggle('open');
+      t.classList.toggle('open');
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
