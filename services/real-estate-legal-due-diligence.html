@@ -428,6 +428,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 .nav-mobile-services-trigger svg { transition: transform 0.25s ease; }
 .nav-mobile-services-trigger.open svg { transform: rotate(180deg); }
 
+.skip-link{position:absolute;left:-9999px;top:0;background:#2c4770;color:#fff;padding:0.75rem 1.25rem;z-index:9999;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;border-radius:0 0 4px 0}.skip-link:focus{left:0}
 </style>
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
@@ -528,6 +529,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- NAVIGATION -->
 <nav role="navigation" aria-label="Main navigation">
@@ -537,7 +539,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       <div class="nav-logo-divider"></div>
       <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li class="nav-has-dropdown">
         <button class="nav-dropdown-trigger nav-mobile-services-trigger">
           Services
@@ -590,12 +592,12 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
       <li><a href="https://www.lexwin.co.in/pune-legal-hr-consultant.html">Pune</a></li>
       <li><a href="https://calendly.com/sadanand-sonar/30min" target="_blank" rel="noopener" class="nav-cta">Free Consultation</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main-content" class="hero">
   <div class="hero-texture"></div>
   <div class="hero-glow"></div>
   <div class="hero-line-left"></div>
@@ -1280,7 +1282,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 const navToggle = document.querySelector('.nav-toggle');
 const navEl = document.querySelector('nav');
 if (navToggle) {
-  navToggle.addEventListener('click', () => { navEl.classList.toggle('nav-open'); });
+  navToggle.addEventListener('click', () => { navEl.classList.toggle('nav-open'); navToggle.setAttribute('aria-expanded', navEl.classList.contains('nav-open') ? 'true' : 'false'); });
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => navEl.classList.remove('nav-open'));
   });
