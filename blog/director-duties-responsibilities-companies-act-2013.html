@@ -245,7 +245,8 @@
     @media (max-width: 600px) { .page-wrap { padding: 1.5rem 1rem 3rem; } }
     @media(max-width:860px){ .stat-strip-inner{grid-template-columns:1fr 1fr} }
     @media(max-width:560px){ .hero{padding:3rem 1.2rem 2rem} .content-wrap{padding:2rem 1.2rem} .hero h1{font-size:1.7rem} .stat-strip-inner{grid-template-columns:1fr 1fr} .compare-table{font-size:0.8rem} .policy-grid{grid-template-columns:1fr} }
-  </style>
+  .skip-link{position:absolute;left:-9999px;top:0;background:#2c4770;color:#fff;padding:0.75rem 1.25rem;z-index:9999;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;border-radius:0 0 4px 0}.skip-link:focus{left:0}
+</style>
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
@@ -258,6 +259,7 @@
 
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
@@ -266,10 +268,10 @@
       <div class="nav-logo-divider"></div>
       <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
     </a>
-    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" onclick="this.nextElementSibling.classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true')">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
             <li class="nav-has-dropdown">
         <button class="nav-dropdown-trigger nav-mobile-services-trigger">
           Services
@@ -325,7 +327,7 @@
   </div>
 </nav>
 
-<div class="breadcrumb-bar">
+<div id="main-content" class="breadcrumb-bar">
   <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
 </div>
 
