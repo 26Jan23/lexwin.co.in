@@ -572,7 +572,8 @@
       .cta-section { padding: 2rem 1.2rem; }
       .blog-block { padding: 2rem 1.2rem; }
     }
-  </style>
+  .skip-link{position:absolute;left:-9999px;top:0;background:#2c4770;color:#fff;padding:0.75rem 1.25rem;z-index:9999;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;border-radius:0 0 4px 0}.skip-link:focus{left:0}
+</style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -672,6 +673,7 @@
 
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- ═══════════════════════════════════
      NAVIGATION
@@ -736,7 +738,7 @@
       <li><a href="https://www.lexwin.co.in/free-tools.html">Free Tools</a></li>
       <li><a href="https://calendly.com/sadanand-sonar/30min" target="_blank" rel="noopener" class="nav-cta-btn">Free Consultation</a></li>
     </ul>
-    <button class="nav-hamburger" id="navToggle" aria-label="Menu">
+    <button class="nav-hamburger" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -745,7 +747,7 @@
 <!-- ═══════════════════════════════════
      HERO
 ════════════════════════════════════ -->
-<section class="hero">
+<section id="main-content" class="hero">
   <div class="hero-inner">
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
@@ -1028,7 +1030,9 @@ s0.parentNode.insertBefore(s1,s0);
 <script>
   // Mobile nav toggle
   document.getElementById('navToggle').addEventListener('click', function(){
-    document.getElementById('navLinks').classList.toggle('open');
+    var links = document.getElementById('navLinks');
+    links.classList.toggle('open');
+    this.setAttribute('aria-expanded', links.classList.contains('open') ? 'true' : 'false');
   });
 </script>
 
