@@ -833,6 +833,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
     @media (max-width: 640px) {
       .icon-grid { grid-template-columns: repeat(2, 1fr); }
     }
+.skip-link{position:absolute;left:-9999px;top:0;background:#2c4770;color:#fff;padding:0.75rem 1.25rem;z-index:9999;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;border-radius:0 0 4px 0}.skip-link:focus{left:0}
 </style>
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
@@ -846,6 +847,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
 
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- ═══════════════════════════════════════════════════════════
      SITE NAV — identical to main site
@@ -857,10 +859,10 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
       <div class="nav-logo-divider"></div>
       <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
     </a>
-    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" onclick="this.nextElementSibling.classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true')">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
             <li class="nav-has-dropdown">
         <button class="nav-dropdown-trigger nav-mobile-services-trigger">
           Services
@@ -919,7 +921,7 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
 <!-- ═══════════════════════════════════════════════════════════
      BREADCRUMB
 ════════════════════════════════════════════════════════════ -->
-<div class="breadcrumb-bar">
+<div id="main-content" class="breadcrumb-bar">
   <a href="https://www.lexwin.co.in/blog/index.html">← Back to Insights</a>
 </div>
 
