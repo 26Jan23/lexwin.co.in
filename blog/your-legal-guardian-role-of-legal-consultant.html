@@ -485,6 +485,14 @@
     .related-reading-list a{color:var(--navy-mid);font-weight:600;text-decoration:none;border-bottom:1px solid transparent}
     .related-reading-list a:hover{color:var(--gold);border-bottom-color:var(--gold)}
   .skip-link{position:absolute;left:-9999px;top:0;background:#2c4770;color:#fff;padding:0.75rem 1.25rem;z-index:9999;text-decoration:none;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;border-radius:0 0 4px 0}.skip-link:focus{left:0}
+.toc-box{background:var(--blue-pale);border:1px solid var(--blue-border);border-left:4px solid var(--navy-mid);border-radius:var(--radius);padding:1.2rem 1.5rem 1.3rem;margin-bottom:2rem}
+.toc-box-title{font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy-mid);margin-bottom:.8rem}
+.toc-box ol{list-style:none;counter-reset:toc;padding:0;margin:0}
+.toc-box ol li{counter-increment:toc;font-family:'DM Sans',sans-serif;font-size:.88rem;padding:.28rem 0 .28rem 1.8rem;position:relative;border-bottom:1px dotted var(--border);line-height:1.4}
+.toc-box ol li:last-child{border-bottom:none}
+.toc-box ol li::before{content:counter(toc)'.';position:absolute;left:0;color:var(--gold);font-weight:700;font-size:.82rem}
+.toc-box ol li a{color:var(--navy);text-decoration:none}
+.toc-box ol li a:hover{color:var(--link);text-decoration:underline}
 </style>
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png" />
@@ -624,6 +632,21 @@
 
   <!-- ── ARTICLE ─────────────────────────────────────── -->
   <main class="article-body" id="article-top">
+
+    <div class="toc-box">
+      <div class="toc-box-title">In this article</div>
+      <ol>
+        <li><a href="#what-is">What is a legal consultant?</a></li>
+        <li><a href="#why-need">Why your company needs one</a></li>
+        <li><a href="#how-help">Key areas where a legal consultant helps</a></li>
+        <li><a href="#retainer">Advantages of a retainer engagement</a></li>
+        <li><a href="#litigation">Litigation vs. non-litigation lawyers</a></li>
+        <li><a href="#lexwin-process">How LexWin works with you</a></li>
+        <li><a href="#who-needs">Which businesses need this</a></li>
+        <li><a href="#checklist">Self-diagnostic checklist</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </div>
 
     <p>When a business owner signs a vendor agreement late on a Friday afternoon — without reading the indemnity clause — they are not being careless. They are being busy. But busy and legally exposed are, more often than not, the same thing. The indemnity clause that gets skipped is the one a lawyer could have flagged in ten minutes. The NDA that is vague on what counts as "confidential information" is the one that becomes the subject of a ₹50 lakh dispute three years later.</p>
 
