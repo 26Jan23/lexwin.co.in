@@ -1225,6 +1225,8 @@ footer{background:var(--navy);border-top:1px solid rgba(184,146,42,0.15);padding
       <div id="gapsList"></div>
     </div>
 
+    <div class="results-links" id="resultsLinks"></div>
+
     <div class="results-actions">
       <a href="https://calendly.com/sadanand-sonar/30min" target="_blank" rel="noopener" class="results-cta-primary">Book a Free DPDP Consultation →</a>
       <button type="button" class="results-restart" id="restartBtn">Start over</button>
@@ -1500,6 +1502,18 @@ s0.parentNode.insertBefore(s1,s0);
         gapsList.appendChild(item);
       });
     }
+
+    var articleMap = {
+      general: 'dpdp-readiness-compliance-guide.html',
+      hospital: 'dpdp-healthcare-compliance.html',
+      school: 'dpdp-act-schools-student-data.html',
+      bfsi: 'dpdp-act-bfsi-financial-services.html'
+    };
+    var resultsLinksHtml = '<a href="blog/' + articleMap[selectedSector] + '">Read the full ' + sectorObj.name + ' DPDP guide &rarr;</a>';
+    if (pct <= 65){
+      resultsLinksHtml += '<a href="blog/dpo-as-a-service-dpdp.html">Learn about DPO as a Service &rarr;</a>';
+    }
+    document.getElementById('resultsLinks').innerHTML = resultsLinksHtml;
 
     wizCard.style.display = 'none';
     wizDots.style.display = 'none';
