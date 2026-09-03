@@ -120,6 +120,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; color
 nav:not([aria-label="Footer navigation"]) { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(12,26,53,0.97); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(184,146,42,0.2); transition: var(--transition); }
 .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 70px; }
 .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.nav-logo-img { height: 63px; width: auto; display: block; }
 .nav-logo-main { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--white); letter-spacing: 0.02em; }
 .nav-logo-divider { width: 1px; height: 20px; background: rgba(184,146,42,0.4); }
 .nav-logo-sub { font-family: 'Source Sans 3', sans-serif; font-size: 0.7rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(232,201,106,0.7); }
@@ -535,9 +536,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="https://www.lexwin.co.in/" class="nav-logo">
-      <span class="nav-logo-main">LexWin</span>
-      <div class="nav-logo-divider"></div>
-      <span class="nav-logo-sub">Legal &amp; HR Consulting</span>
+      <img src="/assets/lexwin-logo.svg" alt="LexWin Legal & HR Consulting" class="nav-logo-img">
     </a>
     <ul class="nav-links" id="navLinks">
       <li class="nav-has-dropdown">
