@@ -90,6 +90,8 @@ nav:not([aria-label="Footer navigation"]) {
 
 .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
 
+.nav-logo-img { height: 63px; width: auto; display: block; }
+
 .nav-logo-main {
       font-family: 'Playfair Display', serif;
       font-size: 1.6rem; font-weight: 700;
