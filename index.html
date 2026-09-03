@@ -109,6 +109,7 @@ nav:not([aria-label="Footer navigation"]) {
   padding: 0 2rem; height: 70px;
 }
 .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.nav-logo-img { height: 63px; width: auto; display: block; }
 .nav-logo-main {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem; font-weight: 700;
@@ -941,9 +942,7 @@ footer { background: #060e1e; border-top: 1px solid rgba(184,146,42,0.2); paddin
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <span class="nav-logo-main">LexWin</span>
-      <div class="nav-logo-divider"></div>
-      <span class="nav-logo-sub">Legal & HR Consulting</span>
+      <img src="/assets/lexwin-logo.svg" alt="LexWin Legal & HR Consulting" class="nav-logo-img">
     </a>
     <ul class="nav-links" id="navLinks">
       <li class="nav-has-dropdown">
