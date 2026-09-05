@@ -18,7 +18,9 @@
 ## Free Tools
 
 - [Free Tools](https://www.lexwin.co.in/free-tools.html): Self-assessment and compliance tools for Indian businesses.
-- [DPDP Compliance Self-Assessment](https://www.lexwin.co.in/free-tools/am-i-dpdp-compliant.html): Interactive tool to check readiness under India's Digital Personal Data Protection Act.
+- [DPDP Compliance Self-Assessment](https://www.lexwin.co.in/am-i-dpdp-compliant.html): Interactive tool to check readiness under India's Digital Personal Data Protection Act.
+- [Business Structure Finder](https://www.lexwin.co.in/business-structure-finder.html): Interactive tool to identify the right entity structure for setting up in India.
+- [Engagement Model Finder](https://www.lexwin.co.in/engagement-model-finder.html): Interactive tool to identify the right LexWin engagement model for a business's needs.
 
 ## Insights — Corporate Legal & Governance
 
