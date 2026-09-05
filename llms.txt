@@ -1,0 +1,91 @@
+# LexWin Legal & HR Consulting
+
+> LexWin is a Pune-based corporate legal and HR advisory firm serving Indian businesses, MNCs, and foreign companies entering India. Practice areas include Corporate Legal Advisory, HR Compliance & Labour Law, Real Estate Legal Due Diligence, and India Entry / Business Setup. Founded by Sadanand Sonar (Bar Council enrolled, background in senior IT management). Tagline: "Precision in law, Clarity in counsel, Speed in execution."
+
+## About
+
+- [About LexWin](https://www.lexwin.co.in/about.html): Firm background, founder profile, and approach.
+- [Home](https://www.lexwin.co.in/): Overview of practice areas, who we help, and engagement models.
+- [Pune Legal & HR Consultant](https://www.lexwin.co.in/pune-legal-hr-consultant.html): Local presence and services in Pune, Maharashtra.
+
+## Services
+
+- [Corporate Legal Advisory](https://www.lexwin.co.in/services/corporate-legal-consultant.html): Contracts, M&A, governance, DPDP/GDPR compliance, retainer advisory.
+- [HR Consulting](https://www.lexwin.co.in/services/hr-consultant.html): HR policies, POSH implementation, labour law compliance, performance management.
+- [Business Setup in India](https://www.lexwin.co.in/services/business-setup-india.html): Entity structuring (WOS, Branch Office, LLP, EOR), FDI/FEMA compliance, market entry for foreign companies.
+- [Real Estate Legal Due Diligence](https://www.lexwin.co.in/services/real-estate-legal-due-diligence.html): Title verification, land acquisition advisory, lease and sale agreement review.
+
+## Free Tools
+
+- [Free Tools](https://www.lexwin.co.in/free-tools.html): Self-assessment and compliance tools for Indian businesses.
+- [DPDP Compliance Self-Assessment](https://www.lexwin.co.in/free-tools/am-i-dpdp-compliant.html): Interactive tool to check readiness under India's Digital Personal Data Protection Act.
+
+## Insights — Corporate Legal & Governance
+
+- [Transfer Pricing for Domestic Group Companies — Section 92BA](https://www.lexwin.co.in/blog/transfer-pricing-domestic-group-companies.html)
+- [Why You Need a Transfer Pricing Advisor — Not Just an Accountant](https://www.lexwin.co.in/blog/why-you-need-a-transfer-pricing-advisor.html)
+- [RPT, Transfer Pricing & Permanent Establishment Risk for Indian Subsidiaries](https://www.lexwin.co.in/blog/rpt-transfer-pricing-pe-risk-indian-subsidiaries.html)
+- [Roles, Responsibilities & Duties of a Director Under Companies Act, 2013](https://www.lexwin.co.in/blog/director-duties-responsibilities-companies-act-2013.html)
+- [Legal Due Diligence for Mergers & Acquisitions](https://www.lexwin.co.in/blog/ma-legal-due-diligence-guide.html)
+- [The Role of Independent Directors Under Companies Act, 2013](https://www.lexwin.co.in/blog/role-of-independent-director-companies-act.html)
+- [Corporate Governance in India](https://www.lexwin.co.in/blog/corporate-governance-india.html)
+- [Why In-House Legal Delays Deals — And How External Counsel Closes Them Faster](https://www.lexwin.co.in/blog/in-house-legal-deal-delays-external-counsel.html)
+- [Your Virtual Law Office](https://www.lexwin.co.in/blog/virtual-law-office.html)
+- [Legal Process Outsourcing to India](https://www.lexwin.co.in/blog/legal-process-outsourcing-india-foreign-companies.html)
+
+## Insights — Commercial Contracts
+
+- [Contract Management for Service & Supply Agreements](https://www.lexwin.co.in/blog/contract-management-service-supply-agreements.html)
+- [One Contract Does Not Fit All — Industry-Specific Contract Drafting](https://www.lexwin.co.in/blog/commercial-contracts-industry-specific-guide.html)
+- [Business Guide to Commercial Contracts](https://www.lexwin.co.in/blog/commercial-contracts-guide.html)
+- [Non-Disclosure Agreements in India: A Practical B2B Guide](https://www.lexwin.co.in/blog/nda-india-b2b-guide.html)
+
+## Insights — Real Estate Legal
+
+- [The Complete Property Buyer's Guide for Pune & Maharashtra](https://www.lexwin.co.in/blog/property-buying-guide-pune-maharashtra.html)
+- [Title Search Report — Why Every Property Buyer in Pune Needs One](https://www.lexwin.co.in/blog/title-search-report-property-lawyer-pune.html)
+- [How to Read a 7/12 Extract (Satbara Utara)](https://www.lexwin.co.in/blog/how-to-read-7-12-extract-satbara-utara-property-lawyer-pune.html)
+- [Built-to-Suit (BTS) Industrial Leases in Pune](https://www.lexwin.co.in/blog/built-to-suit-bts-industrial-lease-pune.html)
+- [Land Acquisition for Industrial Projects in Pune](https://www.lexwin.co.in/blog/land-acquisition-industrial-projects-pune.html)
+- [Legal Due Diligence Before Buying Property](https://www.lexwin.co.in/blog/property-legal-due-diligence-before-purchase.html)
+
+## Insights — HR Compliance & Labour Law
+
+- [HR Compliance Checklist 2025–26 — India's New Labour Codes](https://www.lexwin.co.in/blog/hr-compliance-checklist-2025.html)
+- [India's New Labour Codes — A Comprehensive Summary](https://www.lexwin.co.in/blog/india-new-labour-codes.html)
+- [Multistate HR Operations Management](https://www.lexwin.co.in/blog/multistate-hr-compliance-management.html)
+- [Designing, Executing & Monitoring an Employee Performance Management System](https://www.lexwin.co.in/blog/performance-management-system-design-execution.html)
+- [Workplace Incident & Grievance Management](https://www.lexwin.co.in/blog/workplace-incident-grievance-management.html)
+- [Where HR Ends and Law Begins — Legal Map of the Employee Lifecycle](https://www.lexwin.co.in/blog/legal-side-of-hr-employee-lifecycle.html)
+- [Managing Underperformance Legally — PIP, Warnings & Exits](https://www.lexwin.co.in/blog/managing-underperformance-legally.html)
+- [Employee Termination in India](https://www.lexwin.co.in/blog/employee-termination-india.html)
+- [POSH in Your Organization — A Complete Guide](https://www.lexwin.co.in/blog/posh-complete-guide.html)
+- [HR Policies That Actually Protect You](https://www.lexwin.co.in/blog/hr-policies-legal-drafting.html)
+- [HR Transformation That Actually Works](https://www.lexwin.co.in/blog/hr-transformation-chro-support.html)
+- [Your Business Needs a CHRO — But Can't Afford One](https://www.lexwin.co.in/blog/virtual-chro-guide.html)
+
+## Insights — Data Protection (DPDP & GDPR)
+
+- [DPDP Readiness — What Indian Businesses Must Do Before May 2027](https://www.lexwin.co.in/blog/dpdp-readiness-compliance-guide.html)
+- [DPDP Act for BFSI](https://www.lexwin.co.in/blog/dpdp-act-bfsi-financial-services.html)
+- [DPDP Act for Schools](https://www.lexwin.co.in/blog/dpdp-act-schools-student-data.html)
+- [DPDP Act for Hospitals & Healthcare](https://www.lexwin.co.in/blog/dpdp-healthcare-compliance.html)
+- [DPO as a Service — Your Compliance Engine Under the DPDP Act](https://www.lexwin.co.in/blog/dpo-as-a-service-dpdp.html)
+
+## Insights — India Entry & Startups
+
+- [Business Guide on India Entry](https://www.lexwin.co.in/blog/india-entry-guide.html)
+- [Incorporating in India — Choosing the Right Business Structure](https://www.lexwin.co.in/blog/india-company-incorporation-guide.html)
+- [Founders' Agreement India — Why Every Startup Needs One](https://www.lexwin.co.in/blog/founders-agreement-india.html)
+- [Your Legal Guardian — The Role of a Legal Consultant](https://www.lexwin.co.in/blog/your-legal-guardian-role-of-legal-consultant.html)
+
+## Contact
+
+- [Free Consultation Booking](https://calendly.com/sadanand-sonar/30min): 30-minute consultation via Calendly.
+- Email: info@LexWin.co.in
+- Phone / WhatsApp: +91 98233 85085
+- Office: A-402, La Valle Casa, NDA–Pashan Road, Chandani Chowk, Bavdhan, Pune – 411071, Maharashtra, India
+
+## Optional
+
+- [All Articles / Blog Index](https://www.lexwin.co.in/blog/index.html): Full archive of LexWin's legal and HR insights.
