@@ -73,6 +73,7 @@
 - [DPDP Act for Schools](https://www.lexwin.co.in/blog/dpdp-act-schools-student-data.html)
 - [DPDP Act for Hospitals & Healthcare](https://www.lexwin.co.in/blog/dpdp-healthcare-compliance.html)
 - [DPO as a Service — Your Compliance Engine Under the DPDP Act](https://www.lexwin.co.in/blog/dpo-as-a-service-dpdp.html)
+- [DPDP Act FAQs — 100 Questions Answered](https://www.lexwin.co.in/dpdp-faq.html): Plain-English answers on applicability, consent, breach notification, penalties, planning and implementation, plus sector sections for schools, hospitals, BFSI, HR and startups.
 
 ## Insights — India Entry & Startups
 
