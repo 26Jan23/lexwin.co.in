@@ -45,7 +45,7 @@
 
   <!-- Blog Index -->
   <url>
-    <loc>https://www.lexwin.co.in/blog/index.html</loc>
+    <loc>https://www.lexwin.co.in/blog/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
